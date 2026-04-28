@@ -31,5 +31,6 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/latest.json
-          git diff --staged --quiet || git commit -m "data: update IDX $(date -u '+%Y-%m-%d %H:%M') UTC"
+          WIB_TIME=$(TZ='Asia/Jakarta' date '+%Y-%m-%d %H:%M WIB')
+          git diff --staged --quiet || git commit -m "data: update IDX ${WIB_TIME}"
           git push
