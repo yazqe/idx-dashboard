@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IDX Dashboard</title>
+<style>
+  :root {
+    --bg:#0d1117;--card:#161b22;--border:#30363d;--text:#c9d1d9;--muted:#8b949e;
+    --green:#3fb950;--green-bg:#0d2a14;--red:#f85149;--red-bg:#2d0f0f;
+    --gold:#e3b341;--blue:#58a6ff;--purple:#bc8cff;--accent:#1f6feb;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;font-size:13px}
+  header{background:var(--card);border-bottom:1px solid var(--border);padding:12px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  header h1{font-size:18px;font-weight:700;color:var(--blue)}
+  .badge{padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;background:var(--accent);color:#fff}
+  .meta{margin-left:auto;color:var(--muted);font-size:11px;text-align:right}
+  .meta span{display:block}
+  .refresh-bar{background:var(--card);border-bottom:1px solid var(--border);padding:6px 20px;display:flex;align-items:center;gap:12px;font-size:11px;color:var(--muted);flex-wrap:wrap}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+  .btn-refresh{background:var(--accent);color:#fff;border:none;padding:4px 12px;border-radius:6px;cursor:pointer;font-size:11px;margin-left:auto}
+  main{padding:16px 20px;display:grid;gap:16px}
+  .cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media(max-width:900px){.cols3{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+  .card-header{padding:10px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border)}
+  .card-header h2{font-size:13px;font-weight:700}
+  .card-header .count{margin-left:auto;background:var(--border);border-radius:10px;padding:1px 8px;font-size:10px;color:var(--muted)}
+  table{width:100%;border-collapse:collapse}
+  th{padding:6px 10px;text-align:left;font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;border-bottom:1px solid var(--border)}
+  td{padding:6px 10px;border-bottom:1px solid #1c2128;vertical-align:middle}
+  tr:last-child td{border-bottom:none}
+  tr:hover td{background:#1c2128}
+  .code{font-weight:700;color:var(--blue);font-size:12px}
+  .price{font-weight:600}
+  .vol{color:var(--muted);font-size:11px}
+  .pos{color:var(--green)}.neg{color:var(--red)}.neu{color:var(--muted)}
+  .intersection-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;padding:14px}
+  .inter-card{background:#1c2128;border-radius:8px;padding:10px 12px;border-left:3px solid var(--gold)}
+  .inter-card.triple{border-left-color:var(--purple)}
+  .inter-top{display:flex;align-items:center;gap:8px}
+  .inter-code{font-weight:700;font-size:14px;color:var(--blue)}
+  .inter-change{font-weight:700;margin-left:auto}
+  .inter-name{font-size:10px;color:var(--muted);margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .inter-cats{display:flex;gap:4px;margin-top:6px;flex-wrap:wrap}
+  .cat-pill{font-size:9px;padding:2px 7px;border-radius:10px;font-weight:600}
+  .cat-gainer{background:var(--green-bg);color:var(--green)}
+  .cat-volume{background:#0d1f3c;color:var(--blue)}
+  .cat-value{background:#2a1f0a;color:var(--gold)}
+  .watchlist{display:flex;gap:10px;padding:14px;flex-wrap:wrap}
+  .watch-card{background:#1c2128;border-radius:8px;padding:12px 14px;flex:1;min-width:160px;border-top:3px solid var(--green)}
+  .watch-card .wcode{font-weight:800;font-size:16px;color:var(--green)}
+  .watch-card .wname{font-size:10px;color:var(--muted);margin-top:2px}
+  .watch-card .wrow{display:flex;justify-content:space-between;margin-top:8px}
+  .watch-card .wlabel{font-size:10px;color:var(--muted)}
+  .watch-card .wval{font-size:12px;font-weight:600}
+  .loading{text-align:center;padding:40px;color:var(--muted)}
+  .spinner{width:32px;height:32px;border:3px solid var(--border);border-top-color:var(--blue);border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 12px}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .no-data{padding:20px;text-align:center;color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📊 IDX Dashboard</h1>
+  <span class="badge" id="session-badge">–</span>
+  <div class="meta">
+    <span id="date-display">–</span>
+    <span id="time-display" style="color:var(--text);font-weight:600">–</span>
+  </div>
+</header>
+
+<div class="refresh-bar">
+  <span class="dot"></span>
+  <span>Auto update tiap 5 menit (jam bursa)</span>
+  <span id="countdown" style="color:var(--text)"></span>
+  <button class="btn-refresh" onclick="load()">⟳ Refresh</button>
+</div>
+
+<!-- IHSG Bar -->
+<div id="ihsg-bar" style="background:#0d1f3c;border-bottom:2px solid #1f6feb;padding:12px 20px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
+  <span style="font-size:12px;color:#58a6ff;font-weight:800;letter-spacing:1px">📊 IHSG</span>
+  <span id="ihsg-status" style="font-size:10px;padding:3px 10px;border-radius:10px;font-weight:700;background:#1c2128;color:#8b949e">Loading…</span>
+  <span id="ihsg-price" style="font-size:26px;font-weight:800;color:#fff">–</span>
+  <span id="ihsg-change" style="font-size:15px;font-weight:700">–</span>
+  <span style="color:#30363d">│</span>
+  <span id="ihsg-hl" style="font-size:12px;color:#8b949e">H: – &nbsp; L: –</span>
+  <span id="ihsg-open" style="font-size:12px;color:#8b949e">Open: –</span>
+  <span style="color:#30363d">│</span>
+  <span id="ihsg-vol" style="font-size:12px;color:#8b949e">Vol: –</span>
+  <span id="ihsg-as-of" style="font-size:10px;color:#8b949e;font-style:italic"></span>
+  <span id="ihsg-bar-chart" style="margin-left:auto;display:flex;align-items:center;gap:6px;font-size:11px"></span>
+</div>
+
+<main id="main">
+  <div class="loading"><div class="spinner"></div>Memuat data…</div>
+</main>
+
+<script>
+const fmt = (n,d=0) => n==null?'–':Number(n).toLocaleString('id-ID',{minimumFractionDigits:d,maximumFractionDigits:d});
+const fmtV = v => {if(!v)return'–';if(v>=1e12)return(v/1e12).toFixed(2)+'T';if(v>=1e9)return(v/1e9).toFixed(2)+'B';if(v>=1e6)return(v/1e6).toFixed(1)+'M';return(v/1e3).toFixed(0)+'K'};
+const clr  = p => p>0?'pos':p<0?'neg':'neu';
+const sign = p => p>0?'+':'';
+
+// Baca dari data/latest.json (GitHub Pages sama domain = no CORS)
+const DATA_URL = './data/latest.json';
+
+let nextRefresh = Date.now() + 5*60*1000;
+
+function updateCountdown() {
+  const sec = Math.max(0, Math.round((nextRefresh - Date.now()) / 1000));
+  const el = document.getElementById('countdown');
+  if (el) el.textContent = sec > 0 ? `Update dalam ${sec}s` : 'Mengambil data…';
+}
+
+function renderIHSG(ihsg) {
+  if (!ihsg) return;
+  const isOpen = ihsg.market_open === true;
+  const hasData = !!ihsg.close;
+  const statusEl = document.getElementById('ihsg-status');
+  if (isOpen) {
+    statusEl.textContent = '● LIVE';
+    statusEl.style.background = 'var(--green-bg)';
+    statusEl.style.color = 'var(--green)';
+  } else {
+    statusEl.textContent = '○ Market Tutup';
+    statusEl.style.background = '#1c2128';
+    statusEl.style.color = '#8b949e';
+  }
+  if (!hasData) { document.getElementById('ihsg-price').textContent = 'Tidak ada data'; return; }
+  const up = ihsg.change_pct >= 0;
+  const col = up ? 'var(--green)' : 'var(--red)';
+  document.getElementById('ihsg-price').textContent = fmt(ihsg.close, 2);
+  document.getElementById('ihsg-price').style.color = col;
+  document.getElementById('ihsg-change').innerHTML = `<span style="color:${col}">${up?'▲':'▼'} ${Math.abs(ihsg.change_abs||0).toFixed(2)} (${up?'+':''}${fmt(ihsg.change_pct,2)}%)</span>`;
+  document.getElementById('ihsg-hl').innerHTML = `<span style="color:var(--green)">H: ${fmt(ihsg.high,2)}</span> &nbsp; <span style="color:var(--red)">L: ${fmt(ihsg.low,2)}</span>`;
+  document.getElementById('ihsg-open').textContent = `Open: ${fmt(ihsg.open,2)}`;
+  document.getElementById('ihsg-vol').textContent = `Vol: ${fmtV(ihsg.volume)}`;
+  document.getElementById('ihsg-as-of').textContent = !isOpen && ihsg.as_of ? `Data terakhir: ${ihsg.as_of}` : '';
+  if (ihsg.high && ihsg.low && ihsg.high !== ihsg.low) {
+    const pct = Math.round(((ihsg.close-ihsg.low)/(ihsg.high-ihsg.low))*100);
+    document.getElementById('ihsg-bar-chart').innerHTML = `
+      <span style="color:var(--red);font-size:10px">${fmt(ihsg.low,0)}</span>
+      <div style="width:120px;height:6px;background:#30363d;border-radius:3px;position:relative">
+        <div style="width:${pct}%;height:100%;background:${col};border-radius:3px"></div>
+      </div>
+      <span style="color:var(--green);font-size:10px">${fmt(ihsg.high,0)}</span>
+      <span style="color:#8b949e;font-size:10px">${pct}%</span>`;
+  }
+}
+
+function renderTable(stocks, type) {
+  if (!stocks?.length) return '<div class="no-data">Tidak ada data</div>';
+  const val = s => type==='gainer'?`<span class="${clr(s.change_pct)}">${sign(s.change_pct)}${fmt(s.change_pct,2)}%</span>`
+    :type==='volume'?`<span class="vol">${fmtV(s.volume)}</span>`
+    :`<span class="vol">Rp${fmtV(s.value)}</span>`;
+  const col = type==='gainer'?'Change':type==='volume'?'Volume':'Nilai';
+  return `<table><thead><tr><th>#</th><th>Kode</th><th>Harga</th><th>${col}</th></tr></thead><tbody>
+    ${stocks.slice(0,15).map((s,i)=>`<tr>
+      <td class="vol">${i+1}</td>
+      <td><span class="code">${s.code}</span><br><span class="vol" style="font-size:10px">${(s.name||'').substring(0,20)}</span></td>
+      <td class="price">Rp${fmt(s.price||s.close)}</td>
+      <td>${val(s)}</td></tr>`).join('')}
+  </tbody></table>`;
+}
+
+function renderIntersection(list) {
+  if (!list?.length) return '<div class="no-data">Tidak ada saham yang masuk 2+ kategori</div>';
+  return `<div class="intersection-grid">${list.map(s=>`
+    <div class="inter-card ${s.categories.length===3?'triple':''}">
+      <div class="inter-top"><span class="inter-code">${s.code}</span><span class="inter-change ${clr(s.change_pct)}">${sign(s.change_pct)}${fmt(s.change_pct,2)}%</span></div>
+      <div class="inter-name">${s.name}</div>
+      <div class="inter-cats">
+        ${s.categories.includes('gainer')?'<span class="cat-pill cat-gainer">🟢 Gainer</span>':''}
+        ${s.categories.includes('volume')?'<span class="cat-pill cat-volume">📈 Volume</span>':''}
+        ${s.categories.includes('value')?'<span class="cat-pill cat-value">💰 Value</span>':''}
+        ${s.categories.length===3?'<span class="cat-pill" style="background:#1e0d3c;color:var(--purple)">⭐ Triple</span>':''}
+      </div>
+      <div style="margin-top:6px;font-size:10px;color:var(--muted)">Harga: Rp${fmt(s.price||s.close)} · Vol: ${fmtV(s.volume)}</div>
+    </div>`).join('')}</div>`;
+}
+
+function renderWatchlist(list) {
+  if (!list?.length) return '<div class="no-data">Tidak ada data</div>';
+  return `<div class="watchlist">${list.map(s=>`
+    <div class="watch-card">
+      <div class="wcode">${s.code}</div>
+      <div class="wname">${(s.name||'').substring(0,28)}</div>
+      <div class="wrow">
+        <span><span class="wlabel">Harga</span><br><span class="wval">Rp${fmt(s.price||s.close)}</span></span>
+        <span><span class="wlabel">Change</span><br><span class="wval ${clr(s.change_pct)}">${sign(s.change_pct)}${fmt(s.change_pct,2)}%</span></span>
+        <span><span class="wlabel">Volume</span><br><span class="wval">${fmtV(s.volume)}</span></span>
+      </div>
+      <div style="margin-top:6px;font-size:10px;color:var(--muted)">Nilai: Rp${fmtV(s.value)}</div>
+    </div>`).join('')}</div>`;
+}
+
+async function load() {
+  try {
+    // Cache-busting agar selalu ambil data terbaru
+    const r = await fetch(DATA_URL + '?t=' + Date.now());
+    if (!r.ok) throw new Error('Data not found');
+    const d = await r.json();
+
+    renderIHSG(d.ihsg);
+
+    document.getElementById('session-badge').textContent =
+      {pagi:'🌅 Sesi Pagi',siang:'☀️ Sesi Siang',penutupan:'🌆 Menjelang Tutup'}[d.session] || d.session;
+    document.getElementById('date-display').textContent = d.date;
+    document.getElementById('time-display').textContent = 'Update: ' + d.time;
+
+    nextRefresh = Date.now() + 5*60*1000;
+
+    document.getElementById('main').innerHTML = `
+      <div class="cols3">
+        <div class="card">
+          <div class="card-header"><span>🟢</span><h2>Top Gainers</h2><span class="count">${d.gainers?.length||0}</span></div>
+          ${renderTable(d.gainers,'gainer')}
+        </div>
+        <div class="card">
+          <div class="card-header"><span>📈</span><h2>Top Volume / Frekuensi</h2><span class="count">${d.volume?.length||0}</span></div>
+          ${renderTable(d.volume,'volume')}
+        </div>
+        <div class="card">
+          <div class="card-header"><span>💰</span><h2>Top Value</h2><span class="count">${d.value?.length||0}</span></div>
+          ${renderTable(d.value,'value')}
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><span>⭐</span><h2>Intersection — Masuk 2+ Kategori</h2><span class="count">${d.intersection?.length||0} saham</span></div>
+        ${renderIntersection(d.intersection)}
+      </div>
+      <div class="card">
+        <div class="card-header"><span>🎯</span><h2>Scalping Watchlist</h2><span class="count">Top ${d.watchlist?.length||0}</span></div>
+        ${renderWatchlist(d.watchlist)}
+      </div>`;
+  } catch(e) {
+    document.getElementById('main').innerHTML = '<div class="loading"><div class="spinner"></div>Menunggu data…</div>';
+  }
+}
+
+load();
+setInterval(updateCountdown, 1000);
+setInterval(load, 5*60*1000);
+</script>
+</body>
+</html>
