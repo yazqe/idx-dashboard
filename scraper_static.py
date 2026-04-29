@@ -97,6 +97,141 @@ def build_watchlist(intersection, gainers):
     return picks[:5]
 
 
+def fmt_vol(v):
+    if not v: return "–"
+    if v >= 1e12: return f"{v/1e12:.2f}T"
+    if v >= 1e9:  return f"{v/1e9:.2f}B"
+    if v >= 1e6:  return f"{v/1e6:.1f}M"
+    return f"{v/1e3:.0f}K"
+
+
+def generate_analysis(ihsg, gainers, volume, value, inters, watch, now):
+    """Auto-generate scalper analysis from market data."""
+
+    triple  = [s for s in inters if len(s["categories"]) == 3]
+    crashes = [s for s in gainers + volume + value if (s.get("change_pct") or 0) < -8]
+    seen_crash = set()
+    unique_crashes = []
+    for s in crashes:
+        if s["code"] not in seen_crash:
+            unique_crashes.append(s); seen_crash.add(s["code"])
+
+    # Watchlist reasons
+    watchlist_notes = []
+    for s in watch:
+        cats = s.get("categories", [])
+        vol_str  = fmt_vol(s.get("volume", 0))
+        val_str  = fmt_vol(s.get("value", 0))
+        chg      = s.get("change_pct", 0)
+        cat_str  = " + ".join(c.capitalize() for c in cats)
+
+        if len(cats) == 3:
+            reason = f"Triple intersection ({cat_str}). Vol {vol_str} sangat liquid. Momentum terkuat hari ini."
+        elif "gainer" in cats and "volume" in cats:
+            reason = f"Gain +{chg:.1f}% dengan volume {vol_str} — momentum kuat, liquid untuk scalp."
+        elif "volume" in cats and "value" in cats:
+            reason = f"Volume {vol_str} & nilai Rp{val_str} — paling liquid, spread kecil."
+        else:
+            reason = f"Kategori: {cat_str}. Vol {vol_str}, Nilai Rp{val_str}."
+
+        # Entry/exit guidance
+        price = s.get("price", 0) or 0
+        if price > 0 and chg > 0:
+            entry_low  = round(price * 0.96 / (1 if price >= 100 else 5)) * (1 if price >= 100 else 5)
+            target     = round(price * 1.04 / (1 if price >= 100 else 5)) * (1 if price >= 100 else 5)
+            stop       = round(price * 0.93 / (1 if price >= 100 else 5)) * (1 if price >= 100 else 5)
+            guidance   = f"Entry area Rp{entry_low:,} | Target Rp{target:,} | Stop Rp{stop:,}"
+        else:
+            guidance = "Pantau open besok untuk konfirmasi arah."
+
+        watchlist_notes.append({
+            "code":    s["code"],
+            "name":    s.get("name", ""),
+            "price":   price,
+            "change":  chg,
+            "volume":  s.get("volume", 0),
+            "value":   s.get("value", 0),
+            "cats":    cats,
+            "reason":  reason,
+            "guidance": guidance,
+        })
+
+    # Signals — positive
+    signals = []
+    for s in triple:
+        signals.append({
+            "type": "bullish",
+            "icon": "🔥",
+            "code": s["code"],
+            "text": f"Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+        })
+    vol_king = sorted(volume, key=lambda x: x.get("volume", 0), reverse=True)
+    if vol_king:
+        v = vol_king[0]
+        signals.append({
+            "type": "info",
+            "icon": "📈",
+            "code": v["code"],
+            "text": f"Volume king hari ini: {fmt_vol(v.get('volume',0))} shares — paling liquid untuk scalp."
+        })
+
+    # Warnings
+    warnings = []
+    for s in unique_crashes[:3]:
+        warnings.append({
+            "code": s["code"],
+            "change": s.get("change_pct", 0),
+            "text": f"Turun {s.get('change_pct',0):.1f}% — hindari untuk long, potensi tekanan berlanjut."
+        })
+    # High gain low volume = pump risk
+    for s in gainers[:5]:
+        vol = s.get("volume", 0)
+        chg = s.get("change_pct", 0)
+        if chg > 20 and vol < 10_000_000:
+            warnings.append({
+                "code": s["code"],
+                "change": chg,
+                "text": f"Naik +{chg:.1f}% tapi volume hanya {fmt_vol(vol)} — rentan profit taking, tidak liquid."
+            })
+
+    # Market summary
+    is_positive = (ihsg.get("change_pct") or 0) >= 0
+    ihsg_chg    = ihsg.get("change_pct") or 0
+    ihsg_close  = ihsg.get("close") or 0
+    ihsg_h      = ihsg.get("high") or 0
+    ihsg_l      = ihsg.get("low") or 0
+    day_range   = round(ihsg_h - ihsg_l, 2) if ihsg_h and ihsg_l else 0
+
+    # Window dressing check (last 3 days of month)
+    is_month_end = now.day >= 28
+    session_label = {"pagi": "Sesi Pagi", "siang": "Sesi Siang", "penutupan": "Menjelang Penutupan"}.get(
+        ("pagi" if now.hour < 11 else "siang" if now.hour < 14 else "penutupan"), "")
+
+    summary = {
+        "ihsg_close":   ihsg_close,
+        "ihsg_change":  ihsg_chg,
+        "ihsg_high":    ihsg_h,
+        "ihsg_low":     ihsg_l,
+        "day_range":    day_range,
+        "is_positive":  is_positive,
+        "is_month_end": is_month_end,
+        "session_label": session_label,
+        "top_gainer":   gainers[0]["code"] if gainers else "–",
+        "top_gainer_chg": gainers[0].get("change_pct", 0) if gainers else 0,
+        "vol_king":     volume[0]["code"] if volume else "–",
+        "vol_king_vol": fmt_vol(volume[0].get("volume", 0)) if volume else "–",
+        "triple_count": len(triple),
+        "intersection_count": len(inters),
+    }
+
+    return {
+        "watchlist_notes": watchlist_notes,
+        "signals":  signals,
+        "warnings": warnings,
+        "summary":  summary,
+    }
+
+
 now = datetime.now(WIB)
 hour = now.hour
 session = "pagi" if hour < 11 else "siang" if hour < 14 else "penutupan"
@@ -107,6 +242,7 @@ volume  = scan("volume", "desc", 20)
 value   = scan("Value.Traded", "desc", 20)
 inters  = find_intersection(gainers, volume, value)
 watch   = build_watchlist(inters, gainers)
+analysis = generate_analysis(ihsg, gainers, volume, value, inters, watch, now)
 
 data = {
     "session":      session,
@@ -119,6 +255,7 @@ data = {
     "value":        value,
     "intersection": inters,
     "watchlist":    watch,
+    "analysis":     analysis,
 }
 
 with open(OUT, "w") as f:

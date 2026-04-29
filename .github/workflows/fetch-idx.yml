@@ -33,4 +33,5 @@ jobs:
           git add data/latest.json
           WIB_TIME=$(TZ='Asia/Jakarta' date '+%Y-%m-%d %H:%M WIB')
           git diff --staged --quiet || git commit -m "data: update IDX ${WIB_TIME}"
+          git pull --rebase origin main
           git push

@@ -1,8 +1,8 @@
 {
-  "session": "penutupan",
-  "timestamp": "2026-04-29T18:26:15.380623+07:00",
-  "date": "29 April 2026",
-  "time": "18:26 WIB",
+  "session": "pagi",
+  "timestamp": "2026-04-30T03:18:28.107714+07:00",
+  "date": "30 April 2026",
+  "time": "03:18 WIB",
   "ihsg": {
     "close": 7101.23,
     "change_pct": 0.41,
@@ -13,7 +13,7 @@
     "volume": 0,
     "market_open": false,
     "market_state": "CLOSED",
-    "as_of": "29 Apr 2026 18:26 WIB"
+    "as_of": "30 Apr 2026 03:18 WIB"
   },
   "gainers": [
     {
@@ -724,5 +724,134 @@
         "value"
       ]
     }
-  ]
+  ],
+  "analysis": {
+    "watchlist_notes": [
+      {
+        "code": "APLN",
+        "name": "PT Agung Podomoro Land Tbk",
+        "price": 216,
+        "change": 16.13,
+        "volume": 989948800,
+        "value": 213828940800,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 989.9M sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp207 | Target Rp225 | Stop Rp201"
+      },
+      {
+        "code": "BAPA",
+        "name": "PT Bekasi Asri Pemula Tbk",
+        "price": 238,
+        "change": 19.6,
+        "volume": 728295200,
+        "value": 173334257600,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 728.3M sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp228 | Target Rp248 | Stop Rp221"
+      },
+      {
+        "code": "GOTO",
+        "name": "PT GoTo Gojek Tokopedia Tbk",
+        "price": 55,
+        "change": 3.77,
+        "volume": 7685000300,
+        "value": 422675016500,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 7.69B & nilai Rp422.68B — paling liquid, spread kecil.",
+        "guidance": "Entry area Rp55 | Target Rp55 | Stop Rp50"
+      },
+      {
+        "code": "ESIP",
+        "name": "PT Sinergi Inti Plastindo Tbk",
+        "price": 163,
+        "change": 2.52,
+        "volume": 1912829400,
+        "value": 311791192200,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 1.91B & nilai Rp311.79B — paling liquid, spread kecil.",
+        "guidance": "Entry area Rp156 | Target Rp170 | Stop Rp152"
+      },
+      {
+        "code": "BUMI",
+        "name": "PT Bumi Resources Tbk Class A",
+        "price": 230,
+        "change": 0.88,
+        "volume": 1730505500,
+        "value": 398016265000,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 1.73B & nilai Rp398.02B — paling liquid, spread kecil.",
+        "guidance": "Entry area Rp221 | Target Rp239 | Stop Rp214"
+      }
+    ],
+    "signals": [
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "APLN",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "BAPA",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "info",
+        "icon": "📈",
+        "code": "GOTO",
+        "text": "Volume king hari ini: 7.69B shares — paling liquid untuk scalp."
+      }
+    ],
+    "warnings": [
+      {
+        "code": "PPRE",
+        "change": -11.32,
+        "text": "Turun -11.3% — hindari untuk long, potensi tekanan berlanjut."
+      },
+      {
+        "code": "KONI",
+        "change": 24.89,
+        "text": "Naik +24.9% tapi volume hanya 599K — rentan profit taking, tidak liquid."
+      },
+      {
+        "code": "WBSA",
+        "change": 24.88,
+        "text": "Naik +24.9% tapi volume hanya 7.2M — rentan profit taking, tidak liquid."
+      }
+    ],
+    "summary": {
+      "ihsg_close": 7101.23,
+      "ihsg_change": 0.41,
+      "ihsg_high": 7126.063,
+      "ihsg_low": 7063.992,
+      "day_range": 62.07,
+      "is_positive": true,
+      "is_month_end": true,
+      "session_label": "Sesi Pagi",
+      "top_gainer": "INOV",
+      "top_gainer_chg": 34.68,
+      "vol_king": "GOTO",
+      "vol_king_vol": "7.69B",
+      "triple_count": 2,
+      "intersection_count": 13
+    }
+  }
 }

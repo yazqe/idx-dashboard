@@ -18,6 +18,12 @@ os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
 def save(data):
     with open(DATA_FILE, "w") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
+    # Juga simpan ke scraper_static path (untuk git push ke GitHub Pages)
+    static_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "latest.json")
+    if static_file != DATA_FILE:
+        os.makedirs(os.path.dirname(static_file), exist_ok=True)
+        with open(static_file, "w") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
 
 def load():
     if os.path.exists(DATA_FILE):
@@ -41,6 +47,31 @@ def notify(title, message):
     except Exception:
         pass
 
+REPO_DIR = os.path.dirname(os.path.abspath(__file__))
+
+def git_push():
+    """Commit & push latest.json ke GitHub Pages."""
+    try:
+        wib_time = datetime.now(WIB).strftime("%Y-%m-%d %H:%M WIB")
+        subprocess.run(["git", "-C", REPO_DIR, "pull", "--rebase", "origin", "main"],
+                       capture_output=True, timeout=30)
+        subprocess.run(["git", "-C", REPO_DIR, "add", "data/latest.json"],
+                       capture_output=True, timeout=10)
+        result = subprocess.run(
+            ["git", "-C", REPO_DIR, "diff", "--staged", "--quiet"],
+            capture_output=True
+        )
+        if result.returncode != 0:  # ada perubahan
+            subprocess.run(
+                ["git", "-C", REPO_DIR, "commit", "-m", f"data: update IDX {wib_time}"],
+                capture_output=True, timeout=10
+            )
+            subprocess.run(["git", "-C", REPO_DIR, "push", "origin", "main"],
+                           capture_output=True, timeout=30)
+            print(f"[{datetime.now(WIB).strftime('%H:%M')}] Pushed to GitHub Pages ✅")
+    except Exception as e:
+        print(f"[git_push] error: {e}", file=sys.stderr)
+
 def refresh(session_label=None):
     now = datetime.now(WIB)
     label = session_label or label_for_hour(now.hour)
@@ -49,6 +80,7 @@ def refresh(session_label=None):
     try:
         data = fetch_all(label)
         save(data)
+        git_push()
         # Ringkasan untuk notifikasi
         top3 = ", ".join(f"{s['code']} {s['change_pct']:+.1f}%" for s in data["gainers"][:3])
         inter_count = len(data["intersection"])

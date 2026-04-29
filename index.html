@@ -198,6 +198,33 @@ function renderWatchlist(list) {
     </div>`).join('')}</div>`;
 }
 
+function renderWatchlistFull(notes, fallback) {
+  const list = notes?.length ? notes : fallback;
+  if (!list?.length) return '<div class="no-data">Tidak ada data</div>';
+  if (!notes?.length) return renderWatchlist(fallback);
+
+  const catColor = c => c==='gainer'?'cat-gainer':c==='volume'?'cat-volume':'cat-value';
+  const catIcon  = c => c==='gainer'?'🟢':c==='volume'?'📈':'💰';
+
+  return `<div style="padding:14px;display:flex;flex-direction:column;gap:12px">
+    ${notes.map((s,i)=>`
+    <div style="background:#1c2128;border-radius:10px;padding:14px 16px;border-left:4px solid ${s.cats?.length===3?'var(--purple)':'var(--green)'}">
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+        <span style="font-size:20px;font-weight:800;color:var(--blue)">${i+1}. ${s.code}</span>
+        <span style="font-size:14px;font-weight:700;color:${s.change>=0?'var(--green)':'var(--red)'}">${s.change>=0?'+':''}${(s.change||0).toFixed(2)}%</span>
+        <span style="font-size:13px;font-weight:600;color:var(--text)">Rp${fmt(s.price)}</span>
+        <div style="display:flex;gap:4px;flex-wrap:wrap">
+          ${(s.cats||[]).map(c=>`<span class="cat-pill ${catColor(c)}">${catIcon(c)} ${c}</span>`).join('')}
+          ${s.cats?.length===3?'<span class="cat-pill" style="background:#1e0d3c;color:var(--purple)">⭐ Triple</span>':''}
+        </div>
+        <span style="margin-left:auto;font-size:11px;color:var(--muted)">Vol: ${fmtV(s.volume)} | Nilai: Rp${fmtV(s.value)}</span>
+      </div>
+      <div style="margin-top:8px;font-size:12px;color:var(--text);line-height:1.5">${s.reason}</div>
+      <div style="margin-top:6px;font-size:11px;color:var(--gold);background:#2a1f0a;padding:5px 10px;border-radius:6px;display:inline-block">${s.guidance}</div>
+    </div>`).join('')}
+  </div>`;
+}
+
 async function load() {
   try {
     // Cache-busting agar selalu ambil data terbaru
@@ -214,7 +241,15 @@ async function load() {
 
     nextRefresh = Date.now() + 5*60*1000;
 
+    const a = d.analysis || {};
+    const sm = a.summary || {};
+
     document.getElementById('main').innerHTML = `
+
+      ${sm.is_month_end ? `<div style="background:#2a1a00;border:1px solid var(--gold);border-radius:8px;padding:10px 16px;display:flex;align-items:center;gap:10px;font-size:12px;color:var(--gold)">
+        📅 <strong>AKHIR BULAN</strong> — Potensi window dressing aktif. Fund manager cenderung push saham blue chip menjelang penutupan bulan.
+      </div>` : ''}
+
       <div class="cols3">
         <div class="card">
           <div class="card-header"><span>🟢</span><h2>Top Gainers</h2><span class="count">${d.gainers?.length||0}</span></div>
@@ -229,13 +264,82 @@ async function load() {
           ${renderTable(d.value,'value')}
         </div>
       </div>
+
       <div class="card">
         <div class="card-header"><span>⭐</span><h2>Intersection — Masuk 2+ Kategori</h2><span class="count">${d.intersection?.length||0} saham</span></div>
         ${renderIntersection(d.intersection)}
       </div>
+
       <div class="card">
-        <div class="card-header"><span>🎯</span><h2>Scalping Watchlist</h2><span class="count">Top ${d.watchlist?.length||0}</span></div>
-        ${renderWatchlist(d.watchlist)}
+        <div class="card-header"><span>🎯</span><h2>Scalping Watchlist</h2><span class="count">Top ${(a.watchlist_notes||d.watchlist||[]).length}</span></div>
+        ${renderWatchlistFull(a.watchlist_notes, d.watchlist)}
+      </div>
+
+      <div class="cols2" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        <div class="card">
+          <div class="card-header"><span>📡</span><h2>Sinyal Trading</h2></div>
+          <div style="padding:12px;display:flex;flex-direction:column;gap:8px">
+            ${(a.signals||[]).map(s=>`
+              <div style="display:flex;align-items:flex-start;gap:10px;padding:8px 10px;background:#1c2128;border-radius:6px;border-left:3px solid ${s.type==='bullish'?'var(--green)':'var(--blue)'}">
+                <span style="font-size:16px">${s.icon}</span>
+                <div>
+                  <span style="font-weight:700;color:var(--blue)">${s.code}</span>
+                  <span style="font-size:11px;color:var(--muted);display:block;margin-top:2px">${s.text}</span>
+                </div>
+              </div>`).join('') || '<div class="no-data">Tidak ada sinyal tersedia</div>'}
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header"><span>⚠️</span><h2>Peringatan</h2></div>
+          <div style="padding:12px;display:flex;flex-direction:column;gap:8px">
+            ${(a.warnings||[]).map(w=>`
+              <div style="display:flex;align-items:flex-start;gap:10px;padding:8px 10px;background:var(--red-bg);border-radius:6px;border-left:3px solid var(--red)">
+                <span style="font-size:16px">🚫</span>
+                <div>
+                  <span style="font-weight:700;color:var(--red)">${w.code}</span>
+                  <span style="color:var(--red);font-size:11px"> ${w.change?.toFixed(1)||0}%</span>
+                  <span style="font-size:11px;color:var(--muted);display:block;margin-top:2px">${w.text}</span>
+                </div>
+              </div>`).join('') || '<div class="no-data">Tidak ada peringatan</div>'}
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header"><span>📋</span><h2>Ringkasan Hari Ini</h2></div>
+        <div style="padding:14px;display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px">
+          <div style="background:#1c2128;border-radius:8px;padding:10px 14px">
+            <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">IHSG Penutupan</div>
+            <div style="font-size:20px;font-weight:800;color:${sm.is_positive?'var(--green)':'var(--red)'};margin-top:4px">${fmt(sm.ihsg_close,2)}</div>
+            <div style="font-size:11px;color:${sm.is_positive?'var(--green)':'var(--red)'}">${sm.is_positive?'▲':'▼'} ${Math.abs(sm.ihsg_change||0).toFixed(2)}%</div>
+          </div>
+          <div style="background:#1c2128;border-radius:8px;padding:10px 14px">
+            <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Range Harian</div>
+            <div style="font-size:16px;font-weight:700;color:var(--text);margin-top:4px">${fmt(sm.day_range,2)} poin</div>
+            <div style="font-size:11px;color:var(--muted)">H:${fmt(sm.ihsg_high,0)} L:${fmt(sm.ihsg_low,0)}</div>
+          </div>
+          <div style="background:#1c2128;border-radius:8px;padding:10px 14px">
+            <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Top Gainer</div>
+            <div style="font-size:18px;font-weight:800;color:var(--green);margin-top:4px">${sm.top_gainer||'–'}</div>
+            <div style="font-size:11px;color:var(--green)">+${(sm.top_gainer_chg||0).toFixed(1)}%</div>
+          </div>
+          <div style="background:#1c2128;border-radius:8px;padding:10px 14px">
+            <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Volume King</div>
+            <div style="font-size:18px;font-weight:800;color:var(--blue);margin-top:4px">${sm.vol_king||'–'}</div>
+            <div style="font-size:11px;color:var(--muted)">${sm.vol_king_vol||'–'} shares</div>
+          </div>
+          <div style="background:#1c2128;border-radius:8px;padding:10px 14px">
+            <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Triple Intersection</div>
+            <div style="font-size:24px;font-weight:800;color:var(--purple);margin-top:4px">${sm.triple_count||0}</div>
+            <div style="font-size:11px;color:var(--muted)">saham masuk 3 kategori</div>
+          </div>
+          <div style="background:#1c2128;border-radius:8px;padding:10px 14px">
+            <div style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px">Total Intersection</div>
+            <div style="font-size:24px;font-weight:800;color:var(--gold);margin-top:4px">${sm.intersection_count||0}</div>
+            <div style="font-size:11px;color:var(--muted)">saham masuk 2+ kategori</div>
+          </div>
+        </div>
       </div>`;
   } catch(e) {
     document.getElementById('main').innerHTML = '<div class="loading"><div class="spinner"></div>Menunggu data…</div>';
