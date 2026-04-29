@@ -71,7 +71,16 @@
     <span id="date-display">–</span>
     <span id="time-display" style="color:var(--text);font-weight:600">–</span>
   </div>
+  <!-- Visitor counter -->
+  <div style="margin-left:auto;display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted)">
+    <span>👥</span>
+    <span id="visit-count" style="color:var(--text);font-weight:600">–</span>
+    <span>kunjungan</span>
+  </div>
 </header>
+
+<!-- GoatCounter analytics (ganti YOUR_CODE dengan kode dari goatcounter.com) -->
+<!-- <script data-goatcounter="https://YOUR_CODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> -->
 
 <div class="refresh-bar">
   <span class="dot"></span>
@@ -346,7 +355,22 @@ async function load() {
   }
 }
 
+// Visitor counter via countapi
+async function updateVisitorCount() {
+  try {
+    const r = await fetch('https://api.counterapi.dev/v1/yazqe-idx-dashboard/visits/up');
+    const d = await r.json();
+    const el = document.getElementById('visit-count');
+    if (el && d.count) el.textContent = Number(d.count).toLocaleString('id-ID');
+  } catch(e) {
+    // Fallback: hits badge
+    const el = document.getElementById('visit-count');
+    if (el) el.textContent = '–';
+  }
+}
+
 load();
+updateVisitorCount();
 setInterval(updateCountdown, 1000);
 setInterval(load, 5*60*1000);
 </script>
