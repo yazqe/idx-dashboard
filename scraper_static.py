@@ -1,6 +1,7 @@
 """Standalone scraper for GitHub Actions — no Flask dependency."""
 import json, os, requests, pytz
 from datetime import datetime
+from filters import is_valid, SUSPENDED
 
 WIB = pytz.timezone('Asia/Jakarta')
 SCANNER_URL = "https://scanner.tradingview.com/indonesia/scan"
@@ -237,9 +238,9 @@ hour = now.hour
 session = "pagi" if hour < 11 else "siang" if hour < 14 else "penutupan"
 
 ihsg    = get_ihsg()
-gainers = scan("change", "desc", 20, [{"left":"change","operation":"greater","right":0},{"left":"volume","operation":"greater","right":500_000}])
-volume  = scan("volume", "desc", 20)
-value   = scan("Value.Traded", "desc", 20)
+gainers = [s for s in scan("change", "desc", 30, [{"left":"change","operation":"greater","right":0},{"left":"volume","operation":"greater","right":500_000}]) if is_valid(s, "gainer")][:20]
+volume  = [s for s in scan("volume", "desc", 30) if is_valid(s, "volume")][:20]
+value   = [s for s in scan("Value.Traded", "desc", 30) if is_valid(s, "value")][:20]
 inters  = find_intersection(gainers, volume, value)
 watch   = build_watchlist(inters, gainers)
 analysis = generate_analysis(ihsg, gainers, volume, value, inters, watch, now)
