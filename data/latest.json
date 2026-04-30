@@ -1,38 +1,21 @@
 {
   "session": "siang",
-  "timestamp": "2026-04-30T12:18:00.000917+07:00",
+  "timestamp": "2026-04-30T12:33:05.194074+07:00",
   "date": "30 April 2026",
-  "time": "12:18 WIB",
+  "time": "12:33 WIB",
   "ihsg": {
-    "close": 6926.548,
+    "close": 6926.55,
     "change_pct": -2.46,
     "change_abs": -174.68,
     "high": 7109.004,
     "low": 6923.192,
-    "open": 7103.256,
+    "open": null,
     "volume": 0,
-    "value": 0,
-    "market_open": true,
-    "market_state": "REGULAR",
-    "as_of": "30 Apr 2026 12:18 WIB"
+    "market_open": false,
+    "market_state": "CLOSED",
+    "as_of": "30 Apr 2026 12:33 WIB"
   },
   "gainers": [
-    {
-      "code": "WBSA",
-      "name": "PT BSA Logistics Indonesia Tbk",
-      "price": 1330,
-      "change_pct": 24.88,
-      "volume": 7155400,
-      "value": 9516682000
-    },
-    {
-      "code": "HERO",
-      "name": "PT DFI Retail Nusantara Tbk",
-      "price": 474,
-      "change_pct": 24.74,
-      "volume": 7984900,
-      "value": 3784842600
-    },
     {
       "code": "ADHI",
       "name": "PT Adhi Karya (Persero) Tbk",
@@ -58,14 +41,6 @@
       "value": 43531432000
     },
     {
-      "code": "BAPA",
-      "name": "PT Bekasi Asri Pemula Tbk",
-      "price": 238,
-      "change_pct": 19.6,
-      "volume": 728295200,
-      "value": 173334257600
-    },
-    {
       "code": "PSDN",
       "name": "PT Prasidha Aneka Niaga Tbk",
       "price": 230,
@@ -88,14 +63,6 @@
       "change_pct": 10.4,
       "volume": 202923100,
       "value": 28003387800
-    },
-    {
-      "code": "CASH",
-      "name": "PT.Cashlez Worldwide Indonesia Tbk",
-      "price": 266,
-      "change_pct": 9.92,
-      "volume": 7150000,
-      "value": 1901900000
     },
     {
       "code": "MSIE",
@@ -170,12 +137,28 @@
       "value": 7268928600
     },
     {
-      "code": "APIC",
-      "name": "PT Pacific Strategic Financial Tbk Class A",
-      "price": 2050,
-      "change_pct": 5.94,
-      "volume": 565700,
-      "value": 1159685000
+      "code": "EPAC",
+      "name": "PT Megalestari Epack Sentosaraya Tbk",
+      "price": 79,
+      "change_pct": 5.33,
+      "volume": 13232700,
+      "value": 1045383300
+    },
+    {
+      "code": "KKES",
+      "name": "PT Kusuma Kemindo Sentosa Tbk",
+      "price": 41,
+      "change_pct": 5.13,
+      "volume": 10227300,
+      "value": 419319300
+    },
+    {
+      "code": "UVCR",
+      "name": "PT Trimegah Karya Pratama Tbk",
+      "price": 208,
+      "change_pct": 4,
+      "volume": 63941500,
+      "value": 13299832000
     }
   ],
   "volume": [
@@ -218,14 +201,6 @@
       "change_pct": 3.07,
       "volume": 776376400,
       "value": 130431235200
-    },
-    {
-      "code": "BAPA",
-      "name": "PT Bekasi Asri Pemula Tbk",
-      "price": 238,
-      "change_pct": 19.6,
-      "volume": 728295200,
-      "value": 173334257600
     },
     {
       "code": "BNBR",
@@ -338,6 +313,14 @@
       "change_pct": -2.41,
       "volume": 202589600,
       "value": 32819515200
+    },
+    {
+      "code": "CPRO",
+      "name": "PT Central Proteina Prima Tbk",
+      "price": 57,
+      "change_pct": -3.39,
+      "volume": 202267700,
+      "value": 11529258900
     }
   ],
   "value": [
@@ -412,14 +395,6 @@
       "change_pct": -1.74,
       "volume": 103394700,
       "value": 174737043000
-    },
-    {
-      "code": "BAPA",
-      "name": "PT Bekasi Asri Pemula Tbk",
-      "price": 238,
-      "change_pct": 19.6,
-      "volume": 728295200,
-      "value": 173334257600
     },
     {
       "code": "DEWA",
@@ -500,6 +475,14 @@
       "change_pct": -3.97,
       "volume": 431147600,
       "value": 104337719200
+    },
+    {
+      "code": "BULL",
+      "name": "PT Buana Lintas Lautan Tbk",
+      "price": 500,
+      "change_pct": -6.54,
+      "volume": 205808300,
+      "value": 102904150000
     }
   ],
   "intersection": [
@@ -510,19 +493,6 @@
       "change_pct": 6.38,
       "volume": 1248108500,
       "value": 124810850000,
-      "categories": [
-        "gainer",
-        "volume",
-        "value"
-      ]
-    },
-    {
-      "code": "BAPA",
-      "name": "PT Bekasi Asri Pemula Tbk",
-      "price": 238,
-      "change_pct": 19.6,
-      "volume": 728295200,
-      "value": 173334257600,
       "categories": [
         "gainer",
         "volume",
@@ -626,6 +596,18 @@
       ]
     },
     {
+      "code": "BULL",
+      "name": "PT Buana Lintas Lautan Tbk",
+      "price": 500,
+      "change_pct": -6.54,
+      "volume": 205808300,
+      "value": 102904150000,
+      "categories": [
+        "volume",
+        "value"
+      ]
+    },
+    {
       "code": "LCKM",
       "name": "PT LCK Global Kedaton Tbk",
       "price": 138,
@@ -646,19 +628,6 @@
       "change_pct": 6.38,
       "volume": 1248108500,
       "value": 124810850000,
-      "categories": [
-        "gainer",
-        "volume",
-        "value"
-      ]
-    },
-    {
-      "code": "BAPA",
-      "name": "PT Bekasi Asri Pemula Tbk",
-      "price": 238,
-      "change_pct": 19.6,
-      "volume": 728295200,
-      "value": 173334257600,
       "categories": [
         "gainer",
         "volume",
@@ -700,6 +669,124 @@
         "volume",
         "value"
       ]
+    },
+    {
+      "code": "ESIP",
+      "name": "PT Sinergi Inti Plastindo Tbk",
+      "price": 168,
+      "change_pct": 3.07,
+      "volume": 776376400,
+      "value": 130431235200,
+      "categories": [
+        "volume",
+        "value"
+      ]
     }
-  ]
+  ],
+  "analysis": {
+    "watchlist_notes": [
+      {
+        "code": "TOOL",
+        "name": "PT Rohartindo Nusantara Luas Tbk",
+        "price": 100,
+        "change": 6.38,
+        "volume": 1248108500,
+        "value": 124810850000,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 1.25B sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp96 | Target Rp104 | Stop Rp93"
+      },
+      {
+        "code": "KOTA",
+        "name": "PT DMS Propertindo Tbk",
+        "price": 141,
+        "change": -1.4,
+        "volume": 2695605500,
+        "value": 380080375500,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 2.70B & nilai Rp380.08B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "GOTO",
+        "name": "PT GoTo Gojek Tokopedia Tbk",
+        "price": 54,
+        "change": -1.82,
+        "volume": 2344043900,
+        "value": 126578370600,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 2.34B & nilai Rp126.58B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "BUMI",
+        "name": "PT Bumi Resources Tbk Class A",
+        "price": 224,
+        "change": -2.61,
+        "volume": 1001166600,
+        "value": 224261318400,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 1.00B & nilai Rp224.26B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "ESIP",
+        "name": "PT Sinergi Inti Plastindo Tbk",
+        "price": 168,
+        "change": 3.07,
+        "volume": 776376400,
+        "value": 130431235200,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 776.4M & nilai Rp130.43B — paling liquid, spread kecil.",
+        "guidance": "Entry area Rp161 | Target Rp175 | Stop Rp156"
+      }
+    ],
+    "signals": [
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "TOOL",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "info",
+        "icon": "📈",
+        "code": "KOTA",
+        "text": "Volume king hari ini: 2.70B shares — paling liquid untuk scalp."
+      }
+    ],
+    "warnings": [],
+    "summary": {
+      "ihsg_close": 6926.55,
+      "ihsg_change": -2.46,
+      "ihsg_high": 7109.004,
+      "ihsg_low": 6923.192,
+      "day_range": 185.81,
+      "is_positive": false,
+      "is_month_end": true,
+      "session_label": "Sesi Siang",
+      "top_gainer": "ADHI",
+      "top_gainer_chg": 21.98,
+      "vol_king": "KOTA",
+      "vol_king_vol": "2.70B",
+      "triple_count": 1,
+      "intersection_count": 11
+    }
+  }
 }
