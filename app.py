@@ -1,4 +1,4 @@
-import json, os, subprocess, sys
+import json, os, subprocess, sys, threading
 from datetime import datetime
 from flask import Flask, jsonify, render_template
 from apscheduler.schedulers.background import BackgroundScheduler
@@ -80,7 +80,7 @@ def refresh(session_label=None):
     try:
         data = fetch_all(label)
         save(data)
-        git_push()
+        threading.Thread(target=git_push, daemon=True).start()
         # Ringkasan untuk notifikasi
         top3 = ", ".join(f"{s['code']} {s['change_pct']:+.1f}%" for s in data["gainers"][:3])
         inter_count = len(data["intersection"])
@@ -121,7 +121,10 @@ scheduler = BackgroundScheduler(timezone=WIB)
 scheduler.add_job(
     lambda: refresh(),
     CronTrigger(day_of_week="mon-fri", hour="9-15", minute="*", timezone=WIB),
-    id="minutely"
+    id="minutely",
+    max_instances=1,
+    coalesce=True,
+    misfire_grace_time=30
 )
 
 # Notifikasi macOS di 3 waktu kunci
