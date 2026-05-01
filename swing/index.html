@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IDX Swing Trading Dashboard</title>
+<style>
+  :root {
+    --bg:#0d1117;--card:#161b22;--border:#30363d;--text:#c9d1d9;--muted:#8b949e;
+    --green:#3fb950;--green-bg:#0d2a14;--red:#f85149;--red-bg:#2d0f0f;
+    --gold:#e3b341;--blue:#58a6ff;--purple:#bc8cff;--accent:#1f6feb;--teal:#39d353;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;font-size:13px}
+
+  header{background:var(--card);border-bottom:1px solid var(--border);padding:12px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  header h1{font-size:18px;font-weight:700;color:var(--teal)}
+  .sub{font-size:11px;color:var(--muted);background:#1c2128;padding:2px 8px;border-radius:10px}
+  .meta{margin-left:auto;font-size:11px;color:var(--muted);text-align:right}
+  .meta span{display:block}
+
+  .refresh-bar{background:var(--card);border-bottom:1px solid var(--border);padding:6px 20px;display:flex;align-items:center;gap:12px;font-size:11px;color:var(--muted);flex-wrap:wrap}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--green);display:inline-block;animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+  .btn{background:var(--accent);color:#fff;border:none;padding:4px 12px;border-radius:6px;cursor:pointer;font-size:11px;margin-left:auto}
+
+  .ihsg-bar{background:#0d2a1a;border-bottom:2px solid var(--teal);padding:10px 20px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+
+  main{padding:16px 20px;display:grid;gap:16px}
+  .cols2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media(max-width:900px){.cols2,.cols3{grid-template-columns:1fr}}
+
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+  .card-header{padding:10px 14px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border)}
+  .card-header h2{font-size:13px;font-weight:700}
+  .count{margin-left:auto;background:var(--border);border-radius:10px;padding:1px 8px;font-size:10px;color:var(--muted)}
+
+  table{width:100%;border-collapse:collapse}
+  th{padding:6px 10px;text-align:left;font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;border-bottom:1px solid var(--border)}
+  td{padding:6px 10px;border-bottom:1px solid #1c2128;vertical-align:middle}
+  tr:last-child td{border-bottom:none}
+  tr:hover td{background:#1c2128}
+  .code{font-weight:700;color:var(--blue);font-size:12px}
+  .pos{color:var(--green)}.neg{color:var(--red)}.neu{color:var(--muted)}
+
+  .sector-grid{display:flex;flex-wrap:wrap;gap:8px;padding:12px}
+  .sector-card{background:#1c2128;border-radius:8px;padding:8px 12px;flex:1;min-width:140px;border-left:3px solid var(--teal)}
+  .sector-name{font-size:10px;color:var(--muted)}
+  .sector-gain{font-size:16px;font-weight:700}
+  .sector-leader{font-size:10px;color:var(--blue);margin-top:2px}
+
+  .watchlist-swing{display:flex;flex-direction:column;gap:12px;padding:14px}
+  .swing-card{background:#1c2128;border-radius:10px;padding:14px 16px}
+  .swing-card.breakout{border-left:4px solid var(--purple)}
+  .swing-card.accumulation{border-left:4px solid var(--gold)}
+  .swing-card.momentum{border-left:4px solid var(--green)}
+  .swing-top{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+  .swing-code{font-size:20px;font-weight:800;color:var(--blue)}
+  .swing-badges{display:flex;gap:4px;flex-wrap:wrap}
+  .badge-pill{font-size:9px;padding:2px 8px;border-radius:10px;font-weight:600}
+  .badge-bp{background:#1e0d3c;color:var(--purple)}
+  .badge-ac{background:#2a1f0a;color:var(--gold)}
+  .badge-mo{background:var(--green-bg);color:var(--green)}
+  .swing-reason{font-size:12px;color:var(--text);line-height:1.5;margin-bottom:6px}
+  .swing-guidance{font-size:11px;color:var(--teal);background:#0d2a1a;padding:5px 10px;border-radius:6px;display:inline-block;margin-top:2px}
+  .swing-meta{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;font-size:11px;color:var(--muted)}
+
+  .stat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;padding:12px}
+  .stat-box{background:#1c2128;border-radius:8px;padding:10px 12px}
+  .stat-label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+  .stat-value{font-size:20px;font-weight:800;margin-top:4px}
+  .stat-sub{font-size:10px;color:var(--muted);margin-top:2px}
+
+  .loading{text-align:center;padding:40px;color:var(--muted)}
+  .spinner{width:32px;height:32px;border:3px solid var(--border);border-top-color:var(--teal);border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 12px}
+  @keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📈 IDX Swing Trading</h1>
+  <span class="sub">Weekly Momentum · Breakout · Sektor Rotation</span>
+  <span class="sub">⏱ Hold: Hari–Minggu</span>
+  <div class="meta">
+    <span id="date-display">–</span>
+    <span id="time-display" style="color:var(--text);font-weight:600">–</span>
+  </div>
+</header>
+
+<div class="refresh-bar">
+  <span class="dot"></span>
+  <span>Update tiap hari (Senin–Jumat)</span>
+  <a href="../" style="color:var(--blue);font-size:11px;margin-left:8px">← Scalping Dashboard</a>
+  <button class="btn" onclick="load()">⟳ Refresh</button>
+</div>
+
+<!-- IHSG Bar -->
+<div class="ihsg-bar">
+  <span style="font-size:12px;color:var(--teal);font-weight:800">📊 IHSG</span>
+  <span id="ihsg-status" style="font-size:10px;padding:3px 10px;border-radius:10px;font-weight:700;background:#1c2128;color:#8b949e">–</span>
+  <span id="ihsg-price" style="font-size:24px;font-weight:800;color:#fff">–</span>
+  <span id="ihsg-change" style="font-size:14px;font-weight:700">–</span>
+  <span id="ihsg-as-of" style="font-size:10px;color:#8b949e;font-style:italic;margin-left:auto"></span>
+</div>
+
+<main id="main">
+  <div class="loading"><div class="spinner"></div>Memuat data swing trading…</div>
+</main>
+
+<script>
+const fmt  = (n,d=0) => n==null?'–':Number(n).toLocaleString('id-ID',{minimumFractionDigits:d,maximumFractionDigits:d});
+const fmtV = v => {if(!v)return'–';if(v>=1e12)return(v/1e12).toFixed(2)+'T';if(v>=1e9)return(v/1e9).toFixed(2)+'B';if(v>=1e6)return(v/1e6).toFixed(1)+'M';return(v/1e3).toFixed(0)+'K'};
+const clr  = p => p>0?'pos':p<0?'neg':'neu';
+const sign = p => p>0?'+':'';
+const DATA_URL = './data/latest.json';
+
+function renderIHSG(h) {
+  if (!h) return;
+  const up = (h.change_pct||0) >= 0;
+  const col = up ? 'var(--green)' : 'var(--red)';
+  const st = document.getElementById('ihsg-status');
+  st.textContent = h.market_open ? '● LIVE' : '○ Market Tutup';
+  st.style.background = h.market_open ? 'var(--green-bg)' : '#1c2128';
+  st.style.color = h.market_open ? 'var(--green)' : '#8b949e';
+  document.getElementById('ihsg-price').textContent = fmt(h.close,2);
+  document.getElementById('ihsg-price').style.color = col;
+  document.getElementById('ihsg-change').innerHTML =
+    `<span style="color:${col}">${up?'▲':'▼'} ${Math.abs(h.change_abs||0).toFixed(2)} (${up?'+':''}${fmt(h.change_pct,2)}%)</span>`;
+  document.getElementById('ihsg-as-of').textContent = h.as_of || '';
+}
+
+function renderWeeklyTable(stocks) {
+  if (!stocks?.length) return '<div style="padding:16px;color:var(--muted);text-align:center">Tidak ada data</div>';
+  return `<table><thead><tr><th>#</th><th>Kode</th><th>Harga</th><th>1D</th><th>1W</th><th>1M</th><th>Rel Vol</th></tr></thead><tbody>
+    ${stocks.slice(0,15).map((s,i)=>`<tr>
+      <td style="color:var(--muted)">${i+1}</td>
+      <td><span class="code">${s.code}</span><br><span style="font-size:10px;color:var(--muted)">${(s.name||'').substring(0,18)}</span></td>
+      <td style="font-weight:600">Rp${fmt(s.price)}</td>
+      <td class="${clr(s.change_d)}">${sign(s.change_d)}${fmt(s.change_d,1)}%</td>
+      <td class="${clr(s.change_1w)}" style="font-weight:700">${sign(s.change_1w)}${fmt(s.change_1w,1)}%</td>
+      <td class="${clr(s.change_1m)}">${sign(s.change_1m)}${fmt(s.change_1m,1)}%</td>
+      <td style="color:${s.rel_volume>=2?'var(--gold)':'var(--muted)'}">${fmt(s.rel_volume,1)}x</td>
+    </tr>`).join('')}
+  </tbody></table>`;
+}
+
+function renderBreakouts(stocks) {
+  if (!stocks?.length) return '<div style="padding:16px;color:var(--muted);text-align:center">Tidak ada breakout kandidat</div>';
+  return `<table><thead><tr><th>#</th><th>Kode</th><th>Harga</th><th>1W</th><th>dari 52W High</th><th>Rel Vol</th></tr></thead><tbody>
+    ${stocks.slice(0,12).map((s,i)=>`<tr>
+      <td style="color:var(--muted)">${i+1}</td>
+      <td><span class="code">${s.code}</span><br><span style="font-size:10px;color:var(--muted)">${(s.name||'').substring(0,18)}</span></td>
+      <td style="font-weight:600">Rp${fmt(s.price)}</td>
+      <td class="${clr(s.change_1w)}" style="font-weight:700">${sign(s.change_1w)}${fmt(s.change_1w,1)}%</td>
+      <td style="color:${Math.abs(s.pct_from_high)<5?'var(--gold)':'var(--muted)'}">${sign(s.pct_from_high)}${fmt(s.pct_from_high,1)}%</td>
+      <td style="color:${s.rel_volume>=2?'var(--gold)':'var(--muted)'}">${fmt(s.rel_volume,1)}x</td>
+    </tr>`).join('')}
+  </tbody></table>`;
+}
+
+function renderSectors(sectors) {
+  if (!sectors?.length) return '<div style="padding:16px;color:var(--muted);text-align:center">–</div>';
+  return `<div class="sector-grid">${sectors.map(s=>`
+    <div class="sector-card">
+      <div class="sector-name">${s.sector}</div>
+      <div class="sector-gain ${clr(s.change_1w)}">${sign(s.change_1w)}${(s.change_1w||0).toFixed(1)}%</div>
+      <div class="sector-leader">Leader: ${s.leader}</div>
+    </div>`).join('')}</div>`;
+}
+
+function renderWatchlist(notes) {
+  if (!notes?.length) return '<div style="padding:16px;color:var(--muted);text-align:center">–</div>';
+  const typeLabel = t => t==='breakout_momentum'?['badge-bp','🚀 Breakout']:t==='accumulation'?['badge-ac','📦 Akumulasi']:['badge-mo','📈 Momentum'];
+  return `<div class="watchlist-swing">${notes.map((s,i)=>{
+    const [cls,lbl] = typeLabel(s.swing_type);
+    return `<div class="swing-card ${s.swing_type?.split('_')[0]||'momentum'}">
+      <div class="swing-top">
+        <span class="swing-code">${i+1}. ${s.code}</span>
+        <span class="badge-pill ${cls}">${lbl}</span>
+        <span class="badge-pill" style="background:#0d1f3c;color:var(--blue)">${s.sector||'–'}</span>
+        <span style="margin-left:auto;font-size:12px;font-weight:700;color:${s.change_1w>=0?'var(--green)':'var(--red)'}">
+          1W: ${sign(s.change_1w)}${(s.change_1w||0).toFixed(1)}%
+        </span>
+      </div>
+      <div style="display:flex;gap:16px;font-size:11px;color:var(--muted);margin-bottom:8px;flex-wrap:wrap">
+        <span>Harga: <strong style="color:var(--text)">Rp${fmt(s.price)}</strong></span>
+        <span>1D: <strong class="${clr(s.change_d)}">${sign(s.change_d)}${(s.change_d||0).toFixed(1)}%</strong></span>
+        <span>1M: <strong class="${clr(s.change_1m)}">${sign(s.change_1m)}${(s.change_1m||0).toFixed(1)}%</strong></span>
+        <span>Vol: <strong style="color:var(--text)">${fmtV(s.volume)}</strong></span>
+        <span>Rel Vol: <strong style="color:${s.rel_volume>=2?'var(--gold)':'var(--muted)'}">${(s.rel_volume||0).toFixed(1)}x</strong></span>
+        ${s.pct_from_high ? `<span>52W High: <strong style="color:${Math.abs(s.pct_from_high)<5?'var(--gold)':'var(--muted)'}">${sign(s.pct_from_high)}${(s.pct_from_high||0).toFixed(1)}%</strong></span>` : ''}
+      </div>
+      <div class="swing-reason">${s.reason}</div>
+      <div class="swing-guidance">🎯 ${s.guidance}</div>
+      <div style="margin-top:6px;font-size:10px;color:var(--muted)">💡 ${s.strategy}</div>
+    </div>`;
+  }).join('')}</div>`;
+}
+
+async function load() {
+  try {
+    const r = await fetch(DATA_URL + '?t=' + Date.now());
+    if (!r.ok) throw new Error();
+    const d = await r.json();
+    const a = d.analysis || {};
+    const sm = a.summary || {};
+
+    renderIHSG(d.ihsg);
+    document.getElementById('date-display').textContent = d.date || '–';
+    document.getElementById('time-display').textContent = 'Update: ' + (d.time || '–');
+
+    document.getElementById('main').innerHTML = `
+      <!-- Stats row -->
+      <div class="card">
+        <div class="card-header"><span>📊</span><h2>Market Overview Minggu Ini</h2></div>
+        <div class="stat-grid">
+          <div class="stat-box">
+            <div class="stat-label">IHSG</div>
+            <div class="stat-value" style="color:${sm.is_positive?'var(--green)':'var(--red)'};font-size:18px">${fmt(sm.ihsg_close,2)}</div>
+            <div class="stat-sub" style="color:${sm.is_positive?'var(--green)':'var(--red)'}">${sm.is_positive?'▲':'▼'} ${Math.abs(sm.ihsg_change||0).toFixed(2)}%</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Breakout Kandidat</div>
+            <div class="stat-value" style="color:var(--purple)">${sm.breakout_count||0}</div>
+            <div class="stat-sub">dekat 52W High</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Weekly Gainers</div>
+            <div class="stat-value" style="color:var(--green)">${sm.weekly_gainer_count||0}</div>
+            <div class="stat-sub">gain > 5% seminggu</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Volume Surge</div>
+            <div class="stat-value" style="color:var(--gold)">${sm.vol_surge_count||0}</div>
+            <div class="stat-sub">vol > 2x rata-rata</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-label">Sektor Terkuat</div>
+            <div class="stat-value" style="color:var(--teal);font-size:14px">${sm.top_sector||'–'}</div>
+            <div class="stat-sub" style="color:var(--green)">${sign(sm.top_sector_gain||0)}${(sm.top_sector_gain||0).toFixed(1)}% 1W</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sektor rotation -->
+      <div class="card">
+        <div class="card-header"><span>🔄</span><h2>Sektor Rotation Mingguan</h2><span class="count">${(d.sector_leaders||[]).length} sektor</span></div>
+        ${renderSectors(d.sector_leaders)}
+      </div>
+
+      <!-- Watchlist -->
+      <div class="card">
+        <div class="card-header"><span>🎯</span><h2>Swing Watchlist</h2><span class="count">Top ${(a.watchlist_notes||[]).length}</span></div>
+        ${renderWatchlist(a.watchlist_notes)}
+      </div>
+
+      <div class="cols2">
+        <!-- Breakout candidates -->
+        <div class="card">
+          <div class="card-header"><span>🚀</span><h2>Breakout Kandidat</h2><span class="count">${(d.breakouts||[]).length}</span></div>
+          ${renderBreakouts(d.breakouts)}
+        </div>
+        <!-- Volume surge -->
+        <div class="card">
+          <div class="card-header"><span>📦</span><h2>Volume Surge (Akumulasi?)</h2><span class="count">${(d.vol_surge||[]).length}</span></div>
+          ${renderWeeklyTable(d.vol_surge)}
+        </div>
+      </div>
+
+      <!-- Weekly gainers -->
+      <div class="card">
+        <div class="card-header"><span>📈</span><h2>Top Weekly Gainers IDX</h2><span class="count">${(d.weekly_gainers||[]).length}</span></div>
+        ${renderWeeklyTable(d.weekly_gainers)}
+      </div>`;
+  } catch(e) {
+    document.getElementById('main').innerHTML = '<div class="loading"><div class="spinner"></div>Menunggu data…</div>';
+  }
+}
+
+load();
+setInterval(load, 10*60*1000); // refresh tiap 10 menit
+</script>
+</body>
+</html>

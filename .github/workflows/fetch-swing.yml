@@ -1,0 +1,39 @@
+name: Fetch Swing Data
+
+on:
+  schedule:
+    # Sekali sehari jam 16:00 WIB (09:00 UTC) Senin-Jumat — setelah market tutup
+    - cron: '0 9 * * 1-5'
+    # Juga pagi jam 08:30 WIB (01:30 UTC) untuk pre-market data
+    - cron: '30 1 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install requests pytz
+
+      - name: Fetch swing data
+        run: python swing/scraper_swing.py
+
+      - name: Commit data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add swing/data/latest.json
+          WIB_TIME=$(TZ='Asia/Jakarta' date '+%Y-%m-%d %H:%M WIB')
+          git diff --staged --quiet || git commit -m "swing: update ${WIB_TIME}"
+          git pull --rebase origin main
+          git push
