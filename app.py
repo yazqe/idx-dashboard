@@ -117,14 +117,15 @@ def api_refresh():
 
 scheduler = BackgroundScheduler(timezone=WIB)
 
-# Tiap menit selama jam bursa (09:00–16:00, Senin–Jumat)
+# Tiap 5 menit selama jam bursa (09:00–16:00, Senin–Jumat)
+# Hemat 80% git push vs tiap menit: 84/hari vs 420/hari
 scheduler.add_job(
     lambda: refresh(),
-    CronTrigger(day_of_week="mon-fri", hour="9-15", minute="*", timezone=WIB),
-    id="minutely",
+    CronTrigger(day_of_week="mon-fri", hour="9-15", minute="*/5", timezone=WIB),
+    id="every5min",
     max_instances=1,
     coalesce=True,
-    misfire_grace_time=30
+    misfire_grace_time=60
 )
 
 # Notifikasi macOS di 3 waktu kunci
@@ -135,7 +136,7 @@ scheduler.add_job(lambda: refresh("penutupan"),  CronTrigger(day_of_week="mon-fr
 
 if __name__ == "__main__":
     scheduler.start()
-    print("Scheduler aktif: 09:17 | 12:03 | 15:37 WIB (Senin–Jumat)")
+    print("Scheduler aktif: tiap 5 menit 09:00–16:00 + notifikasi 09:17 | 12:03 | 15:37 (Senin–Jumat)")
     # Fetch sekali saat startup jika belum ada data
     if not load():
         refresh()
