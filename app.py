@@ -53,22 +53,32 @@ def git_push():
     """Commit & push latest.json ke GitHub Pages."""
     try:
         wib_time = datetime.now(WIB).strftime("%Y-%m-%d %H:%M WIB")
+        env = {**os.environ, "GIT_AUTHOR_NAME": "idx-dashboard", "GIT_AUTHOR_EMAIL": "bot@idx",
+               "GIT_COMMITTER_NAME": "idx-dashboard", "GIT_COMMITTER_EMAIL": "bot@idx"}
+
         subprocess.run(["git", "-C", REPO_DIR, "pull", "--rebase", "origin", "main"],
-                       capture_output=True, timeout=30)
+                       capture_output=True, timeout=30, env=env)
         subprocess.run(["git", "-C", REPO_DIR, "add", "data/latest.json"],
-                       capture_output=True, timeout=10)
+                       capture_output=True, timeout=10, env=env)
         result = subprocess.run(
             ["git", "-C", REPO_DIR, "diff", "--staged", "--quiet"],
-            capture_output=True
+            capture_output=True, env=env
         )
-        if result.returncode != 0:  # ada perubahan
+        if result.returncode != 0:
             subprocess.run(
                 ["git", "-C", REPO_DIR, "commit", "-m", f"data: update IDX {wib_time}"],
-                capture_output=True, timeout=10
+                capture_output=True, timeout=10, env=env
             )
-            subprocess.run(["git", "-C", REPO_DIR, "push", "origin", "main"],
-                           capture_output=True, timeout=30)
-            print(f"[{datetime.now(WIB).strftime('%H:%M')}] Pushed to GitHub Pages ✅")
+            push = subprocess.run(
+                ["git", "-C", REPO_DIR, "push", "origin", "main"],
+                capture_output=True, timeout=30, env=env
+            )
+            if push.returncode == 0:
+                print(f"[{datetime.now(WIB).strftime('%H:%M')}] Pushed to GitHub ✅")
+            else:
+                print(f"[git_push] push failed: {push.stderr.decode()[:100]}", file=sys.stderr)
+        else:
+            print(f"[{datetime.now(WIB).strftime('%H:%M')}] No changes to push")
     except Exception as e:
         print(f"[git_push] error: {e}", file=sys.stderr)
 
