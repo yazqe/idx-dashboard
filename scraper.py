@@ -282,6 +282,58 @@ def get_ihsg():
     return {"market_open": False}
 
 
+def get_stock_detail(ticker: str) -> dict:
+    """Fetch real-time data + scalping analysis for a single IDX ticker."""
+    ticker = ticker.upper().strip()
+    symbol = f"IDX:{ticker}"
+    payload = {
+        "symbols": {"tickers": [symbol]},
+        "columns": ["name", "description", "close", "change", "volume",
+                    "Value.Traded", "high", "low", "open",
+                    "relative_volume_10d_calc", "sector"],
+    }
+    try:
+        r = requests.post(SCANNER_URL, headers=HEADERS, json=payload, timeout=10)
+        r.raise_for_status()
+        items = r.json().get("data", [])
+        if not items:
+            return {"error": f"Saham {ticker} tidak ditemukan di IDX"}
+        d = items[0].get("d", [None] * 11)
+        stock = {
+            "code":       ticker,
+            "name":       d[1] or d[0] or ticker,
+            "price":      d[2],
+            "change_pct": round(d[3] or 0, 2),
+            "volume":     int(d[4] or 0),
+            "value":      d[5] or 0,
+            "high":       d[6],
+            "low":        d[7],
+            "open":       d[8],
+            "rel_volume": round(d[9] or 1, 2),
+            "sector":     d[10] or "–",
+            "categories": [],
+        }
+    except Exception as e:
+        return {"error": f"Gagal fetch data {ticker}: {e}"}
+
+    if not stock["price"]:
+        return {"error": f"Tidak ada data harga untuk {ticker}"}
+
+    stock["analysis"] = _analyze_stock(stock)
+
+    # Tambah konteks scalping: relative volume + intraday range
+    p = stock["price"]
+    h = stock["high"] or p
+    lo = stock["low"] or p
+    stock["intraday_range_pct"] = round((h - lo) / lo * 100, 2) if lo else 0
+    stock["rel_vol_label"] = (
+        "Sangat Tinggi" if stock["rel_volume"] > 3 else
+        "Tinggi"        if stock["rel_volume"] > 1.5 else
+        "Normal"        if stock["rel_volume"] > 0.7 else "Rendah"
+    )
+    return stock
+
+
 def fetch_all(session_label="pagi"):
     now = datetime.now(WIB)
     ihsg    = get_ihsg()

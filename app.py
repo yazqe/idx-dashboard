@@ -5,7 +5,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.cron import CronTrigger
 import pytz
 
-from scraper import fetch_all
+from scraper import fetch_all, get_stock_detail
 
 WIB  = pytz.timezone('Asia/Jakarta')
 app  = Flask(__name__)
@@ -120,6 +120,13 @@ def api_data():
 def api_refresh():
     refresh()
     return jsonify({"status": "ok", "time": datetime.now(WIB).strftime("%H:%M WIB")})
+
+@app.route("/api/stock/<ticker>")
+def api_stock(ticker: str):
+    result = get_stock_detail(ticker)
+    if "error" in result:
+        return jsonify(result), 404
+    return jsonify(result)
 
 
 # ── Scheduler ─────────────────────────────────────────────────────────────────

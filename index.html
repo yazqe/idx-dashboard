@@ -331,6 +331,28 @@ async function load() {
       <div class="card">
         <div class="card-header"><span>🎯</span><h2>Scalping Watchlist</h2><span class="count">Top ${(a.watchlist_notes||d.watchlist||[]).length}</span></div>
         ${renderWatchlistFull(a.watchlist_notes, d.watchlist)}
+
+      <!-- Analisa Saham Section -->
+      <div class="card" style="margin-top:0">
+        <div class="card-header">
+          <span>🔎</span>
+          <h2>Analisa Saham</h2>
+          <span style="font-size:10px;color:var(--muted);margin-left:8px">Cek analisa scalping untuk saham apapun</span>
+        </div>
+        <div style="padding:14px">
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <input id="stock-input" type="text" placeholder="Ketik kode saham... (BBRI, TLKM, GOTO)"
+              style="flex:1;min-width:180px;background:#1c2128;border:1px solid var(--border);border-radius:8px;padding:9px 14px;color:var(--text);font-size:13px;outline:none"
+              onkeydown="if(event.key==='Enter')analyzeStock()"
+              onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='var(--border)'">
+            <button onclick="analyzeStock()"
+              style="background:var(--accent);color:#fff;border:none;border-radius:8px;padding:9px 18px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap">
+              ⚡ Analisa
+            </button>
+          </div>
+          <div id="stock-result" style="margin-top:12px"></div>
+        </div>
+      </div>
       </div>
 
       <div class="cols2" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
@@ -422,6 +444,106 @@ load();
 updateVisitorCount();
 setInterval(updateCountdown, 1000);
 setInterval(load, 5*60*1000);
+
+async function analyzeStock() {
+  const inp = document.getElementById('stock-input');
+  const res = document.getElementById('stock-result');
+  const ticker = (inp.value||'').toUpperCase().trim().replace(/[^A-Z0-9]/g,'');
+  if (!ticker) { inp.focus(); return; }
+
+  res.innerHTML = `<div style="color:var(--muted);font-size:12px;padding:8px 0">⏳ Mengambil data ${ticker}…</div>`;
+
+  // Try local API first, fallback to GitHub Pages static (no backend)
+  const LOCAL  = window._localAPI || '';
+  const url    = LOCAL ? `${LOCAL}/api/stock/${ticker}` : `/api/stock/${ticker}`;
+  let d;
+  try {
+    const r = await fetch(url, {signal: AbortSignal.timeout(8000)});
+    d = await r.json();
+    if (d.error) { res.innerHTML = `<div style="color:var(--red);font-size:12px;padding:8px 0">❌ ${d.error}</div>`; return; }
+  } catch(e) {
+    res.innerHTML = `<div style="color:var(--red);font-size:12px;padding:8px 0">❌ Tidak bisa terhubung ke server lokal. Buka dari Mac mini atau isi Connection Settings.</div>`;
+    return;
+  }
+
+  const a   = d.analysis || {};
+  const sig = (a.signal||'WATCH').replace(' ','-');
+  const p   = d.price || 0;
+  const araFill  = a.ara_hit ? 100 : Math.min(100, Math.round(((p-(a.prev_close||p))/((a.ara_price||p)-(a.prev_close||p)))*100));
+  const araColor = a.ara_hit ? 'var(--red)' : araFill > 70 ? 'var(--gold)' : 'var(--green)';
+
+  res.innerHTML = `
+  <div style="background:#1c2128;border-radius:10px;padding:14px 16px;border-left:4px solid ${a.ara_hit?'var(--red)':a.signal==='STRONG BUY'?'var(--green)':'var(--blue)'}">
+
+    <!-- Header -->
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px">
+      <span style="font-size:22px;font-weight:800;color:var(--blue)">${d.code}</span>
+      <span style="font-size:11px;color:var(--muted);flex:1">${(d.name||'').substring(0,36)}</span>
+      <span style="font-size:15px;font-weight:700;color:${d.change_pct>=0?'var(--green)':'var(--red)'}">${sign(d.change_pct)}${fmt(d.change_pct,2)}%</span>
+      <span style="font-size:16px;font-weight:700">Rp${fmt(p)}</span>
+    </div>
+
+    <!-- Signal row -->
+    <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px">
+      <span class="signal-badge sig-${sig}">${a.signal||'–'}</span>
+      <span style="font-size:11px;color:var(--muted)">${a.pattern||'–'}</span>
+      <span class="risk-pill ${a.risk_cls||''}" style="margin-left:auto">⚠ ${a.risk||'–'}</span>
+    </div>
+
+    <!-- Stats row -->
+    <div style="display:flex;gap:16px;font-size:11px;flex-wrap:wrap;margin-bottom:12px">
+      <span style="color:var(--muted)">Sektor: <strong style="color:var(--text)">${d.sector||'–'}</strong></span>
+      <span style="color:var(--muted)">Rel. Vol: <strong style="color:${d.rel_volume>1.5?'var(--green)':'var(--text)'}">${d.rel_volume}x — ${d.rel_vol_label}</strong></span>
+      <span style="color:var(--muted)">Range hari ini: <strong style="color:var(--text)">${d.intraday_range_pct}%</strong></span>
+      <span style="color:var(--muted)">Nilai: <strong style="color:var(--text)">Rp${a.value_b||0}B</strong></span>
+    </div>
+
+    <!-- Levels -->
+    <div class="level-grid" style="margin-bottom:12px">
+      <div class="level-box sl-box">
+        <div class="lbl">Stop Loss</div>
+        <div class="lv" style="color:var(--red)">${fmt(a.sl||0)}</div>
+        <div class="sub" style="color:var(--red)">−${fmt(p&&a.sl?((p-a.sl)/p*100):0,1)}%</div>
+      </div>
+      <div class="level-box t1-box">
+        <div class="lbl">Target 1</div>
+        <div class="lv" style="color:var(--green)">${fmt(a.target1||0)}</div>
+        <div class="sub" style="color:var(--green)">+${fmt(p&&a.target1?((a.target1-p)/p*100):0,1)}%</div>
+      </div>
+      <div class="level-box ara-box">
+        <div class="lbl">Target 2 / ARA</div>
+        <div class="lv" style="color:var(--gold)">${fmt(a.target2||0)}</div>
+        <div class="sub" style="color:var(--gold)">+${fmt(p&&a.target2?((a.target2-p)/p*100):0,1)}%</div>
+      </div>
+    </div>
+
+    <!-- R/R + ARA info -->
+    <div style="display:flex;gap:16px;font-size:11px;flex-wrap:wrap;margin-bottom:10px">
+      <span style="color:var(--muted)">R/R: <strong style="color:var(--text)">${a.rr||0}x</strong></span>
+      <span style="color:var(--muted)">ARA: <strong style="color:var(--gold)">Rp${fmt(a.ara_price||0)}</strong></span>
+      <span style="color:var(--muted)">Sisa ke ARA: <strong style="color:${a.ara_hit?'var(--red)':'var(--green)'}">${a.ara_dist||0}%</strong></span>
+      <span style="color:var(--muted)">H: <strong style="color:var(--green)">${fmt(d.high)}</strong> &nbsp; L: <strong style="color:var(--red)">${fmt(d.low)}</strong></span>
+    </div>
+
+    <!-- ARA bar -->
+    <div class="ara-bar-wrap" style="margin-bottom:12px">
+      <div class="ara-bar-label">
+        <span>Prev Rp${fmt(a.prev_close||0)}</span>
+        <span>Sekarang Rp${fmt(p)}</span>
+        <span>ARA Rp${fmt(a.ara_price||0)}</span>
+      </div>
+      <div class="ara-bar-track"><div class="ara-bar-fill" style="width:${araFill}%;background:${araColor}"></div></div>
+      <div style="font-size:9px;color:var(--muted);margin-top:4px;text-align:center">
+        ${a.ara_hit?'🔴 Sudah di ceiling ARA':`Sudah naik ${araFill}% dari jarak ke ARA`}
+      </div>
+    </div>
+
+    <!-- Tip -->
+    <div class="tip-box">💡 <strong>Pro tip:</strong> ${a.tip||'–'}</div>
+
+    <div style="font-size:10px;color:var(--muted);margin-top:8px;text-align:right">Data real-time via TradingView Scanner</div>
+  </div>`;
+}
 
 function showDetail(idx) {
   const s = _wData[idx]; if (!s) return;
