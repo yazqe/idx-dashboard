@@ -156,6 +156,66 @@ const sign = p => p>0?'+':'';
 // Baca dari data/latest.json (GitHub Pages sama domain = no CORS)
 const DATA_URL = './data/latest.json';
 
+// ── Client-side scalping analysis (no backend needed) ────────────────────────
+let _dashData = null;  // semua data dari latest.json disimpan di sini
+
+function _tickRound(p) {
+  if (p < 200)  return Math.round(p);
+  if (p < 500)  return Math.round(p/2)*2;
+  if (p < 2000) return Math.round(p/5)*5;
+  if (p < 5000) return Math.round(p/10)*10;
+  return Math.round(p/25)*25;
+}
+
+function _analyzeStockJS(stock) {
+  const price  = stock.price || stock.close || 0;
+  const chg    = stock.change_pct || 0;
+  const value  = stock.value || 0;
+  const cats   = stock.categories || [];
+  if (!price) return {};
+
+  const prev   = price / (1 + chg/100);
+  const ara    = _tickRound(prev * 1.25);
+  const dist   = Math.round((ara - price) / price * 1000) / 10;
+  const hit    = dist <= 2;
+  const sl     = _tickRound(price * 0.95);
+  const t1     = _tickRound(price * 1.04);
+  const t2     = dist > 3 ? ara : _tickRound(price * 1.08);
+  const rr     = price > sl ? Math.round((t1-price)/(price-sl)*10)/10 : 0;
+  const cn     = cats.length;
+
+  let sig, pat;
+  if (hit)                        { sig='WAIT';        pat='Mendekati Ceiling ARA'; }
+  else if (cn===3 && chg>=15)     { sig='STRONG BUY';  pat='Triple Intersection + Momentum Kuat'; }
+  else if (cn===3)                { sig='BUY';         pat='Triple Intersection'; }
+  else if (cn===2 && chg>=15)     { sig='BUY';         pat='Double Intersection + Gainer Kuat'; }
+  else if (cn===2)                { sig='WATCH';       pat='Double Intersection'; }
+  else if (chg>=10)               { sig='WATCH';       pat='Single Momentum Kuat'; }
+  else                            { sig='WATCH';       pat='Single Momentum'; }
+
+  let risk, rcls;
+  if (hit)        { risk='CEILING'; rcls='risk-ceiling'; }
+  else if(chg>=20){ risk='Tinggi';  rcls='risk-high'; }
+  else if(chg>=10){ risk='Moderat'; rcls='risk-mod'; }
+  else            { risk='Rendah';  rcls='risk-low'; }
+
+  const fmtN = n => Number(n).toLocaleString('id-ID');
+  let tip;
+  if (hit)
+    tip = `Harga sudah di ceiling ARA (Rp${fmtN(ara)}). Tidak ada ruang naik hari ini. Tunggu besok pagi.`;
+  else if (cn===3 && dist>=8)
+    tip = `Triple intersection, ${dist}% ruang ke ARA Rp${fmtN(ara)}. Entry area sekarang, target 1 Rp${fmtN(t1)} · target 2 Rp${fmtN(t2)}. SL Rp${fmtN(sl)} · R/R ${rr}x.`;
+  else if (cn>=2 && dist>=6)
+    tip = `Double intersection, ${dist}% ruang ke ARA Rp${fmtN(ara)}. Entry Rp${fmtN(price)}, target Rp${fmtN(t1)}, SL Rp${fmtN(sl)}. Konfirmasi volume sebelum masuk.`;
+  else
+    tip = `Pantau apakah harga hold di atas Rp${fmtN(sl)}. ARA target Rp${fmtN(ara)} (+${dist}%). Masuk hanya jika volume naik.`;
+
+  return { prev_close:Math.round(prev), ara_price:ara, ara_dist:dist, ara_hit:hit,
+           sl, target1:t1, target2:t2, rr, risk, risk_cls:rcls,
+           pattern:pat, signal:sig, tip, value_b:Math.round(value/1e9*10)/10, cat_count:cn };
+}
+// ─────────────────────────────────────────────────────────────────────────────
+
 let nextRefresh = Date.now() + 5*60*1000;
 
 function updateCountdown() {
@@ -289,6 +349,7 @@ async function load() {
     const r = await fetch(DATA_URL + '?t=' + Date.now());
     if (!r.ok) throw new Error('Data not found');
     const d = await r.json();
+    _dashData = d;  // simpan untuk analyzeStock()
 
     renderIHSG(d.ihsg);
 
@@ -451,18 +512,37 @@ async function analyzeStock() {
   const ticker = (inp.value||'').toUpperCase().trim().replace(/[^A-Z0-9]/g,'');
   if (!ticker) { inp.focus(); return; }
 
-  res.innerHTML = `<div style="color:var(--muted);font-size:12px;padding:8px 0">⏳ Mengambil data ${ticker}…</div>`;
+  res.innerHTML = `<div style="color:var(--muted);font-size:12px;padding:8px 0">⏳ Mencari ${ticker}…</div>`;
 
-  // Try local API first, fallback to GitHub Pages static (no backend)
-  const LOCAL  = window._localAPI || '';
-  const url    = LOCAL ? `${LOCAL}/api/stock/${ticker}` : `/api/stock/${ticker}`;
-  let d;
-  try {
-    const r = await fetch(url, {signal: AbortSignal.timeout(8000)});
-    d = await r.json();
-    if (d.error) { res.innerHTML = `<div style="color:var(--red);font-size:12px;padding:8px 0">❌ ${d.error}</div>`; return; }
-  } catch(e) {
-    res.innerHTML = `<div style="color:var(--red);font-size:12px;padding:8px 0">❌ Tidak bisa terhubung ke server lokal. Buka dari Mac mini atau isi Connection Settings.</div>`;
+  // Cari di semua array data yang sudah di-load (no backend needed)
+  let d = null;
+  if (_dashData) {
+    const all = [
+      ...(_dashData.watchlist   || []),
+      ...(_dashData.intersection|| []),
+      ...(_dashData.gainers     || []),
+      ...(_dashData.volume      || []),
+      ...(_dashData.value       || []),
+    ];
+    const found = all.find(s => (s.code||'').toUpperCase() === ticker);
+    if (found) {
+      d = {...found};
+      d.analysis = found.analysis || _analyzeStockJS(found);
+      d.intraday_range_pct = '–';
+      d.rel_volume = '–';
+      d.rel_vol_label = '–';
+      d.sector = found.sector || '–';
+      d.high = found.high || found.price;
+      d.low  = found.low  || found.price;
+    }
+  }
+
+  if (!d) {
+    res.innerHTML = `
+      <div style="background:#1c2128;border-radius:8px;padding:12px 14px;font-size:12px;color:var(--muted)">
+        ⚠️ <strong style="color:var(--text)">${ticker}</strong> tidak ada di data hari ini (bukan top 20 gainer/volume/value).
+        <br><br>Untuk analisa saham di luar top 20, buka dashboard dari <strong style="color:var(--blue)">Mac mini</strong> (bukan GitHub Pages).
+      </div>`;
     return;
   }
 
