@@ -97,7 +97,96 @@ def build_watchlist(intersection, gainers):
             if len(picks) >= 5:
                 break
 
-    return picks[:5]
+    result = picks[:5]
+    for s in result:
+        s["analysis"] = _analyze_stock(s)
+    return result
+
+
+def _tick_round(price):
+    if price <= 0:     return 0
+    if price < 200:    return round(price)
+    if price < 500:    return round(price / 2) * 2
+    if price < 2000:   return round(price / 5) * 5
+    if price < 5000:   return round(price / 10) * 10
+    return round(price / 25) * 25
+
+
+def _analyze_stock(stock):
+    price      = stock.get("price") or 0
+    change_pct = stock.get("change_pct") or 0
+    volume     = stock.get("volume") or 0
+    value      = stock.get("value") or 0
+    categories = stock.get("categories", [])
+    cat_count  = len(categories)
+
+    if price <= 0:
+        return {}
+
+    # Estimated previous close & ARA
+    prev_close      = price / (1 + change_pct / 100) if change_pct != -100 else price
+    ara_price       = _tick_round(prev_close * 1.25)
+    ara_dist        = round((ara_price - price) / price * 100, 1) if price else 0
+    ara_hit         = ara_dist <= 2
+
+    # Key levels
+    sl       = _tick_round(price * 0.95)
+    target1  = _tick_round(price * 1.04)
+    target2  = ara_price if ara_dist > 3 else _tick_round(price * 1.08)
+    rr       = round((target1 - price) / (price - sl), 1) if price > sl else 0
+
+    # Signal & pattern
+    if ara_hit:
+        signal, pattern = "WAIT",         "Mendekati Ceiling ARA"
+    elif cat_count == 3 and change_pct >= 15:
+        signal, pattern = "STRONG BUY",   "Triple Intersection + Momentum Kuat"
+    elif cat_count == 3:
+        signal, pattern = "BUY",          "Triple Intersection"
+    elif cat_count == 2 and change_pct >= 15:
+        signal, pattern = "BUY",          "Double Intersection + Gainer Kuat"
+    elif cat_count == 2:
+        signal, pattern = "WATCH",        "Double Intersection"
+    else:
+        signal, pattern = "WATCH",        "Single Momentum"
+
+    # Risk
+    if ara_hit:            risk, risk_cls = "CEILING",  "risk-ceiling"
+    elif change_pct >= 20: risk, risk_cls = "Tinggi",   "risk-high"
+    elif change_pct >= 10: risk, risk_cls = "Moderat",  "risk-mod"
+    else:                  risk, risk_cls = "Rendah",   "risk-low"
+
+    # Pro tip
+    if ara_hit:
+        tip = (f"Harga sudah di ceiling ARA (Rp{ara_price:,}). "
+               "Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.")
+    elif cat_count == 3 and ara_dist >= 8:
+        tip = (f"Setup terkuat — triple intersection, {ara_dist}% ruang ke ARA Rp{ara_price:,}. "
+               f"Entry area sekarang, target 1 Rp{target1:,} · target 2 Rp{target2:,}. SL Rp{sl:,} · R/R {rr}x.")
+    elif cat_count >= 2 and ara_dist >= 6:
+        tip = (f"Double intersection, {ara_dist}% ruang ke ARA Rp{ara_price:,}. "
+               f"Entry Rp{price:,}, target Rp{target1:,}, SL Rp{sl:,}. "
+               "Konfirmasi volume sebelum masuk.")
+    else:
+        tip = (f"Pantau apakah harga hold di atas Rp{sl:,}. "
+               f"ARA target Rp{ara_price:,} (+{ara_dist}%). Masuk hanya jika volume naik.")
+
+    return {
+        "prev_close":  round(prev_close),
+        "ara_price":   ara_price,
+        "ara_dist":    ara_dist,
+        "ara_hit":     ara_hit,
+        "sl":          sl,
+        "target1":     target1,
+        "target2":     target2,
+        "rr":          rr,
+        "risk":        risk,
+        "risk_cls":    risk_cls,
+        "pattern":     pattern,
+        "signal":      signal,
+        "tip":         tip,
+        "value_b":     round(value / 1e9, 1),
+        "cat_count":   cat_count,
+    }
 
 
 IHSG_CACHE_FILE = os.path.join(os.path.dirname(__file__), "data", "ihsg_last.json")

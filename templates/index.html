@@ -100,6 +100,58 @@
   @keyframes spin { to { transform: rotate(360deg); } }
 
   .no-data { padding: 20px; text-align: center; color: var(--muted); font-size: 12px; }
+
+  /* Detail button */
+  .btn-detail { margin-top: 8px; width: 100%; background: #1f2d3d; color: var(--blue); border: 1px solid #2a4a6b; border-radius: 6px; padding: 5px 0; font-size: 11px; font-weight: 600; cursor: pointer; letter-spacing: .3px; }
+  .btn-detail:hover { background: #1f3d5d; }
+
+  /* Modal overlay */
+  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.7); z-index: 1000; align-items: center; justify-content: center; padding: 16px; }
+  .modal-overlay.open { display: flex; }
+  .modal-box { background: #161b22; border: 1px solid #30363d; border-radius: 12px; width: 100%; max-width: 520px; max-height: 90vh; overflow-y: auto; }
+  .modal-head { padding: 14px 18px; border-bottom: 1px solid #30363d; display: flex; align-items: center; gap: 10px; position: sticky; top: 0; background: #161b22; z-index: 1; }
+  .modal-head .m-code { font-size: 22px; font-weight: 800; color: var(--blue); }
+  .modal-head .m-name { font-size: 11px; color: var(--muted); }
+  .modal-head .m-close { margin-left: auto; background: #2d333b; border: none; color: var(--muted); border-radius: 6px; padding: 4px 10px; cursor: pointer; font-size: 16px; line-height: 1; }
+  .modal-head .m-close:hover { color: var(--text); }
+  .modal-body { padding: 16px 18px; display: flex; flex-direction: column; gap: 14px; }
+
+  /* Signal badge */
+  .signal-row { display: flex; align-items: center; gap: 10px; }
+  .signal-badge { padding: 4px 14px; border-radius: 20px; font-size: 12px; font-weight: 800; letter-spacing: .5px; }
+  .sig-STRONG-BUY { background:#0d2a14; color:var(--green); border:1px solid var(--green); }
+  .sig-BUY        { background:#0d1f3c; color:var(--blue); border:1px solid var(--blue); }
+  .sig-WATCH      { background:#2a2000; color:var(--gold); border:1px solid var(--gold); }
+  .sig-WAIT       { background:#2d0f0f; color:var(--red); border:1px solid var(--red); }
+  .pattern-text   { font-size: 11px; color: var(--muted); }
+
+  /* Risk pill */
+  .risk-ceiling { background:#2d0f0f; color:var(--red); }
+  .risk-high    { background:#2a1500; color:#ff8c00; }
+  .risk-mod     { background:#2a2000; color:var(--gold); }
+  .risk-low     { background:#0d2a14; color:var(--green); }
+  .risk-pill    { font-size: 10px; padding: 2px 8px; border-radius: 10px; font-weight: 700; }
+
+  /* Level grid */
+  .level-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .level-box { background: #1c2128; border-radius: 8px; padding: 9px 10px; text-align: center; }
+  .level-box .lbl { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: .4px; }
+  .level-box .val { font-size: 14px; font-weight: 700; margin-top: 3px; }
+  .level-box.ara-box { border: 1px solid #3d2f00; }
+  .level-box.sl-box  { border: 1px solid #2d0f0f; }
+  .level-box.t1-box  { border: 1px solid #0d2a14; }
+
+  /* ARA bar */
+  .ara-bar-wrap { background: #1c2128; border-radius: 8px; padding: 10px 12px; }
+  .ara-bar-label { display: flex; justify-content: space-between; font-size: 10px; color: var(--muted); margin-bottom: 6px; }
+  .ara-bar-track { height: 8px; background: #30363d; border-radius: 4px; overflow: hidden; }
+  .ara-bar-fill  { height: 100%; border-radius: 4px; transition: width .4s; }
+
+  /* Tip box */
+  .tip-box { background: #0d1f3c; border-left: 3px solid var(--blue); border-radius: 0 8px 8px 0; padding: 10px 12px; font-size: 12px; line-height: 1.6; color: var(--text); }
+
+  /* Cat pills in modal */
+  .modal-cats { display: flex; gap: 6px; flex-wrap: wrap; }
 </style>
 </head>
 <body>
@@ -140,6 +192,20 @@
 <main id="main">
   <div class="loading"><div class="spinner"></div>Memuat data…</div>
 </main>
+
+<!-- Detail Modal -->
+<div class="modal-overlay" id="detail-modal" onclick="closeModal(event)">
+  <div class="modal-box" id="modal-box">
+    <div class="modal-head">
+      <div>
+        <div class="m-code" id="m-code">–</div>
+        <div class="m-name" id="m-name">–</div>
+      </div>
+      <button class="m-close" onclick="closeDetail()">✕</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
 
 <script>
 const fmt = (n, d=0) => n == null ? '–' : Number(n).toLocaleString('id-ID', {minimumFractionDigits:d, maximumFractionDigits:d});
@@ -201,9 +267,16 @@ function renderIntersection(list) {
   }).join('')}</div>`;
 }
 
+// Store watchlist globally for modal access
+let _watchlistData = [];
+
 function renderWatchlist(list) {
   if (!list || !list.length) return '<div class="no-data">Tidak ada data</div>';
-  return `<div class="watchlist">${list.map(s => `
+  _watchlistData = list;
+  return `<div class="watchlist">${list.map((s, i) => {
+    const a = s.analysis || {};
+    const sig = (a.signal||'WATCH').replace(' ','-');
+    return `
     <div class="watch-card">
       <div class="wcode">${s.code}</div>
       <div class="wname">${(s.name||'').substring(0,28)}</div>
@@ -212,8 +285,116 @@ function renderWatchlist(list) {
         <span><span class="wlabel">Change</span><br><span class="wval ${clr(s.change_pct)}">${sign(s.change_pct)}${fmt(s.change_pct,2)}%</span></span>
         <span><span class="wlabel">Volume</span><br><span class="wval">${fmtV(s.volume)}</span></span>
       </div>
-      <div style="margin-top:6px;font-size:10px;color:var(--muted)">Nilai: Rp${fmtV(s.value)}</div>
-    </div>`).join('')}</div>`;
+      <div style="margin-top:6px;font-size:10px;color:var(--muted)">
+        Nilai: Rp${fmtV(s.value)}
+        ${a.signal ? `&nbsp;·&nbsp;<span class="signal-badge sig-${sig}" style="font-size:9px;padding:1px 6px">${a.signal}</span>` : ''}
+      </div>
+      <button class="btn-detail" onclick="showDetail(${i})">🔍 Analisa Detail</button>
+    </div>`;
+  }).join('')}</div>`;
+}
+
+function showDetail(idx) {
+  const s = _watchlistData[idx];
+  if (!s) return;
+  const a = s.analysis || {};
+  const sig = (a.signal||'WATCH').replace(' ','-');
+
+  document.getElementById('m-code').textContent = s.code;
+  document.getElementById('m-name').textContent = s.name || '';
+
+  // ARA bar fill (% of way from prev_close to ARA)
+  const araFill = a.ara_hit ? 100 : Math.round(((s.price - (a.prev_close||s.price)) / ((a.ara_price||s.price) - (a.prev_close||s.price))) * 100);
+  const araColor = a.ara_hit ? 'var(--red)' : araFill > 70 ? 'var(--gold)' : 'var(--green)';
+
+  document.getElementById('modal-body').innerHTML = `
+    <!-- Signal + Pattern -->
+    <div class="signal-row">
+      <span class="signal-badge sig-${sig}">${a.signal||'–'}</span>
+      <span class="pattern-text">${a.pattern||'–'}</span>
+      <span class="risk-pill ${a.risk_cls||''}" style="margin-left:auto">⚠ ${a.risk||'–'}</span>
+    </div>
+
+    <!-- Category pills -->
+    <div class="modal-cats">
+      ${(s.categories||[]).includes('gainer') ? '<span class="cat-pill cat-gainer">🟢 Gainer</span>' : ''}
+      ${(s.categories||[]).includes('volume') ? '<span class="cat-pill cat-volume">📈 Volume</span>' : ''}
+      ${(s.categories||[]).includes('value')  ? '<span class="cat-pill cat-value">💰 Value</span>' : ''}
+      ${(s.categories||[]).length===3 ? '<span class="cat-pill" style="background:#1e0d3c;color:var(--purple)">⭐ Triple</span>' : ''}
+    </div>
+
+    <!-- Price snapshot -->
+    <div class="level-grid">
+      <div class="level-box">
+        <div class="lbl">Harga</div>
+        <div class="val ${clr(s.change_pct)}">${fmt(s.price)}</div>
+        <div style="font-size:9px;color:var(--muted);margin-top:2px">${sign(s.change_pct)}${fmt(s.change_pct,2)}%</div>
+      </div>
+      <div class="level-box">
+        <div class="lbl">Prev Close Est.</div>
+        <div class="val" style="color:var(--muted)">${fmt(a.prev_close)}</div>
+      </div>
+      <div class="level-box">
+        <div class="lbl">Volume</div>
+        <div class="val" style="color:var(--blue)">${fmtV(s.volume)}</div>
+        <div style="font-size:9px;color:var(--muted);margin-top:2px">Nilai Rp${a.value_b||0}B</div>
+      </div>
+    </div>
+
+    <!-- Entry / Target / SL -->
+    <div class="level-grid">
+      <div class="level-box sl-box">
+        <div class="lbl">Stop Loss</div>
+        <div class="val" style="color:var(--red)">${fmt(a.sl)}</div>
+        <div style="font-size:9px;color:var(--red);margin-top:2px">−${fmt(((s.price-(a.sl||0))/s.price*100),1)}%</div>
+      </div>
+      <div class="level-box t1-box">
+        <div class="lbl">Target 1</div>
+        <div class="val" style="color:var(--green)">${fmt(a.target1)}</div>
+        <div style="font-size:9px;color:var(--green);margin-top:2px">+${fmt(((a.target1-s.price)/s.price*100),1)}%</div>
+      </div>
+      <div class="level-box ara-box">
+        <div class="lbl">Target 2 / ARA</div>
+        <div class="val" style="color:var(--gold)">${fmt(a.target2)}</div>
+        <div style="font-size:9px;color:var(--gold);margin-top:2px">+${fmt(((a.target2-s.price)/s.price*100),1)}%</div>
+      </div>
+    </div>
+
+    <!-- R/R -->
+    <div style="display:flex;gap:12px;font-size:11px">
+      <span style="color:var(--muted)">Risk/Reward: <strong style="color:var(--text)">${a.rr||0}x</strong></span>
+      <span style="color:var(--muted)">ARA: <strong style="color:var(--gold)">Rp${fmt(a.ara_price)}</strong></span>
+      <span style="color:var(--muted)">Sisa ke ARA: <strong style="color:${a.ara_hit?'var(--red)':'var(--green)'}">${a.ara_dist||0}%</strong></span>
+    </div>
+
+    <!-- ARA progress bar -->
+    <div class="ara-bar-wrap">
+      <div class="ara-bar-label">
+        <span>Prev Close Rp${fmt(a.prev_close)}</span>
+        <span>Sekarang Rp${fmt(s.price)}</span>
+        <span>ARA Rp${fmt(a.ara_price)}</span>
+      </div>
+      <div class="ara-bar-track">
+        <div class="ara-bar-fill" style="width:${Math.min(araFill,100)}%;background:${araColor}"></div>
+      </div>
+      <div style="font-size:9px;color:var(--muted);margin-top:4px;text-align:center">
+        ${a.ara_hit ? '🔴 Sudah di ceiling ARA' : `Sudah naik ${araFill}% dari jarak ke ARA`}
+      </div>
+    </div>
+
+    <!-- Pro tip -->
+    <div class="tip-box">💡 <strong>Pro tip:</strong> ${a.tip||'–'}</div>
+  `;
+
+  document.getElementById('detail-modal').classList.add('open');
+}
+
+function closeDetail() {
+  document.getElementById('detail-modal').classList.remove('open');
+}
+
+function closeModal(e) {
+  if (e.target === document.getElementById('detail-modal')) closeDetail();
 }
 
 function renderIHSG(ihsg) {
