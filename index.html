@@ -60,6 +60,45 @@
   .spinner{width:32px;height:32px;border:3px solid var(--border);border-top-color:var(--blue);border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 12px}
   @keyframes spin{to{transform:rotate(360deg)}}
   .no-data{padding:20px;text-align:center;color:var(--muted);font-size:12px}
+  /* Detail button */
+  .btn-detail{margin-top:8px;width:100%;background:#1f2d3d;color:var(--blue);border:1px solid #2a4a6b;border-radius:6px;padding:6px 0;font-size:11px;font-weight:600;cursor:pointer;letter-spacing:.3px}
+  .btn-detail:hover{background:#1f3d5d}
+  /* Modal */
+  .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:1000;align-items:center;justify-content:center;padding:16px}
+  .modal-overlay.open{display:flex}
+  .modal-box{background:#161b22;border:1px solid #30363d;border-radius:12px;width:100%;max-width:520px;max-height:90vh;overflow-y:auto}
+  .modal-head{padding:14px 18px;border-bottom:1px solid #30363d;display:flex;align-items:center;gap:10px;position:sticky;top:0;background:#161b22;z-index:1}
+  .m-code{font-size:22px;font-weight:800;color:var(--blue)}
+  .m-name{font-size:11px;color:var(--muted)}
+  .m-close{margin-left:auto;background:#2d333b;border:none;color:var(--muted);border-radius:6px;padding:4px 12px;cursor:pointer;font-size:16px;line-height:1}
+  .m-close:hover{color:var(--text)}
+  .modal-body{padding:16px 18px;display:flex;flex-direction:column;gap:14px}
+  .signal-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .signal-badge{padding:4px 14px;border-radius:20px;font-size:12px;font-weight:800;letter-spacing:.5px}
+  .sig-STRONG-BUY{background:#0d2a14;color:var(--green);border:1px solid var(--green)}
+  .sig-BUY{background:#0d1f3c;color:var(--blue);border:1px solid var(--blue)}
+  .sig-WATCH{background:#2a2000;color:var(--gold);border:1px solid var(--gold)}
+  .sig-WAIT{background:#2d0f0f;color:var(--red);border:1px solid var(--red)}
+  .pattern-text{font-size:11px;color:var(--muted)}
+  .risk-pill{font-size:10px;padding:2px 8px;border-radius:10px;font-weight:700}
+  .risk-ceiling{background:#2d0f0f;color:var(--red)}
+  .risk-high{background:#2a1500;color:#ff8c00}
+  .risk-mod{background:#2a2000;color:var(--gold)}
+  .risk-low{background:#0d2a14;color:var(--green)}
+  .level-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  .level-box{background:#1c2128;border-radius:8px;padding:9px 10px;text-align:center}
+  .level-box .lbl{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px}
+  .level-box .lv{font-size:14px;font-weight:700;margin-top:3px}
+  .level-box .sub{font-size:9px;margin-top:2px}
+  .sl-box{border:1px solid #2d0f0f}
+  .t1-box{border:1px solid #0d2a14}
+  .ara-box{border:1px solid #3d2f00}
+  .ara-bar-wrap{background:#1c2128;border-radius:8px;padding:10px 12px}
+  .ara-bar-label{display:flex;justify-content:space-between;font-size:10px;color:var(--muted);margin-bottom:6px}
+  .ara-bar-track{height:8px;background:#30363d;border-radius:4px;overflow:hidden}
+  .ara-bar-fill{height:100%;border-radius:4px}
+  .tip-box{background:#0d1f3c;border-left:3px solid var(--blue);border-radius:0 8px 8px 0;padding:10px 12px;font-size:12px;line-height:1.6;color:var(--text)}
+  .modal-cats{display:flex;gap:6px;flex-wrap:wrap}
 </style>
 </head>
 <body>
@@ -192,9 +231,14 @@ function renderIntersection(list) {
     </div>`).join('')}</div>`;
 }
 
+let _wData = [];
 function renderWatchlist(list) {
   if (!list?.length) return '<div class="no-data">Tidak ada data</div>';
-  return `<div class="watchlist">${list.map(s=>`
+  _wData = list;
+  return `<div class="watchlist">${list.map((s,i)=>{
+    const a = s.analysis||{};
+    const sig = (a.signal||'WATCH').replace(' ','-');
+    return `
     <div class="watch-card">
       <div class="wcode">${s.code}</div>
       <div class="wname">${(s.name||'').substring(0,28)}</div>
@@ -203,8 +247,13 @@ function renderWatchlist(list) {
         <span><span class="wlabel">Change</span><br><span class="wval ${clr(s.change_pct)}">${sign(s.change_pct)}${fmt(s.change_pct,2)}%</span></span>
         <span><span class="wlabel">Volume</span><br><span class="wval">${fmtV(s.volume)}</span></span>
       </div>
-      <div style="margin-top:6px;font-size:10px;color:var(--muted)">Nilai: Rp${fmtV(s.value)}</div>
-    </div>`).join('')}</div>`;
+      <div style="margin-top:6px;font-size:10px;color:var(--muted)">
+        Nilai: Rp${fmtV(s.value)}
+        ${a.signal?`&nbsp;·&nbsp;<span class="signal-badge sig-${sig}" style="font-size:9px;padding:1px 6px">${a.signal}</span>`:''}
+      </div>
+      <button class="btn-detail" onclick="showDetail(${i})">🔍 Analisa Detail</button>
+    </div>`;
+  }).join('')}</div>`;
 }
 
 function renderWatchlistFull(notes, fallback) {
@@ -373,6 +422,97 @@ load();
 updateVisitorCount();
 setInterval(updateCountdown, 1000);
 setInterval(load, 5*60*1000);
+
+function showDetail(idx) {
+  const s = _wData[idx]; if (!s) return;
+  const a = s.analysis||{};
+  const sig = (a.signal||'WATCH').replace(' ','-');
+  const price = s.price||s.close||0;
+  const araFill = a.ara_hit ? 100 : Math.min(100, Math.round(((price-(a.prev_close||price))/((a.ara_price||price)-(a.prev_close||price)))*100));
+  const araColor = a.ara_hit?'var(--red)':araFill>70?'var(--gold)':'var(--green)';
+  document.getElementById('m-code').textContent = s.code;
+  document.getElementById('m-name').textContent = s.name||'';
+  document.getElementById('modal-body').innerHTML = `
+    <div class="signal-row">
+      <span class="signal-badge sig-${sig}">${a.signal||'–'}</span>
+      <span class="pattern-text">${a.pattern||'–'}</span>
+      <span class="risk-pill ${a.risk_cls||''}" style="margin-left:auto">⚠ ${a.risk||'–'}</span>
+    </div>
+    <div class="modal-cats">
+      ${(s.categories||s.cats||[]).includes('gainer')?'<span class="cat-pill cat-gainer">🟢 Gainer</span>':''}
+      ${(s.categories||s.cats||[]).includes('volume')?'<span class="cat-pill cat-volume">📈 Volume</span>':''}
+      ${(s.categories||s.cats||[]).includes('value')?'<span class="cat-pill cat-value">💰 Value</span>':''}
+      ${(s.categories||s.cats||[]).length===3?'<span class="cat-pill" style="background:#1e0d3c;color:var(--purple)">⭐ Triple</span>':''}
+    </div>
+    <div class="level-grid">
+      <div class="level-box">
+        <div class="lbl">Harga</div>
+        <div class="lv ${clr(s.change_pct)}">${fmt(price)}</div>
+        <div class="sub" style="color:${s.change_pct>=0?'var(--green)':'var(--red)'}">${sign(s.change_pct)}${fmt(s.change_pct,2)}%</div>
+      </div>
+      <div class="level-box">
+        <div class="lbl">Prev Close Est.</div>
+        <div class="lv" style="color:var(--muted)">${fmt(a.prev_close||0)}</div>
+      </div>
+      <div class="level-box">
+        <div class="lbl">Volume</div>
+        <div class="lv" style="color:var(--blue)">${fmtV(s.volume)}</div>
+        <div class="sub" style="color:var(--muted)">Rp${a.value_b||0}B</div>
+      </div>
+    </div>
+    <div class="level-grid">
+      <div class="level-box sl-box">
+        <div class="lbl">Stop Loss</div>
+        <div class="lv" style="color:var(--red)">${fmt(a.sl||0)}</div>
+        <div class="sub" style="color:var(--red)">−${fmt(price&&a.sl?((price-a.sl)/price*100):0,1)}%</div>
+      </div>
+      <div class="level-box t1-box">
+        <div class="lbl">Target 1</div>
+        <div class="lv" style="color:var(--green)">${fmt(a.target1||0)}</div>
+        <div class="sub" style="color:var(--green)">+${fmt(price&&a.target1?((a.target1-price)/price*100):0,1)}%</div>
+      </div>
+      <div class="level-box ara-box">
+        <div class="lbl">Target 2 / ARA</div>
+        <div class="lv" style="color:var(--gold)">${fmt(a.target2||0)}</div>
+        <div class="sub" style="color:var(--gold)">+${fmt(price&&a.target2?((a.target2-price)/price*100):0,1)}%</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:16px;font-size:11px;flex-wrap:wrap">
+      <span style="color:var(--muted)">R/R: <strong style="color:var(--text)">${a.rr||0}x</strong></span>
+      <span style="color:var(--muted)">ARA: <strong style="color:var(--gold)">Rp${fmt(a.ara_price||0)}</strong></span>
+      <span style="color:var(--muted)">Sisa: <strong style="color:${a.ara_hit?'var(--red)':'var(--green)'}">${a.ara_dist||0}%</strong></span>
+    </div>
+    <div class="ara-bar-wrap">
+      <div class="ara-bar-label">
+        <span>Prev Rp${fmt(a.prev_close||0)}</span>
+        <span>Sekarang Rp${fmt(price)}</span>
+        <span>ARA Rp${fmt(a.ara_price||0)}</span>
+      </div>
+      <div class="ara-bar-track"><div class="ara-bar-fill" style="width:${araFill}%;background:${araColor}"></div></div>
+      <div style="font-size:9px;color:var(--muted);margin-top:4px;text-align:center">
+        ${a.ara_hit?'🔴 Sudah di ceiling ARA':`Sudah naik ${araFill}% dari jarak ke ARA`}
+      </div>
+    </div>
+    <div class="tip-box">💡 <strong>Pro tip:</strong> ${a.tip||'Tidak ada data analisa — klik Refresh untuk update.'}</div>
+  `;
+  document.getElementById('detail-modal').classList.add('open');
+}
+function closeDetail() { document.getElementById('detail-modal').classList.remove('open'); }
+function closeModal(e) { if (e.target===document.getElementById('detail-modal')) closeDetail(); }
 </script>
+
+<!-- Detail Modal -->
+<div class="modal-overlay" id="detail-modal" onclick="closeModal(event)">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div>
+        <div class="m-code" id="m-code">–</div>
+        <div class="m-name" id="m-name">–</div>
+      </div>
+      <button class="m-close" onclick="closeDetail()">✕</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
 </body>
 </html>
