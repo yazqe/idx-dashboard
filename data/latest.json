@@ -1,19 +1,20 @@
 {
-  "session": "penutupan",
-  "timestamp": "2026-05-05T18:04:41.037463+07:00",
-  "date": "05 May 2026",
-  "time": "18:04 WIB",
+  "session": "pagi",
+  "timestamp": "2026-05-06T03:11:50.171033+07:00",
+  "date": "06 May 2026",
+  "time": "03:11 WIB",
   "ihsg": {
-    "close": 7057.11,
+    "close": 7057.106,
     "change_pct": 1.22,
     "change_abs": 85.15,
     "high": 7069.207,
     "low": 6921.609,
-    "open": null,
+    "open": 6968.566,
     "volume": 0,
-    "market_open": false,
-    "market_state": "CLOSED",
-    "as_of": "05 May 2026 18:04 WIB"
+    "value": 0,
+    "market_open": true,
+    "market_state": "REGULAR",
+    "as_of": "06 May 2026 03:11 WIB"
   },
   "gainers": [
     {
@@ -23,6 +24,14 @@
       "change_pct": 34.72,
       "volume": 437707600,
       "value": 42457637200
+    },
+    {
+      "code": "KONI",
+      "name": "PT Perdana Bangun Pusaka Tbk",
+      "price": 2980,
+      "change_pct": 24.69,
+      "volume": 503800,
+      "value": 1501324000
     },
     {
       "code": "BRPT",
@@ -89,6 +98,14 @@
       "value": 157250160000
     },
     {
+      "code": "BAPA",
+      "name": "PT Bekasi Asri Pemula Tbk",
+      "price": 238,
+      "change_pct": 19.6,
+      "volume": 728295200,
+      "value": 173334257600
+    },
+    {
       "code": "PTRO",
       "name": "PT Petrosea Tbk",
       "price": 5900,
@@ -129,6 +146,14 @@
       "value": 494462280000
     },
     {
+      "code": "AGII",
+      "name": "PT Samator Indo Gas Tbk",
+      "price": 3180,
+      "change_pct": 11.19,
+      "volume": 2132100,
+      "value": 6780078000
+    },
+    {
       "code": "KOTA",
       "name": "PT DMS Propertindo Tbk",
       "price": 151,
@@ -151,30 +176,6 @@
       "change_pct": 10.64,
       "volume": 496192500,
       "value": 51604020000
-    },
-    {
-      "code": "CENT",
-      "name": "PT Centratama Telekomunikasi Indonesia Tbk",
-      "price": 110,
-      "change_pct": 10,
-      "volume": 18712700,
-      "value": 2058397000
-    },
-    {
-      "code": "RBMS",
-      "name": "PT Ristia Bintang Mahkotasejati Tbk",
-      "price": 77,
-      "change_pct": 10,
-      "volume": 23712800,
-      "value": 1825885600
-    },
-    {
-      "code": "IBOS",
-      "name": "PT Indo Boga Sukses Tbk",
-      "price": 122,
-      "change_pct": 9.91,
-      "volume": 40203100,
-      "value": 4904778200
     }
   ],
   "volume": [
@@ -241,6 +242,14 @@
       "change_pct": -0.52,
       "volume": 734553100,
       "value": 279130178000
+    },
+    {
+      "code": "BAPA",
+      "name": "PT Bekasi Asri Pemula Tbk",
+      "price": 238,
+      "change_pct": 19.6,
+      "volume": 728295200,
+      "value": 173334257600
     },
     {
       "code": "BNBR",
@@ -329,14 +338,6 @@
       "change_pct": 3.36,
       "volume": 379504400,
       "value": 93358082400
-    },
-    {
-      "code": "RODA",
-      "name": "PT Pikko Land Development Tbk",
-      "price": 87,
-      "change_pct": 8.75,
-      "volume": 303900700,
-      "value": 26439360900
     }
   ],
   "value": [
@@ -513,7 +514,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 136,
+        "ara_price": 170,
+        "ara_dist": 12.6,
+        "ara_hit": false,
+        "sl": 143,
+        "target1": 157,
+        "target2": 170,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 12.6% ruang ke ARA Rp170. Entry area sekarang, target 1 Rp157 · target 2 Rp170. SL Rp143 · R/R 0.8x.",
+        "value_b": 452.3,
+        "cat_count": 3
+      }
     },
     {
       "code": "BRPT",
@@ -526,7 +544,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 1845,
+        "ara_price": 2310,
+        "ara_dist": 0.4,
+        "ara_hit": true,
+        "sl": 2180,
+        "target1": 2390,
+        "target2": 2480,
+        "rr": 0.8,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp2,310). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 1419.8,
+        "cat_count": 3
+      }
     },
     {
       "code": "ASPR",
@@ -539,7 +574,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 332,
+        "ara_price": 416,
+        "ara_dist": 8.9,
+        "ara_hit": false,
+        "sl": 362,
+        "target1": 398,
+        "target2": 416,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection + Momentum Kuat",
+        "signal": "STRONG BUY",
+        "tip": "Setup terkuat — triple intersection, 8.9% ruang ke ARA Rp416. Entry area sekarang, target 1 Rp398 · target 2 Rp416. SL Rp362 · R/R 0.8x.",
+        "value_b": 216.8,
+        "cat_count": 3
+      }
     },
     {
       "code": "CUAN",
@@ -552,7 +604,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 1160,
+        "ara_price": 1450,
+        "ara_dist": 11.5,
+        "ara_hit": false,
+        "sl": 1235,
+        "target1": 1350,
+        "target2": 1450,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 11.5% ruang ke ARA Rp1,450. Entry area sekarang, target 1 Rp1,350 · target 2 Rp1,450. SL Rp1,235 · R/R 0.8x.",
+        "value_b": 494.5,
+        "cat_count": 3
+      }
     },
     {
       "code": "GOTO",
@@ -564,7 +633,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 51,
+        "ara_price": 64,
+        "ara_dist": 28.0,
+        "ara_hit": false,
+        "sl": 48,
+        "target1": 52,
+        "target2": 64,
+        "rr": 1.0,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 28.0% ruang ke ARA Rp64. Entry Rp50, target Rp52, SL Rp48. Konfirmasi volume sebelum masuk.",
+        "value_b": 407.9,
+        "cat_count": 2
+      }
     },
     {
       "code": "BUMI",
@@ -612,6 +698,18 @@
       "categories": [
         "volume",
         "value"
+      ]
+    },
+    {
+      "code": "BAPA",
+      "name": "PT Bekasi Asri Pemula Tbk",
+      "price": 238,
+      "change_pct": 19.6,
+      "volume": 728295200,
+      "value": 173334257600,
+      "categories": [
+        "gainer",
+        "volume"
       ]
     },
     {
@@ -711,7 +809,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 136,
+        "ara_price": 170,
+        "ara_dist": 12.6,
+        "ara_hit": false,
+        "sl": 143,
+        "target1": 157,
+        "target2": 170,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 12.6% ruang ke ARA Rp170. Entry area sekarang, target 1 Rp157 · target 2 Rp170. SL Rp143 · R/R 0.8x.",
+        "value_b": 452.3,
+        "cat_count": 3
+      }
     },
     {
       "code": "BRPT",
@@ -724,7 +839,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 1845,
+        "ara_price": 2310,
+        "ara_dist": 0.4,
+        "ara_hit": true,
+        "sl": 2180,
+        "target1": 2390,
+        "target2": 2480,
+        "rr": 0.8,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp2,310). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 1419.8,
+        "cat_count": 3
+      }
     },
     {
       "code": "ASPR",
@@ -737,7 +869,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 332,
+        "ara_price": 416,
+        "ara_dist": 8.9,
+        "ara_hit": false,
+        "sl": 362,
+        "target1": 398,
+        "target2": 416,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection + Momentum Kuat",
+        "signal": "STRONG BUY",
+        "tip": "Setup terkuat — triple intersection, 8.9% ruang ke ARA Rp416. Entry area sekarang, target 1 Rp398 · target 2 Rp416. SL Rp362 · R/R 0.8x.",
+        "value_b": 216.8,
+        "cat_count": 3
+      }
     },
     {
       "code": "CUAN",
@@ -750,7 +899,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 1160,
+        "ara_price": 1450,
+        "ara_dist": 11.5,
+        "ara_hit": false,
+        "sl": 1235,
+        "target1": 1350,
+        "target2": 1450,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 11.5% ruang ke ARA Rp1,450. Entry area sekarang, target 1 Rp1,350 · target 2 Rp1,450. SL Rp1,235 · R/R 0.8x.",
+        "value_b": 494.5,
+        "cat_count": 3
+      }
     },
     {
       "code": "GOTO",
@@ -762,140 +928,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 51,
+        "ara_price": 64,
+        "ara_dist": 28.0,
+        "ara_hit": false,
+        "sl": 48,
+        "target1": 52,
+        "target2": 64,
+        "rr": 1.0,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 28.0% ruang ke ARA Rp64. Entry Rp50, target Rp52, SL Rp48. Konfirmasi volume sebelum masuk.",
+        "value_b": 407.9,
+        "cat_count": 2
+      }
     }
-  ],
-  "analysis": {
-    "watchlist_notes": [
-      {
-        "code": "KOTA",
-        "name": "PT DMS Propertindo Tbk",
-        "price": 151,
-        "change": 11.03,
-        "volume": 2995429400,
-        "value": 452309839400,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 3.00B sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp145 | Target Rp157 | Stop Rp140"
-      },
-      {
-        "code": "BRPT",
-        "name": "PT Barito Pacific Tbk",
-        "price": 2300,
-        "change": 24.66,
-        "volume": 617314400,
-        "value": 1419823120000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 617.3M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp2,208 | Target Rp2,392 | Stop Rp2,139"
-      },
-      {
-        "code": "ASPR",
-        "name": "PT Asia Pramulia Tbk",
-        "price": 382,
-        "change": 15.06,
-        "volume": 567583000,
-        "value": 216816706000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 567.6M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp367 | Target Rp397 | Stop Rp355"
-      },
-      {
-        "code": "CUAN",
-        "name": "PT Petrindo Jaya Kreasi Tbk",
-        "price": 1300,
-        "change": 12.07,
-        "volume": 380355600,
-        "value": 494462280000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 380.4M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp1,248 | Target Rp1,352 | Stop Rp1,209"
-      },
-      {
-        "code": "GOTO",
-        "name": "PT GoTo Gojek Tokopedia Tbk",
-        "price": 50,
-        "change": -1.96,
-        "volume": 8158041800,
-        "value": 407902090000,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 8.16B & nilai Rp407.90B — paling liquid, spread kecil.",
-        "guidance": "Pantau open besok untuk konfirmasi arah."
-      }
-    ],
-    "signals": [
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "KOTA",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "BRPT",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "ASPR",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "CUAN",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "info",
-        "icon": "📈",
-        "code": "GOTO",
-        "text": "Volume king hari ini: 8.16B shares — paling liquid untuk scalp."
-      }
-    ],
-    "warnings": [
-      {
-        "code": "INCO",
-        "change": -13.09,
-        "text": "Turun -13.1% — hindari untuk long, potensi tekanan berlanjut."
-      }
-    ],
-    "summary": {
-      "ihsg_close": 7057.11,
-      "ihsg_change": 1.22,
-      "ihsg_high": 7069.207,
-      "ihsg_low": 6921.609,
-      "day_range": 147.6,
-      "is_positive": true,
-      "is_month_end": false,
-      "session_label": "Menjelang Penutupan",
-      "top_gainer": "ENZO",
-      "top_gainer_chg": 34.72,
-      "vol_king": "GOTO",
-      "vol_king_vol": "8.16B",
-      "triple_count": 4,
-      "intersection_count": 16
-    }
-  }
+  ]
 }
