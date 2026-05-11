@@ -56,15 +56,31 @@ def git_push():
         env = {**os.environ, "GIT_AUTHOR_NAME": "idx-dashboard", "GIT_AUTHOR_EMAIL": "bot@idx",
                "GIT_COMMITTER_NAME": "idx-dashboard", "GIT_COMMITTER_EMAIL": "bot@idx"}
 
-        subprocess.run(["git", "-C", REPO_DIR, "pull", "--rebase", "origin", "main"],
+        # Baca data fresh sebelum reset
+        fresh_data = None
+        if os.path.exists(DATA_FILE):
+            with open(DATA_FILE) as f:
+                fresh_data = f.read()
+
+        # Fetch + reset hard ke origin/main — hindari divergence sepenuhnya
+        subprocess.run(["git", "-C", REPO_DIR, "fetch", "origin", "main"],
                        capture_output=True, timeout=30, env=env)
+        subprocess.run(["git", "-C", REPO_DIR, "reset", "--hard", "origin/main"],
+                       capture_output=True, timeout=10, env=env)
+
+        # Tulis ulang data fresh (sudah di-reset, perlu tulis lagi)
+        if fresh_data:
+            os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
+            with open(DATA_FILE, "w") as f:
+                f.write(fresh_data)
+
         subprocess.run(["git", "-C", REPO_DIR, "add", "data/latest.json"],
                        capture_output=True, timeout=10, env=env)
-        result = subprocess.run(
+        diff = subprocess.run(
             ["git", "-C", REPO_DIR, "diff", "--staged", "--quiet"],
             capture_output=True, env=env
         )
-        if result.returncode != 0:
+        if diff.returncode != 0:
             subprocess.run(
                 ["git", "-C", REPO_DIR, "commit", "-m", f"data: update IDX {wib_time}"],
                 capture_output=True, timeout=10, env=env
@@ -76,7 +92,7 @@ def git_push():
             if push.returncode == 0:
                 print(f"[{datetime.now(WIB).strftime('%H:%M')}] Pushed to GitHub ✅")
             else:
-                print(f"[git_push] push failed: {push.stderr.decode()[:100]}", file=sys.stderr)
+                print(f"[git_push] push failed: {push.stderr.decode()[:200]}", file=sys.stderr)
         else:
             print(f"[{datetime.now(WIB).strftime('%H:%M')}] No changes to push")
     except Exception as e:
