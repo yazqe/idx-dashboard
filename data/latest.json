@@ -1,20 +1,19 @@
 {
   "session": "penutupan",
-  "timestamp": "2026-05-28T15:55:00.340710+07:00",
+  "timestamp": "2026-05-28T17:35:59.212913+07:00",
   "date": "28 May 2026",
-  "time": "15:55 WIB",
+  "time": "17:35 WIB",
   "ihsg": {
     "close": 6130.19,
     "change_pct": -1.23,
     "change_abs": -76.16,
     "high": 6286.872,
     "low": 6124.794,
-    "open": 6201.804,
+    "open": null,
     "volume": 0,
-    "value": 0,
-    "market_open": true,
-    "market_state": "REGULAR",
-    "as_of": "28 May 2026 15:55 WIB"
+    "market_open": false,
+    "market_state": "CLOSED",
+    "as_of": "28 May 2026 17:35 WIB"
   },
   "gainers": [
     {
@@ -34,108 +33,12 @@
       "value": 14802617100
     },
     {
-      "code": "ELPI",
-      "name": "PT Pelayaran Nasional Ekalya Purnamasari Tbk",
-      "price": 1700,
-      "change_pct": 12.96,
-      "volume": 2451300,
-      "value": 4167210000
-    },
-    {
-      "code": "AWAN",
-      "name": "PT Era Digital Media Tbk",
-      "price": 160,
-      "change_pct": 12.68,
-      "volume": 2685000,
-      "value": 429600000
-    },
-    {
-      "code": "DART",
-      "name": "PT Duta Anggada Realty Tbk",
-      "price": 131,
-      "change_pct": 11.97,
-      "volume": 1668500,
-      "value": 218573500
-    },
-    {
       "code": "BREN",
       "name": "PT Barito Renewables Energy Tbk",
       "price": 2640,
       "change_pct": 10.92,
       "volume": 211822800,
       "value": 559212192000
-    },
-    {
-      "code": "TAMU",
-      "name": "PT Pelayaran Tamarin Samudra Tbk",
-      "price": 22,
-      "change_pct": 10,
-      "volume": 5935000,
-      "value": 130570000
-    },
-    {
-      "code": "BAPI",
-      "name": "PT Bhakti Agung Propertindo Tbk",
-      "price": 22,
-      "change_pct": 10,
-      "volume": 2798400,
-      "value": 61564800
-    },
-    {
-      "code": "MDRN",
-      "name": "PT Modern Internasional Tbk",
-      "price": 33,
-      "change_pct": 10,
-      "volume": 2342800,
-      "value": 77312400
-    },
-    {
-      "code": "SINI",
-      "name": "PT Singaraja Putra Tbk",
-      "price": 11225,
-      "change_pct": 9.78,
-      "volume": 2439700,
-      "value": 27385632500
-    },
-    {
-      "code": "SOFA",
-      "name": "PT Solusi Environment Asia Tbk",
-      "price": 406,
-      "change_pct": 9.73,
-      "volume": 4200500,
-      "value": 1705403000
-    },
-    {
-      "code": "TBIG",
-      "name": "PT Tower Bersama Infrastructure Tbk",
-      "price": 1470,
-      "change_pct": 9.7,
-      "volume": 996800,
-      "value": 1465296000
-    },
-    {
-      "code": "BKDP",
-      "name": "PT Bukit Darmo Property Tbk",
-      "price": 125,
-      "change_pct": 9.65,
-      "volume": 8340400,
-      "value": 1042550000
-    },
-    {
-      "code": "WGSH",
-      "name": "PT Wira Global Solusi Tbk",
-      "price": 115,
-      "change_pct": 9.52,
-      "volume": 4985200,
-      "value": 573298000
-    },
-    {
-      "code": "HRME",
-      "name": "PT Menteng Heritage Realty Tbk",
-      "price": 46,
-      "change_pct": 9.52,
-      "volume": 1567100,
-      "value": 72086600
     },
     {
       "code": "PPGL",
@@ -170,12 +73,12 @@
       "value": 2095254000
     },
     {
-      "code": "UNSP",
-      "name": "PT Bakrie Sumatera Plantations Tbk",
-      "price": 296,
-      "change_pct": 8.82,
-      "volume": 1414300,
-      "value": 418632800
+      "code": "TPIA",
+      "name": "PT Chandra Asri Pacific Tbk",
+      "price": 1900,
+      "change_pct": 7.65,
+      "volume": 538559300,
+      "value": 1023262670000
     }
   ],
   "volume": [
@@ -332,12 +235,12 @@
       "value": 78819320600
     },
     {
-      "code": "WBSA",
-      "name": "PT BSA Logistics Indonesia Tbk",
-      "price": 660,
-      "change_pct": -13.16,
-      "volume": 203236500,
-      "value": 134136090000
+      "code": "ZATA",
+      "name": "PT Bersama Zatta Jaya Tbk",
+      "price": 70,
+      "change_pct": -4.11,
+      "volume": 202470500,
+      "value": 14172935000
     }
   ],
   "value": [
@@ -504,6 +407,19 @@
   ],
   "intersection": [
     {
+      "code": "TPIA",
+      "name": "PT Chandra Asri Pacific Tbk",
+      "price": 1900,
+      "change_pct": 7.65,
+      "volume": 538559300,
+      "value": 1023262670000,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ]
+    },
+    {
       "code": "BREN",
       "name": "PT Barito Renewables Energy Tbk",
       "price": 2640,
@@ -514,24 +430,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 2380,
-        "ara_price": 2980,
-        "ara_dist": 12.9,
-        "ara_hit": false,
-        "sl": 2510,
-        "target1": 2750,
-        "target2": 2980,
-        "rr": 0.8,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Triple Intersection",
-        "signal": "BUY",
-        "tip": "Setup terkuat — triple intersection, 12.9% ruang ke ARA Rp2,980. Entry area sekarang, target 1 Rp2,750 · target 2 Rp2,980. SL Rp2,510 · R/R 0.8x.",
-        "value_b": 559.2,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "BUMI",
@@ -543,24 +442,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 171,
-        "ara_price": 214,
-        "ara_dist": 28.9,
-        "ara_hit": false,
-        "sl": 158,
-        "target1": 173,
-        "target2": 214,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 28.9% ruang ke ARA Rp214. Entry Rp166, target Rp173, SL Rp158. Konfirmasi volume sebelum masuk.",
-        "value_b": 447.9,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BIPI",
@@ -572,24 +454,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 179,
-        "ara_price": 224,
-        "ara_dist": 26.6,
-        "ara_hit": false,
-        "sl": 168,
-        "target1": 184,
-        "target2": 224,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 26.6% ruang ke ARA Rp224. Entry Rp177, target Rp184, SL Rp168. Konfirmasi volume sebelum masuk.",
-        "value_b": 173.2,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "CUAN",
@@ -601,24 +466,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 486,
-        "ara_price": 605,
-        "ara_dist": 19.8,
-        "ara_hit": false,
-        "sl": 480,
-        "target1": 525,
-        "target2": 605,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 19.8% ruang ke ARA Rp605. Entry Rp505, target Rp525, SL Rp480. Konfirmasi volume sebelum masuk.",
-        "value_b": 439.9,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "DSSA",
@@ -630,24 +478,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 480,
-        "ara_price": 600,
-        "ara_dist": 38.9,
-        "ara_hit": false,
-        "sl": 410,
-        "target1": 450,
-        "target2": 600,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 38.9% ruang ke ARA Rp600. Entry Rp432, target Rp450, SL Rp410. Konfirmasi volume sebelum masuk.",
-        "value_b": 368.0,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BRPT",
@@ -668,18 +499,6 @@
       "change_pct": -5.71,
       "volume": 584878500,
       "value": 193009905000,
-      "categories": [
-        "volume",
-        "value"
-      ]
-    },
-    {
-      "code": "TPIA",
-      "name": "PT Chandra Asri Pacific Tbk",
-      "price": 1900,
-      "change_pct": 7.65,
-      "volume": 538559300,
-      "value": 1023262670000,
       "categories": [
         "volume",
         "value"
@@ -712,6 +531,19 @@
   ],
   "watchlist": [
     {
+      "code": "TPIA",
+      "name": "PT Chandra Asri Pacific Tbk",
+      "price": 1900,
+      "change_pct": 7.65,
+      "volume": 538559300,
+      "value": 1023262670000,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ]
+    },
+    {
       "code": "BREN",
       "name": "PT Barito Renewables Energy Tbk",
       "price": 2640,
@@ -722,24 +554,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 2380,
-        "ara_price": 2980,
-        "ara_dist": 12.9,
-        "ara_hit": false,
-        "sl": 2510,
-        "target1": 2750,
-        "target2": 2980,
-        "rr": 0.8,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Triple Intersection",
-        "signal": "BUY",
-        "tip": "Setup terkuat — triple intersection, 12.9% ruang ke ARA Rp2,980. Entry area sekarang, target 1 Rp2,750 · target 2 Rp2,980. SL Rp2,510 · R/R 0.8x.",
-        "value_b": 559.2,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "BUMI",
@@ -751,24 +566,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 171,
-        "ara_price": 214,
-        "ara_dist": 28.9,
-        "ara_hit": false,
-        "sl": 158,
-        "target1": 173,
-        "target2": 214,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 28.9% ruang ke ARA Rp214. Entry Rp166, target Rp173, SL Rp158. Konfirmasi volume sebelum masuk.",
-        "value_b": 447.9,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BIPI",
@@ -780,24 +578,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 179,
-        "ara_price": 224,
-        "ara_dist": 26.6,
-        "ara_hit": false,
-        "sl": 168,
-        "target1": 184,
-        "target2": 224,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 26.6% ruang ke ARA Rp224. Entry Rp177, target Rp184, SL Rp168. Konfirmasi volume sebelum masuk.",
-        "value_b": 173.2,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "CUAN",
@@ -809,53 +590,136 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 486,
-        "ara_price": 605,
-        "ara_dist": 19.8,
-        "ara_hit": false,
-        "sl": 480,
-        "target1": 525,
-        "target2": 605,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 19.8% ruang ke ARA Rp605. Entry Rp505, target Rp525, SL Rp480. Konfirmasi volume sebelum masuk.",
-        "value_b": 439.9,
-        "cat_count": 2
-      }
-    },
-    {
-      "code": "DSSA",
-      "name": "PT Dian Swastatika Sentosa Tbk",
-      "price": 432,
-      "change_pct": -10,
-      "volume": 851802500,
-      "value": 367978680000,
-      "categories": [
-        "volume",
-        "value"
-      ],
-      "analysis": {
-        "prev_close": 480,
-        "ara_price": 600,
-        "ara_dist": 38.9,
-        "ara_hit": false,
-        "sl": 410,
-        "target1": 450,
-        "target2": 600,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 38.9% ruang ke ARA Rp600. Entry Rp432, target Rp450, SL Rp410. Konfirmasi volume sebelum masuk.",
-        "value_b": 368.0,
-        "cat_count": 2
-      }
+      ]
     }
-  ]
+  ],
+  "analysis": {
+    "watchlist_notes": [
+      {
+        "code": "TPIA",
+        "name": "PT Chandra Asri Pacific Tbk",
+        "price": 1900,
+        "change": 7.65,
+        "volume": 538559300,
+        "value": 1023262670000,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 538.6M sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp1,824 | Target Rp1,976 | Stop Rp1,767"
+      },
+      {
+        "code": "BREN",
+        "name": "PT Barito Renewables Energy Tbk",
+        "price": 2640,
+        "change": 10.92,
+        "volume": 211822800,
+        "value": 559212192000,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 211.8M sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp2,534 | Target Rp2,746 | Stop Rp2,455"
+      },
+      {
+        "code": "BUMI",
+        "name": "PT Bumi Resources Tbk Class A",
+        "price": 166,
+        "change": -2.92,
+        "volume": 2698201800,
+        "value": 447901498800,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 2.70B & nilai Rp447.90B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "BIPI",
+        "name": "PT Astrindo Nusantara Infrastruktur Tbk",
+        "price": 177,
+        "change": -1.12,
+        "volume": 978280300,
+        "value": 173155613100,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 978.3M & nilai Rp173.16B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "CUAN",
+        "name": "PT Petrindo Jaya Kreasi Tbk",
+        "price": 505,
+        "change": 3.91,
+        "volume": 871026600,
+        "value": 439868433000,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 871.0M & nilai Rp439.87B — paling liquid, spread kecil.",
+        "guidance": "Entry area Rp485 | Target Rp525 | Stop Rp470"
+      }
+    ],
+    "signals": [
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "TPIA",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "BREN",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "info",
+        "icon": "📈",
+        "code": "BUMI",
+        "text": "Volume king hari ini: 2.70B shares — paling liquid untuk scalp."
+      }
+    ],
+    "warnings": [
+      {
+        "code": "DSSA",
+        "change": -10,
+        "text": "Turun -10.0% — hindari untuk long, potensi tekanan berlanjut."
+      },
+      {
+        "code": "AMRT",
+        "change": -8.11,
+        "text": "Turun -8.1% — hindari untuk long, potensi tekanan berlanjut."
+      },
+      {
+        "code": "BUVA",
+        "change": -12.23,
+        "text": "Turun -12.2% — hindari untuk long, potensi tekanan berlanjut."
+      }
+    ],
+    "summary": {
+      "ihsg_close": 6130.19,
+      "ihsg_change": -1.23,
+      "ihsg_high": 6286.872,
+      "ihsg_low": 6124.794,
+      "day_range": 162.08,
+      "is_positive": false,
+      "is_month_end": true,
+      "session_label": "Menjelang Penutupan",
+      "top_gainer": "MGNA",
+      "top_gainer_chg": 34.09,
+      "vol_king": "BUMI",
+      "vol_king_vol": "2.70B",
+      "triple_count": 2,
+      "intersection_count": 10
+    }
+  }
 }
