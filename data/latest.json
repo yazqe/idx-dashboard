@@ -1,19 +1,20 @@
 {
   "session": "siang",
-  "timestamp": "2026-06-04T12:35:32.918679+07:00",
+  "timestamp": "2026-06-04T12:40:00.147383+07:00",
   "date": "04 June 2026",
-  "time": "12:35 WIB",
+  "time": "12:40 WIB",
   "ihsg": {
-    "close": 5734.26,
+    "close": 5734.256,
     "change_pct": -3.48,
     "change_abs": -206.81,
     "high": 5924.508,
     "low": 5644.234,
-    "open": null,
+    "open": 5919.565,
     "volume": 0,
-    "market_open": false,
-    "market_state": "CLOSED",
-    "as_of": "04 Jun 2026 12:35 WIB"
+    "value": 0,
+    "market_open": true,
+    "market_state": "REGULAR",
+    "as_of": "04 Jun 2026 12:40 WIB"
   },
   "gainers": [
     {
@@ -41,6 +42,14 @@
       "value": 53167594500
     },
     {
+      "code": "ALKA",
+      "name": "PT Alakasa Industrindo, Tbk Class A",
+      "price": 720,
+      "change_pct": 18.03,
+      "volume": 1466100,
+      "value": 1055592000
+    },
+    {
       "code": "BELL",
       "name": "PT Trisula Textile Industries Tbk",
       "price": 108,
@@ -57,12 +66,36 @@
       "value": 10456965200
     },
     {
+      "code": "BKDP",
+      "name": "PT Bukit Darmo Property Tbk",
+      "price": 125,
+      "change_pct": 9.65,
+      "volume": 8340400,
+      "value": 1042550000
+    },
+    {
+      "code": "AWAN",
+      "name": "PT Era Digital Media Tbk",
+      "price": 149,
+      "change_pct": 9.56,
+      "volume": 4586800,
+      "value": 683433200
+    },
+    {
       "code": "NAYZ",
       "name": "PT Hassana Boga Sejahtera Tbk",
       "price": 62,
       "change_pct": 8.77,
       "volume": 12471100,
       "value": 773208200
+    },
+    {
+      "code": "ARII",
+      "name": "PT Atlas Resources Tbk",
+      "price": 278,
+      "change_pct": 8.59,
+      "volume": 652200,
+      "value": 181311600
     },
     {
       "code": "MSIN",
@@ -73,12 +106,52 @@
       "value": 66850681600
     },
     {
+      "code": "DAAZ",
+      "name": "PT Daaz Bara Lestari Tbk",
+      "price": 1680,
+      "change_pct": 8.04,
+      "volume": 1840500,
+      "value": 3092040000
+    },
+    {
+      "code": "KING",
+      "name": "PT Hoffmen Cleanindo Tbk",
+      "price": 565,
+      "change_pct": 7.62,
+      "volume": 5470100,
+      "value": 3090606500
+    },
+    {
       "code": "ZATA",
       "name": "PT Bersama Zatta Jaya Tbk",
       "price": 58,
       "change_pct": 7.41,
       "volume": 419378900,
       "value": 24323976200
+    },
+    {
+      "code": "AEGS",
+      "name": "PT Anugerah Spareparts Sejahtera Tbk",
+      "price": 45,
+      "change_pct": 7.14,
+      "volume": 1663400,
+      "value": 74853000
+    },
+    {
+      "code": "ERTX",
+      "name": "PT Eratex Djaja Tbk",
+      "price": 145,
+      "change_pct": 5.84,
+      "volume": 4645500,
+      "value": 673597500
+    },
+    {
+      "code": "INOV",
+      "name": "PT Inocycle Technology Group Tbk",
+      "price": 119,
+      "change_pct": 5.31,
+      "volume": 5253100,
+      "value": 625118900
     },
     {
       "code": "CUAN",
@@ -97,28 +170,12 @@
       "value": 38048167000
     },
     {
-      "code": "ADRO",
-      "name": "PT Alamtri Resources Indonesia Tbk",
-      "price": 2230,
-      "change_pct": 2.29,
-      "volume": 43401700,
-      "value": 96785791000
-    },
-    {
-      "code": "HATM",
-      "name": "PT Habco Trans Maritima Tbk",
-      "price": 358,
-      "change_pct": 2.29,
-      "volume": 21635500,
-      "value": 7745509000
-    },
-    {
-      "code": "AKRA",
-      "name": "PT AKR Corporindo Tbk",
-      "price": 1220,
-      "change_pct": 1.24,
-      "volume": 11497900,
-      "value": 14027438000
+      "code": "INAI",
+      "name": "PT Indal Aluminium Industry Tbk",
+      "price": 167,
+      "change_pct": 2.45,
+      "volume": 731200,
+      "value": 122110400
     }
   ],
   "volume": [
@@ -457,7 +514,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 725,
+        "ara_price": 905,
+        "ara_dist": 19.1,
+        "ara_hit": false,
+        "sl": 720,
+        "target1": 790,
+        "target2": 905,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 19.1% ruang ke ARA Rp905. Entry area sekarang, target 1 Rp790 · target 2 Rp905. SL Rp720 · R/R 0.8x.",
+        "value_b": 505.7,
+        "cat_count": 3
+      }
     },
     {
       "code": "BUMI",
@@ -469,7 +543,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 148,
+        "ara_price": 185,
+        "ara_dist": 32.1,
+        "ara_hit": false,
+        "sl": 133,
+        "target1": 146,
+        "target2": 185,
+        "rr": 0.9,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 32.1% ruang ke ARA Rp185. Entry Rp140, target Rp146, SL Rp133. Konfirmasi volume sebelum masuk.",
+        "value_b": 409.1,
+        "cat_count": 2
+      }
     },
     {
       "code": "BIPI",
@@ -481,7 +572,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 152,
+        "ara_price": 190,
+        "ara_dist": 43.9,
+        "ara_hit": false,
+        "sl": 125,
+        "target1": 137,
+        "target2": 190,
+        "rr": 0.7,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 43.9% ruang ke ARA Rp190. Entry Rp132, target Rp137, SL Rp125. Konfirmasi volume sebelum masuk.",
+        "value_b": 196.3,
+        "cat_count": 2
+      }
     },
     {
       "code": "DSSA",
@@ -493,7 +601,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 690,
+        "ara_price": 860,
+        "ara_dist": 35.4,
+        "ara_hit": false,
+        "sl": 605,
+        "target1": 660,
+        "target2": 860,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 35.4% ruang ke ARA Rp860. Entry Rp635, target Rp660, SL Rp605. Konfirmasi volume sebelum masuk.",
+        "value_b": 500.5,
+        "cat_count": 2
+      }
     },
     {
       "code": "DEWA",
@@ -505,7 +630,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 294,
+        "ara_price": 368,
+        "ara_dist": 38.3,
+        "ara_hit": false,
+        "sl": 252,
+        "target1": 276,
+        "target2": 368,
+        "rr": 0.7,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 38.3% ruang ke ARA Rp368. Entry Rp266, target Rp276, SL Rp252. Konfirmasi volume sebelum masuk.",
+        "value_b": 184.2,
+        "cat_count": 2
+      }
     },
     {
       "code": "TPIA",
@@ -604,7 +746,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 725,
+        "ara_price": 905,
+        "ara_dist": 19.1,
+        "ara_hit": false,
+        "sl": 720,
+        "target1": 790,
+        "target2": 905,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 19.1% ruang ke ARA Rp905. Entry area sekarang, target 1 Rp790 · target 2 Rp905. SL Rp720 · R/R 0.8x.",
+        "value_b": 505.7,
+        "cat_count": 3
+      }
     },
     {
       "code": "BUMI",
@@ -616,7 +775,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 148,
+        "ara_price": 185,
+        "ara_dist": 32.1,
+        "ara_hit": false,
+        "sl": 133,
+        "target1": 146,
+        "target2": 185,
+        "rr": 0.9,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 32.1% ruang ke ARA Rp185. Entry Rp140, target Rp146, SL Rp133. Konfirmasi volume sebelum masuk.",
+        "value_b": 409.1,
+        "cat_count": 2
+      }
     },
     {
       "code": "BIPI",
@@ -628,7 +804,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 152,
+        "ara_price": 190,
+        "ara_dist": 43.9,
+        "ara_hit": false,
+        "sl": 125,
+        "target1": 137,
+        "target2": 190,
+        "rr": 0.7,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 43.9% ruang ke ARA Rp190. Entry Rp132, target Rp137, SL Rp125. Konfirmasi volume sebelum masuk.",
+        "value_b": 196.3,
+        "cat_count": 2
+      }
     },
     {
       "code": "DSSA",
@@ -640,7 +833,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 690,
+        "ara_price": 860,
+        "ara_dist": 35.4,
+        "ara_hit": false,
+        "sl": 605,
+        "target1": 660,
+        "target2": 860,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 35.4% ruang ke ARA Rp860. Entry Rp635, target Rp660, SL Rp605. Konfirmasi volume sebelum masuk.",
+        "value_b": 500.5,
+        "cat_count": 2
+      }
     },
     {
       "code": "DEWA",
@@ -652,129 +862,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 294,
+        "ara_price": 368,
+        "ara_dist": 38.3,
+        "ara_hit": false,
+        "sl": 252,
+        "target1": 276,
+        "target2": 368,
+        "rr": 0.7,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 38.3% ruang ke ARA Rp368. Entry Rp266, target Rp276, SL Rp252. Konfirmasi volume sebelum masuk.",
+        "value_b": 184.2,
+        "cat_count": 2
+      }
     }
-  ],
-  "analysis": {
-    "watchlist_notes": [
-      {
-        "code": "CUAN",
-        "name": "PT Petrindo Jaya Kreasi Tbk",
-        "price": 760,
-        "change": 4.83,
-        "volume": 665421900,
-        "value": 505720644000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 665.4M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp730 | Target Rp790 | Stop Rp707"
-      },
-      {
-        "code": "BUMI",
-        "name": "PT Bumi Resources Tbk Class A",
-        "price": 140,
-        "change": -5.41,
-        "volume": 2921831700,
-        "value": 409056438000,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 2.92B & nilai Rp409.06B — paling liquid, spread kecil.",
-        "guidance": "Pantau open besok untuk konfirmasi arah."
-      },
-      {
-        "code": "BIPI",
-        "name": "PT Astrindo Nusantara Infrastruktur Tbk",
-        "price": 132,
-        "change": -13.16,
-        "volume": 1487376400,
-        "value": 196333684800,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 1.49B & nilai Rp196.33B — paling liquid, spread kecil.",
-        "guidance": "Pantau open besok untuk konfirmasi arah."
-      },
-      {
-        "code": "DSSA",
-        "name": "PT Dian Swastatika Sentosa Tbk",
-        "price": 635,
-        "change": -7.97,
-        "volume": 788158100,
-        "value": 500480393500,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 788.2M & nilai Rp500.48B — paling liquid, spread kecil.",
-        "guidance": "Pantau open besok untuk konfirmasi arah."
-      },
-      {
-        "code": "DEWA",
-        "name": "PT Darma Henwa Tbk",
-        "price": 266,
-        "change": -9.52,
-        "volume": 692350200,
-        "value": 184165153200,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 692.4M & nilai Rp184.17B — paling liquid, spread kecil.",
-        "guidance": "Pantau open besok untuk konfirmasi arah."
-      }
-    ],
-    "signals": [
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "CUAN",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "info",
-        "icon": "📈",
-        "code": "BUMI",
-        "text": "Volume king hari ini: 2.92B shares — paling liquid untuk scalp."
-      }
-    ],
-    "warnings": [
-      {
-        "code": "BIPI",
-        "change": -13.16,
-        "text": "Turun -13.2% — hindari untuk long, potensi tekanan berlanjut."
-      },
-      {
-        "code": "BNBR",
-        "change": -9.17,
-        "text": "Turun -9.2% — hindari untuk long, potensi tekanan berlanjut."
-      },
-      {
-        "code": "DEWA",
-        "change": -9.52,
-        "text": "Turun -9.5% — hindari untuk long, potensi tekanan berlanjut."
-      }
-    ],
-    "summary": {
-      "ihsg_close": 5734.26,
-      "ihsg_change": -3.48,
-      "ihsg_high": 5924.508,
-      "ihsg_low": 5644.234,
-      "day_range": 280.27,
-      "is_positive": false,
-      "is_month_end": false,
-      "session_label": "Sesi Siang",
-      "top_gainer": "ESTI",
-      "top_gainer_chg": 31.78,
-      "vol_king": "BUMI",
-      "vol_king_vol": "2.92B",
-      "triple_count": 1,
-      "intersection_count": 12
-    }
-  }
+  ]
 }
