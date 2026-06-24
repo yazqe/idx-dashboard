@@ -1,19 +1,20 @@
 {
-  "session": "penutupan",
-  "timestamp": "2026-06-23T17:02:36.735811+07:00",
-  "date": "23 June 2026",
-  "time": "17:02 WIB",
+  "session": "pagi",
+  "timestamp": "2026-06-24T09:00:02.249608+07:00",
+  "date": "24 June 2026",
+  "time": "09:00 WIB",
   "ihsg": {
-    "close": 6101.33,
+    "close": 6101.333,
     "change_pct": -0.25,
     "change_abs": -15.36,
     "high": 6121.775,
     "low": 5993.037,
-    "open": null,
+    "open": 6096.499,
     "volume": 0,
-    "market_open": false,
-    "market_state": "CLOSED",
-    "as_of": "23 Jun 2026 17:02 WIB"
+    "value": 0,
+    "market_open": true,
+    "market_state": "REGULAR",
+    "as_of": "24 Jun 2026 09:00 WIB"
   },
   "gainers": [
     {
@@ -31,6 +32,14 @@
       "change_pct": 22.8,
       "volume": 11032500,
       "value": 41592525000
+    },
+    {
+      "code": "ENAK",
+      "name": "PT Champ Resto Indonesia Tbk",
+      "price": 312,
+      "change_pct": 15.56,
+      "volume": 4154500,
+      "value": 1296204000
     },
     {
       "code": "LAJU",
@@ -81,12 +90,36 @@
       "value": 1391784000
     },
     {
+      "code": "SOFA",
+      "name": "PT Solusi Environment Asia Tbk",
+      "price": 242,
+      "change_pct": 9.01,
+      "volume": 7785500,
+      "value": 1884091000
+    },
+    {
       "code": "BUVA",
       "name": "PT Bukit Uluwatu Villa Tbk",
       "price": 930,
       "change_pct": 8.77,
       "volume": 274326600,
       "value": 255123738000
+    },
+    {
+      "code": "ARKA",
+      "name": "PT Arkha Jayanti Persada Tbk",
+      "price": 25,
+      "change_pct": 8.7,
+      "volume": 2500500,
+      "value": 62512500
+    },
+    {
+      "code": "MMIX",
+      "name": "PT Multi Medika Internasional Tbk",
+      "price": 705,
+      "change_pct": 8.46,
+      "volume": 1654500,
+      "value": 1166422500
     },
     {
       "code": "KOCI",
@@ -97,12 +130,12 @@
       "value": 19639331000
     },
     {
-      "code": "SMIL",
-      "name": "PT Sarana Mitra Luas Tbk",
-      "price": 280,
-      "change_pct": 7.69,
-      "volume": 79346900,
-      "value": 22217132000
+      "code": "FILM",
+      "name": "PT MD Entertainment Tbk",
+      "price": 1735,
+      "change_pct": 7.76,
+      "volume": 3045300,
+      "value": 5283595500
     },
     {
       "code": "PPRE",
@@ -113,60 +146,36 @@
       "value": 52291915200
     },
     {
-      "code": "FIRE",
-      "name": "PT Alfa Energi Investama Tbk",
-      "price": 107,
-      "change_pct": 7.0,
-      "volume": 37750200,
-      "value": 4039271400
+      "code": "SMIL",
+      "name": "PT Sarana Mitra Luas Tbk",
+      "price": 280,
+      "change_pct": 7.69,
+      "volume": 79346900,
+      "value": 22217132000
     },
     {
-      "code": "PTRO",
-      "name": "PT Petrosea Tbk",
-      "price": 4320,
-      "change_pct": 6.93,
-      "volume": 37843500,
-      "value": 163483920000
+      "code": "KAEF",
+      "name": "PT Kimia Farma (Persero) Tbk Class B",
+      "price": 478,
+      "change_pct": 7.66,
+      "volume": 3527600,
+      "value": 1686192800
     },
     {
-      "code": "POLA",
-      "name": "PT Pool Advista Finance Tbk",
-      "price": 62,
-      "change_pct": 6.9,
-      "volume": 21408300,
-      "value": 1327314600
+      "code": "FPNI",
+      "name": "PT Lotte Chemical Titan Tbk",
+      "price": 376,
+      "change_pct": 7.43,
+      "volume": 4179900,
+      "value": 1571642400
     },
     {
-      "code": "LABA",
-      "name": "PT Green Power Group Tbk",
-      "price": 97,
-      "change_pct": 6.59,
-      "volume": 27572700,
-      "value": 2674551900
-    },
-    {
-      "code": "MKAP",
-      "name": "PT Multikarya Asia Pasifik Raya Tbk",
-      "price": 1100,
-      "change_pct": 6.28,
-      "volume": 10486700,
-      "value": 11535370000
-    },
-    {
-      "code": "TPIA",
-      "name": "PT Chandra Asri Pacific Tbk",
-      "price": 2050,
-      "change_pct": 6.22,
-      "volume": 476977700,
-      "value": 977804285000
-    },
-    {
-      "code": "MBMA",
-      "name": "PT Merdeka Battery Materials Tbk",
-      "price": 535,
-      "change_pct": 5.94,
-      "volume": 147119600,
-      "value": 78708986000
+      "code": "SBMA",
+      "name": "PT Surya Biru Murni Acetylene Tbk",
+      "price": 116,
+      "change_pct": 7.41,
+      "volume": 616400,
+      "value": 71502400
     }
   ],
   "volume": [
@@ -495,19 +504,6 @@
   ],
   "intersection": [
     {
-      "code": "TPIA",
-      "name": "PT Chandra Asri Pacific Tbk",
-      "price": 2050,
-      "change_pct": 6.22,
-      "volume": 476977700,
-      "value": 977804285000,
-      "categories": [
-        "gainer",
-        "volume",
-        "value"
-      ]
-    },
-    {
       "code": "BUVA",
       "name": "PT Bukit Uluwatu Villa Tbk",
       "price": 930,
@@ -518,7 +514,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 855,
+        "ara_price": 1070,
+        "ara_dist": 15.1,
+        "ara_hit": false,
+        "sl": 885,
+        "target1": 965,
+        "target2": 1070,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 15.1% ruang ke ARA Rp1,070. Entry area sekarang, target 1 Rp965 · target 2 Rp1,070. SL Rp885 · R/R 0.8x.",
+        "value_b": 255.1,
+        "cat_count": 3
+      }
     },
     {
       "code": "KLBF",
@@ -531,7 +544,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 680,
+        "ara_price": 850,
+        "ara_dist": 11.8,
+        "ara_hit": false,
+        "sl": 720,
+        "target1": 790,
+        "target2": 850,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 11.8% ruang ke ARA Rp850. Entry area sekarang, target 1 Rp790 · target 2 Rp850. SL Rp720 · R/R 0.8x.",
+        "value_b": 177.6,
+        "cat_count": 3
+      }
     },
     {
       "code": "BUMI",
@@ -543,7 +573,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 162,
+        "ara_price": 202,
+        "ara_dist": 21.0,
+        "ara_hit": false,
+        "sl": 159,
+        "target1": 174,
+        "target2": 202,
+        "rr": 0.9,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 21.0% ruang ke ARA Rp202. Entry Rp167, target Rp174, SL Rp159. Konfirmasi volume sebelum masuk.",
+        "value_b": 418.5,
+        "cat_count": 2
+      }
     },
     {
       "code": "DSSA",
@@ -555,7 +602,53 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 850,
+        "ara_price": 1060,
+        "ara_dist": 27.7,
+        "ara_hit": false,
+        "sl": 790,
+        "target1": 865,
+        "target2": 1060,
+        "rr": 0.9,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 27.7% ruang ke ARA Rp1,060. Entry Rp830, target Rp865, SL Rp790. Konfirmasi volume sebelum masuk.",
+        "value_b": 1843.3,
+        "cat_count": 2
+      }
+    },
+    {
+      "code": "TPIA",
+      "name": "PT Chandra Asri Pacific Tbk",
+      "price": 2050,
+      "change_pct": 6.22,
+      "volume": 476977700,
+      "value": 977804285000,
+      "categories": [
+        "volume",
+        "value"
+      ],
+      "analysis": {
+        "prev_close": 1930,
+        "ara_price": 2410,
+        "ara_dist": 17.6,
+        "ara_hit": false,
+        "sl": 1950,
+        "target1": 2130,
+        "target2": 2410,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 17.6% ruang ke ARA Rp2,410. Entry Rp2,050, target Rp2,130, SL Rp1,950. Konfirmasi volume sebelum masuk.",
+        "value_b": 977.8,
+        "cat_count": 2
+      }
     },
     {
       "code": "PPRE",
@@ -676,34 +769,9 @@
         "gainer",
         "value"
       ]
-    },
-    {
-      "code": "PTRO",
-      "name": "PT Petrosea Tbk",
-      "price": 4320,
-      "change_pct": 6.93,
-      "volume": 37843500,
-      "value": 163483920000,
-      "categories": [
-        "gainer",
-        "value"
-      ]
     }
   ],
   "watchlist": [
-    {
-      "code": "TPIA",
-      "name": "PT Chandra Asri Pacific Tbk",
-      "price": 2050,
-      "change_pct": 6.22,
-      "volume": 476977700,
-      "value": 977804285000,
-      "categories": [
-        "gainer",
-        "volume",
-        "value"
-      ]
-    },
     {
       "code": "BUVA",
       "name": "PT Bukit Uluwatu Villa Tbk",
@@ -715,7 +783,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 855,
+        "ara_price": 1070,
+        "ara_dist": 15.1,
+        "ara_hit": false,
+        "sl": 885,
+        "target1": 965,
+        "target2": 1070,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 15.1% ruang ke ARA Rp1,070. Entry area sekarang, target 1 Rp965 · target 2 Rp1,070. SL Rp885 · R/R 0.8x.",
+        "value_b": 255.1,
+        "cat_count": 3
+      }
     },
     {
       "code": "KLBF",
@@ -728,7 +813,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 680,
+        "ara_price": 850,
+        "ara_dist": 11.8,
+        "ara_hit": false,
+        "sl": 720,
+        "target1": 790,
+        "target2": 850,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 11.8% ruang ke ARA Rp850. Entry area sekarang, target 1 Rp790 · target 2 Rp850. SL Rp720 · R/R 0.8x.",
+        "value_b": 177.6,
+        "cat_count": 3
+      }
     },
     {
       "code": "BUMI",
@@ -740,7 +842,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 162,
+        "ara_price": 202,
+        "ara_dist": 21.0,
+        "ara_hit": false,
+        "sl": 159,
+        "target1": 174,
+        "target2": 202,
+        "rr": 0.9,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 21.0% ruang ke ARA Rp202. Entry Rp167, target Rp174, SL Rp159. Konfirmasi volume sebelum masuk.",
+        "value_b": 418.5,
+        "cat_count": 2
+      }
     },
     {
       "code": "DSSA",
@@ -752,127 +871,53 @@
       "categories": [
         "volume",
         "value"
-      ]
-    }
-  ],
-  "analysis": {
-    "watchlist_notes": [
-      {
-        "code": "TPIA",
-        "name": "PT Chandra Asri Pacific Tbk",
-        "price": 2050,
-        "change": 6.22,
-        "volume": 476977700,
-        "value": 977804285000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 477.0M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp1,968 | Target Rp2,132 | Stop Rp1,906"
-      },
-      {
-        "code": "BUVA",
-        "name": "PT Bukit Uluwatu Villa Tbk",
-        "price": 930,
-        "change": 8.77,
-        "volume": 274326600,
-        "value": 255123738000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 274.3M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp893 | Target Rp967 | Stop Rp865"
-      },
-      {
-        "code": "KLBF",
-        "name": "PT Kalbe Farma Tbk",
-        "price": 760,
-        "change": 11.76,
-        "volume": 233666800,
-        "value": 177586768000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 233.7M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp730 | Target Rp790 | Stop Rp707"
-      },
-      {
-        "code": "BUMI",
-        "name": "PT Bumi Resources Tbk Class A",
-        "price": 167,
-        "change": 3.09,
-        "volume": 2505862500,
-        "value": 418479037500,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 2.51B & nilai Rp418.48B — paling liquid, spread kecil.",
-        "guidance": "Entry area Rp160 | Target Rp174 | Stop Rp155"
-      },
-      {
-        "code": "DSSA",
-        "name": "PT Dian Swastatika Sentosa Tbk",
-        "price": 830,
-        "change": -2.35,
-        "volume": 2220829400,
-        "value": 1843288402000,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 2.22B & nilai Rp1.84T — paling liquid, spread kecil.",
-        "guidance": "Pantau open besok untuk konfirmasi arah."
+      ],
+      "analysis": {
+        "prev_close": 850,
+        "ara_price": 1060,
+        "ara_dist": 27.7,
+        "ara_hit": false,
+        "sl": 790,
+        "target1": 865,
+        "target2": 1060,
+        "rr": 0.9,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 27.7% ruang ke ARA Rp1,060. Entry Rp830, target Rp865, SL Rp790. Konfirmasi volume sebelum masuk.",
+        "value_b": 1843.3,
+        "cat_count": 2
       }
-    ],
-    "signals": [
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "TPIA",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "BUVA",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "KLBF",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "info",
-        "icon": "📈",
-        "code": "BUMI",
-        "text": "Volume king hari ini: 2.51B shares — paling liquid untuk scalp."
+    },
+    {
+      "code": "TPIA",
+      "name": "PT Chandra Asri Pacific Tbk",
+      "price": 2050,
+      "change_pct": 6.22,
+      "volume": 476977700,
+      "value": 977804285000,
+      "categories": [
+        "volume",
+        "value"
+      ],
+      "analysis": {
+        "prev_close": 1930,
+        "ara_price": 2410,
+        "ara_dist": 17.6,
+        "ara_hit": false,
+        "sl": 1950,
+        "target1": 2130,
+        "target2": 2410,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 17.6% ruang ke ARA Rp2,410. Entry Rp2,050, target Rp2,130, SL Rp1,950. Konfirmasi volume sebelum masuk.",
+        "value_b": 977.8,
+        "cat_count": 2
       }
-    ],
-    "warnings": [],
-    "summary": {
-      "ihsg_close": 6101.33,
-      "ihsg_change": -0.25,
-      "ihsg_high": 6121.775,
-      "ihsg_low": 5993.037,
-      "day_range": 128.74,
-      "is_positive": false,
-      "is_month_end": false,
-      "session_label": "Menjelang Penutupan",
-      "top_gainer": "LEAD",
-      "top_gainer_chg": 33.71,
-      "vol_king": "BUMI",
-      "vol_king_vol": "2.51B",
-      "triple_count": 3,
-      "intersection_count": 16
     }
-  }
+  ]
 }
