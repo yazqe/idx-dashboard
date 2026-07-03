@@ -1,20 +1,19 @@
 {
   "session": "pagi",
-  "timestamp": "2026-07-03T09:00:02.380942+07:00",
+  "timestamp": "2026-07-03T09:04:38.800248+07:00",
   "date": "03 July 2026",
-  "time": "09:00 WIB",
+  "time": "09:04 WIB",
   "ihsg": {
-    "close": 5744.556,
+    "close": 5744.56,
     "change_pct": 0.87,
     "change_abs": 49.44,
     "high": 5806.715,
     "low": 5704.499,
-    "open": 5709.842,
+    "open": null,
     "volume": 0,
-    "value": 0,
-    "market_open": true,
-    "market_state": "REGULAR",
-    "as_of": "03 Jul 2026 09:00 WIB"
+    "market_open": false,
+    "market_state": "CLOSED",
+    "as_of": "03 Jul 2026 09:04 WIB"
   },
   "gainers": [
     {
@@ -24,14 +23,6 @@
       "change_pct": 34.88,
       "volume": 169258800,
       "value": 39268041600
-    },
-    {
-      "code": "TRUS",
-      "name": "PT Trust Finance Indonesia Tbk",
-      "price": 545,
-      "change_pct": 25,
-      "volume": 3909500,
-      "value": 2130677500
     },
     {
       "code": "BEEF",
@@ -48,22 +39,6 @@
       "change_pct": 25,
       "volume": 21137200,
       "value": 12259576000
-    },
-    {
-      "code": "RMKO",
-      "name": "PT Royaltama Mulia Kontraktorindo Tbk",
-      "price": 312,
-      "change_pct": 24.8,
-      "volume": 2688200,
-      "value": 838718400
-    },
-    {
-      "code": "KDTN",
-      "name": "PT Puri Sentul Permai Tbk",
-      "price": 600,
-      "change_pct": 22.95,
-      "volume": 5260500,
-      "value": 3156300000
     },
     {
       "code": "CBRE",
@@ -106,20 +81,12 @@
       "value": 2767415900
     },
     {
-      "code": "SQMI",
-      "name": "PT Wilton Makmur Indonesia Tbk",
-      "price": 44,
+      "code": "OPMS",
+      "name": "PT Optima Prima Metal Sinergi Tbk",
+      "price": 99,
       "change_pct": 10,
-      "volume": 3212900,
-      "value": 141367600
-    },
-    {
-      "code": "FORU",
-      "name": "PT Fortune Indonesia, Tbk",
-      "price": 3300,
-      "change_pct": 10,
-      "volume": 932200,
-      "value": 3076260000
+      "volume": 150901100,
+      "value": 14939208900
     },
     {
       "code": "WINR",
@@ -130,36 +97,12 @@
       "value": 315288600
     },
     {
-      "code": "OPMS",
-      "name": "PT Optima Prima Metal Sinergi Tbk",
-      "price": 99,
-      "change_pct": 10,
-      "volume": 150901100,
-      "value": 14939208900
-    },
-    {
-      "code": "MSIE",
-      "name": "PT Multisarana Intan Eduka Tbk",
-      "price": 78,
-      "change_pct": 9.86,
-      "volume": 5626600,
-      "value": 438874800
-    },
-    {
       "code": "LAJU",
       "name": "PT Jasa Berdikari Logistics Tbk",
       "price": 67,
       "change_pct": 9.84,
       "volume": 40992200,
       "value": 2746477400
-    },
-    {
-      "code": "UDNG",
-      "name": "PT Agro Bahari Nusantara Tbk",
-      "price": 1285,
-      "change_pct": 9.83,
-      "volume": 2342600,
-      "value": 3010241000
     },
     {
       "code": "RGAS",
@@ -170,12 +113,20 @@
       "value": 16143251800
     },
     {
-      "code": "BAPA",
-      "name": "PT Bekasi Asri Pemula Tbk",
-      "price": 344,
-      "change_pct": 9.55,
-      "volume": 16528300,
-      "value": 5685735200
+      "code": "BRPT",
+      "name": "PT Barito Pacific Tbk",
+      "price": 1500,
+      "change_pct": 8.7,
+      "volume": 396835500,
+      "value": 595253250000
+    },
+    {
+      "code": "CTTH",
+      "name": "PT Citatah Tbk",
+      "price": 119,
+      "change_pct": 8.18,
+      "volume": 30807100,
+      "value": 3666044900
     }
   ],
   "volume": [
@@ -514,24 +465,20 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 90,
-        "ara_price": 112,
-        "ara_dist": 6.7,
-        "ara_hit": false,
-        "sl": 100,
-        "target1": 109,
-        "target2": 112,
-        "rr": 0.8,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Triple Intersection + Momentum Kuat",
-        "signal": "STRONG BUY",
-        "tip": "Double intersection, 6.7% ruang ke ARA Rp112. Entry Rp105, target Rp109, SL Rp100. Konfirmasi volume sebelum masuk.",
-        "value_b": 240.0,
-        "cat_count": 3
-      }
+      ]
+    },
+    {
+      "code": "BRPT",
+      "name": "PT Barito Pacific Tbk",
+      "price": 1500,
+      "change_pct": 8.7,
+      "volume": 396835500,
+      "value": 595253250000,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ]
     },
     {
       "code": "BUMI",
@@ -543,24 +490,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 135,
-        "ara_price": 169,
-        "ara_dist": 25.2,
-        "ara_hit": false,
-        "sl": 128,
-        "target1": 140,
-        "target2": 169,
-        "rr": 0.7,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 25.2% ruang ke ARA Rp169. Entry Rp135, target Rp140, SL Rp128. Konfirmasi volume sebelum masuk.",
-        "value_b": 348.3,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "DEWA",
@@ -572,24 +502,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 292,
-        "ara_price": 364,
-        "ara_dist": 21.3,
-        "ara_hit": false,
-        "sl": 284,
-        "target1": 312,
-        "target2": 364,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 21.3% ruang ke ARA Rp364. Entry Rp300, target Rp312, SL Rp284. Konfirmasi volume sebelum masuk.",
-        "value_b": 182.0,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BRMS",
@@ -601,24 +514,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 476,
-        "ara_price": 595,
-        "ara_dist": 22.9,
-        "ara_hit": false,
-        "sl": 460,
-        "target1": 505,
-        "target2": 595,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 22.9% ruang ke ARA Rp595. Entry Rp484, target Rp505, SL Rp460. Konfirmasi volume sebelum masuk.",
-        "value_b": 288.9,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "CUAN",
@@ -630,24 +526,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 620,
-        "ara_price": 775,
-        "ara_dist": 26.0,
-        "ara_hit": false,
-        "sl": 585,
-        "target1": 640,
-        "target2": 775,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 26.0% ruang ke ARA Rp775. Entry Rp615, target Rp640, SL Rp585. Konfirmasi volume sebelum masuk.",
-        "value_b": 284.1,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "TPIA",
@@ -656,18 +535,6 @@
       "change_pct": 5.36,
       "volume": 436620300,
       "value": 772817931000,
-      "categories": [
-        "volume",
-        "value"
-      ]
-    },
-    {
-      "code": "BRPT",
-      "name": "PT Barito Pacific Tbk",
-      "price": 1500,
-      "change_pct": 8.7,
-      "volume": 396835500,
-      "value": 595253250000,
       "categories": [
         "volume",
         "value"
@@ -782,24 +649,20 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 90,
-        "ara_price": 112,
-        "ara_dist": 6.7,
-        "ara_hit": false,
-        "sl": 100,
-        "target1": 109,
-        "target2": 112,
-        "rr": 0.8,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Triple Intersection + Momentum Kuat",
-        "signal": "STRONG BUY",
-        "tip": "Double intersection, 6.7% ruang ke ARA Rp112. Entry Rp105, target Rp109, SL Rp100. Konfirmasi volume sebelum masuk.",
-        "value_b": 240.0,
-        "cat_count": 3
-      }
+      ]
+    },
+    {
+      "code": "BRPT",
+      "name": "PT Barito Pacific Tbk",
+      "price": 1500,
+      "change_pct": 8.7,
+      "volume": 396835500,
+      "value": 595253250000,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ]
     },
     {
       "code": "BUMI",
@@ -811,24 +674,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 135,
-        "ara_price": 169,
-        "ara_dist": 25.2,
-        "ara_hit": false,
-        "sl": 128,
-        "target1": 140,
-        "target2": 169,
-        "rr": 0.7,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 25.2% ruang ke ARA Rp169. Entry Rp135, target Rp140, SL Rp128. Konfirmasi volume sebelum masuk.",
-        "value_b": 348.3,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "DEWA",
@@ -840,24 +686,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 292,
-        "ara_price": 364,
-        "ara_dist": 21.3,
-        "ara_hit": false,
-        "sl": 284,
-        "target1": 312,
-        "target2": 364,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 21.3% ruang ke ARA Rp364. Entry Rp300, target Rp312, SL Rp284. Konfirmasi volume sebelum masuk.",
-        "value_b": 182.0,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BRMS",
@@ -869,53 +698,126 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 476,
-        "ara_price": 595,
-        "ara_dist": 22.9,
-        "ara_hit": false,
-        "sl": 460,
-        "target1": 505,
-        "target2": 595,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 22.9% ruang ke ARA Rp595. Entry Rp484, target Rp505, SL Rp460. Konfirmasi volume sebelum masuk.",
-        "value_b": 288.9,
-        "cat_count": 2
-      }
-    },
-    {
-      "code": "CUAN",
-      "name": "PT Petrindo Jaya Kreasi Tbk",
-      "price": 615,
-      "change_pct": -0.81,
-      "volume": 461948300,
-      "value": 284098204500,
-      "categories": [
-        "volume",
-        "value"
-      ],
-      "analysis": {
-        "prev_close": 620,
-        "ara_price": 775,
-        "ara_dist": 26.0,
-        "ara_hit": false,
-        "sl": 585,
-        "target1": 640,
-        "target2": 775,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 26.0% ruang ke ARA Rp775. Entry Rp615, target Rp640, SL Rp585. Konfirmasi volume sebelum masuk.",
-        "value_b": 284.1,
-        "cat_count": 2
-      }
+      ]
     }
-  ]
+  ],
+  "analysis": {
+    "watchlist_notes": [
+      {
+        "code": "BNBR",
+        "name": "PT Bakrie & Brothers Tbk Class A",
+        "price": 105,
+        "change": 16.67,
+        "volume": 2286021600,
+        "value": 240032268000,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 2.29B sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp101 | Target Rp109 | Stop Rp98"
+      },
+      {
+        "code": "BRPT",
+        "name": "PT Barito Pacific Tbk",
+        "price": 1500,
+        "change": 8.7,
+        "volume": 396835500,
+        "value": 595253250000,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 396.8M sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp1,440 | Target Rp1,560 | Stop Rp1,395"
+      },
+      {
+        "code": "BUMI",
+        "name": "PT Bumi Resources Tbk Class A",
+        "price": 135,
+        "change": 0,
+        "volume": 2580095000,
+        "value": 348312825000,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 2.58B & nilai Rp348.31B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "DEWA",
+        "name": "PT Darma Henwa Tbk",
+        "price": 300,
+        "change": 2.74,
+        "volume": 606614500,
+        "value": 181984350000,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 606.6M & nilai Rp181.98B — paling liquid, spread kecil.",
+        "guidance": "Entry area Rp288 | Target Rp312 | Stop Rp279"
+      },
+      {
+        "code": "BRMS",
+        "name": "PT Bumi Resources Minerals Tbk Class A",
+        "price": 484,
+        "change": 1.68,
+        "volume": 596893600,
+        "value": 288896502400,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 596.9M & nilai Rp288.90B — paling liquid, spread kecil.",
+        "guidance": "Entry area Rp465 | Target Rp503 | Stop Rp450"
+      }
+    ],
+    "signals": [
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "BNBR",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "BRPT",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "info",
+        "icon": "📈",
+        "code": "BUMI",
+        "text": "Volume king hari ini: 2.58B shares — paling liquid untuk scalp."
+      }
+    ],
+    "warnings": [
+      {
+        "code": "TRUE",
+        "change": -9.09,
+        "text": "Turun -9.1% — hindari untuk long, potensi tekanan berlanjut."
+      }
+    ],
+    "summary": {
+      "ihsg_close": 5744.56,
+      "ihsg_change": 0.87,
+      "ihsg_high": 5806.715,
+      "ihsg_low": 5704.499,
+      "day_range": 102.22,
+      "is_positive": true,
+      "is_month_end": false,
+      "session_label": "Sesi Pagi",
+      "top_gainer": "COCO",
+      "top_gainer_chg": 34.88,
+      "vol_king": "BUMI",
+      "vol_king_vol": "2.58B",
+      "triple_count": 2,
+      "intersection_count": 15
+    }
+  }
 }
