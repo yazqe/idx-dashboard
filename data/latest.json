@@ -1,19 +1,18 @@
 {
   "session": "pagi",
-  "timestamp": "2026-07-09T09:00:02.204777+07:00",
+  "timestamp": "2026-07-09T09:00:50.428305+07:00",
   "date": "09 July 2026",
   "time": "09:00 WIB",
   "ihsg": {
-    "close": 5873.372,
+    "close": 5873.37,
     "change_pct": -1.89,
     "change_abs": -113.12,
     "high": 5984.473,
     "low": 5872.016,
-    "open": 5984.182,
+    "open": null,
     "volume": 0,
-    "value": 0,
-    "market_open": true,
-    "market_state": "REGULAR",
+    "market_open": false,
+    "market_state": "CLOSED",
     "as_of": "09 Jul 2026 09:00 WIB"
   },
   "gainers": [
@@ -66,22 +65,6 @@
       "value": 5740912500
     },
     {
-      "code": "STAR",
-      "name": "PT Calculus Global Ventures Tbk.",
-      "price": 298,
-      "change_pct": 10.37,
-      "volume": 1676000,
-      "value": 499448000
-    },
-    {
-      "code": "WMPP",
-      "name": "PT Widodo Makmur Perkasa Tbk",
-      "price": 22,
-      "change_pct": 10,
-      "volume": 162394100,
-      "value": 3572670200
-    },
-    {
       "code": "DKHH",
       "name": "Pt Cipta Sarana Medika Tbk.",
       "price": 66,
@@ -90,28 +73,12 @@
       "value": 15458539800
     },
     {
-      "code": "SINI",
-      "name": "PT Singaraja Putra Tbk",
-      "price": 10950,
-      "change_pct": 9.77,
-      "volume": 3436600,
-      "value": 37630770000
-    },
-    {
-      "code": "KKES",
-      "name": "PT Kusuma Kemindo Sentosa Tbk",
-      "price": 57,
-      "change_pct": 9.62,
-      "volume": 9720600,
-      "value": 554074200
-    },
-    {
-      "code": "LMAX",
-      "name": "PT Lupromax Pelumas Indonesia Tbk",
-      "price": 93,
-      "change_pct": 9.41,
-      "volume": 2448500,
-      "value": 227710500
+      "code": "WMPP",
+      "name": "PT Widodo Makmur Perkasa Tbk",
+      "price": 22,
+      "change_pct": 10,
+      "volume": 162394100,
+      "value": 3572670200
     },
     {
       "code": "KJEN",
@@ -138,14 +105,6 @@
       "value": 21281057100
     },
     {
-      "code": "WIDI",
-      "name": "PT Widiant Jaya Krenindo Tbk",
-      "price": 27,
-      "change_pct": 8,
-      "volume": 6545800,
-      "value": 176736600
-    },
-    {
       "code": "HALO",
       "name": "PT Haloni Jane Tbk",
       "price": 69,
@@ -170,12 +129,36 @@
       "value": 284932200
     },
     {
-      "code": "FORU",
-      "name": "PT Fortune Indonesia, Tbk",
-      "price": 3000,
-      "change_pct": 7.53,
-      "volume": 1285100,
-      "value": 3855300000
+      "code": "SQMI",
+      "name": "PT Wilton Makmur Indonesia Tbk",
+      "price": 61,
+      "change_pct": 7.02,
+      "volume": 189731800,
+      "value": 11573639800
+    },
+    {
+      "code": "SMLE",
+      "name": "PT Sinergi Multi Lestarindo Tbk",
+      "price": 115,
+      "change_pct": 5.5,
+      "volume": 19050600,
+      "value": 2190819000
+    },
+    {
+      "code": "APEX",
+      "name": "PT Apexindo Pratama Duta Tbk",
+      "price": 135,
+      "change_pct": 5.47,
+      "volume": 13733600,
+      "value": 1854036000
+    },
+    {
+      "code": "ASHA",
+      "name": "PT Cilacap Samudera Fishing Industry Tbk",
+      "price": 58,
+      "change_pct": 5.45,
+      "volume": 297989600,
+      "value": 17283396800
     }
   ],
   "volume": [
@@ -513,24 +496,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 140,
-        "ara_price": 175,
-        "ara_dist": 28.7,
-        "ara_hit": false,
-        "sl": 129,
-        "target1": 141,
-        "target2": 175,
-        "rr": 0.7,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 28.7% ruang ke ARA Rp175. Entry Rp136, target Rp141, SL Rp129. Konfirmasi volume sebelum masuk.",
-        "value_b": 146.1,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "EMMI",
@@ -542,24 +508,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 550,
-        "ara_price": 690,
-        "ara_dist": 25.5,
-        "ara_hit": false,
-        "sl": 520,
-        "target1": 570,
-        "target2": 690,
-        "rr": 0.7,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 25.5% ruang ke ARA Rp690. Entry Rp550, target Rp570, SL Rp520. Konfirmasi volume sebelum masuk.",
-        "value_b": 449.9,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "MEDS",
@@ -571,24 +520,7 @@
       "categories": [
         "gainer",
         "volume"
-      ],
-      "analysis": {
-        "prev_close": 72,
-        "ara_price": 90,
-        "ara_dist": 7.1,
-        "ara_hit": false,
-        "sl": 80,
-        "target1": 87,
-        "target2": 90,
-        "rr": 0.8,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Double Intersection + Gainer Kuat",
-        "signal": "BUY",
-        "tip": "Double intersection, 7.1% ruang ke ARA Rp90. Entry Rp84, target Rp87, SL Rp80. Konfirmasi volume sebelum masuk.",
-        "value_b": 67.8,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BRMS",
@@ -600,24 +532,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 510,
-        "ara_price": 640,
-        "ara_dist": 34.5,
-        "ara_hit": false,
-        "sl": 452,
-        "target1": 496,
-        "target2": 640,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 34.5% ruang ke ARA Rp640. Entry Rp476, target Rp496, SL Rp452. Konfirmasi volume sebelum masuk.",
-        "value_b": 175.8,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "COCO",
@@ -629,24 +544,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 286,
-        "ara_price": 358,
-        "ara_dist": 28.8,
-        "ara_hit": false,
-        "sl": 264,
-        "target1": 290,
-        "target2": 358,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 28.8% ruang ke ARA Rp358. Entry Rp278, target Rp290, SL Rp264. Konfirmasi volume sebelum masuk.",
-        "value_b": 86.3,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "MAPI",
@@ -667,6 +565,18 @@
       "change_pct": 22.95,
       "volume": 303552800,
       "value": 45532920000,
+      "categories": [
+        "gainer",
+        "volume"
+      ]
+    },
+    {
+      "code": "ASHA",
+      "name": "PT Cilacap Samudera Fishing Industry Tbk",
+      "price": 58,
+      "change_pct": 5.45,
+      "volume": 297989600,
+      "value": 17283396800,
       "categories": [
         "gainer",
         "volume"
@@ -720,24 +630,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 140,
-        "ara_price": 175,
-        "ara_dist": 28.7,
-        "ara_hit": false,
-        "sl": 129,
-        "target1": 141,
-        "target2": 175,
-        "rr": 0.7,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 28.7% ruang ke ARA Rp175. Entry Rp136, target Rp141, SL Rp129. Konfirmasi volume sebelum masuk.",
-        "value_b": 146.1,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "EMMI",
@@ -749,24 +642,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 550,
-        "ara_price": 690,
-        "ara_dist": 25.5,
-        "ara_hit": false,
-        "sl": 520,
-        "target1": 570,
-        "target2": 690,
-        "rr": 0.7,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 25.5% ruang ke ARA Rp690. Entry Rp550, target Rp570, SL Rp520. Konfirmasi volume sebelum masuk.",
-        "value_b": 449.9,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "MEDS",
@@ -778,24 +654,7 @@
       "categories": [
         "gainer",
         "volume"
-      ],
-      "analysis": {
-        "prev_close": 72,
-        "ara_price": 90,
-        "ara_dist": 7.1,
-        "ara_hit": false,
-        "sl": 80,
-        "target1": 87,
-        "target2": 90,
-        "rr": 0.8,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Double Intersection + Gainer Kuat",
-        "signal": "BUY",
-        "tip": "Double intersection, 7.1% ruang ke ARA Rp90. Entry Rp84, target Rp87, SL Rp80. Konfirmasi volume sebelum masuk.",
-        "value_b": 67.8,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BRMS",
@@ -807,24 +666,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 510,
-        "ara_price": 640,
-        "ara_dist": 34.5,
-        "ara_hit": false,
-        "sl": 452,
-        "target1": 496,
-        "target2": 640,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 34.5% ruang ke ARA Rp640. Entry Rp476, target Rp496, SL Rp452. Konfirmasi volume sebelum masuk.",
-        "value_b": 175.8,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "COCO",
@@ -836,24 +678,122 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 286,
-        "ara_price": 358,
-        "ara_dist": 28.8,
-        "ara_hit": false,
-        "sl": 264,
-        "target1": 290,
-        "target2": 358,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 28.8% ruang ke ARA Rp358. Entry Rp278, target Rp290, SL Rp264. Konfirmasi volume sebelum masuk.",
-        "value_b": 86.3,
-        "cat_count": 2
-      }
+      ]
     }
-  ]
+  ],
+  "analysis": {
+    "watchlist_notes": [
+      {
+        "code": "BUMI",
+        "name": "PT Bumi Resources Tbk Class A",
+        "price": 136,
+        "change": -2.86,
+        "volume": 1074520000,
+        "value": 146134720000,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 1.07B & nilai Rp146.13B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "EMMI",
+        "name": "PT ESA Medika Mandiri Tbk",
+        "price": 550,
+        "change": 0,
+        "volume": 817990700,
+        "value": 449894885000,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 818.0M & nilai Rp449.89B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "MEDS",
+        "name": "PT Hetzer Medical Indonesia Tbk",
+        "price": 84,
+        "change": 16.67,
+        "volume": 806931700,
+        "value": 67782262800,
+        "cats": [
+          "gainer",
+          "volume"
+        ],
+        "reason": "Gain +16.7% dengan volume 806.9M — momentum kuat, liquid untuk scalp.",
+        "guidance": "Entry area Rp80 | Target Rp85 | Stop Rp80"
+      },
+      {
+        "code": "BRMS",
+        "name": "PT Bumi Resources Minerals Tbk Class A",
+        "price": 476,
+        "change": -6.67,
+        "volume": 369387800,
+        "value": 175828592800,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 369.4M & nilai Rp175.83B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "COCO",
+        "name": "PT Wahana Interfood Nusantara Tbk",
+        "price": 278,
+        "change": -2.8,
+        "volume": 310568000,
+        "value": 86337904000,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 310.6M & nilai Rp86.34B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      }
+    ],
+    "signals": [
+      {
+        "type": "info",
+        "icon": "📈",
+        "code": "BUMI",
+        "text": "Volume king hari ini: 1.07B shares — paling liquid untuk scalp."
+      }
+    ],
+    "warnings": [
+      {
+        "code": "NTBK",
+        "change": -13.33,
+        "text": "Turun -13.3% — hindari untuk long, potensi tekanan berlanjut."
+      },
+      {
+        "code": "NETV",
+        "change": -8.93,
+        "text": "Turun -8.9% — hindari untuk long, potensi tekanan berlanjut."
+      },
+      {
+        "code": "BKSL",
+        "change": -8.96,
+        "text": "Turun -9.0% — hindari untuk long, potensi tekanan berlanjut."
+      }
+    ],
+    "summary": {
+      "ihsg_close": 5873.37,
+      "ihsg_change": -1.89,
+      "ihsg_high": 5984.473,
+      "ihsg_low": 5872.016,
+      "day_range": 112.46,
+      "is_positive": false,
+      "is_month_end": false,
+      "session_label": "Sesi Pagi",
+      "top_gainer": "JECX",
+      "top_gainer_chg": 25,
+      "vol_king": "BUMI",
+      "vol_king_vol": "1.07B",
+      "triple_count": 0,
+      "intersection_count": 11
+    }
+  }
 }
