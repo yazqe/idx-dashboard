@@ -1,20 +1,19 @@
 {
   "session": "pagi",
-  "timestamp": "2026-07-14T09:00:02.332527+07:00",
+  "timestamp": "2026-07-14T09:04:50.839930+07:00",
   "date": "14 July 2026",
-  "time": "09:00 WIB",
+  "time": "09:04 WIB",
   "ihsg": {
-    "close": 6037.842,
+    "close": 6037.84,
     "change_pct": 1.92,
     "change_abs": 113.48,
     "high": 6037.842,
     "low": 5898.147,
-    "open": 5934.719,
+    "open": null,
     "volume": 0,
-    "value": 0,
-    "market_open": true,
-    "market_state": "REGULAR",
-    "as_of": "14 Jul 2026 09:00 WIB"
+    "market_open": false,
+    "market_state": "CLOSED",
+    "as_of": "14 Jul 2026 09:04 WIB"
   },
   "gainers": [
     {
@@ -48,14 +47,6 @@
       "change_pct": 24.77,
       "volume": 449968400,
       "value": 122391404800
-    },
-    {
-      "code": "ATAP",
-      "name": "PT Trimitra Prawara Goldland Tbk",
-      "price": 555,
-      "change_pct": 24.44,
-      "volume": 4538500,
-      "value": 2518867500
     },
     {
       "code": "OASA",
@@ -98,14 +89,6 @@
       "value": 4235358100
     },
     {
-      "code": "AGII",
-      "name": "PT Samator Indo Gas Tbk",
-      "price": 3240,
-      "change_pct": 11.72,
-      "volume": 791400,
-      "value": 2564136000
-    },
-    {
       "code": "BIPP",
       "name": "PT Bhuwanatala Indah Permai Tbk Class A",
       "price": 70,
@@ -130,28 +113,12 @@
       "value": 17462510000
     },
     {
-      "code": "SAGE",
-      "name": "PT Saptausaha Gemilangindah Tbk",
-      "price": 33,
-      "change_pct": 10,
-      "volume": 4958900,
-      "value": 163643700
-    },
-    {
-      "code": "KKES",
-      "name": "PT Kusuma Kemindo Sentosa Tbk",
-      "price": 67,
-      "change_pct": 9.84,
-      "volume": 8768400,
-      "value": 587482800
-    },
-    {
-      "code": "UDNG",
-      "name": "PT Agro Bahari Nusantara Tbk",
-      "price": 1380,
-      "change_pct": 9.52,
-      "volume": 1259900,
-      "value": 1738662000
+      "code": "ISAP",
+      "name": "PT Isra Presisi Indonesia Tbk",
+      "price": 24,
+      "change_pct": 9.09,
+      "volume": 15252800,
+      "value": 366067200
     },
     {
       "code": "NANO",
@@ -162,20 +129,52 @@
       "value": 1078548000
     },
     {
-      "code": "ISAP",
-      "name": "PT Isra Presisi Indonesia Tbk",
-      "price": 24,
-      "change_pct": 9.09,
-      "volume": 15252800,
-      "value": 366067200
-    },
-    {
       "code": "VERN",
       "name": "PT Verona Indah Pictures Tbk",
       "price": 160,
       "change_pct": 8.84,
       "volume": 12174300,
       "value": 1947888000
+    },
+    {
+      "code": "TAMA",
+      "name": "PT Lancartama Sejati Tbk",
+      "price": 168,
+      "change_pct": 8.39,
+      "volume": 69991700,
+      "value": 11758605600
+    },
+    {
+      "code": "BNBR",
+      "name": "PT Bakrie & Brothers Tbk Class A",
+      "price": 93,
+      "change_pct": 8.14,
+      "volume": 1239982600,
+      "value": 115318381800
+    },
+    {
+      "code": "BRPT",
+      "name": "PT Barito Pacific Tbk",
+      "price": 1750,
+      "change_pct": 8.02,
+      "volume": 318950900,
+      "value": 558164075000
+    },
+    {
+      "code": "BIPI",
+      "name": "PT Astrindo Nusantara Infrastruktur Tbk",
+      "price": 135,
+      "change_pct": 8,
+      "volume": 1327343300,
+      "value": 179191345500
+    },
+    {
+      "code": "AMMN",
+      "name": "PT Amman Mineral Internasional Tbk",
+      "price": 3780,
+      "change_pct": 7.69,
+      "volume": 56645300,
+      "value": 214119234000
     }
   ],
   "volume": [
@@ -504,6 +503,32 @@
   ],
   "intersection": [
     {
+      "code": "BIPI",
+      "name": "PT Astrindo Nusantara Infrastruktur Tbk",
+      "price": 135,
+      "change_pct": 8,
+      "volume": 1327343300,
+      "value": 179191345500,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ]
+    },
+    {
+      "code": "BRPT",
+      "name": "PT Barito Pacific Tbk",
+      "price": 1750,
+      "change_pct": 8.02,
+      "volume": 318950900,
+      "value": 558164075000,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ]
+    },
+    {
       "code": "RANS",
       "name": "PT Rans Entertainmen Indonesia",
       "price": 204,
@@ -513,24 +538,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 228,
-        "ara_price": 286,
-        "ara_dist": 40.2,
-        "ara_hit": false,
-        "sl": 194,
-        "target1": 212,
-        "target2": 286,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 40.2% ruang ke ARA Rp286. Entry Rp204, target Rp212, SL Rp194. Konfirmasi volume sebelum masuk.",
-        "value_b": 693.5,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BUMI",
@@ -542,53 +550,19 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 142,
-        "ara_price": 178,
-        "ara_dist": 21.1,
-        "ara_hit": false,
-        "sl": 140,
-        "target1": 153,
-        "target2": 178,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 21.1% ruang ke ARA Rp178. Entry Rp147, target Rp153, SL Rp140. Konfirmasi volume sebelum masuk.",
-        "value_b": 285.5,
-        "cat_count": 2
-      }
+      ]
     },
     {
-      "code": "BIPI",
-      "name": "PT Astrindo Nusantara Infrastruktur Tbk",
-      "price": 135,
-      "change_pct": 8,
-      "volume": 1327343300,
-      "value": 179191345500,
+      "code": "BNBR",
+      "name": "PT Bakrie & Brothers Tbk Class A",
+      "price": 93,
+      "change_pct": 8.14,
+      "volume": 1239982600,
+      "value": 115318381800,
       "categories": [
-        "volume",
-        "value"
-      ],
-      "analysis": {
-        "prev_close": 125,
-        "ara_price": 156,
-        "ara_dist": 15.6,
-        "ara_hit": false,
-        "sl": 128,
-        "target1": 140,
-        "target2": 156,
-        "rr": 0.7,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 15.6% ruang ke ARA Rp156. Entry Rp135, target Rp140, SL Rp128. Konfirmasi volume sebelum masuk.",
-        "value_b": 179.2,
-        "cat_count": 2
-      }
+        "gainer",
+        "volume"
+      ]
     },
     {
       "code": "LAND",
@@ -600,24 +574,7 @@
       "categories": [
         "gainer",
         "volume"
-      ],
-      "analysis": {
-        "prev_close": 63,
-        "ara_price": 79,
-        "ara_dist": 0.0,
-        "ara_hit": true,
-        "sl": 75,
-        "target1": 82,
-        "target2": 85,
-        "rr": 0.8,
-        "risk": "CEILING",
-        "risk_cls": "risk-ceiling",
-        "pattern": "Mendekati Ceiling ARA",
-        "signal": "WAIT",
-        "tip": "Harga sudah di ceiling ARA (Rp79). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
-        "value_b": 54.7,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "DEWA",
@@ -629,24 +586,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 338,
-        "ara_price": 422,
-        "ara_dist": 22.0,
-        "ara_hit": false,
-        "sl": 328,
-        "target1": 360,
-        "target2": 422,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 22.0% ruang ke ARA Rp422. Entry Rp346, target Rp360, SL Rp328. Konfirmasi volume sebelum masuk.",
-        "value_b": 213.2,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "PRDL",
@@ -667,18 +607,6 @@
       "change_pct": 4.95,
       "volume": 401639700,
       "value": 212869041000,
-      "categories": [
-        "volume",
-        "value"
-      ]
-    },
-    {
-      "code": "BRPT",
-      "name": "PT Barito Pacific Tbk",
-      "price": 1750,
-      "change_pct": 8.02,
-      "volume": 318950900,
-      "value": 558164075000,
       "categories": [
         "volume",
         "value"
@@ -755,9 +683,47 @@
         "volume",
         "value"
       ]
+    },
+    {
+      "code": "AMMN",
+      "name": "PT Amman Mineral Internasional Tbk",
+      "price": 3780,
+      "change_pct": 7.69,
+      "volume": 56645300,
+      "value": 214119234000,
+      "categories": [
+        "gainer",
+        "value"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "code": "BIPI",
+      "name": "PT Astrindo Nusantara Infrastruktur Tbk",
+      "price": 135,
+      "change_pct": 8,
+      "volume": 1327343300,
+      "value": 179191345500,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ]
+    },
+    {
+      "code": "BRPT",
+      "name": "PT Barito Pacific Tbk",
+      "price": 1750,
+      "change_pct": 8.02,
+      "volume": 318950900,
+      "value": 558164075000,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ]
+    },
     {
       "code": "RANS",
       "name": "PT Rans Entertainmen Indonesia",
@@ -768,24 +734,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 228,
-        "ara_price": 286,
-        "ara_dist": 40.2,
-        "ara_hit": false,
-        "sl": 194,
-        "target1": 212,
-        "target2": 286,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 40.2% ruang ke ARA Rp286. Entry Rp204, target Rp212, SL Rp194. Konfirmasi volume sebelum masuk.",
-        "value_b": 693.5,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BUMI",
@@ -797,111 +746,143 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 142,
-        "ara_price": 178,
-        "ara_dist": 21.1,
-        "ara_hit": false,
-        "sl": 140,
-        "target1": 153,
-        "target2": 178,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 21.1% ruang ke ARA Rp178. Entry Rp147, target Rp153, SL Rp140. Konfirmasi volume sebelum masuk.",
-        "value_b": 285.5,
-        "cat_count": 2
-      }
+      ]
     },
     {
-      "code": "BIPI",
-      "name": "PT Astrindo Nusantara Infrastruktur Tbk",
-      "price": 135,
-      "change_pct": 8,
-      "volume": 1327343300,
-      "value": 179191345500,
-      "categories": [
-        "volume",
-        "value"
-      ],
-      "analysis": {
-        "prev_close": 125,
-        "ara_price": 156,
-        "ara_dist": 15.6,
-        "ara_hit": false,
-        "sl": 128,
-        "target1": 140,
-        "target2": 156,
-        "rr": 0.7,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 15.6% ruang ke ARA Rp156. Entry Rp135, target Rp140, SL Rp128. Konfirmasi volume sebelum masuk.",
-        "value_b": 179.2,
-        "cat_count": 2
-      }
-    },
-    {
-      "code": "LAND",
-      "name": "PT Trimitra Propertindo Tbk",
-      "price": 79,
-      "change_pct": 25.4,
-      "volume": 691896300,
-      "value": 54659807700,
+      "code": "BNBR",
+      "name": "PT Bakrie & Brothers Tbk Class A",
+      "price": 93,
+      "change_pct": 8.14,
+      "volume": 1239982600,
+      "value": 115318381800,
       "categories": [
         "gainer",
         "volume"
-      ],
-      "analysis": {
-        "prev_close": 63,
-        "ara_price": 79,
-        "ara_dist": 0.0,
-        "ara_hit": true,
-        "sl": 75,
-        "target1": 82,
-        "target2": 85,
-        "rr": 0.8,
-        "risk": "CEILING",
-        "risk_cls": "risk-ceiling",
-        "pattern": "Mendekati Ceiling ARA",
-        "signal": "WAIT",
-        "tip": "Harga sudah di ceiling ARA (Rp79). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
-        "value_b": 54.7,
-        "cat_count": 2
-      }
-    },
-    {
-      "code": "DEWA",
-      "name": "PT Darma Henwa Tbk",
-      "price": 346,
-      "change_pct": 2.37,
-      "volume": 616077000,
-      "value": 213162642000,
-      "categories": [
-        "volume",
-        "value"
-      ],
-      "analysis": {
-        "prev_close": 338,
-        "ara_price": 422,
-        "ara_dist": 22.0,
-        "ara_hit": false,
-        "sl": 328,
-        "target1": 360,
-        "target2": 422,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 22.0% ruang ke ARA Rp422. Entry Rp346, target Rp360, SL Rp328. Konfirmasi volume sebelum masuk.",
-        "value_b": 213.2,
-        "cat_count": 2
-      }
+      ]
     }
-  ]
+  ],
+  "analysis": {
+    "watchlist_notes": [
+      {
+        "code": "BIPI",
+        "name": "PT Astrindo Nusantara Infrastruktur Tbk",
+        "price": 135,
+        "change": 8,
+        "volume": 1327343300,
+        "value": 179191345500,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 1.33B sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp130 | Target Rp140 | Stop Rp126"
+      },
+      {
+        "code": "BRPT",
+        "name": "PT Barito Pacific Tbk",
+        "price": 1750,
+        "change": 8.02,
+        "volume": 318950900,
+        "value": 558164075000,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 319.0M sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp1,680 | Target Rp1,820 | Stop Rp1,628"
+      },
+      {
+        "code": "RANS",
+        "name": "PT Rans Entertainmen Indonesia",
+        "price": 204,
+        "change": -10.53,
+        "volume": 3399398700,
+        "value": 693477334800,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 3.40B & nilai Rp693.48B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "BUMI",
+        "name": "PT Bumi Resources Tbk Class A",
+        "price": 147,
+        "change": 3.52,
+        "volume": 1941996500,
+        "value": 285473485500,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 1.94B & nilai Rp285.47B — paling liquid, spread kecil.",
+        "guidance": "Entry area Rp141 | Target Rp153 | Stop Rp137"
+      },
+      {
+        "code": "BNBR",
+        "name": "PT Bakrie & Brothers Tbk Class A",
+        "price": 93,
+        "change": 8.14,
+        "volume": 1239982600,
+        "value": 115318381800,
+        "cats": [
+          "gainer",
+          "volume"
+        ],
+        "reason": "Gain +8.1% dengan volume 1.24B — momentum kuat, liquid untuk scalp.",
+        "guidance": "Entry area Rp90 | Target Rp95 | Stop Rp85"
+      }
+    ],
+    "signals": [
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "BIPI",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "BRPT",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "info",
+        "icon": "📈",
+        "code": "RANS",
+        "text": "Volume king hari ini: 3.40B shares — paling liquid untuk scalp."
+      }
+    ],
+    "warnings": [
+      {
+        "code": "RANS",
+        "change": -10.53,
+        "text": "Turun -10.5% — hindari untuk long, potensi tekanan berlanjut."
+      },
+      {
+        "code": "RBMS",
+        "change": -10.61,
+        "text": "Turun -10.6% — hindari untuk long, potensi tekanan berlanjut."
+      }
+    ],
+    "summary": {
+      "ihsg_close": 6037.84,
+      "ihsg_change": 1.92,
+      "ihsg_high": 6037.842,
+      "ihsg_low": 5898.147,
+      "day_range": 139.69,
+      "is_positive": true,
+      "is_month_end": false,
+      "session_label": "Sesi Pagi",
+      "top_gainer": "BKDP",
+      "top_gainer_chg": 31.07,
+      "vol_king": "RANS",
+      "vol_king_vol": "3.40B",
+      "triple_count": 2,
+      "intersection_count": 16
+    }
+  }
 }
