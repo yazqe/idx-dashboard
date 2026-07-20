@@ -1,21 +1,38 @@
 {
   "session": "siang",
-  "timestamp": "2026-07-20T13:31:08.578912+07:00",
+  "timestamp": "2026-07-20T13:35:00.052150+07:00",
   "date": "20 July 2026",
-  "time": "13:31 WIB",
+  "time": "13:35 WIB",
   "ihsg": {
-    "close": 6228.92,
+    "close": 6228.918,
     "change_pct": 0.86,
     "change_abs": 53.38,
     "high": 6249.903,
     "low": 6191.042,
-    "open": null,
+    "open": 6197.476,
     "volume": 0,
-    "market_open": false,
-    "market_state": "CLOSED",
-    "as_of": "20 Jul 2026 13:31 WIB"
+    "value": 0,
+    "market_open": true,
+    "market_state": "REGULAR",
+    "as_of": "20 Jul 2026 13:35 WIB"
   },
   "gainers": [
+    {
+      "code": "AGAR",
+      "name": "PT Asia Sejahtera Mina Tbk",
+      "price": 505,
+      "change_pct": 25,
+      "volume": 790000,
+      "value": 398950000
+    },
+    {
+      "code": "RISE",
+      "name": "PT Jaya Sukses Makmur Sentosa Tbk",
+      "price": 1125,
+      "change_pct": 17.19,
+      "volume": 9948600,
+      "value": 11192175000
+    },
     {
       "code": "FWCT",
       "name": "PT Wijaya Cahaya Timber Tbk",
@@ -65,6 +82,14 @@
       "value": 52812817400
     },
     {
+      "code": "PAMG",
+      "name": "PT Bima Sakti Pertiwi Tbk",
+      "price": 57,
+      "change_pct": 11.76,
+      "volume": 141498500,
+      "value": 8065414500
+    },
+    {
       "code": "BNBR",
       "name": "PT Bakrie & Brothers Tbk Class A",
       "price": 95,
@@ -73,12 +98,12 @@
       "value": 176359596000
     },
     {
-      "code": "PAMG",
-      "name": "PT Bima Sakti Pertiwi Tbk",
-      "price": 57,
-      "change_pct": 11.76,
-      "volume": 141498500,
-      "value": 8065414500
+      "code": "AREA",
+      "name": "PT Dunia Virtual Online Tbk",
+      "price": 298,
+      "change_pct": 11.19,
+      "volume": 7858400,
+      "value": 2341803200
     },
     {
       "code": "PURI",
@@ -97,6 +122,14 @@
       "value": 25251355000
     },
     {
+      "code": "NANO",
+      "name": "PT Nanotech Indonesia Global Tbk",
+      "price": 36,
+      "change_pct": 9.09,
+      "volume": 38991500,
+      "value": 1403694000
+    },
+    {
       "code": "MIRA",
       "name": "PT Mitra International Resources Tbk",
       "price": 24,
@@ -105,12 +138,20 @@
       "value": 286149600
     },
     {
-      "code": "NANO",
-      "name": "PT Nanotech Indonesia Global Tbk",
-      "price": 36,
-      "change_pct": 9.09,
-      "volume": 38991500,
-      "value": 1403694000
+      "code": "GEMA",
+      "name": "PT Gema Grahasarana Tbk",
+      "price": 86,
+      "change_pct": 8.86,
+      "volume": 5264500,
+      "value": 452747000
+    },
+    {
+      "code": "FLMC",
+      "name": "PT Falmaco Nonwoven Industri Tbk",
+      "price": 62,
+      "change_pct": 8.77,
+      "volume": 774100,
+      "value": 47994200
     },
     {
       "code": "KREN",
@@ -121,36 +162,20 @@
       "value": 414055600
     },
     {
-      "code": "SMGA",
-      "name": "PT Sumber Mineral Global Abadi Tbk",
-      "price": 74,
-      "change_pct": 7.25,
-      "volume": 62038600,
-      "value": 4590856400
+      "code": "PEVE",
+      "name": "PT Penta Valent Tbk",
+      "price": 338,
+      "change_pct": 7.64,
+      "volume": 1318800,
+      "value": 445754400
     },
     {
-      "code": "BAPI",
-      "name": "PT Bhakti Agung Propertindo Tbk",
-      "price": 16,
-      "change_pct": 6.67,
-      "volume": 10185600,
-      "value": 162969600
-    },
-    {
-      "code": "EPAC",
-      "name": "PT Megalestari Epack Sentosaraya Tbk",
-      "price": 72,
-      "change_pct": 5.88,
-      "volume": 882109800,
-      "value": 63511905600
-    },
-    {
-      "code": "IOTF",
-      "name": "PT Sumber Sinergi Makmur Tbk",
-      "price": 55,
-      "change_pct": 5.77,
-      "volume": 18862600,
-      "value": 1037443000
+      "code": "BLOG",
+      "name": "PT Trimitra Trans Persada Tbk",
+      "price": 380,
+      "change_pct": 7.34,
+      "volume": 1259300,
+      "value": 478534000
     }
   ],
   "volume": [
@@ -489,7 +514,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 85,
+        "ara_price": 106,
+        "ara_dist": 11.6,
+        "ara_hit": false,
+        "sl": 90,
+        "target1": 99,
+        "target2": 106,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 11.6% ruang ke ARA Rp106. Entry area sekarang, target 1 Rp99 · target 2 Rp106. SL Rp90 · R/R 0.8x.",
+        "value_b": 176.4,
+        "cat_count": 3
+      }
     },
     {
       "code": "KOKA",
@@ -502,7 +544,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 218,
+        "ara_price": 272,
+        "ara_dist": 8.8,
+        "ara_hit": false,
+        "sl": 238,
+        "target1": 260,
+        "target2": 272,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 8.8% ruang ke ARA Rp272. Entry area sekarang, target 1 Rp260 · target 2 Rp272. SL Rp238 · R/R 0.8x.",
+        "value_b": 73.5,
+        "cat_count": 3
+      }
     },
     {
       "code": "BUMI",
@@ -514,19 +573,24 @@
       "categories": [
         "volume",
         "value"
-      ]
-    },
-    {
-      "code": "EPAC",
-      "name": "PT Megalestari Epack Sentosaraya Tbk",
-      "price": 72,
-      "change_pct": 5.88,
-      "volume": 882109800,
-      "value": 63511905600,
-      "categories": [
-        "gainer",
-        "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 150,
+        "ara_price": 188,
+        "ara_dist": 21.3,
+        "ara_hit": false,
+        "sl": 147,
+        "target1": 161,
+        "target2": 188,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 21.3% ruang ke ARA Rp188. Entry Rp155, target Rp161, SL Rp147. Konfirmasi volume sebelum masuk.",
+        "value_b": 198.3,
+        "cat_count": 2
+      }
     },
     {
       "code": "NTBK",
@@ -538,7 +602,24 @@
       "categories": [
         "gainer",
         "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 92,
+        "ara_price": 115,
+        "ara_dist": 11.7,
+        "ara_hit": false,
+        "sl": 98,
+        "target1": 107,
+        "target2": 115,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 11.7% ruang ke ARA Rp115. Entry Rp103, target Rp107, SL Rp98. Konfirmasi volume sebelum masuk.",
+        "value_b": 52.8,
+        "cat_count": 2
+      }
     },
     {
       "code": "DEWA",
@@ -550,7 +631,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 364,
+        "ara_price": 454,
+        "ara_dist": 21.4,
+        "ara_hit": false,
+        "sl": 356,
+        "target1": 388,
+        "target2": 454,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 21.4% ruang ke ARA Rp454. Entry Rp374, target Rp388, SL Rp356. Konfirmasi volume sebelum masuk.",
+        "value_b": 119.2,
+        "cat_count": 2
+      }
     },
     {
       "code": "TPIA",
@@ -661,7 +759,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 85,
+        "ara_price": 106,
+        "ara_dist": 11.6,
+        "ara_hit": false,
+        "sl": 90,
+        "target1": 99,
+        "target2": 106,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 11.6% ruang ke ARA Rp106. Entry area sekarang, target 1 Rp99 · target 2 Rp106. SL Rp90 · R/R 0.8x.",
+        "value_b": 176.4,
+        "cat_count": 3
+      }
     },
     {
       "code": "KOKA",
@@ -674,7 +789,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 218,
+        "ara_price": 272,
+        "ara_dist": 8.8,
+        "ara_hit": false,
+        "sl": 238,
+        "target1": 260,
+        "target2": 272,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 8.8% ruang ke ARA Rp272. Entry area sekarang, target 1 Rp260 · target 2 Rp272. SL Rp238 · R/R 0.8x.",
+        "value_b": 73.5,
+        "cat_count": 3
+      }
     },
     {
       "code": "BUMI",
@@ -686,19 +818,24 @@
       "categories": [
         "volume",
         "value"
-      ]
-    },
-    {
-      "code": "EPAC",
-      "name": "PT Megalestari Epack Sentosaraya Tbk",
-      "price": 72,
-      "change_pct": 5.88,
-      "volume": 882109800,
-      "value": 63511905600,
-      "categories": [
-        "gainer",
-        "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 150,
+        "ara_price": 188,
+        "ara_dist": 21.3,
+        "ara_hit": false,
+        "sl": 147,
+        "target1": 161,
+        "target2": 188,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 21.3% ruang ke ARA Rp188. Entry Rp155, target Rp161, SL Rp147. Konfirmasi volume sebelum masuk.",
+        "value_b": 198.3,
+        "cat_count": 2
+      }
     },
     {
       "code": "NTBK",
@@ -710,131 +847,53 @@
       "categories": [
         "gainer",
         "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 92,
+        "ara_price": 115,
+        "ara_dist": 11.7,
+        "ara_hit": false,
+        "sl": 98,
+        "target1": 107,
+        "target2": 115,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 11.7% ruang ke ARA Rp115. Entry Rp103, target Rp107, SL Rp98. Konfirmasi volume sebelum masuk.",
+        "value_b": 52.8,
+        "cat_count": 2
+      }
+    },
+    {
+      "code": "DEWA",
+      "name": "PT Darma Henwa Tbk",
+      "price": 374,
+      "change_pct": 2.75,
+      "volume": 318714500,
+      "value": 119199223000,
+      "categories": [
+        "volume",
+        "value"
+      ],
+      "analysis": {
+        "prev_close": 364,
+        "ara_price": 454,
+        "ara_dist": 21.4,
+        "ara_hit": false,
+        "sl": 356,
+        "target1": 388,
+        "target2": 454,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 21.4% ruang ke ARA Rp454. Entry Rp374, target Rp388, SL Rp356. Konfirmasi volume sebelum masuk.",
+        "value_b": 119.2,
+        "cat_count": 2
+      }
     }
-  ],
-  "analysis": {
-    "watchlist_notes": [
-      {
-        "code": "BNBR",
-        "name": "PT Bakrie & Brothers Tbk Class A",
-        "price": 95,
-        "change": 11.76,
-        "volume": 1856416800,
-        "value": 176359596000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 1.86B sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp90 | Target Rp100 | Stop Rp90"
-      },
-      {
-        "code": "KOKA",
-        "name": "PT Koka Indonesia Tbk",
-        "price": 250,
-        "change": 14.68,
-        "volume": 293942000,
-        "value": 73485500000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 293.9M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp240 | Target Rp260 | Stop Rp232"
-      },
-      {
-        "code": "BUMI",
-        "name": "PT Bumi Resources Tbk Class A",
-        "price": 155,
-        "change": 3.33,
-        "volume": 1279225500,
-        "value": 198279952500,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 1.28B & nilai Rp198.28B — paling liquid, spread kecil.",
-        "guidance": "Entry area Rp149 | Target Rp161 | Stop Rp144"
-      },
-      {
-        "code": "EPAC",
-        "name": "PT Megalestari Epack Sentosaraya Tbk",
-        "price": 72,
-        "change": 5.88,
-        "volume": 882109800,
-        "value": 63511905600,
-        "cats": [
-          "gainer",
-          "volume"
-        ],
-        "reason": "Gain +5.9% dengan volume 882.1M — momentum kuat, liquid untuk scalp.",
-        "guidance": "Entry area Rp70 | Target Rp75 | Stop Rp65"
-      },
-      {
-        "code": "NTBK",
-        "name": "PT Nusatama Berkah Tbk",
-        "price": 103,
-        "change": 11.96,
-        "volume": 512745800,
-        "value": 52812817400,
-        "cats": [
-          "gainer",
-          "volume"
-        ],
-        "reason": "Gain +12.0% dengan volume 512.7M — momentum kuat, liquid untuk scalp.",
-        "guidance": "Entry area Rp99 | Target Rp107 | Stop Rp96"
-      }
-    ],
-    "signals": [
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "BNBR",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "KOKA",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "info",
-        "icon": "📈",
-        "code": "BNBR",
-        "text": "Volume king hari ini: 1.86B shares — paling liquid untuk scalp."
-      }
-    ],
-    "warnings": [
-      {
-        "code": "RBMS",
-        "change": -9.33,
-        "text": "Turun -9.3% — hindari untuk long, potensi tekanan berlanjut."
-      },
-      {
-        "code": "PRDL",
-        "change": -10.36,
-        "text": "Turun -10.4% — hindari untuk long, potensi tekanan berlanjut."
-      }
-    ],
-    "summary": {
-      "ihsg_close": 6228.92,
-      "ihsg_change": 0.86,
-      "ihsg_high": 6249.903,
-      "ihsg_low": 6191.042,
-      "day_range": 58.86,
-      "is_positive": true,
-      "is_month_end": false,
-      "session_label": "Sesi Siang",
-      "top_gainer": "FWCT",
-      "top_gainer_chg": 16.87,
-      "vol_king": "BNBR",
-      "vol_king_vol": "1.86B",
-      "triple_count": 2,
-      "intersection_count": 14
-    }
-  }
+  ]
 }
