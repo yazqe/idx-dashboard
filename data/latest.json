@@ -1,19 +1,20 @@
 {
-  "session": "penutupan",
-  "timestamp": "2026-07-17T18:07:25.274662+07:00",
-  "date": "17 July 2026",
-  "time": "18:07 WIB",
+  "session": "pagi",
+  "timestamp": "2026-07-20T09:00:08.204756+07:00",
+  "date": "20 July 2026",
+  "time": "09:00 WIB",
   "ihsg": {
-    "close": 6175.53,
+    "close": 6175.535,
     "change_pct": 1.1,
     "change_abs": 67.33,
     "high": 6192.658,
     "low": 6079.318,
-    "open": null,
+    "open": 6112.842,
     "volume": 0,
-    "market_open": false,
-    "market_state": "CLOSED",
-    "as_of": "17 Jul 2026 18:07 WIB"
+    "value": 0,
+    "market_open": true,
+    "market_state": "REGULAR",
+    "as_of": "20 Jul 2026 09:00 WIB"
   },
   "gainers": [
     {
@@ -31,6 +32,14 @@
       "change_pct": 26.85,
       "volume": 635404600,
       "value": 87050430200
+    },
+    {
+      "code": "AGAR",
+      "name": "PT Asia Sejahtera Mina Tbk",
+      "price": 505,
+      "change_pct": 25,
+      "volume": 790000,
+      "value": 398950000
     },
     {
       "code": "HOPE",
@@ -89,6 +98,14 @@
       "value": 43834216000
     },
     {
+      "code": "MIRA",
+      "name": "PT Mitra International Resources Tbk",
+      "price": 22,
+      "change_pct": 10,
+      "volume": 5602700,
+      "value": 123259400
+    },
+    {
       "code": "NANO",
       "name": "PT Nanotech Indonesia Global Tbk",
       "price": 33,
@@ -113,6 +130,14 @@
       "value": 123766663000
     },
     {
+      "code": "FLMC",
+      "name": "PT Falmaco Nonwoven Industri Tbk",
+      "price": 57,
+      "change_pct": 9.62,
+      "volume": 3915800,
+      "value": 223200600
+    },
+    {
       "code": "IKAI",
       "name": "PT Intikeramik Alamasri Industri Tbk",
       "price": 23,
@@ -129,6 +154,14 @@
       "value": 2705616000
     },
     {
+      "code": "AREA",
+      "name": "PT Dunia Virtual Online Tbk",
+      "price": 268,
+      "change_pct": 8.94,
+      "volume": 1678800,
+      "value": 449918400
+    },
+    {
       "code": "BPTR",
       "name": "PT Batavia Prosperindo Trans Tbk",
       "price": 74,
@@ -143,38 +176,6 @@
       "change_pct": 8.7,
       "volume": 471375800,
       "value": 35353185000
-    },
-    {
-      "code": "BUVA",
-      "name": "PT Bukit Uluwatu Villa Tbk",
-      "price": 955,
-      "change_pct": 8.52,
-      "volume": 577697600,
-      "value": 551701208000
-    },
-    {
-      "code": "KREN",
-      "name": "PT Quantum Clovera Investama Tbk",
-      "price": 13,
-      "change_pct": 8.33,
-      "volume": 20507900,
-      "value": 266602700
-    },
-    {
-      "code": "INPC",
-      "name": "PT Bank Artha Graha Internasional Tbk",
-      "price": 145,
-      "change_pct": 8.21,
-      "volume": 60412800,
-      "value": 8759856000
-    },
-    {
-      "code": "KJEN",
-      "name": "PT Krida Jaringan Nusantara Tbk",
-      "price": 132,
-      "change_pct": 8.2,
-      "volume": 71296500,
-      "value": 9411138000
     }
   ],
   "volume": [
@@ -503,19 +504,6 @@
   ],
   "intersection": [
     {
-      "code": "BUVA",
-      "name": "PT Bukit Uluwatu Villa Tbk",
-      "price": 955,
-      "change_pct": 8.52,
-      "volume": 577697600,
-      "value": 551701208000,
-      "categories": [
-        "gainer",
-        "volume",
-        "value"
-      ]
-    },
-    {
       "code": "EPAC",
       "name": "PT Megalestari Epack Sentosaraya Tbk",
       "price": 68,
@@ -525,7 +513,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 70,
+        "ara_price": 88,
+        "ara_dist": 29.4,
+        "ara_hit": false,
+        "sl": 65,
+        "target1": 71,
+        "target2": 88,
+        "rr": 1.0,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 29.4% ruang ke ARA Rp88. Entry Rp68, target Rp71, SL Rp65. Konfirmasi volume sebelum masuk.",
+        "value_b": 144.8,
+        "cat_count": 2
+      }
     },
     {
       "code": "BUMI",
@@ -537,7 +542,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 149,
+        "ara_price": 186,
+        "ara_dist": 24.0,
+        "ara_hit": false,
+        "sl": 142,
+        "target1": 156,
+        "target2": 186,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 24.0% ruang ke ARA Rp186. Entry Rp150, target Rp156, SL Rp142. Konfirmasi volume sebelum masuk.",
+        "value_b": 203.8,
+        "cat_count": 2
+      }
     },
     {
       "code": "RANS",
@@ -549,7 +571,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 254,
+        "ara_price": 318,
+        "ara_dist": 27.2,
+        "ara_hit": false,
+        "sl": 238,
+        "target1": 260,
+        "target2": 318,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 27.2% ruang ke ARA Rp318. Entry Rp250, target Rp260, SL Rp238. Konfirmasi volume sebelum masuk.",
+        "value_b": 160.2,
+        "cat_count": 2
+      }
     },
     {
       "code": "KBLV",
@@ -561,7 +600,53 @@
       "categories": [
         "gainer",
         "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 108,
+        "ara_price": 135,
+        "ara_dist": -1.5,
+        "ara_hit": true,
+        "sl": 130,
+        "target1": 142,
+        "target2": 148,
+        "rr": 0.7,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp135). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 87.1,
+        "cat_count": 2
+      }
+    },
+    {
+      "code": "BUVA",
+      "name": "PT Bukit Uluwatu Villa Tbk",
+      "price": 955,
+      "change_pct": 8.52,
+      "volume": 577697600,
+      "value": 551701208000,
+      "categories": [
+        "volume",
+        "value"
+      ],
+      "analysis": {
+        "prev_close": 880,
+        "ara_price": 1100,
+        "ara_dist": 15.2,
+        "ara_hit": false,
+        "sl": 905,
+        "target1": 995,
+        "target2": 1100,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 15.2% ruang ke ARA Rp1,100. Entry Rp955, target Rp995, SL Rp905. Konfirmasi volume sebelum masuk.",
+        "value_b": 551.7,
+        "cat_count": 2
+      }
     },
     {
       "code": "RBMS",
@@ -698,19 +783,6 @@
   ],
   "watchlist": [
     {
-      "code": "BUVA",
-      "name": "PT Bukit Uluwatu Villa Tbk",
-      "price": 955,
-      "change_pct": 8.52,
-      "volume": 577697600,
-      "value": 551701208000,
-      "categories": [
-        "gainer",
-        "volume",
-        "value"
-      ]
-    },
-    {
       "code": "EPAC",
       "name": "PT Megalestari Epack Sentosaraya Tbk",
       "price": 68,
@@ -720,7 +792,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 70,
+        "ara_price": 88,
+        "ara_dist": 29.4,
+        "ara_hit": false,
+        "sl": 65,
+        "target1": 71,
+        "target2": 88,
+        "rr": 1.0,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 29.4% ruang ke ARA Rp88. Entry Rp68, target Rp71, SL Rp65. Konfirmasi volume sebelum masuk.",
+        "value_b": 144.8,
+        "cat_count": 2
+      }
     },
     {
       "code": "BUMI",
@@ -732,7 +821,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 149,
+        "ara_price": 186,
+        "ara_dist": 24.0,
+        "ara_hit": false,
+        "sl": 142,
+        "target1": 156,
+        "target2": 186,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 24.0% ruang ke ARA Rp186. Entry Rp150, target Rp156, SL Rp142. Konfirmasi volume sebelum masuk.",
+        "value_b": 203.8,
+        "cat_count": 2
+      }
     },
     {
       "code": "RANS",
@@ -744,7 +850,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 254,
+        "ara_price": 318,
+        "ara_dist": 27.2,
+        "ara_hit": false,
+        "sl": 238,
+        "target1": 260,
+        "target2": 318,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 27.2% ruang ke ARA Rp318. Entry Rp250, target Rp260, SL Rp238. Konfirmasi volume sebelum masuk.",
+        "value_b": 160.2,
+        "cat_count": 2
+      }
     },
     {
       "code": "KBLV",
@@ -756,119 +879,53 @@
       "categories": [
         "gainer",
         "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 108,
+        "ara_price": 135,
+        "ara_dist": -1.5,
+        "ara_hit": true,
+        "sl": 130,
+        "target1": 142,
+        "target2": 148,
+        "rr": 0.7,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp135). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 87.1,
+        "cat_count": 2
+      }
+    },
+    {
+      "code": "BUVA",
+      "name": "PT Bukit Uluwatu Villa Tbk",
+      "price": 955,
+      "change_pct": 8.52,
+      "volume": 577697600,
+      "value": 551701208000,
+      "categories": [
+        "volume",
+        "value"
+      ],
+      "analysis": {
+        "prev_close": 880,
+        "ara_price": 1100,
+        "ara_dist": 15.2,
+        "ara_hit": false,
+        "sl": 905,
+        "target1": 995,
+        "target2": 1100,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 15.2% ruang ke ARA Rp1,100. Entry Rp955, target Rp995, SL Rp905. Konfirmasi volume sebelum masuk.",
+        "value_b": 551.7,
+        "cat_count": 2
+      }
     }
-  ],
-  "analysis": {
-    "watchlist_notes": [
-      {
-        "code": "BUVA",
-        "name": "PT Bukit Uluwatu Villa Tbk",
-        "price": 955,
-        "change": 8.52,
-        "volume": 577697600,
-        "value": 551701208000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 577.7M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp917 | Target Rp993 | Stop Rp888"
-      },
-      {
-        "code": "EPAC",
-        "name": "PT Megalestari Epack Sentosaraya Tbk",
-        "price": 68,
-        "change": -2.86,
-        "volume": 2129403100,
-        "value": 144799410800,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 2.13B & nilai Rp144.80B — paling liquid, spread kecil.",
-        "guidance": "Pantau open besok untuk konfirmasi arah."
-      },
-      {
-        "code": "BUMI",
-        "name": "PT Bumi Resources Tbk Class A",
-        "price": 150,
-        "change": 0.67,
-        "volume": 1358919500,
-        "value": 203837925000,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 1.36B & nilai Rp203.84B — paling liquid, spread kecil.",
-        "guidance": "Entry area Rp144 | Target Rp156 | Stop Rp140"
-      },
-      {
-        "code": "RANS",
-        "name": "PT Rans Entertainmen Indonesia Tbk",
-        "price": 250,
-        "change": -1.57,
-        "volume": 640770100,
-        "value": 160192525000,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 640.8M & nilai Rp160.19B — paling liquid, spread kecil.",
-        "guidance": "Pantau open besok untuk konfirmasi arah."
-      },
-      {
-        "code": "KBLV",
-        "name": "PT First Media Tbk",
-        "price": 137,
-        "change": 26.85,
-        "volume": 635404600,
-        "value": 87050430200,
-        "cats": [
-          "gainer",
-          "volume"
-        ],
-        "reason": "Gain +26.9% dengan volume 635.4M — momentum kuat, liquid untuk scalp.",
-        "guidance": "Entry area Rp132 | Target Rp142 | Stop Rp127"
-      }
-    ],
-    "signals": [
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "BUVA",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "info",
-        "icon": "📈",
-        "code": "EPAC",
-        "text": "Volume king hari ini: 2.13B shares — paling liquid untuk scalp."
-      }
-    ],
-    "warnings": [
-      {
-        "code": "PRDL",
-        "change": -11.47,
-        "text": "Turun -11.5% — hindari untuk long, potensi tekanan berlanjut."
-      }
-    ],
-    "summary": {
-      "ihsg_close": 6175.53,
-      "ihsg_change": 1.1,
-      "ihsg_high": 6192.658,
-      "ihsg_low": 6079.318,
-      "day_range": 113.34,
-      "is_positive": true,
-      "is_month_end": false,
-      "session_label": "Menjelang Penutupan",
-      "top_gainer": "KOKA",
-      "top_gainer_chg": 27.49,
-      "vol_king": "EPAC",
-      "vol_king_vol": "2.13B",
-      "triple_count": 1,
-      "intersection_count": 16
-    }
-  }
+  ]
 }
