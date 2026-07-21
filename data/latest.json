@@ -1,30 +1,21 @@
 {
   "session": "siang",
-  "timestamp": "2026-07-21T12:20:00.475857+07:00",
+  "timestamp": "2026-07-21T12:23:12.862282+07:00",
   "date": "21 July 2026",
-  "time": "12:20 WIB",
+  "time": "12:23 WIB",
   "ihsg": {
     "close": 6319.85,
     "change_pct": 1.41,
     "change_abs": 88.07,
     "high": 6321.507,
     "low": 6247.353,
-    "open": 6273.571,
+    "open": null,
     "volume": 0,
-    "value": 0,
-    "market_open": true,
-    "market_state": "REGULAR",
-    "as_of": "21 Jul 2026 12:20 WIB"
+    "market_open": false,
+    "market_state": "CLOSED",
+    "as_of": "21 Jul 2026 12:23 WIB"
   },
   "gainers": [
-    {
-      "code": "TIFA",
-      "name": "PT KDB Tifa Finance Tbk",
-      "price": 294,
-      "change_pct": 20.49,
-      "volume": 1083400,
-      "value": 318519600
-    },
     {
       "code": "JGLE",
       "name": "PT Graha Andrasentra Propertindo Tbk",
@@ -50,14 +41,6 @@
       "value": 12360535200
     },
     {
-      "code": "ARKO",
-      "name": "PT Arkora Hydro Tbk",
-      "price": 5325,
-      "change_pct": 14.76,
-      "volume": 3549900,
-      "value": 18903217500
-    },
-    {
       "code": "MDIA",
       "name": "PT Intermedia Capital Tbk",
       "price": 81,
@@ -74,22 +57,6 @@
       "value": 38848620600
     },
     {
-      "code": "ALKA",
-      "name": "PT Alakasa Industrindo, Tbk Class A",
-      "price": 790,
-      "change_pct": 13.67,
-      "volume": 919300,
-      "value": 726247000
-    },
-    {
-      "code": "INDS",
-      "name": "PT Indospring Tbk",
-      "price": 300,
-      "change_pct": 13.64,
-      "volume": 9050400,
-      "value": 2715120000
-    },
-    {
       "code": "WIRG",
       "name": "PT WIR Asia Tbk",
       "price": 60,
@@ -104,46 +71,6 @@
       "change_pct": 10.84,
       "volume": 242252900,
       "value": 22287266800
-    },
-    {
-      "code": "GWSA",
-      "name": "PT Greenwood Sejahtera Tbk",
-      "price": 135,
-      "change_pct": 10.66,
-      "volume": 2892200,
-      "value": 390447000
-    },
-    {
-      "code": "FORU",
-      "name": "PT Fortune Indonesia, Tbk",
-      "price": 2920,
-      "change_pct": 10.61,
-      "volume": 955600,
-      "value": 2790352000
-    },
-    {
-      "code": "SINI",
-      "name": "PT Singaraja Putra Tbk",
-      "price": 6325,
-      "change_pct": 10,
-      "volume": 3019000,
-      "value": 19095175000
-    },
-    {
-      "code": "AEGS",
-      "name": "PT Anugerah Spareparts Sejahtera Tbk",
-      "price": 45,
-      "change_pct": 9.76,
-      "volume": 5151000,
-      "value": 231795000
-    },
-    {
-      "code": "FLMC",
-      "name": "PT Falmaco Nonwoven Industri Tbk",
-      "price": 68,
-      "change_pct": 9.68,
-      "volume": 6872300,
-      "value": 467316400
     },
     {
       "code": "BMBL",
@@ -176,6 +103,38 @@
       "change_pct": 9.23,
       "volume": 880402100,
       "value": 125017098200
+    },
+    {
+      "code": "DSSA",
+      "name": "PT Dian Swastatika Sentosa Tbk",
+      "price": 885,
+      "change_pct": 8.59,
+      "volume": 904500400,
+      "value": 800482854000
+    },
+    {
+      "code": "PSKT",
+      "name": "PT Red Planet Indonesia Tbk",
+      "price": 214,
+      "change_pct": 8.08,
+      "volume": 23165100,
+      "value": 4957331400
+    },
+    {
+      "code": "ELTY",
+      "name": "PT Bakrieland Development Tbk Class A",
+      "price": 27,
+      "change_pct": 8,
+      "volume": 59179200,
+      "value": 1597838400
+    },
+    {
+      "code": "LPPS",
+      "name": "PT Lenox Pasifik InvestamaTbk Class A",
+      "price": 84,
+      "change_pct": 7.69,
+      "volume": 24400400,
+      "value": 2049633600
     }
   ],
   "volume": [
@@ -514,24 +473,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 50,
-        "ara_price": 62,
-        "ara_dist": 5.1,
-        "ara_hit": false,
-        "sl": 56,
-        "target1": 61,
-        "target2": 62,
-        "rr": 0.7,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Triple Intersection + Momentum Kuat",
-        "signal": "STRONG BUY",
-        "tip": "Pantau apakah harga hold di atas Rp56. ARA target Rp62 (+5.1%). Masuk hanya jika volume naik.",
-        "value_b": 103.1,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "DEWA",
@@ -544,24 +486,20 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 398,
-        "ara_price": 498,
-        "ara_dist": 14.2,
-        "ara_hit": false,
-        "sl": 414,
-        "target1": 454,
-        "target2": 498,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Triple Intersection",
-        "signal": "BUY",
-        "tip": "Setup terkuat — triple intersection, 14.2% ruang ke ARA Rp498. Entry area sekarang, target 1 Rp454 · target 2 Rp498. SL Rp414 · R/R 0.8x.",
-        "value_b": 695.1,
-        "cat_count": 3
-      }
+      ]
+    },
+    {
+      "code": "DSSA",
+      "name": "PT Dian Swastatika Sentosa Tbk",
+      "price": 885,
+      "change_pct": 8.59,
+      "volume": 904500400,
+      "value": 800482854000,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ]
     },
     {
       "code": "COCO",
@@ -574,24 +512,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 130,
-        "ara_price": 163,
-        "ara_dist": 14.8,
-        "ara_hit": false,
-        "sl": 135,
-        "target1": 148,
-        "target2": 163,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Triple Intersection",
-        "signal": "BUY",
-        "tip": "Setup terkuat — triple intersection, 14.8% ruang ke ARA Rp163. Entry area sekarang, target 1 Rp148 · target 2 Rp163. SL Rp135 · R/R 0.9x.",
-        "value_b": 125.0,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "BNBR",
@@ -603,24 +524,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 105,
-        "ara_price": 131,
-        "ara_dist": 20.2,
-        "ara_hit": false,
-        "sl": 104,
-        "target1": 113,
-        "target2": 131,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 20.2% ruang ke ARA Rp131. Entry Rp109, target Rp113, SL Rp104. Konfirmasi volume sebelum masuk.",
-        "value_b": 480.7,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BUMI",
@@ -632,24 +536,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 159,
-        "ara_price": 199,
-        "ara_dist": 18.5,
-        "ara_hit": false,
-        "sl": 160,
-        "target1": 175,
-        "target2": 199,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 18.5% ruang ke ARA Rp199. Entry Rp168, target Rp175, SL Rp160. Konfirmasi volume sebelum masuk.",
-        "value_b": 700.7,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BIPI",
@@ -658,18 +545,6 @@
       "change_pct": 7.1,
       "volume": 1115496000,
       "value": 185172336000,
-      "categories": [
-        "volume",
-        "value"
-      ]
-    },
-    {
-      "code": "DSSA",
-      "name": "PT Dian Swastatika Sentosa Tbk",
-      "price": 885,
-      "change_pct": 8.59,
-      "volume": 904500400,
-      "value": 800482854000,
       "categories": [
         "volume",
         "value"
@@ -784,24 +659,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 50,
-        "ara_price": 62,
-        "ara_dist": 5.1,
-        "ara_hit": false,
-        "sl": 56,
-        "target1": 61,
-        "target2": 62,
-        "rr": 0.7,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Triple Intersection + Momentum Kuat",
-        "signal": "STRONG BUY",
-        "tip": "Pantau apakah harga hold di atas Rp56. ARA target Rp62 (+5.1%). Masuk hanya jika volume naik.",
-        "value_b": 103.1,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "DEWA",
@@ -814,24 +672,20 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 398,
-        "ara_price": 498,
-        "ara_dist": 14.2,
-        "ara_hit": false,
-        "sl": 414,
-        "target1": 454,
-        "target2": 498,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Triple Intersection",
-        "signal": "BUY",
-        "tip": "Setup terkuat — triple intersection, 14.2% ruang ke ARA Rp498. Entry area sekarang, target 1 Rp454 · target 2 Rp498. SL Rp414 · R/R 0.8x.",
-        "value_b": 695.1,
-        "cat_count": 3
-      }
+      ]
+    },
+    {
+      "code": "DSSA",
+      "name": "PT Dian Swastatika Sentosa Tbk",
+      "price": 885,
+      "change_pct": 8.59,
+      "volume": 904500400,
+      "value": 800482854000,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ]
     },
     {
       "code": "COCO",
@@ -844,24 +698,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 130,
-        "ara_price": 163,
-        "ara_dist": 14.8,
-        "ara_hit": false,
-        "sl": 135,
-        "target1": 148,
-        "target2": 163,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Triple Intersection",
-        "signal": "BUY",
-        "tip": "Setup terkuat — triple intersection, 14.8% ruang ke ARA Rp163. Entry area sekarang, target 1 Rp148 · target 2 Rp163. SL Rp135 · R/R 0.9x.",
-        "value_b": 125.0,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "BNBR",
@@ -873,53 +710,134 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 105,
-        "ara_price": 131,
-        "ara_dist": 20.2,
-        "ara_hit": false,
-        "sl": 104,
-        "target1": 113,
-        "target2": 131,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 20.2% ruang ke ARA Rp131. Entry Rp109, target Rp113, SL Rp104. Konfirmasi volume sebelum masuk.",
-        "value_b": 480.7,
-        "cat_count": 2
-      }
-    },
-    {
-      "code": "BUMI",
-      "name": "PT Bumi Resources Tbk Class A",
-      "price": 168,
-      "change_pct": 5.66,
-      "volume": 4171013100,
-      "value": 700730200800,
-      "categories": [
-        "volume",
-        "value"
-      ],
-      "analysis": {
-        "prev_close": 159,
-        "ara_price": 199,
-        "ara_dist": 18.5,
-        "ara_hit": false,
-        "sl": 160,
-        "target1": 175,
-        "target2": 199,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 18.5% ruang ke ARA Rp199. Entry Rp168, target Rp175, SL Rp160. Konfirmasi volume sebelum masuk.",
-        "value_b": 700.7,
-        "cat_count": 2
-      }
+      ]
     }
-  ]
+  ],
+  "analysis": {
+    "watchlist_notes": [
+      {
+        "code": "JGLE",
+        "name": "PT Graha Andrasentra Propertindo Tbk",
+        "price": 59,
+        "change": 18,
+        "volume": 1747151500,
+        "value": 103081938500,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 1.75B sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp55 | Target Rp60 | Stop Rp55"
+      },
+      {
+        "code": "DEWA",
+        "name": "PT Darma Henwa Tbk",
+        "price": 436,
+        "change": 9.55,
+        "volume": 1594156800,
+        "value": 695052364800,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 1.59B sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp419 | Target Rp453 | Stop Rp405"
+      },
+      {
+        "code": "DSSA",
+        "name": "PT Dian Swastatika Sentosa Tbk",
+        "price": 885,
+        "change": 8.59,
+        "volume": 904500400,
+        "value": 800482854000,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 904.5M sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp850 | Target Rp920 | Stop Rp823"
+      },
+      {
+        "code": "COCO",
+        "name": "PT Wahana Interfood Nusantara Tbk",
+        "price": 142,
+        "change": 9.23,
+        "volume": 880402100,
+        "value": 125017098200,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 880.4M sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp136 | Target Rp148 | Stop Rp132"
+      },
+      {
+        "code": "BNBR",
+        "name": "PT Bakrie & Brothers Tbk Class A",
+        "price": 109,
+        "change": 3.81,
+        "volume": 4410082300,
+        "value": 480698970700,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 4.41B & nilai Rp480.70B — paling liquid, spread kecil.",
+        "guidance": "Entry area Rp105 | Target Rp113 | Stop Rp101"
+      }
+    ],
+    "signals": [
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "JGLE",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "DEWA",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "DSSA",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "COCO",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "info",
+        "icon": "📈",
+        "code": "BNBR",
+        "text": "Volume king hari ini: 4.41B shares — paling liquid untuk scalp."
+      }
+    ],
+    "warnings": [],
+    "summary": {
+      "ihsg_close": 6319.85,
+      "ihsg_change": 1.41,
+      "ihsg_high": 6321.507,
+      "ihsg_low": 6247.353,
+      "day_range": 74.15,
+      "is_positive": true,
+      "is_month_end": false,
+      "session_label": "Sesi Siang",
+      "top_gainer": "JGLE",
+      "top_gainer_chg": 18,
+      "vol_king": "BNBR",
+      "vol_king_vol": "4.41B",
+      "triple_count": 4,
+      "intersection_count": 15
+    }
+  }
 }
