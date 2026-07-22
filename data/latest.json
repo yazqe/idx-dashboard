@@ -1,19 +1,20 @@
 {
   "session": "pagi",
-  "timestamp": "2026-07-22T09:02:13.150651+07:00",
+  "timestamp": "2026-07-22T09:05:00.131904+07:00",
   "date": "22 July 2026",
-  "time": "09:02 WIB",
+  "time": "09:05 WIB",
   "ihsg": {
     "close": 6340.02,
     "change_pct": 1.74,
     "change_abs": 108.24,
     "high": 6340.02,
     "low": 6247.353,
-    "open": null,
+    "open": 6273.571,
     "volume": 0,
-    "market_open": false,
-    "market_state": "CLOSED",
-    "as_of": "22 Jul 2026 09:02 WIB"
+    "value": 0,
+    "market_open": true,
+    "market_state": "REGULAR",
+    "as_of": "22 Jul 2026 09:05 WIB"
   },
   "gainers": [
     {
@@ -47,6 +48,38 @@
       "change_pct": 25.24,
       "volume": 19858900,
       "value": 25816570000
+    },
+    {
+      "code": "TIFA",
+      "name": "PT KDB Tifa Finance Tbk",
+      "price": 304,
+      "change_pct": 24.59,
+      "volume": 1528700,
+      "value": 464724800
+    },
+    {
+      "code": "ALKA",
+      "name": "PT Alakasa Industrindo, Tbk Class A",
+      "price": 865,
+      "change_pct": 24.46,
+      "volume": 2092900,
+      "value": 1810358500
+    },
+    {
+      "code": "FORU",
+      "name": "PT Fortune Indonesia, Tbk",
+      "price": 3150,
+      "change_pct": 19.32,
+      "volume": 2143800,
+      "value": 6752970000
+    },
+    {
+      "code": "ARKO",
+      "name": "PT Arkora Hydro Tbk",
+      "price": 5475,
+      "change_pct": 18.0,
+      "volume": 6368400,
+      "value": 34866990000
     },
     {
       "code": "GPSO",
@@ -89,6 +122,14 @@
       "value": 15102324000
     },
     {
+      "code": "RLCO",
+      "name": "PT Abadi Lestari Indonesia Tbk",
+      "price": 3730,
+      "change_pct": 12.01,
+      "volume": 1290000,
+      "value": 4811700000
+    },
+    {
       "code": "COCO",
       "name": "PT Wahana Interfood Nusantara Tbk",
       "price": 144,
@@ -113,68 +154,28 @@
       "value": 966664556000
     },
     {
-      "code": "CUAN",
-      "name": "PT Petrindo Jaya Kreasi Tbk",
-      "price": 735,
-      "change_pct": 9.7,
-      "volume": 807199700,
-      "value": 593291779500
+      "code": "SINI",
+      "name": "PT Singaraja Putra Tbk",
+      "price": 6325,
+      "change_pct": 10,
+      "volume": 3166300,
+      "value": 20026847500
     },
     {
-      "code": "LUCY",
-      "name": "PT Lima Dua Lima Tiga Tbk",
-      "price": 342,
-      "change_pct": 9.62,
-      "volume": 19177300,
-      "value": 6558636600
+      "code": "MIRA",
+      "name": "PT Mitra International Resources Tbk",
+      "price": 22,
+      "change_pct": 10,
+      "volume": 7244000,
+      "value": 159368000
     },
     {
-      "code": "VIVA",
-      "name": "PT Visi Media Asia Tbk Class A",
-      "price": 35,
-      "change_pct": 9.38,
-      "volume": 21501200,
-      "value": 752542000
-    },
-    {
-      "code": "WIRG",
-      "name": "PT WIR Asia Tbk",
-      "price": 59,
-      "change_pct": 9.26,
-      "volume": 389805800,
-      "value": 22998542200
-    },
-    {
-      "code": "TRIN",
-      "name": "PT Perintis Triniti Properti Tbk",
-      "price": 354,
-      "change_pct": 9.26,
-      "volume": 18162500,
-      "value": 6429525000
-    },
-    {
-      "code": "PSKT",
-      "name": "PT Red Planet Indonesia Tbk",
-      "price": 216,
-      "change_pct": 9.09,
-      "volume": 28808700,
-      "value": 6222679200
-    },
-    {
-      "code": "CDIA",
-      "name": "PT Chandra Daya Investasi Tbk.",
-      "price": 725,
-      "change_pct": 9.02,
-      "volume": 131093200,
-      "value": 95042570000
-    },
-    {
-      "code": "PTRO",
-      "name": "PT Petrosea Tbk",
-      "price": 4470,
-      "change_pct": 8.5,
-      "volume": 74662400,
-      "value": 333740928000
+      "code": "CASH",
+      "name": "PT.Cashlez Worldwide Indonesia Tbk",
+      "price": 212,
+      "change_pct": 9.84,
+      "volume": 4927500,
+      "value": 1044630000
     }
   ],
   "volume": [
@@ -513,7 +514,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 398,
+        "ara_price": 498,
+        "ara_dist": 13.2,
+        "ara_hit": false,
+        "sl": 418,
+        "target1": 458,
+        "target2": 498,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 13.2% ruang ke ARA Rp498. Entry area sekarang, target 1 Rp458 · target 2 Rp498. SL Rp418 · R/R 0.8x.",
+        "value_b": 966.7,
+        "cat_count": 3
+      }
     },
     {
       "code": "DSSA",
@@ -526,20 +544,24 @@
         "gainer",
         "volume",
         "value"
-      ]
-    },
-    {
-      "code": "CUAN",
-      "name": "PT Petrindo Jaya Kreasi Tbk",
-      "price": 735,
-      "change_pct": 9.7,
-      "volume": 807199700,
-      "value": 593291779500,
-      "categories": [
-        "gainer",
-        "volume",
-        "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 815,
+        "ara_price": 1020,
+        "ara_dist": 8.5,
+        "ara_hit": false,
+        "sl": 895,
+        "target1": 980,
+        "target2": 1020,
+        "rr": 0.9,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection + Momentum Kuat",
+        "signal": "STRONG BUY",
+        "tip": "Setup terkuat — triple intersection, 8.5% ruang ke ARA Rp1,020. Entry area sekarang, target 1 Rp980 · target 2 Rp1,020. SL Rp895 · R/R 0.9x.",
+        "value_b": 1867.9,
+        "cat_count": 3
+      }
     },
     {
       "code": "BUMI",
@@ -551,7 +573,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 159,
+        "ara_price": 199,
+        "ara_dist": 18.5,
+        "ara_hit": false,
+        "sl": 160,
+        "target1": 175,
+        "target2": 199,
+        "rr": 0.9,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 18.5% ruang ke ARA Rp199. Entry Rp168, target Rp175, SL Rp160. Konfirmasi volume sebelum masuk.",
+        "value_b": 976.9,
+        "cat_count": 2
+      }
     },
     {
       "code": "BNBR",
@@ -563,7 +602,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 105,
+        "ara_price": 131,
+        "ara_dist": 22.4,
+        "ara_hit": false,
+        "sl": 102,
+        "target1": 111,
+        "target2": 131,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 22.4% ruang ke ARA Rp131. Entry Rp107, target Rp111, SL Rp102. Konfirmasi volume sebelum masuk.",
+        "value_b": 611.1,
+        "cat_count": 2
+      }
     },
     {
       "code": "JGLE",
@@ -575,7 +631,24 @@
       "categories": [
         "gainer",
         "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 50,
+        "ara_price": 62,
+        "ara_dist": -7.5,
+        "ara_hit": true,
+        "sl": 64,
+        "target1": 70,
+        "target2": 72,
+        "rr": 1.0,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp62). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 185.7,
+        "cat_count": 2
+      }
     },
     {
       "code": "BIPI",
@@ -638,6 +711,18 @@
       ]
     },
     {
+      "code": "CUAN",
+      "name": "PT Petrindo Jaya Kreasi Tbk",
+      "price": 735,
+      "change_pct": 9.7,
+      "volume": 807199700,
+      "value": 593291779500,
+      "categories": [
+        "volume",
+        "value"
+      ]
+    },
+    {
       "code": "MDIA",
       "name": "PT Intermedia Capital Tbk",
       "price": 82,
@@ -672,30 +757,6 @@
         "volume",
         "value"
       ]
-    },
-    {
-      "code": "WIRG",
-      "name": "PT WIR Asia Tbk",
-      "price": 59,
-      "change_pct": 9.26,
-      "volume": 389805800,
-      "value": 22998542200,
-      "categories": [
-        "gainer",
-        "volume"
-      ]
-    },
-    {
-      "code": "PTRO",
-      "name": "PT Petrosea Tbk",
-      "price": 4470,
-      "change_pct": 8.5,
-      "volume": 74662400,
-      "value": 333740928000,
-      "categories": [
-        "gainer",
-        "value"
-      ]
     }
   ],
   "watchlist": [
@@ -710,7 +771,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 398,
+        "ara_price": 498,
+        "ara_dist": 13.2,
+        "ara_hit": false,
+        "sl": 418,
+        "target1": 458,
+        "target2": 498,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 13.2% ruang ke ARA Rp498. Entry area sekarang, target 1 Rp458 · target 2 Rp498. SL Rp418 · R/R 0.8x.",
+        "value_b": 966.7,
+        "cat_count": 3
+      }
     },
     {
       "code": "DSSA",
@@ -723,20 +801,24 @@
         "gainer",
         "volume",
         "value"
-      ]
-    },
-    {
-      "code": "CUAN",
-      "name": "PT Petrindo Jaya Kreasi Tbk",
-      "price": 735,
-      "change_pct": 9.7,
-      "volume": 807199700,
-      "value": 593291779500,
-      "categories": [
-        "gainer",
-        "volume",
-        "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 815,
+        "ara_price": 1020,
+        "ara_dist": 8.5,
+        "ara_hit": false,
+        "sl": 895,
+        "target1": 980,
+        "target2": 1020,
+        "rr": 0.9,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection + Momentum Kuat",
+        "signal": "STRONG BUY",
+        "tip": "Setup terkuat — triple intersection, 8.5% ruang ke ARA Rp1,020. Entry area sekarang, target 1 Rp980 · target 2 Rp1,020. SL Rp895 · R/R 0.9x.",
+        "value_b": 1867.9,
+        "cat_count": 3
+      }
     },
     {
       "code": "BUMI",
@@ -748,7 +830,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 159,
+        "ara_price": 199,
+        "ara_dist": 18.5,
+        "ara_hit": false,
+        "sl": 160,
+        "target1": 175,
+        "target2": 199,
+        "rr": 0.9,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 18.5% ruang ke ARA Rp199. Entry Rp168, target Rp175, SL Rp160. Konfirmasi volume sebelum masuk.",
+        "value_b": 976.9,
+        "cat_count": 2
+      }
     },
     {
       "code": "BNBR",
@@ -760,127 +859,53 @@
       "categories": [
         "volume",
         "value"
-      ]
-    }
-  ],
-  "analysis": {
-    "watchlist_notes": [
-      {
-        "code": "DEWA",
-        "name": "PT Darma Henwa Tbk",
-        "price": 440,
-        "change": 10.55,
-        "volume": 2196964900,
-        "value": 966664556000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 2.20B sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp422 | Target Rp458 | Stop Rp409"
-      },
-      {
-        "code": "DSSA",
-        "name": "PT Dian Swastatika Sentosa Tbk",
-        "price": 940,
-        "change": 15.34,
-        "volume": 1987169500,
-        "value": 1867939330000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 1.99B sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp902 | Target Rp978 | Stop Rp874"
-      },
-      {
-        "code": "CUAN",
-        "name": "PT Petrindo Jaya Kreasi Tbk",
-        "price": 735,
-        "change": 9.7,
-        "volume": 807199700,
-        "value": 593291779500,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 807.2M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp706 | Target Rp764 | Stop Rp684"
-      },
-      {
-        "code": "BUMI",
-        "name": "PT Bumi Resources Tbk Class A",
-        "price": 168,
-        "change": 5.66,
-        "volume": 5815015800,
-        "value": 976922654400,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 5.82B & nilai Rp976.92B — paling liquid, spread kecil.",
-        "guidance": "Entry area Rp161 | Target Rp175 | Stop Rp156"
-      },
-      {
-        "code": "BNBR",
-        "name": "PT Bakrie & Brothers Tbk Class A",
-        "price": 107,
-        "change": 1.9,
-        "volume": 5710801200,
-        "value": 611055728400,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 5.71B & nilai Rp611.06B — paling liquid, spread kecil.",
-        "guidance": "Entry area Rp103 | Target Rp111 | Stop Rp100"
+      ],
+      "analysis": {
+        "prev_close": 105,
+        "ara_price": 131,
+        "ara_dist": 22.4,
+        "ara_hit": false,
+        "sl": 102,
+        "target1": 111,
+        "target2": 131,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 22.4% ruang ke ARA Rp131. Entry Rp107, target Rp111, SL Rp102. Konfirmasi volume sebelum masuk.",
+        "value_b": 611.1,
+        "cat_count": 2
       }
-    ],
-    "signals": [
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "DEWA",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "DSSA",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "CUAN",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "info",
-        "icon": "📈",
-        "code": "BUMI",
-        "text": "Volume king hari ini: 5.82B shares — paling liquid untuk scalp."
+    },
+    {
+      "code": "JGLE",
+      "name": "PT Graha Andrasentra Propertindo Tbk",
+      "price": 67,
+      "change_pct": 34,
+      "volume": 2772380900,
+      "value": 185749520300,
+      "categories": [
+        "gainer",
+        "volume"
+      ],
+      "analysis": {
+        "prev_close": 50,
+        "ara_price": 62,
+        "ara_dist": -7.5,
+        "ara_hit": true,
+        "sl": 64,
+        "target1": 70,
+        "target2": 72,
+        "rr": 1.0,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp62). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 185.7,
+        "cat_count": 2
       }
-    ],
-    "warnings": [],
-    "summary": {
-      "ihsg_close": 6340.02,
-      "ihsg_change": 1.74,
-      "ihsg_high": 6340.02,
-      "ihsg_low": 6247.353,
-      "day_range": 92.67,
-      "is_positive": true,
-      "is_month_end": false,
-      "session_label": "Sesi Pagi",
-      "top_gainer": "SULI",
-      "top_gainer_chg": 34.18,
-      "vol_king": "BUMI",
-      "vol_king_vol": "5.82B",
-      "triple_count": 3,
-      "intersection_count": 16
     }
-  }
+  ]
 }
