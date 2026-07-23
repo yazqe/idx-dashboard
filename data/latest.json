@@ -1,19 +1,20 @@
 {
   "session": "siang",
-  "timestamp": "2026-07-23T12:46:08.758942+07:00",
+  "timestamp": "2026-07-23T12:50:00.127727+07:00",
   "date": "23 July 2026",
-  "time": "12:46 WIB",
+  "time": "12:50 WIB",
   "ihsg": {
-    "close": 6430.15,
+    "close": 6430.154,
     "change_pct": 1.51,
     "change_abs": 95.68,
     "high": 6437.201,
     "low": 6338.244,
-    "open": null,
+    "open": 6346.616,
     "volume": 0,
-    "market_open": false,
-    "market_state": "CLOSED",
-    "as_of": "23 Jul 2026 12:46 WIB"
+    "value": 0,
+    "market_open": true,
+    "market_state": "REGULAR",
+    "as_of": "23 Jul 2026 12:50 WIB"
   },
   "gainers": [
     {
@@ -31,6 +32,14 @@
       "change_pct": 20.9,
       "volume": 1459994000,
       "value": 118259514000
+    },
+    {
+      "code": "ENAK",
+      "name": "PT Champ Resto Indonesia Tbk",
+      "price": 294,
+      "change_pct": 20.49,
+      "volume": 8554200,
+      "value": 2514934800
     },
     {
       "code": "MDIA",
@@ -65,6 +74,14 @@
       "value": 168174745600
     },
     {
+      "code": "RLCO",
+      "name": "PT Abadi Lestari Indonesia Tbk",
+      "price": 4580,
+      "change_pct": 14.5,
+      "volume": 4596100,
+      "value": 21050138000
+    },
+    {
       "code": "CUAN",
       "name": "PT Petrindo Jaya Kreasi Tbk",
       "price": 815,
@@ -79,6 +96,14 @@
       "change_pct": 11.79,
       "volume": 25184600,
       "value": 10980485600
+    },
+    {
+      "code": "ALII",
+      "name": "PT Ancara Logistics Indonesia Tbk",
+      "price": 830,
+      "change_pct": 10.67,
+      "volume": 2830200,
+      "value": 2349066000
     },
     {
       "code": "DEWA",
@@ -97,6 +122,22 @@
       "value": 669886800
     },
     {
+      "code": "LOPI",
+      "name": "PT Logisticsplus International Tbk",
+      "price": 66,
+      "change_pct": 10,
+      "volume": 9413500,
+      "value": 621291000
+    },
+    {
+      "code": "DAAZ",
+      "name": "PT Daaz Bara Lestari Tbk",
+      "price": 1675,
+      "change_pct": 9.84,
+      "volume": 772000,
+      "value": 1293100000
+    },
+    {
       "code": "GRIA",
       "name": "PT Ingria Pratama Capitalindo Tbk",
       "price": 123,
@@ -113,6 +154,14 @@
       "value": 705996000
     },
     {
+      "code": "SINI",
+      "name": "PT Singaraja Putra Tbk",
+      "price": 6800,
+      "change_pct": 9.68,
+      "volume": 3159200,
+      "value": 21482560000
+    },
+    {
       "code": "FORE",
       "name": "PT Fore Kopi Indonesia Tbk",
       "price": 695,
@@ -121,60 +170,12 @@
       "value": 15535613000
     },
     {
-      "code": "MCAS",
-      "name": "PT M Cash Integrasi Tbk",
-      "price": 166,
-      "change_pct": 9.21,
-      "volume": 11506700,
-      "value": 1910112200
-    },
-    {
-      "code": "MEJA",
-      "name": "PT Harta Djaya Karya Tbk",
-      "price": 96,
-      "change_pct": 9.09,
-      "volume": 10024900,
-      "value": 962390400
-    },
-    {
-      "code": "COAL",
-      "name": "PT Black Diamond Resources Tbk",
-      "price": 24,
-      "change_pct": 9.09,
-      "volume": 12027800,
-      "value": 288667200
-    },
-    {
-      "code": "COCO",
-      "name": "PT Wahana Interfood Nusantara Tbk",
-      "price": 147,
-      "change_pct": 8.89,
-      "volume": 1199245600,
-      "value": 176289103200
-    },
-    {
-      "code": "DOOH",
-      "name": "PT Era Media Sejahtera Tbk",
-      "price": 186,
-      "change_pct": 8.77,
-      "volume": 74280100,
-      "value": 13816098600
-    },
-    {
-      "code": "PTRO",
-      "name": "PT Petrosea Tbk",
-      "price": 5100,
-      "change_pct": 8.74,
-      "volume": 103348900,
-      "value": 527079390000
-    },
-    {
-      "code": "IRSX",
-      "name": "PT Folago Global Nusantara Tbk",
-      "price": 338,
-      "change_pct": 8.33,
-      "volume": 53869800,
-      "value": 18207992400
+      "code": "RCCC",
+      "name": "PT Utama Radar Cahaya Tbk",
+      "price": 105,
+      "change_pct": 9.38,
+      "volume": 2677700,
+      "value": 281158500
     }
   ],
   "volume": [
@@ -513,7 +514,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 168,
+        "ara_price": 210,
+        "ara_dist": 8.2,
+        "ara_hit": false,
+        "sl": 184,
+        "target1": 202,
+        "target2": 210,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection + Momentum Kuat",
+        "signal": "STRONG BUY",
+        "tip": "Setup terkuat — triple intersection, 8.2% ruang ke ARA Rp210. Entry area sekarang, target 1 Rp202 · target 2 Rp210. SL Rp184 · R/R 0.8x.",
+        "value_b": 1317.1,
+        "cat_count": 3
+      }
     },
     {
       "code": "DEWA",
@@ -526,7 +544,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 440,
+        "ara_price": 550,
+        "ara_dist": 13.2,
+        "ara_hit": false,
+        "sl": 462,
+        "target1": 505,
+        "target2": 550,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 13.2% ruang ke ARA Rp550. Entry area sekarang, target 1 Rp505 · target 2 Rp550. SL Rp462 · R/R 0.8x.",
+        "value_b": 712.9,
+        "cat_count": 3
+      }
     },
     {
       "code": "KOTA",
@@ -539,20 +574,24 @@
         "gainer",
         "volume",
         "value"
-      ]
-    },
-    {
-      "code": "COCO",
-      "name": "PT Wahana Interfood Nusantara Tbk",
-      "price": 147,
-      "change_pct": 8.89,
-      "volume": 1199245600,
-      "value": 176289103200,
-      "categories": [
-        "gainer",
-        "volume",
-        "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 111,
+        "ara_price": 139,
+        "ara_dist": 8.6,
+        "ara_hit": false,
+        "sl": 122,
+        "target1": 133,
+        "target2": 139,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection + Momentum Kuat",
+        "signal": "STRONG BUY",
+        "tip": "Setup terkuat — triple intersection, 8.6% ruang ke ARA Rp139. Entry area sekarang, target 1 Rp133 · target 2 Rp139. SL Rp122 · R/R 0.8x.",
+        "value_b": 168.2,
+        "cat_count": 3
+      }
     },
     {
       "code": "CUAN",
@@ -565,7 +604,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 720,
+        "ara_price": 900,
+        "ara_dist": 10.4,
+        "ara_hit": false,
+        "sl": 775,
+        "target1": 850,
+        "target2": 900,
+        "rr": 0.9,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 10.4% ruang ke ARA Rp900. Entry area sekarang, target 1 Rp850 · target 2 Rp900. SL Rp775 · R/R 0.9x.",
+        "value_b": 510.4,
+        "cat_count": 3
+      }
     },
     {
       "code": "BNBR",
@@ -577,7 +633,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 115,
+        "ara_price": 144,
+        "ara_dist": 18.0,
+        "ara_hit": false,
+        "sl": 116,
+        "target1": 127,
+        "target2": 144,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 18.0% ruang ke ARA Rp144. Entry Rp122, target Rp127, SL Rp116. Konfirmasi volume sebelum masuk.",
+        "value_b": 368.8,
+        "cat_count": 2
+      }
     },
     {
       "code": "ZATA",
@@ -589,6 +662,18 @@
       "categories": [
         "gainer",
         "volume"
+      ]
+    },
+    {
+      "code": "COCO",
+      "name": "PT Wahana Interfood Nusantara Tbk",
+      "price": 147,
+      "change_pct": 8.89,
+      "volume": 1199245600,
+      "value": 176289103200,
+      "categories": [
+        "volume",
+        "value"
       ]
     },
     {
@@ -662,18 +747,6 @@
         "volume",
         "value"
       ]
-    },
-    {
-      "code": "PTRO",
-      "name": "PT Petrosea Tbk",
-      "price": 5100,
-      "change_pct": 8.74,
-      "volume": 103348900,
-      "value": 527079390000,
-      "categories": [
-        "gainer",
-        "value"
-      ]
     }
   ],
   "watchlist": [
@@ -688,7 +761,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 168,
+        "ara_price": 210,
+        "ara_dist": 8.2,
+        "ara_hit": false,
+        "sl": 184,
+        "target1": 202,
+        "target2": 210,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection + Momentum Kuat",
+        "signal": "STRONG BUY",
+        "tip": "Setup terkuat — triple intersection, 8.2% ruang ke ARA Rp210. Entry area sekarang, target 1 Rp202 · target 2 Rp210. SL Rp184 · R/R 0.8x.",
+        "value_b": 1317.1,
+        "cat_count": 3
+      }
     },
     {
       "code": "DEWA",
@@ -701,7 +791,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 440,
+        "ara_price": 550,
+        "ara_dist": 13.2,
+        "ara_hit": false,
+        "sl": 462,
+        "target1": 505,
+        "target2": 550,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 13.2% ruang ke ARA Rp550. Entry area sekarang, target 1 Rp505 · target 2 Rp550. SL Rp462 · R/R 0.8x.",
+        "value_b": 712.9,
+        "cat_count": 3
+      }
     },
     {
       "code": "KOTA",
@@ -714,20 +821,24 @@
         "gainer",
         "volume",
         "value"
-      ]
-    },
-    {
-      "code": "COCO",
-      "name": "PT Wahana Interfood Nusantara Tbk",
-      "price": 147,
-      "change_pct": 8.89,
-      "volume": 1199245600,
-      "value": 176289103200,
-      "categories": [
-        "gainer",
-        "volume",
-        "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 111,
+        "ara_price": 139,
+        "ara_dist": 8.6,
+        "ara_hit": false,
+        "sl": 122,
+        "target1": 133,
+        "target2": 139,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection + Momentum Kuat",
+        "signal": "STRONG BUY",
+        "tip": "Setup terkuat — triple intersection, 8.6% ruang ke ARA Rp139. Entry area sekarang, target 1 Rp133 · target 2 Rp139. SL Rp122 · R/R 0.8x.",
+        "value_b": 168.2,
+        "cat_count": 3
+      }
     },
     {
       "code": "CUAN",
@@ -740,141 +851,53 @@
         "gainer",
         "volume",
         "value"
-      ]
-    }
-  ],
-  "analysis": {
-    "watchlist_notes": [
-      {
-        "code": "BUMI",
-        "name": "PT Bumi Resources Tbk Class A",
-        "price": 194,
-        "change": 15.48,
-        "volume": 6788974300,
-        "value": 1317061014200,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 6.79B sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp186 | Target Rp202 | Stop Rp180"
-      },
-      {
-        "code": "DEWA",
-        "name": "PT Darma Henwa Tbk",
-        "price": 486,
-        "change": 10.45,
-        "volume": 1466823700,
-        "value": 712876318200,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 1.47B sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp467 | Target Rp505 | Stop Rp452"
-      },
-      {
-        "code": "KOTA",
-        "name": "PT DMS Propertindo Tbk",
-        "price": 128,
-        "change": 15.32,
-        "volume": 1313865200,
-        "value": 168174745600,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 1.31B sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp123 | Target Rp133 | Stop Rp119"
-      },
-      {
-        "code": "COCO",
-        "name": "PT Wahana Interfood Nusantara Tbk",
-        "price": 147,
-        "change": 8.89,
-        "volume": 1199245600,
-        "value": 176289103200,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 1.20B sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp141 | Target Rp153 | Stop Rp137"
-      },
-      {
-        "code": "CUAN",
-        "name": "PT Petrindo Jaya Kreasi Tbk",
-        "price": 815,
-        "change": 13.19,
-        "volume": 626201000,
-        "value": 510353815000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 626.2M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp782 | Target Rp848 | Stop Rp758"
+      ],
+      "analysis": {
+        "prev_close": 720,
+        "ara_price": 900,
+        "ara_dist": 10.4,
+        "ara_hit": false,
+        "sl": 775,
+        "target1": 850,
+        "target2": 900,
+        "rr": 0.9,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 10.4% ruang ke ARA Rp900. Entry area sekarang, target 1 Rp850 · target 2 Rp900. SL Rp775 · R/R 0.9x.",
+        "value_b": 510.4,
+        "cat_count": 3
       }
-    ],
-    "signals": [
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "BUMI",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "DEWA",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "KOTA",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "COCO",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "CUAN",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "info",
-        "icon": "📈",
-        "code": "BUMI",
-        "text": "Volume king hari ini: 6.79B shares — paling liquid untuk scalp."
+    },
+    {
+      "code": "BNBR",
+      "name": "PT Bakrie & Brothers Tbk Class A",
+      "price": 122,
+      "change_pct": 6.09,
+      "volume": 3023049300,
+      "value": 368812014600,
+      "categories": [
+        "volume",
+        "value"
+      ],
+      "analysis": {
+        "prev_close": 115,
+        "ara_price": 144,
+        "ara_dist": 18.0,
+        "ara_hit": false,
+        "sl": 116,
+        "target1": 127,
+        "target2": 144,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 18.0% ruang ke ARA Rp144. Entry Rp122, target Rp127, SL Rp116. Konfirmasi volume sebelum masuk.",
+        "value_b": 368.8,
+        "cat_count": 2
       }
-    ],
-    "warnings": [],
-    "summary": {
-      "ihsg_close": 6430.15,
-      "ihsg_change": 1.51,
-      "ihsg_high": 6437.201,
-      "ihsg_low": 6338.244,
-      "day_range": 98.96,
-      "is_positive": true,
-      "is_month_end": false,
-      "session_label": "Sesi Siang",
-      "top_gainer": "MLPT",
-      "top_gainer_chg": 24.92,
-      "vol_king": "BUMI",
-      "vol_king_vol": "6.79B",
-      "triple_count": 5,
-      "intersection_count": 14
     }
-  }
+  ]
 }
