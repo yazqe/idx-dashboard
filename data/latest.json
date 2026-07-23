@@ -1,19 +1,20 @@
 {
   "session": "pagi",
-  "timestamp": "2026-07-23T09:09:38.841014+07:00",
+  "timestamp": "2026-07-23T09:10:00.200725+07:00",
   "date": "23 July 2026",
-  "time": "09:09 WIB",
+  "time": "09:10 WIB",
   "ihsg": {
-    "close": 6334.48,
+    "close": 6334.476,
     "change_pct": -0.09,
     "change_abs": -5.54,
     "high": 6394.686,
     "low": 6284.882,
-    "open": null,
+    "open": 6366.012,
     "volume": 0,
-    "market_open": false,
-    "market_state": "CLOSED",
-    "as_of": "23 Jul 2026 09:09 WIB"
+    "value": 0,
+    "market_open": true,
+    "market_state": "REGULAR",
+    "as_of": "23 Jul 2026 09:10 WIB"
   },
   "gainers": [
     {
@@ -23,6 +24,22 @@
       "change_pct": 13.43,
       "volume": 17541900,
       "value": 1333184400
+    },
+    {
+      "code": "LUCK",
+      "name": "PT Sentral Mitra Informatika Tbk",
+      "price": 131,
+      "change_pct": 10.08,
+      "volume": 2527800,
+      "value": 331141800
+    },
+    {
+      "code": "MEJA",
+      "name": "PT Harta Djaya Karya Tbk",
+      "price": 88,
+      "change_pct": 10,
+      "volume": 63718200,
+      "value": 5607201600
     },
     {
       "code": "WMPP",
@@ -41,20 +58,12 @@
       "value": 583316800
     },
     {
-      "code": "MEJA",
-      "name": "PT Harta Djaya Karya Tbk",
-      "price": 88,
-      "change_pct": 10,
-      "volume": 63718200,
-      "value": 5607201600
-    },
-    {
-      "code": "BTEK",
-      "name": "PT Bumi Teknokultura Unggul Tbk",
-      "price": 12,
-      "change_pct": 9.09,
-      "volume": 80230100,
-      "value": 962761200
+      "code": "HRME",
+      "name": "PT Menteng Heritage Realty Tbk",
+      "price": 46,
+      "change_pct": 9.52,
+      "volume": 3657300,
+      "value": 168235800
     },
     {
       "code": "LOPI",
@@ -63,6 +72,22 @@
       "change_pct": 9.09,
       "volume": 12714900,
       "value": 762894000
+    },
+    {
+      "code": "RCCC",
+      "name": "PT Utama Radar Cahaya Tbk",
+      "price": 96,
+      "change_pct": 9.09,
+      "volume": 3231200,
+      "value": 310195200
+    },
+    {
+      "code": "BTEK",
+      "name": "PT Bumi Teknokultura Unggul Tbk",
+      "price": 12,
+      "change_pct": 9.09,
+      "volume": 80230100,
+      "value": 962761200
     },
     {
       "code": "VIVA",
@@ -81,12 +106,76 @@
       "value": 230281800
     },
     {
+      "code": "PBRX",
+      "name": "PT Pan Brothers Tbk",
+      "price": 28,
+      "change_pct": 7.69,
+      "volume": 9955500,
+      "value": 278754000
+    },
+    {
       "code": "ELTY",
       "name": "PT Bakrieland Development Tbk Class A",
       "price": 29,
       "change_pct": 7.41,
       "volume": 160011400,
       "value": 4640330600
+    },
+    {
+      "code": "INPS",
+      "name": "PT Indah Prakasa Sentosa Tbk",
+      "price": 705,
+      "change_pct": 6.02,
+      "volume": 507000,
+      "value": 357435000
+    },
+    {
+      "code": "TAMU",
+      "name": "PT Pelayaran Tamarin Samudra Tbk",
+      "price": 20,
+      "change_pct": 5.26,
+      "volume": 3739900,
+      "value": 74798000
+    },
+    {
+      "code": "IKAI",
+      "name": "PT Intikeramik Alamasri Industri Tbk",
+      "price": 21,
+      "change_pct": 5,
+      "volume": 5033700,
+      "value": 105707700
+    },
+    {
+      "code": "KBAG",
+      "name": "PT Karya Bersama Anugerah Tbk",
+      "price": 44,
+      "change_pct": 4.76,
+      "volume": 6370400,
+      "value": 280297600
+    },
+    {
+      "code": "ARNA",
+      "name": "PT Arwana Citramulia Tbk",
+      "price": 500,
+      "change_pct": 4.6,
+      "volume": 1213700,
+      "value": 606850000
+    },
+    {
+      "code": "OILS",
+      "name": "PT Indo Oil Perkasa Tbk",
+      "price": 228,
+      "change_pct": 4.59,
+      "volume": 1078900,
+      "value": 245989200
+    },
+    {
+      "code": "MIRA",
+      "name": "PT Mitra International Resources Tbk",
+      "price": 23,
+      "change_pct": 4.55,
+      "volume": 7618300,
+      "value": 175220900
     }
   ],
   "volume": [
@@ -425,7 +514,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 20,
+        "ara_price": 25,
+        "ara_dist": 13.6,
+        "ara_hit": false,
+        "sl": 21,
+        "target1": 23,
+        "target2": 25,
+        "rr": 1.0,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 13.6% ruang ke ARA Rp25. Entry area sekarang, target 1 Rp23 · target 2 Rp25. SL Rp21 · R/R 1.0x.",
+        "value_b": 6.9,
+        "cat_count": 3
+      }
     },
     {
       "code": "ELTY",
@@ -438,7 +544,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 27,
+        "ara_price": 34,
+        "ara_dist": 17.2,
+        "ara_hit": false,
+        "sl": 28,
+        "target1": 30,
+        "target2": 34,
+        "rr": 1.0,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 17.2% ruang ke ARA Rp34. Entry area sekarang, target 1 Rp30 · target 2 Rp34. SL Rp28 · R/R 1.0x.",
+        "value_b": 4.6,
+        "cat_count": 3
+      }
     },
     {
       "code": "MEJA",
@@ -451,7 +574,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 80,
+        "ara_price": 100,
+        "ara_dist": 13.6,
+        "ara_hit": false,
+        "sl": 84,
+        "target1": 92,
+        "target2": 100,
+        "rr": 1.0,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 13.6% ruang ke ARA Rp100. Entry area sekarang, target 1 Rp92 · target 2 Rp100. SL Rp84 · R/R 1.0x.",
+        "value_b": 5.6,
+        "cat_count": 3
+      }
     },
     {
       "code": "PACK",
@@ -463,7 +603,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 230,
+        "ara_price": 288,
+        "ara_dist": 34.6,
+        "ara_hit": false,
+        "sl": 204,
+        "target1": 222,
+        "target2": 288,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 34.6% ruang ke ARA Rp288. Entry Rp214, target Rp222, SL Rp204. Konfirmasi volume sebelum masuk.",
+        "value_b": 47.8,
+        "cat_count": 2
+      }
     },
     {
       "code": "BTEK",
@@ -475,7 +632,24 @@
       "categories": [
         "gainer",
         "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 11,
+        "ara_price": 14,
+        "ara_dist": 16.7,
+        "ara_hit": false,
+        "sl": 11,
+        "target1": 12,
+        "target2": 14,
+        "rr": 0.0,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 16.7% ruang ke ARA Rp14. Entry Rp12, target Rp12, SL Rp11. Konfirmasi volume sebelum masuk.",
+        "value_b": 1.0,
+        "cat_count": 2
+      }
     },
     {
       "code": "BNBR",
@@ -562,7 +736,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 20,
+        "ara_price": 25,
+        "ara_dist": 13.6,
+        "ara_hit": false,
+        "sl": 21,
+        "target1": 23,
+        "target2": 25,
+        "rr": 1.0,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 13.6% ruang ke ARA Rp25. Entry area sekarang, target 1 Rp23 · target 2 Rp25. SL Rp21 · R/R 1.0x.",
+        "value_b": 6.9,
+        "cat_count": 3
+      }
     },
     {
       "code": "ELTY",
@@ -575,7 +766,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 27,
+        "ara_price": 34,
+        "ara_dist": 17.2,
+        "ara_hit": false,
+        "sl": 28,
+        "target1": 30,
+        "target2": 34,
+        "rr": 1.0,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 17.2% ruang ke ARA Rp34. Entry area sekarang, target 1 Rp30 · target 2 Rp34. SL Rp28 · R/R 1.0x.",
+        "value_b": 4.6,
+        "cat_count": 3
+      }
     },
     {
       "code": "MEJA",
@@ -588,7 +796,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 80,
+        "ara_price": 100,
+        "ara_dist": 13.6,
+        "ara_hit": false,
+        "sl": 84,
+        "target1": 92,
+        "target2": 100,
+        "rr": 1.0,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 13.6% ruang ke ARA Rp100. Entry area sekarang, target 1 Rp92 · target 2 Rp100. SL Rp84 · R/R 1.0x.",
+        "value_b": 5.6,
+        "cat_count": 3
+      }
     },
     {
       "code": "PACK",
@@ -600,7 +825,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 230,
+        "ara_price": 288,
+        "ara_dist": 34.6,
+        "ara_hit": false,
+        "sl": 204,
+        "target1": 222,
+        "target2": 288,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 34.6% ruang ke ARA Rp288. Entry Rp214, target Rp222, SL Rp204. Konfirmasi volume sebelum masuk.",
+        "value_b": 47.8,
+        "cat_count": 2
+      }
     },
     {
       "code": "BTEK",
@@ -612,138 +854,24 @@
       "categories": [
         "gainer",
         "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 11,
+        "ara_price": 14,
+        "ara_dist": 16.7,
+        "ara_hit": false,
+        "sl": 11,
+        "target1": 12,
+        "target2": 14,
+        "rr": 0.0,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 16.7% ruang ke ARA Rp14. Entry Rp12, target Rp12, SL Rp11. Konfirmasi volume sebelum masuk.",
+        "value_b": 1.0,
+        "cat_count": 2
+      }
     }
-  ],
-  "analysis": {
-    "watchlist_notes": [
-      {
-        "code": "WMPP",
-        "name": "PT Widodo Makmur Perkasa Tbk",
-        "price": 22,
-        "change": 10,
-        "volume": 314632500,
-        "value": 6921915000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 314.6M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp20 | Target Rp25 | Stop Rp20"
-      },
-      {
-        "code": "ELTY",
-        "name": "PT Bakrieland Development Tbk Class A",
-        "price": 29,
-        "change": 7.41,
-        "volume": 160011400,
-        "value": 4640330600,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 160.0M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp30 | Target Rp30 | Stop Rp25"
-      },
-      {
-        "code": "MEJA",
-        "name": "PT Harta Djaya Karya Tbk",
-        "price": 88,
-        "change": 10,
-        "volume": 63718200,
-        "value": 5607201600,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 63.7M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp85 | Target Rp90 | Stop Rp80"
-      },
-      {
-        "code": "PACK",
-        "name": "PT Abadi Nusantara Hijau Investama Tbk",
-        "price": 214,
-        "change": -6.96,
-        "volume": 223459600,
-        "value": 47820354400,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 223.5M & nilai Rp47.82B — paling liquid, spread kecil.",
-        "guidance": "Pantau open besok untuk konfirmasi arah."
-      },
-      {
-        "code": "BTEK",
-        "name": "PT Bumi Teknokultura Unggul Tbk",
-        "price": 12,
-        "change": 9.09,
-        "volume": 80230100,
-        "value": 962761200,
-        "cats": [
-          "gainer",
-          "volume"
-        ],
-        "reason": "Gain +9.1% dengan volume 80.2M — momentum kuat, liquid untuk scalp.",
-        "guidance": "Entry area Rp10 | Target Rp10 | Stop Rp10"
-      }
-    ],
-    "signals": [
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "WMPP",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "ELTY",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "MEJA",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "info",
-        "icon": "📈",
-        "code": "WMPP",
-        "text": "Volume king hari ini: 314.6M shares — paling liquid untuk scalp."
-      }
-    ],
-    "warnings": [
-      {
-        "code": "NANO",
-        "change": -9.09,
-        "text": "Turun -9.1% — hindari untuk long, potensi tekanan berlanjut."
-      },
-      {
-        "code": "MMIX",
-        "change": -13.6,
-        "text": "Turun -13.6% — hindari untuk long, potensi tekanan berlanjut."
-      }
-    ],
-    "summary": {
-      "ihsg_close": 6334.48,
-      "ihsg_change": -0.09,
-      "ihsg_high": 6394.686,
-      "ihsg_low": 6284.882,
-      "day_range": 109.8,
-      "is_positive": false,
-      "is_month_end": false,
-      "session_label": "Sesi Pagi",
-      "top_gainer": "ZATA",
-      "top_gainer_chg": 13.43,
-      "vol_king": "WMPP",
-      "vol_king_vol": "314.6M",
-      "triple_count": 3,
-      "intersection_count": 11
-    }
-  }
+  ]
 }
