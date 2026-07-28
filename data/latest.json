@@ -1,21 +1,38 @@
 {
   "session": "pagi",
-  "timestamp": "2026-07-28T09:09:09.141124+07:00",
+  "timestamp": "2026-07-28T09:10:00.137083+07:00",
   "date": "28 July 2026",
-  "time": "09:09 WIB",
+  "time": "09:10 WIB",
   "ihsg": {
-    "close": 6185.78,
+    "close": 6185.783,
     "change_pct": -0.17,
     "change_abs": -10.65,
     "high": 6219.418,
     "low": 6144.274,
-    "open": null,
+    "open": 6185.799,
     "volume": 0,
-    "market_open": false,
-    "market_state": "CLOSED",
-    "as_of": "28 Jul 2026 09:09 WIB"
+    "value": 0,
+    "market_open": true,
+    "market_state": "REGULAR",
+    "as_of": "28 Jul 2026 09:10 WIB"
   },
   "gainers": [
+    {
+      "code": "DMMX",
+      "name": "PT Digital Mediatama Maxima Tbk",
+      "price": 258,
+      "change_pct": 19.44,
+      "volume": 1170700,
+      "value": 302040600
+    },
+    {
+      "code": "PAMG",
+      "name": "PT Bima Sakti Pertiwi Tbk",
+      "price": 70,
+      "change_pct": 11.11,
+      "volume": 9952000,
+      "value": 696640000
+    },
     {
       "code": "ELTY",
       "name": "PT Bakrieland Development Tbk Class A",
@@ -23,6 +40,14 @@
       "change_pct": 9.38,
       "volume": 149116400,
       "value": 5219074000
+    },
+    {
+      "code": "GRPM",
+      "name": "PT Graha Prima Mentari Tbk",
+      "price": 236,
+      "change_pct": 9.26,
+      "volume": 4579200,
+      "value": 1080691200
     },
     {
       "code": "BTEK",
@@ -41,12 +66,28 @@
       "value": 1675457100
     },
     {
+      "code": "BAJA",
+      "name": "PT Saranacentral Bajatama Tbk",
+      "price": 240,
+      "change_pct": 8.11,
+      "volume": 1042400,
+      "value": 250176000
+    },
+    {
       "code": "KREN",
       "name": "PT Quantum Clovera Investama Tbk",
       "price": 14,
       "change_pct": 7.69,
       "volume": 38492000,
       "value": 538888000
+    },
+    {
+      "code": "NIRO",
+      "name": "PT City Retail Developments Tbk",
+      "price": 147,
+      "change_pct": 7.3,
+      "volume": 928600,
+      "value": 136504200
     },
     {
       "code": "NANO",
@@ -65,6 +106,14 @@
       "value": 214686200
     },
     {
+      "code": "MCAS",
+      "name": "PT M Cash Integrasi Tbk",
+      "price": 280,
+      "change_pct": 5.26,
+      "volume": 1228500,
+      "value": 343980000
+    },
+    {
       "code": "WMPP",
       "name": "PT Widodo Makmur Perkasa Tbk",
       "price": 21,
@@ -79,6 +128,22 @@
       "change_pct": 3.96,
       "volume": 11716000,
       "value": 1230180000
+    },
+    {
+      "code": "PBRX",
+      "name": "PT Pan Brothers Tbk",
+      "price": 27,
+      "change_pct": 3.85,
+      "volume": 6260600,
+      "value": 169036200
+    },
+    {
+      "code": "SPRE",
+      "name": "PT Soraya Berjaya Indonesia Tbk",
+      "price": 93,
+      "change_pct": 3.33,
+      "volume": 5014800,
+      "value": 466376400
     },
     {
       "code": "SMIL",
@@ -97,20 +162,20 @@
       "value": 1453446400
     },
     {
-      "code": "WGSH",
-      "name": "PT Wira Global Solusi Tbk",
-      "price": 133,
-      "change_pct": 3.1,
-      "volume": 20181800,
-      "value": 2684179400
+      "code": "LOPI",
+      "name": "PT Logisticsplus International Tbk",
+      "price": 64,
+      "change_pct": 3.23,
+      "volume": 5251500,
+      "value": 336096000
     },
     {
-      "code": "VIVA",
-      "name": "PT Visi Media Asia Tbk Class A",
-      "price": 38,
-      "change_pct": 2.7,
-      "volume": 13381500,
-      "value": 508497000
+      "code": "BMBL",
+      "name": "PT Lavender Bina Cendikia Tbk",
+      "price": 32,
+      "change_pct": 3.23,
+      "volume": 3188900,
+      "value": 102044800
     }
   ],
   "volume": [
@@ -429,12 +494,12 @@
       "value": 2340288000
     },
     {
-      "code": "DEWA",
-      "name": "PT Darma Henwa Tbk",
-      "price": 444,
-      "change_pct": 0.45,
-      "volume": 4946300,
-      "value": 2196157200
+      "code": "PTRO",
+      "name": "PT Petrosea Tbk",
+      "price": 4710,
+      "change_pct": 0,
+      "volume": 475000,
+      "value": 2237250000
     }
   ],
   "intersection": [
@@ -449,7 +514,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 32,
+        "ara_price": 40,
+        "ara_dist": 14.3,
+        "ara_hit": false,
+        "sl": 33,
+        "target1": 36,
+        "target2": 40,
+        "rr": 0.5,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 14.3% ruang ke ARA Rp40. Entry area sekarang, target 1 Rp36 · target 2 Rp40. SL Rp33 · R/R 0.5x.",
+        "value_b": 5.2,
+        "cat_count": 3
+      }
     },
     {
       "code": "SMIL",
@@ -462,20 +544,24 @@
         "gainer",
         "volume",
         "value"
-      ]
-    },
-    {
-      "code": "WGSH",
-      "name": "PT Wira Global Solusi Tbk",
-      "price": 133,
-      "change_pct": 3.1,
-      "volume": 20181800,
-      "value": 2684179400,
-      "categories": [
-        "gainer",
-        "volume",
-        "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 370,
+        "ara_price": 462,
+        "ara_dist": 20.9,
+        "ara_hit": false,
+        "sl": 362,
+        "target1": 398,
+        "target2": 462,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 20.9% ruang ke ARA Rp462. Entry area sekarang, target 1 Rp398 · target 2 Rp462. SL Rp362 · R/R 0.8x.",
+        "value_b": 18.9,
+        "cat_count": 3
+      }
     },
     {
       "code": "BUMI",
@@ -487,7 +573,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 170,
+        "ara_price": 212,
+        "ara_dist": 24.0,
+        "ara_hit": false,
+        "sl": 162,
+        "target1": 178,
+        "target2": 212,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 24.0% ruang ke ARA Rp212. Entry Rp171, target Rp178, SL Rp162. Konfirmasi volume sebelum masuk.",
+        "value_b": 17.3,
+        "cat_count": 2
+      }
     },
     {
       "code": "PACK",
@@ -499,7 +602,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 234,
+        "ara_price": 292,
+        "ara_dist": 30.4,
+        "ara_hit": false,
+        "sl": 212,
+        "target1": 232,
+        "target2": 292,
+        "rr": 0.7,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 30.4% ruang ke ARA Rp292. Entry Rp224, target Rp232, SL Rp212. Konfirmasi volume sebelum masuk.",
+        "value_b": 22.1,
+        "cat_count": 2
+      }
     },
     {
       "code": "BTEK",
@@ -511,7 +631,24 @@
       "categories": [
         "gainer",
         "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 11,
+        "ara_price": 14,
+        "ara_dist": 16.7,
+        "ara_hit": false,
+        "sl": 11,
+        "target1": 12,
+        "target2": 14,
+        "rr": 0.0,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 16.7% ruang ke ARA Rp14. Entry Rp12, target Rp12, SL Rp11. Konfirmasi volume sebelum masuk.",
+        "value_b": 0.7,
+        "cat_count": 2
+      }
     },
     {
       "code": "WMPP",
@@ -598,15 +735,15 @@
       ]
     },
     {
-      "code": "VIVA",
-      "name": "PT Visi Media Asia Tbk Class A",
-      "price": 38,
-      "change_pct": 2.7,
-      "volume": 13381500,
-      "value": 508497000,
+      "code": "WGSH",
+      "name": "PT Wira Global Solusi Tbk",
+      "price": 133,
+      "change_pct": 3.1,
+      "volume": 20181800,
+      "value": 2684179400,
       "categories": [
-        "gainer",
-        "volume"
+        "volume",
+        "value"
       ]
     }
   ],
@@ -622,7 +759,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 32,
+        "ara_price": 40,
+        "ara_dist": 14.3,
+        "ara_hit": false,
+        "sl": 33,
+        "target1": 36,
+        "target2": 40,
+        "rr": 0.5,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 14.3% ruang ke ARA Rp40. Entry area sekarang, target 1 Rp36 · target 2 Rp40. SL Rp33 · R/R 0.5x.",
+        "value_b": 5.2,
+        "cat_count": 3
+      }
     },
     {
       "code": "SMIL",
@@ -635,20 +789,24 @@
         "gainer",
         "volume",
         "value"
-      ]
-    },
-    {
-      "code": "WGSH",
-      "name": "PT Wira Global Solusi Tbk",
-      "price": 133,
-      "change_pct": 3.1,
-      "volume": 20181800,
-      "value": 2684179400,
-      "categories": [
-        "gainer",
-        "volume",
-        "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 370,
+        "ara_price": 462,
+        "ara_dist": 20.9,
+        "ara_hit": false,
+        "sl": 362,
+        "target1": 398,
+        "target2": 462,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 20.9% ruang ke ARA Rp462. Entry area sekarang, target 1 Rp398 · target 2 Rp462. SL Rp362 · R/R 0.8x.",
+        "value_b": 18.9,
+        "cat_count": 3
+      }
     },
     {
       "code": "BUMI",
@@ -660,7 +818,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 170,
+        "ara_price": 212,
+        "ara_dist": 24.0,
+        "ara_hit": false,
+        "sl": 162,
+        "target1": 178,
+        "target2": 212,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 24.0% ruang ke ARA Rp212. Entry Rp171, target Rp178, SL Rp162. Konfirmasi volume sebelum masuk.",
+        "value_b": 17.3,
+        "cat_count": 2
+      }
     },
     {
       "code": "PACK",
@@ -672,127 +847,53 @@
       "categories": [
         "volume",
         "value"
-      ]
-    }
-  ],
-  "analysis": {
-    "watchlist_notes": [
-      {
-        "code": "ELTY",
-        "name": "PT Bakrieland Development Tbk Class A",
-        "price": 35,
-        "change": 9.38,
-        "volume": 149116400,
-        "value": 5219074000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 149.1M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp35 | Target Rp35 | Stop Rp35"
-      },
-      {
-        "code": "SMIL",
-        "name": "PT Sarana Mitra Luas Tbk",
-        "price": 382,
-        "change": 3.24,
-        "volume": 49568200,
-        "value": 18935052400,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 49.6M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp367 | Target Rp397 | Stop Rp355"
-      },
-      {
-        "code": "WGSH",
-        "name": "PT Wira Global Solusi Tbk",
-        "price": 133,
-        "change": 3.1,
-        "volume": 20181800,
-        "value": 2684179400,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 20.2M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp128 | Target Rp138 | Stop Rp124"
-      },
-      {
-        "code": "BUMI",
-        "name": "PT Bumi Resources Tbk Class A",
-        "price": 171,
-        "change": 0.59,
-        "volume": 100912500,
-        "value": 17256037500,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 100.9M & nilai Rp17.26B — paling liquid, spread kecil.",
-        "guidance": "Entry area Rp164 | Target Rp178 | Stop Rp159"
-      },
-      {
-        "code": "PACK",
-        "name": "PT Abadi Nusantara Hijau Investama Tbk",
-        "price": 224,
-        "change": -4.27,
-        "volume": 98718700,
-        "value": 22112988800,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 98.7M & nilai Rp22.11B — paling liquid, spread kecil.",
-        "guidance": "Pantau open besok untuk konfirmasi arah."
+      ],
+      "analysis": {
+        "prev_close": 234,
+        "ara_price": 292,
+        "ara_dist": 30.4,
+        "ara_hit": false,
+        "sl": 212,
+        "target1": 232,
+        "target2": 292,
+        "rr": 0.7,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 30.4% ruang ke ARA Rp292. Entry Rp224, target Rp232, SL Rp212. Konfirmasi volume sebelum masuk.",
+        "value_b": 22.1,
+        "cat_count": 2
       }
-    ],
-    "signals": [
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "ELTY",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "SMIL",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "WGSH",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "info",
-        "icon": "📈",
-        "code": "ELTY",
-        "text": "Volume king hari ini: 149.1M shares — paling liquid untuk scalp."
+    },
+    {
+      "code": "BTEK",
+      "name": "PT Bumi Teknokultura Unggul Tbk",
+      "price": 12,
+      "change_pct": 9.09,
+      "volume": 57217800,
+      "value": 686613600,
+      "categories": [
+        "gainer",
+        "volume"
+      ],
+      "analysis": {
+        "prev_close": 11,
+        "ara_price": 14,
+        "ara_dist": 16.7,
+        "ara_hit": false,
+        "sl": 11,
+        "target1": 12,
+        "target2": 14,
+        "rr": 0.0,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 16.7% ruang ke ARA Rp14. Entry Rp12, target Rp12, SL Rp11. Konfirmasi volume sebelum masuk.",
+        "value_b": 0.7,
+        "cat_count": 2
       }
-    ],
-    "warnings": [],
-    "summary": {
-      "ihsg_close": 6185.78,
-      "ihsg_change": -0.17,
-      "ihsg_high": 6219.418,
-      "ihsg_low": 6144.274,
-      "day_range": 75.14,
-      "is_positive": false,
-      "is_month_end": true,
-      "session_label": "Sesi Pagi",
-      "top_gainer": "ELTY",
-      "top_gainer_chg": 9.38,
-      "vol_king": "ELTY",
-      "vol_king_vol": "149.1M",
-      "triple_count": 3,
-      "intersection_count": 14
     }
-  }
+  ]
 }
