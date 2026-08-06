@@ -1,8 +1,8 @@
 {
   "session": "penutupan",
-  "timestamp": "2026-08-06T16:27:22.648229+07:00",
+  "timestamp": "2026-08-06T16:32:18.541455+07:00",
   "date": "06 August 2026",
-  "time": "16:27 WIB",
+  "time": "16:32 WIB",
   "ihsg": {
     "close": 6343.41,
     "change_pct": -0.12,
@@ -13,7 +13,7 @@
     "volume": 0,
     "market_open": false,
     "market_state": "CLOSED",
-    "as_of": "06 Aug 2026 16:27 WIB"
+    "as_of": "06 Aug 2026 16:32 WIB"
   },
   "gainers": [
     {
@@ -121,20 +121,20 @@
       "value": 759094123600
     },
     {
-      "code": "COAL",
-      "name": "PT Black Diamond Resources Tbk",
-      "price": 23,
-      "change_pct": 9.52,
-      "volume": 12071200,
-      "value": 277637600
-    },
-    {
       "code": "MSKY",
       "name": "PT MNC Vision Network",
       "price": 69,
       "change_pct": 9.52,
       "volume": 232048600,
       "value": 16011353400
+    },
+    {
+      "code": "COAL",
+      "name": "PT Black Diamond Resources Tbk",
+      "price": 23,
+      "change_pct": 9.52,
+      "volume": 12071200,
+      "value": 277637600
     },
     {
       "code": "VIVA",
@@ -169,12 +169,12 @@
       "value": 1664385800
     },
     {
-      "code": "ELTY",
-      "name": "PT Bakrieland Development Tbk Class A",
-      "price": 39,
+      "code": "BKSL",
+      "name": "PT Sentul City Tbk",
+      "price": 78,
       "change_pct": 8.33,
-      "volume": 206912700,
-      "value": 8069595300
+      "volume": 1235479800,
+      "value": 96367424400
     }
   ],
   "volume": [
@@ -579,6 +579,18 @@
       ]
     },
     {
+      "code": "BKSL",
+      "name": "PT Sentul City Tbk",
+      "price": 78,
+      "change_pct": 8.33,
+      "volume": 1235479800,
+      "value": 96367424400,
+      "categories": [
+        "gainer",
+        "volume"
+      ]
+    },
+    {
       "code": "MDIA",
       "name": "PT Intermedia Capital Tbk",
       "price": 250,
@@ -841,7 +853,7 @@
       "vol_king": "BNBR",
       "vol_king_vol": "7.99B",
       "triple_count": 4,
-      "intersection_count": 12
+      "intersection_count": 13
     }
   }
 }
