@@ -1,20 +1,19 @@
 {
   "session": "siang",
-  "timestamp": "2026-08-10T13:10:00.140798+07:00",
+  "timestamp": "2026-08-10T13:14:05.464453+07:00",
   "date": "10 August 2026",
-  "time": "13:10 WIB",
+  "time": "13:14 WIB",
   "ihsg": {
-    "close": 6378.399,
+    "close": 6378.4,
     "change_pct": -0.49,
     "change_abs": -31.26,
     "high": 6462.738,
     "low": 6372.923,
-    "open": 6440.597,
+    "open": null,
     "volume": 0,
-    "value": 0,
-    "market_open": true,
-    "market_state": "REGULAR",
-    "as_of": "10 Aug 2026 13:10 WIB"
+    "market_open": false,
+    "market_state": "CLOSED",
+    "as_of": "10 Aug 2026 13:14 WIB"
   },
   "gainers": [
     {
@@ -26,28 +25,12 @@
       "value": 62318375000
     },
     {
-      "code": "STAR",
-      "name": "PT Calculus Global Ventures Tbk",
-      "price": 332,
-      "change_pct": 24.81,
-      "volume": 2004000,
-      "value": 665328000
-    },
-    {
       "code": "GMFI",
       "name": "PT Garuda Maintenance Facility Aero Asia Tbk",
       "price": 67,
       "change_pct": 24.07,
       "volume": 1643201400,
       "value": 110094493800
-    },
-    {
-      "code": "ROCK",
-      "name": "PT Rockfields Properti Indonesia Tbk",
-      "price": 2290,
-      "change_pct": 22.13,
-      "volume": 1197300,
-      "value": 2741817000
     },
     {
       "code": "BKDP",
@@ -74,22 +57,6 @@
       "value": 11379546000
     },
     {
-      "code": "KSIX",
-      "name": "PT Kentanix Supra International Tbk",
-      "price": 420,
-      "change_pct": 12.9,
-      "volume": 5168800,
-      "value": 2170896000
-    },
-    {
-      "code": "TRUK",
-      "name": "PT Guna Timur Raya Tbk",
-      "price": 810,
-      "change_pct": 12.5,
-      "volume": 6551800,
-      "value": 5306958000
-    },
-    {
       "code": "MCAS",
       "name": "PT M Cash Integrasi Tbk",
       "price": 330,
@@ -114,22 +81,6 @@
       "value": 2060889600
     },
     {
-      "code": "ARKO",
-      "name": "PT Arkora Hydro Tbk",
-      "price": 5025,
-      "change_pct": 10.93,
-      "volume": 5657600,
-      "value": 28429440000
-    },
-    {
-      "code": "TALF",
-      "name": "PT Tunas Alfin Tbk",
-      "price": 970,
-      "change_pct": 10.86,
-      "volume": 3471900,
-      "value": 3367743000
-    },
-    {
       "code": "PAMG",
       "name": "PT Bima Sakti Pertiwi Tbk",
       "price": 62,
@@ -138,28 +89,12 @@
       "value": 2510063800
     },
     {
-      "code": "DAAZ",
-      "name": "PT Daaz Bara Lestari Tbk",
-      "price": 1765,
-      "change_pct": 10.66,
-      "volume": 2925200,
-      "value": 5162978000
-    },
-    {
       "code": "RGAS",
       "name": "PT Kian Santang Muliatama Tbk",
       "price": 242,
       "change_pct": 10,
       "volume": 47543700,
       "value": 11505575400
-    },
-    {
-      "code": "SOFA",
-      "name": "PT Solusi Environment Asia Tbk",
-      "price": 272,
-      "change_pct": 9.68,
-      "volume": 2883800,
-      "value": 784393600
     },
     {
       "code": "LUCY",
@@ -176,6 +111,62 @@
       "change_pct": 9.52,
       "volume": 19124200,
       "value": 439856600
+    },
+    {
+      "code": "HELI",
+      "name": "PT Jaya Trishindo Tbk",
+      "price": 210,
+      "change_pct": 9.38,
+      "volume": 12270900,
+      "value": 2576889000
+    },
+    {
+      "code": "LOPI",
+      "name": "PT Logisticsplus International Tbk",
+      "price": 84,
+      "change_pct": 9.09,
+      "volume": 18777400,
+      "value": 1577301600
+    },
+    {
+      "code": "MEJA",
+      "name": "PT Harta Djaya Karya Tbk",
+      "price": 110,
+      "change_pct": 8.91,
+      "volume": 64251900,
+      "value": 7067709000
+    },
+    {
+      "code": "COAL",
+      "name": "PT Black Diamond Resources Tbk",
+      "price": 27,
+      "change_pct": 8,
+      "volume": 12030800,
+      "value": 324831600
+    },
+    {
+      "code": "IATA",
+      "name": "PT Karya Pacific Energy Tbk",
+      "price": 124,
+      "change_pct": 7.83,
+      "volume": 2928248600,
+      "value": 363102826400
+    },
+    {
+      "code": "KJEN",
+      "name": "PT Krida Jaringan Nusantara Tbk",
+      "price": 154,
+      "change_pct": 7.69,
+      "volume": 33945000,
+      "value": 5227530000
+    },
+    {
+      "code": "FILM",
+      "name": "PT MD Entertainment Tbk",
+      "price": 1065,
+      "change_pct": 7.58,
+      "volume": 31458500,
+      "value": 33503302500
     }
   ],
   "volume": [
@@ -504,6 +495,19 @@
   ],
   "intersection": [
     {
+      "code": "IATA",
+      "name": "PT Karya Pacific Energy Tbk",
+      "price": 124,
+      "change_pct": 7.83,
+      "volume": 2928248600,
+      "value": 363102826400,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ]
+    },
+    {
       "code": "GMFI",
       "name": "PT Garuda Maintenance Facility Aero Asia Tbk",
       "price": 67,
@@ -514,24 +518,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 54,
-        "ara_price": 68,
-        "ara_dist": 1.5,
-        "ara_hit": true,
-        "sl": 64,
-        "target1": 70,
-        "target2": 72,
-        "rr": 1.0,
-        "risk": "CEILING",
-        "risk_cls": "risk-ceiling",
-        "pattern": "Mendekati Ceiling ARA",
-        "signal": "WAIT",
-        "tip": "Harga sudah di ceiling ARA (Rp68). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
-        "value_b": 110.1,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "BUMI",
@@ -543,53 +530,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 187,
-        "ara_price": 234,
-        "ara_dist": 24.5,
-        "ara_hit": false,
-        "sl": 179,
-        "target1": 196,
-        "target2": 234,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 24.5% ruang ke ARA Rp234. Entry Rp188, target Rp196, SL Rp179. Konfirmasi volume sebelum masuk.",
-        "value_b": 664.2,
-        "cat_count": 2
-      }
-    },
-    {
-      "code": "IATA",
-      "name": "PT Karya Pacific Energy Tbk",
-      "price": 124,
-      "change_pct": 7.83,
-      "volume": 2928248600,
-      "value": 363102826400,
-      "categories": [
-        "volume",
-        "value"
-      ],
-      "analysis": {
-        "prev_close": 115,
-        "ara_price": 144,
-        "ara_dist": 16.1,
-        "ara_hit": false,
-        "sl": 118,
-        "target1": 129,
-        "target2": 144,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 16.1% ruang ke ARA Rp144. Entry Rp124, target Rp129, SL Rp118. Konfirmasi volume sebelum masuk.",
-        "value_b": 363.1,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BNBR",
@@ -601,24 +542,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 106,
-        "ara_price": 133,
-        "ara_dist": 27.9,
-        "ara_hit": false,
-        "sl": 99,
-        "target1": 108,
-        "target2": 133,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 27.9% ruang ke ARA Rp133. Entry Rp104, target Rp108, SL Rp99. Konfirmasi volume sebelum masuk.",
-        "value_b": 175.9,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "JGLE",
@@ -630,24 +554,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 95,
-        "ara_price": 119,
-        "ara_dist": 25.3,
-        "ara_hit": false,
-        "sl": 90,
-        "target1": 99,
-        "target2": 119,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 25.3% ruang ke ARA Rp119. Entry Rp95, target Rp99, SL Rp90. Konfirmasi volume sebelum masuk.",
-        "value_b": 121.2,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "DSSA",
@@ -736,6 +643,19 @@
   ],
   "watchlist": [
     {
+      "code": "IATA",
+      "name": "PT Karya Pacific Energy Tbk",
+      "price": 124,
+      "change_pct": 7.83,
+      "volume": 2928248600,
+      "value": 363102826400,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ]
+    },
+    {
       "code": "GMFI",
       "name": "PT Garuda Maintenance Facility Aero Asia Tbk",
       "price": 67,
@@ -746,24 +666,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 54,
-        "ara_price": 68,
-        "ara_dist": 1.5,
-        "ara_hit": true,
-        "sl": 64,
-        "target1": 70,
-        "target2": 72,
-        "rr": 1.0,
-        "risk": "CEILING",
-        "risk_cls": "risk-ceiling",
-        "pattern": "Mendekati Ceiling ARA",
-        "signal": "WAIT",
-        "tip": "Harga sudah di ceiling ARA (Rp68). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
-        "value_b": 110.1,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "BUMI",
@@ -775,53 +678,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 187,
-        "ara_price": 234,
-        "ara_dist": 24.5,
-        "ara_hit": false,
-        "sl": 179,
-        "target1": 196,
-        "target2": 234,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 24.5% ruang ke ARA Rp234. Entry Rp188, target Rp196, SL Rp179. Konfirmasi volume sebelum masuk.",
-        "value_b": 664.2,
-        "cat_count": 2
-      }
-    },
-    {
-      "code": "IATA",
-      "name": "PT Karya Pacific Energy Tbk",
-      "price": 124,
-      "change_pct": 7.83,
-      "volume": 2928248600,
-      "value": 363102826400,
-      "categories": [
-        "volume",
-        "value"
-      ],
-      "analysis": {
-        "prev_close": 115,
-        "ara_price": 144,
-        "ara_dist": 16.1,
-        "ara_hit": false,
-        "sl": 118,
-        "target1": 129,
-        "target2": 144,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 16.1% ruang ke ARA Rp144. Entry Rp124, target Rp129, SL Rp118. Konfirmasi volume sebelum masuk.",
-        "value_b": 363.1,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BNBR",
@@ -833,24 +690,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 106,
-        "ara_price": 133,
-        "ara_dist": 27.9,
-        "ara_hit": false,
-        "sl": 99,
-        "target1": 108,
-        "target2": 133,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 27.9% ruang ke ARA Rp133. Entry Rp104, target Rp108, SL Rp99. Konfirmasi volume sebelum masuk.",
-        "value_b": 175.9,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "JGLE",
@@ -862,24 +702,120 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 95,
-        "ara_price": 119,
-        "ara_dist": 25.3,
-        "ara_hit": false,
-        "sl": 90,
-        "target1": 99,
-        "target2": 119,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 25.3% ruang ke ARA Rp119. Entry Rp95, target Rp99, SL Rp90. Konfirmasi volume sebelum masuk.",
-        "value_b": 121.2,
-        "cat_count": 2
-      }
+      ]
     }
-  ]
+  ],
+  "analysis": {
+    "watchlist_notes": [
+      {
+        "code": "IATA",
+        "name": "PT Karya Pacific Energy Tbk",
+        "price": 124,
+        "change": 7.83,
+        "volume": 2928248600,
+        "value": 363102826400,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 2.93B sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp119 | Target Rp129 | Stop Rp115"
+      },
+      {
+        "code": "GMFI",
+        "name": "PT Garuda Maintenance Facility Aero Asia Tbk",
+        "price": 67,
+        "change": 24.07,
+        "volume": 1643201400,
+        "value": 110094493800,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 1.64B sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp65 | Target Rp70 | Stop Rp60"
+      },
+      {
+        "code": "BUMI",
+        "name": "PT Bumi Resources Tbk Class A",
+        "price": 188,
+        "change": 0.53,
+        "volume": 3532914200,
+        "value": 664187869600,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 3.53B & nilai Rp664.19B — paling liquid, spread kecil.",
+        "guidance": "Entry area Rp180 | Target Rp196 | Stop Rp175"
+      },
+      {
+        "code": "BNBR",
+        "name": "PT Bakrie & Brothers Tbk Class A",
+        "price": 104,
+        "change": -1.89,
+        "volume": 1691231400,
+        "value": 175888065600,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 1.69B & nilai Rp175.89B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "JGLE",
+        "name": "PT Graha Andrasentra Propertindo Tbk",
+        "price": 95,
+        "change": 0,
+        "volume": 1276250500,
+        "value": 121243797500,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 1.28B & nilai Rp121.24B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      }
+    ],
+    "signals": [
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "IATA",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "GMFI",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "info",
+        "icon": "📈",
+        "code": "BUMI",
+        "text": "Volume king hari ini: 3.53B shares — paling liquid untuk scalp."
+      }
+    ],
+    "warnings": [],
+    "summary": {
+      "ihsg_close": 6378.4,
+      "ihsg_change": -0.49,
+      "ihsg_high": 6462.738,
+      "ihsg_low": 6372.923,
+      "day_range": 89.82,
+      "is_positive": false,
+      "is_month_end": false,
+      "session_label": "Sesi Siang",
+      "top_gainer": "GIAA",
+      "top_gainer_chg": 29.63,
+      "vol_king": "BUMI",
+      "vol_king_vol": "3.53B",
+      "triple_count": 2,
+      "intersection_count": 12
+    }
+  }
 }
