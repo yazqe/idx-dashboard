@@ -1,38 +1,21 @@
 {
   "session": "siang",
-  "timestamp": "2026-08-11T13:15:00.133201+07:00",
+  "timestamp": "2026-08-11T13:18:04.437780+07:00",
   "date": "11 August 2026",
-  "time": "13:15 WIB",
+  "time": "13:18 WIB",
   "ihsg": {
-    "close": 6309.905,
+    "close": 6309.9,
     "change_pct": -0.87,
     "change_abs": -55.47,
     "high": 6388.581,
     "low": 6291.195,
-    "open": 6383.81,
+    "open": null,
     "volume": 0,
-    "value": 0,
-    "market_open": true,
-    "market_state": "REGULAR",
-    "as_of": "11 Aug 2026 13:15 WIB"
+    "market_open": false,
+    "market_state": "CLOSED",
+    "as_of": "11 Aug 2026 13:18 WIB"
   },
   "gainers": [
-    {
-      "code": "STAR",
-      "name": "PT Calculus Global Ventures Tbk",
-      "price": 414,
-      "change_pct": 24.7,
-      "volume": 3148100,
-      "value": 1303313400
-    },
-    {
-      "code": "YPAS",
-      "name": "PT Yanaprima Hastapersada Tbk",
-      "price": 770,
-      "change_pct": 21.26,
-      "volume": 1037800,
-      "value": 799106000
-    },
     {
       "code": "DART",
       "name": "PT Duta Anggada Realty Tbk",
@@ -82,28 +65,12 @@
       "value": 23010965600
     },
     {
-      "code": "TRUK",
-      "name": "PT Guna Timur Raya Tbk",
-      "price": 805,
-      "change_pct": 11.81,
-      "volume": 7347400,
-      "value": 5914657000
-    },
-    {
       "code": "BBSS",
       "name": "PT Bumi Benowo Sukses Sejahtera Tbk",
       "price": 111,
       "change_pct": 11,
       "volume": 29192400,
       "value": 3240356400
-    },
-    {
-      "code": "MGLV",
-      "name": "PT NexAI Digital Infrastruktur Tbk",
-      "price": 9200,
-      "change_pct": 9.85,
-      "volume": 2639100,
-      "value": 24279720000
     },
     {
       "code": "LUCY",
@@ -154,28 +121,60 @@
       "value": 652520300
     },
     {
-      "code": "PGLI",
-      "name": "PT Pembangunan Graha Lestari Indah Tbk",
-      "price": 232,
-      "change_pct": 7.41,
-      "volume": 815000,
-      "value": 189080000
-    },
-    {
-      "code": "SOTS",
-      "name": "PT Satria Mega Kencana Tbk",
-      "price": 675,
-      "change_pct": 7.14,
-      "volume": 1252400,
-      "value": 845370000
-    },
-    {
       "code": "BAJA",
       "name": "PT Saranacentral Bajatama Tbk",
       "price": 362,
       "change_pct": 7.1,
       "volume": 29769300,
       "value": 10776486600
+    },
+    {
+      "code": "TAXI",
+      "name": "PT Express Transindo Utama Tbk",
+      "price": 16,
+      "change_pct": 6.67,
+      "volume": 28017700,
+      "value": 448283200
+    },
+    {
+      "code": "DGIK",
+      "name": "PT Nusa Konstruksi Enjiniring Tbk",
+      "price": 140,
+      "change_pct": 6.06,
+      "volume": 20489200,
+      "value": 2868488000
+    },
+    {
+      "code": "GIAA",
+      "name": "PT Garuda Indonesia (Persero) Tbk Class B",
+      "price": 76,
+      "change_pct": 5.56,
+      "volume": 2469324300,
+      "value": 187668646800
+    },
+    {
+      "code": "MDIA",
+      "name": "PT Intermedia Capital Tbk",
+      "price": 256,
+      "change_pct": 4.92,
+      "volume": 361280600,
+      "value": 92487833600
+    },
+    {
+      "code": "PPRE",
+      "name": "PT PP Presisi Tbk",
+      "price": 110,
+      "change_pct": 4.76,
+      "volume": 152530400,
+      "value": 16778344000
+    },
+    {
+      "code": "ICON",
+      "name": "PT Island Concepts Indonesia Tbk",
+      "price": 119,
+      "change_pct": 4.39,
+      "volume": 23014700,
+      "value": 2738749300
     }
   ],
   "volume": [
@@ -511,26 +510,23 @@
       "volume": 2469324300,
       "value": 187668646800,
       "categories": [
+        "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 72,
-        "ara_price": 90,
-        "ara_dist": 18.4,
-        "ara_hit": false,
-        "sl": 72,
-        "target1": 79,
-        "target2": 90,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 18.4% ruang ke ARA Rp90. Entry Rp76, target Rp79, SL Rp72. Konfirmasi volume sebelum masuk.",
-        "value_b": 187.7,
-        "cat_count": 2
-      }
+      ]
+    },
+    {
+      "code": "MDIA",
+      "name": "PT Intermedia Capital Tbk",
+      "price": 256,
+      "change_pct": 4.92,
+      "volume": 361280600,
+      "value": 92487833600,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ]
     },
     {
       "code": "BUMI",
@@ -542,24 +538,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 187,
-        "ara_price": 234,
-        "ara_dist": 28.6,
-        "ara_hit": false,
-        "sl": 173,
-        "target1": 189,
-        "target2": 234,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 28.6% ruang ke ARA Rp234. Entry Rp182, target Rp189, SL Rp173. Konfirmasi volume sebelum masuk.",
-        "value_b": 343.2,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "GMFI",
@@ -571,24 +550,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 71,
-        "ara_price": 89,
-        "ara_dist": 39.1,
-        "ara_hit": false,
-        "sl": 61,
-        "target1": 67,
-        "target2": 89,
-        "rr": 1.0,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 39.1% ruang ke ARA Rp89. Entry Rp64, target Rp67, SL Rp61. Konfirmasi volume sebelum masuk.",
-        "value_b": 78.6,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BNBR",
@@ -600,24 +562,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 105,
-        "ara_price": 131,
-        "ara_dist": 29.7,
-        "ara_hit": false,
-        "sl": 96,
-        "target1": 105,
-        "target2": 131,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 29.7% ruang ke ARA Rp131. Entry Rp101, target Rp105, SL Rp96. Konfirmasi volume sebelum masuk.",
-        "value_b": 87.6,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "JGLE",
@@ -629,24 +574,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 95,
-        "ara_price": 119,
-        "ara_dist": 32.2,
-        "ara_hit": false,
-        "sl": 86,
-        "target1": 94,
-        "target2": 119,
-        "rr": 1.0,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 32.2% ruang ke ARA Rp119. Entry Rp90, target Rp94, SL Rp86. Konfirmasi volume sebelum masuk.",
-        "value_b": 76.3,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "DEWA",
@@ -682,18 +610,6 @@
       "categories": [
         "gainer",
         "volume"
-      ]
-    },
-    {
-      "code": "MDIA",
-      "name": "PT Intermedia Capital Tbk",
-      "price": 256,
-      "change_pct": 4.92,
-      "volume": 361280600,
-      "value": 92487833600,
-      "categories": [
-        "volume",
-        "value"
       ]
     },
     {
@@ -754,26 +670,23 @@
       "volume": 2469324300,
       "value": 187668646800,
       "categories": [
+        "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 72,
-        "ara_price": 90,
-        "ara_dist": 18.4,
-        "ara_hit": false,
-        "sl": 72,
-        "target1": 79,
-        "target2": 90,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 18.4% ruang ke ARA Rp90. Entry Rp76, target Rp79, SL Rp72. Konfirmasi volume sebelum masuk.",
-        "value_b": 187.7,
-        "cat_count": 2
-      }
+      ]
+    },
+    {
+      "code": "MDIA",
+      "name": "PT Intermedia Capital Tbk",
+      "price": 256,
+      "change_pct": 4.92,
+      "volume": 361280600,
+      "value": 92487833600,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ]
     },
     {
       "code": "BUMI",
@@ -785,24 +698,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 187,
-        "ara_price": 234,
-        "ara_dist": 28.6,
-        "ara_hit": false,
-        "sl": 173,
-        "target1": 189,
-        "target2": 234,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 28.6% ruang ke ARA Rp234. Entry Rp182, target Rp189, SL Rp173. Konfirmasi volume sebelum masuk.",
-        "value_b": 343.2,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "GMFI",
@@ -814,24 +710,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 71,
-        "ara_price": 89,
-        "ara_dist": 39.1,
-        "ara_hit": false,
-        "sl": 61,
-        "target1": 67,
-        "target2": 89,
-        "rr": 1.0,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 39.1% ruang ke ARA Rp89. Entry Rp64, target Rp67, SL Rp61. Konfirmasi volume sebelum masuk.",
-        "value_b": 78.6,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BNBR",
@@ -843,53 +722,131 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 105,
-        "ara_price": 131,
-        "ara_dist": 29.7,
-        "ara_hit": false,
-        "sl": 96,
-        "target1": 105,
-        "target2": 131,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 29.7% ruang ke ARA Rp131. Entry Rp101, target Rp105, SL Rp96. Konfirmasi volume sebelum masuk.",
-        "value_b": 87.6,
-        "cat_count": 2
-      }
-    },
-    {
-      "code": "JGLE",
-      "name": "PT Graha Andrasentra Propertindo Tbk",
-      "price": 90,
-      "change_pct": -5.26,
-      "volume": 848173700,
-      "value": 76335633000,
-      "categories": [
-        "volume",
-        "value"
-      ],
-      "analysis": {
-        "prev_close": 95,
-        "ara_price": 119,
-        "ara_dist": 32.2,
-        "ara_hit": false,
-        "sl": 86,
-        "target1": 94,
-        "target2": 119,
-        "rr": 1.0,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 32.2% ruang ke ARA Rp119. Entry Rp90, target Rp94, SL Rp86. Konfirmasi volume sebelum masuk.",
-        "value_b": 76.3,
-        "cat_count": 2
-      }
+      ]
     }
-  ]
+  ],
+  "analysis": {
+    "watchlist_notes": [
+      {
+        "code": "GIAA",
+        "name": "PT Garuda Indonesia (Persero) Tbk Class B",
+        "price": 76,
+        "change": 5.56,
+        "volume": 2469324300,
+        "value": 187668646800,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 2.47B sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp75 | Target Rp80 | Stop Rp70"
+      },
+      {
+        "code": "MDIA",
+        "name": "PT Intermedia Capital Tbk",
+        "price": 256,
+        "change": 4.92,
+        "volume": 361280600,
+        "value": 92487833600,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 361.3M sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp246 | Target Rp266 | Stop Rp238"
+      },
+      {
+        "code": "BUMI",
+        "name": "PT Bumi Resources Tbk Class A",
+        "price": 182,
+        "change": -2.67,
+        "volume": 1885530500,
+        "value": 343166551000,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 1.89B & nilai Rp343.17B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "GMFI",
+        "name": "PT Garuda Maintenance Facility Aero Asia Tbk",
+        "price": 64,
+        "change": -9.86,
+        "volume": 1228132200,
+        "value": 78600460800,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 1.23B & nilai Rp78.60B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "BNBR",
+        "name": "PT Bakrie & Brothers Tbk Class A",
+        "price": 101,
+        "change": -3.81,
+        "volume": 867016400,
+        "value": 87568656400,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 867.0M & nilai Rp87.57B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      }
+    ],
+    "signals": [
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "GIAA",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "MDIA",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "info",
+        "icon": "📈",
+        "code": "GIAA",
+        "text": "Volume king hari ini: 2.47B shares — paling liquid untuk scalp."
+      }
+    ],
+    "warnings": [
+      {
+        "code": "GMFI",
+        "change": -9.86,
+        "text": "Turun -9.9% — hindari untuk long, potensi tekanan berlanjut."
+      },
+      {
+        "code": "SULI",
+        "change": -11.3,
+        "text": "Turun -11.3% — hindari untuk long, potensi tekanan berlanjut."
+      }
+    ],
+    "summary": {
+      "ihsg_close": 6309.9,
+      "ihsg_change": -0.87,
+      "ihsg_high": 6388.581,
+      "ihsg_low": 6291.195,
+      "day_range": 97.39,
+      "is_positive": false,
+      "is_month_end": false,
+      "session_label": "Sesi Siang",
+      "top_gainer": "DART",
+      "top_gainer_chg": 20.71,
+      "vol_king": "GIAA",
+      "vol_king_vol": "2.47B",
+      "triple_count": 2,
+      "intersection_count": 13
+    }
+  }
 }
