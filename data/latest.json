@@ -1,21 +1,30 @@
 {
   "session": "pagi",
-  "timestamp": "2026-08-13T09:09:45.826319+07:00",
+  "timestamp": "2026-08-13T09:10:00.127646+07:00",
   "date": "13 August 2026",
-  "time": "09:09 WIB",
+  "time": "09:10 WIB",
   "ihsg": {
-    "close": 6373.85,
+    "close": 6373.849,
     "change_pct": 1.69,
     "change_abs": 105.97,
     "high": 6373.849,
     "low": 6272.303,
-    "open": null,
+    "open": 6277.763,
     "volume": 0,
-    "market_open": false,
-    "market_state": "CLOSED",
-    "as_of": "13 Aug 2026 09:09 WIB"
+    "value": 0,
+    "market_open": true,
+    "market_state": "REGULAR",
+    "as_of": "13 Aug 2026 09:10 WIB"
   },
   "gainers": [
+    {
+      "code": "EKAD",
+      "name": "PT Ekadharma International Tbk",
+      "price": 300,
+      "change_pct": 25,
+      "volume": 2445200,
+      "value": 733560000
+    },
     {
       "code": "MDIA",
       "name": "PT Intermedia Capital Tbk",
@@ -31,6 +40,14 @@
       "change_pct": 10,
       "volume": 120447700,
       "value": 1324924700
+    },
+    {
+      "code": "SOFA",
+      "name": "PT Solusi Environment Asia Tbk",
+      "price": 270,
+      "change_pct": 9.76,
+      "volume": 2711600,
+      "value": 732132000
     },
     {
       "code": "LUCY",
@@ -121,6 +138,14 @@
       "value": 4103915200
     },
     {
+      "code": "SINI",
+      "name": "PT Singaraja Putra Tbk",
+      "price": 7075,
+      "change_pct": 5.6,
+      "volume": 1194200,
+      "value": 8448965000
+    },
+    {
       "code": "BAPI",
       "name": "PT Bhakti Agung Propertindo Tbk",
       "price": 19,
@@ -129,36 +154,28 @@
       "value": 255103500
     },
     {
-      "code": "BEKS",
-      "name": "PT Bank Pembangunan Daerah Banten (Perseroda) Tbk Class A",
-      "price": 24,
-      "change_pct": 4.35,
-      "volume": 24778700,
-      "value": 594688800
+      "code": "PCAR",
+      "name": "PT Prima Cakrawala Abadi Tbk",
+      "price": 43,
+      "change_pct": 4.88,
+      "volume": 907800,
+      "value": 39035400
     },
     {
-      "code": "MSIE",
-      "name": "PT Multisarana Intan Eduka Tbk",
-      "price": 98,
-      "change_pct": 4.26,
-      "volume": 16712300,
-      "value": 1637805400
+      "code": "ENRG",
+      "name": "PT Energi Mega Persada Tbk",
+      "price": 1380,
+      "change_pct": 4.55,
+      "volume": 5482900,
+      "value": 7566402000
     },
     {
-      "code": "WGSH",
-      "name": "PT Wira Global Solusi Tbk",
-      "price": 187,
-      "change_pct": 3.89,
-      "volume": 11607800,
-      "value": 2170658600
-    },
-    {
-      "code": "JGLE",
-      "name": "PT Graha Andrasentra Propertindo Tbk",
-      "price": 96,
-      "change_pct": 3.23,
-      "volume": 10175900,
-      "value": 976886400
+      "code": "NIRO",
+      "name": "PT City Retail Developments Tbk",
+      "price": 162,
+      "change_pct": 4.52,
+      "volume": 623800,
+      "value": 101055600
     }
   ],
   "volume": [
@@ -497,7 +514,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 246,
+        "ara_price": 308,
+        "ara_dist": 10.0,
+        "ara_hit": false,
+        "sl": 266,
+        "target1": 292,
+        "target2": 308,
+        "rr": 0.9,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 10.0% ruang ke ARA Rp308. Entry area sekarang, target 1 Rp292 · target 2 Rp308. SL Rp266 · R/R 0.9x.",
+        "value_b": 278.4,
+        "cat_count": 3
+      }
     },
     {
       "code": "PACK",
@@ -510,7 +544,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 252,
+        "ara_price": 316,
+        "ara_dist": 17.0,
+        "ara_hit": false,
+        "sl": 256,
+        "target1": 280,
+        "target2": 316,
+        "rr": 0.7,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 17.0% ruang ke ARA Rp316. Entry area sekarang, target 1 Rp280 · target 2 Rp316. SL Rp256 · R/R 0.7x.",
+        "value_b": 41.9,
+        "cat_count": 3
+      }
     },
     {
       "code": "ELTY",
@@ -523,7 +574,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 37,
+        "ara_price": 46,
+        "ara_dist": 15.0,
+        "ara_hit": false,
+        "sl": 38,
+        "target1": 42,
+        "target2": 46,
+        "rr": 1.0,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 15.0% ruang ke ARA Rp46. Entry area sekarang, target 1 Rp42 · target 2 Rp46. SL Rp38 · R/R 1.0x.",
+        "value_b": 4.2,
+        "cat_count": 3
+      }
     },
     {
       "code": "MEJA",
@@ -536,7 +604,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 105,
+        "ara_price": 131,
+        "ara_dist": 17.0,
+        "ara_hit": false,
+        "sl": 106,
+        "target1": 116,
+        "target2": 131,
+        "rr": 0.7,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 17.0% ruang ke ARA Rp131. Entry area sekarang, target 1 Rp116 · target 2 Rp131. SL Rp106 · R/R 0.7x.",
+        "value_b": 4.1,
+        "cat_count": 3
+      }
     },
     {
       "code": "BAJA",
@@ -549,7 +634,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 338,
+        "ara_price": 422,
+        "ara_dist": 16.6,
+        "ara_hit": false,
+        "sl": 344,
+        "target1": 376,
+        "target2": 422,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 16.6% ruang ke ARA Rp422. Entry area sekarang, target 1 Rp376 · target 2 Rp422. SL Rp344 · R/R 0.8x.",
+        "value_b": 10.8,
+        "cat_count": 3
+      }
     },
     {
       "code": "BTEK",
@@ -624,18 +726,6 @@
       ]
     },
     {
-      "code": "BEKS",
-      "name": "PT Bank Pembangunan Daerah Banten (Perseroda) Tbk Class A",
-      "price": 24,
-      "change_pct": 4.35,
-      "volume": 24778700,
-      "value": 594688800,
-      "categories": [
-        "gainer",
-        "volume"
-      ]
-    },
-    {
       "code": "CUAN",
       "name": "PT Petrindo Jaya Kreasi Tbk",
       "price": 860,
@@ -658,6 +748,30 @@
         "gainer",
         "volume"
       ]
+    },
+    {
+      "code": "ENRG",
+      "name": "PT Energi Mega Persada Tbk",
+      "price": 1380,
+      "change_pct": 4.55,
+      "volume": 5482900,
+      "value": 7566402000,
+      "categories": [
+        "gainer",
+        "value"
+      ]
+    },
+    {
+      "code": "SINI",
+      "name": "PT Singaraja Putra Tbk",
+      "price": 7075,
+      "change_pct": 5.6,
+      "volume": 1194200,
+      "value": 8448965000,
+      "categories": [
+        "gainer",
+        "value"
+      ]
     }
   ],
   "watchlist": [
@@ -672,7 +786,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 246,
+        "ara_price": 308,
+        "ara_dist": 10.0,
+        "ara_hit": false,
+        "sl": 266,
+        "target1": 292,
+        "target2": 308,
+        "rr": 0.9,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 10.0% ruang ke ARA Rp308. Entry area sekarang, target 1 Rp292 · target 2 Rp308. SL Rp266 · R/R 0.9x.",
+        "value_b": 278.4,
+        "cat_count": 3
+      }
     },
     {
       "code": "PACK",
@@ -685,7 +816,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 252,
+        "ara_price": 316,
+        "ara_dist": 17.0,
+        "ara_hit": false,
+        "sl": 256,
+        "target1": 280,
+        "target2": 316,
+        "rr": 0.7,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 17.0% ruang ke ARA Rp316. Entry area sekarang, target 1 Rp280 · target 2 Rp316. SL Rp256 · R/R 0.7x.",
+        "value_b": 41.9,
+        "cat_count": 3
+      }
     },
     {
       "code": "ELTY",
@@ -698,7 +846,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 37,
+        "ara_price": 46,
+        "ara_dist": 15.0,
+        "ara_hit": false,
+        "sl": 38,
+        "target1": 42,
+        "target2": 46,
+        "rr": 1.0,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 15.0% ruang ke ARA Rp46. Entry area sekarang, target 1 Rp42 · target 2 Rp46. SL Rp38 · R/R 1.0x.",
+        "value_b": 4.2,
+        "cat_count": 3
+      }
     },
     {
       "code": "MEJA",
@@ -711,7 +876,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 105,
+        "ara_price": 131,
+        "ara_dist": 17.0,
+        "ara_hit": false,
+        "sl": 106,
+        "target1": 116,
+        "target2": 131,
+        "rr": 0.7,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 17.0% ruang ke ARA Rp131. Entry area sekarang, target 1 Rp116 · target 2 Rp131. SL Rp106 · R/R 0.7x.",
+        "value_b": 4.1,
+        "cat_count": 3
+      }
     },
     {
       "code": "BAJA",
@@ -724,147 +906,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 338,
+        "ara_price": 422,
+        "ara_dist": 16.6,
+        "ara_hit": false,
+        "sl": 344,
+        "target1": 376,
+        "target2": 422,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 16.6% ruang ke ARA Rp422. Entry area sekarang, target 1 Rp376 · target 2 Rp422. SL Rp344 · R/R 0.8x.",
+        "value_b": 10.8,
+        "cat_count": 3
+      }
     }
-  ],
-  "analysis": {
-    "watchlist_notes": [
-      {
-        "code": "MDIA",
-        "name": "PT Intermedia Capital Tbk",
-        "price": 280,
-        "change": 13.82,
-        "volume": 994119200,
-        "value": 278353376000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 994.1M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp269 | Target Rp291 | Stop Rp260"
-      },
-      {
-        "code": "PACK",
-        "name": "PT Abadi Nusantara Hijau Investama Tbk",
-        "price": 270,
-        "change": 7.14,
-        "volume": 155319900,
-        "value": 41936373000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 155.3M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp259 | Target Rp281 | Stop Rp251"
-      },
-      {
-        "code": "ELTY",
-        "name": "PT Bakrieland Development Tbk Class A",
-        "price": 40,
-        "change": 8.11,
-        "volume": 104217100,
-        "value": 4168684000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 104.2M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp40 | Target Rp40 | Stop Rp35"
-      },
-      {
-        "code": "MEJA",
-        "name": "PT Harta Djaya Karya Tbk",
-        "price": 112,
-        "change": 6.67,
-        "volume": 36642100,
-        "value": 4103915200,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 36.6M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp108 | Target Rp116 | Stop Rp104"
-      },
-      {
-        "code": "BAJA",
-        "name": "PT Saranacentral Bajatama Tbk",
-        "price": 362,
-        "change": 7.1,
-        "volume": 29769300,
-        "value": 10776486600,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 29.8M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp348 | Target Rp376 | Stop Rp337"
-      }
-    ],
-    "signals": [
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "MDIA",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "PACK",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "ELTY",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "MEJA",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "BAJA",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "info",
-        "icon": "📈",
-        "code": "MDIA",
-        "text": "Volume king hari ini: 994.1M shares — paling liquid untuk scalp."
-      }
-    ],
-    "warnings": [
-      {
-        "code": "TGUK",
-        "change": -9.89,
-        "text": "Turun -9.9% — hindari untuk long, potensi tekanan berlanjut."
-      }
-    ],
-    "summary": {
-      "ihsg_close": 6373.85,
-      "ihsg_change": 1.69,
-      "ihsg_high": 6373.849,
-      "ihsg_low": 6272.303,
-      "day_range": 101.55,
-      "is_positive": true,
-      "is_month_end": false,
-      "session_label": "Sesi Pagi",
-      "top_gainer": "MDIA",
-      "top_gainer_chg": 13.82,
-      "vol_king": "MDIA",
-      "vol_king_vol": "994.1M",
-      "triple_count": 5,
-      "intersection_count": 14
-    }
-  }
+  ]
 }
