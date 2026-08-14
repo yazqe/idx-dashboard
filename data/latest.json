@@ -1,21 +1,38 @@
 {
   "session": "pagi",
-  "timestamp": "2026-08-14T10:54:51.849544+07:00",
+  "timestamp": "2026-08-14T10:55:00.148835+07:00",
   "date": "14 August 2026",
-  "time": "10:54 WIB",
+  "time": "10:55 WIB",
   "ihsg": {
-    "close": 6282.96,
-    "change_pct": -1.43,
-    "change_abs": -90.89,
+    "close": 6278.989,
+    "change_pct": -0.36,
+    "change_abs": -22.78,
     "high": 6315.921,
     "low": 6267.407,
-    "open": null,
+    "open": 6296.593,
     "volume": 0,
-    "market_open": false,
-    "market_state": "CLOSED",
-    "as_of": "14 Aug 2026 10:54 WIB"
+    "value": 0,
+    "market_open": true,
+    "market_state": "REGULAR",
+    "as_of": "14 Aug 2026 10:55 WIB"
   },
   "gainers": [
+    {
+      "code": "YPAS",
+      "name": "PT Yanaprima Hastapersada Tbk",
+      "price": 1200,
+      "change_pct": 25,
+      "volume": 1113000,
+      "value": 1335600000
+    },
+    {
+      "code": "AGAR",
+      "name": "PT Asia Sejahtera Mina Tbk",
+      "price": 1605,
+      "change_pct": 24.9,
+      "volume": 1508200,
+      "value": 2420661000
+    },
     {
       "code": "SLIS",
       "name": "PT Gaya Abadi Sempurna Tbk",
@@ -23,6 +40,30 @@
       "change_pct": 23.86,
       "volume": 845005900,
       "value": 92105643100
+    },
+    {
+      "code": "STAR",
+      "name": "PT Calculus Global Ventures Tbk",
+      "price": 450,
+      "change_pct": 18.42,
+      "volume": 3346900,
+      "value": 1506105000
+    },
+    {
+      "code": "PEHA",
+      "name": "PT Phapros Tbk",
+      "price": 310,
+      "change_pct": 17.42,
+      "volume": 6402100,
+      "value": 1984651000
+    },
+    {
+      "code": "INTD",
+      "name": "PT Inter-Delta Tbk",
+      "price": 324,
+      "change_pct": 15.71,
+      "volume": 1001300,
+      "value": 324421200
     },
     {
       "code": "MDIA",
@@ -41,6 +82,14 @@
       "value": 26613821400
     },
     {
+      "code": "BRNA",
+      "name": "PT Berlina Tbk",
+      "price": 710,
+      "change_pct": 10.08,
+      "volume": 903600,
+      "value": 641556000
+    },
+    {
       "code": "SURI",
       "name": "PT Maja Agung Latexindo Tbk",
       "price": 82,
@@ -57,12 +106,36 @@
       "value": 2146750200
     },
     {
+      "code": "TEBE",
+      "name": "PT Dana Brata Luhur Tbk",
+      "price": 1185,
+      "change_pct": 7.73,
+      "volume": 2739000,
+      "value": 3245715000
+    },
+    {
+      "code": "KREN",
+      "name": "PT Quantum Clovera Investama Tbk",
+      "price": 14,
+      "change_pct": 7.69,
+      "volume": 751900,
+      "value": 10526600
+    },
+    {
       "code": "VKTR",
       "name": "PT VKTR Teknologi Mobilitas Tbk",
       "price": 880,
       "change_pct": 7.32,
       "volume": 99051600,
       "value": 87165408000
+    },
+    {
+      "code": "TAXI",
+      "name": "PT Express Transindo Utama Tbk",
+      "price": 15,
+      "change_pct": 7.14,
+      "volume": 511900,
+      "value": 7678500
     },
     {
       "code": "BAJA",
@@ -97,36 +170,12 @@
       "value": 4473344700
     },
     {
-      "code": "IOTF",
-      "name": "PT Sumber Sinergi Makmur Tbk",
-      "price": 76,
-      "change_pct": 5.56,
-      "volume": 156804800,
-      "value": 11917164800
-    },
-    {
-      "code": "DOOH",
-      "name": "PT Era Media Sejahtera Tbk",
-      "price": 282,
-      "change_pct": 5.22,
-      "volume": 194726600,
-      "value": 54912901200
-    },
-    {
-      "code": "HATM",
-      "name": "PT Habco Trans Maritima Tbk",
-      "price": 610,
-      "change_pct": 4.27,
-      "volume": 27443900,
-      "value": 16740779000
-    },
-    {
-      "code": "WEGE",
-      "name": "PT Wijaya Karya Bangunan Gedung Tbk",
-      "price": 54,
-      "change_pct": 3.85,
-      "volume": 63073000,
-      "value": 3405942000
+      "code": "ASMI",
+      "name": "PT Asuransi Maximus Graha Persada Tbk",
+      "price": 17,
+      "change_pct": 6.25,
+      "volume": 2243600,
+      "value": 38141200
     }
   ],
   "volume": [
@@ -159,16 +208,16 @@
       "name": "PT Petrindo Jaya Kreasi Tbk",
       "price": 835,
       "change_pct": -0.6,
-      "volume": 672610200,
-      "value": 561629517000
+      "volume": 672905900,
+      "value": 561876426500
     },
     {
       "code": "IATA",
       "name": "PT Karya Pacific Energy Tbk",
-      "price": 116,
-      "change_pct": -3.33,
-      "volume": 538855700,
-      "value": 62507261200
+      "price": 115,
+      "change_pct": -4.17,
+      "volume": 540431400,
+      "value": 62149611000
     },
     {
       "code": "BNBR",
@@ -215,16 +264,16 @@
       "name": "PT Garuda Indonesia (Persero) Tbk Class B",
       "price": 69,
       "change_pct": -4.17,
-      "volume": 201455500,
-      "value": 13900429500
+      "volume": 201455800,
+      "value": 13900450200
     },
     {
       "code": "DOOH",
       "name": "PT Era Media Sejahtera Tbk",
-      "price": 282,
-      "change_pct": 5.22,
-      "volume": 194726600,
-      "value": 54912901200
+      "price": 284,
+      "change_pct": 5.97,
+      "volume": 194726700,
+      "value": 55302382800
     },
     {
       "code": "BAIK",
@@ -261,10 +310,10 @@
     {
       "code": "TMPO",
       "name": "PT Tempo Inti Media Tbk",
-      "price": 182,
-      "change_pct": -3.19,
-      "volume": 126461200,
-      "value": 23015938400
+      "price": 184,
+      "change_pct": -2.13,
+      "volume": 126892200,
+      "value": 23348164800
     },
     {
       "code": "BRMS",
@@ -297,8 +346,8 @@
       "name": "PT Petrindo Jaya Kreasi Tbk",
       "price": 835,
       "change_pct": -0.6,
-      "volume": 672610200,
-      "value": 561629517000
+      "volume": 672905900,
+      "value": 561876426500
     },
     {
       "code": "TPIA",
@@ -445,12 +494,12 @@
       "value": 63987709200
     },
     {
-      "code": "IATA",
-      "name": "PT Karya Pacific Energy Tbk",
-      "price": 116,
-      "change_pct": -3.33,
-      "volume": 538855700,
-      "value": 62507261200
+      "code": "BAIK",
+      "name": "PT Bersama Mencapai Puncak Tbk",
+      "price": 390,
+      "change_pct": -14.85,
+      "volume": 159734800,
+      "value": 62296572000
     }
   ],
   "intersection": [
@@ -465,7 +514,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 246,
+        "ara_price": 308,
+        "ara_dist": 10.0,
+        "ara_hit": false,
+        "sl": 266,
+        "target1": 292,
+        "target2": 308,
+        "rr": 0.9,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 10.0% ruang ke ARA Rp308. Entry area sekarang, target 1 Rp292 · target 2 Rp308. SL Rp266 · R/R 0.9x.",
+        "value_b": 278.4,
+        "cat_count": 3
+      }
     },
     {
       "code": "SLIS",
@@ -478,7 +544,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 88,
+        "ara_price": 110,
+        "ara_dist": 0.9,
+        "ara_hit": true,
+        "sl": 104,
+        "target1": 113,
+        "target2": 118,
+        "rr": 0.8,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp110). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 92.1,
+        "cat_count": 3
+      }
     },
     {
       "code": "VKTR",
@@ -491,7 +574,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 820,
+        "ara_price": 1025,
+        "ara_dist": 16.5,
+        "ara_hit": false,
+        "sl": 835,
+        "target1": 915,
+        "target2": 1025,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 16.5% ruang ke ARA Rp1,025. Entry area sekarang, target 1 Rp915 · target 2 Rp1,025. SL Rp835 · R/R 0.8x.",
+        "value_b": 87.2,
+        "cat_count": 3
+      }
     },
     {
       "code": "BUMI",
@@ -503,31 +603,53 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 178,
+        "ara_price": 222,
+        "ara_dist": 25.4,
+        "ara_hit": false,
+        "sl": 168,
+        "target1": 184,
+        "target2": 222,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 25.4% ruang ke ARA Rp222. Entry Rp177, target Rp184, SL Rp168. Konfirmasi volume sebelum masuk.",
+        "value_b": 151.6,
+        "cat_count": 2
+      }
     },
     {
       "code": "CUAN",
       "name": "PT Petrindo Jaya Kreasi Tbk",
       "price": 835,
       "change_pct": -0.6,
-      "volume": 672610200,
-      "value": 561629517000,
+      "volume": 672905900,
+      "value": 561876426500,
       "categories": [
         "volume",
         "value"
-      ]
-    },
-    {
-      "code": "IATA",
-      "name": "PT Karya Pacific Energy Tbk",
-      "price": 116,
-      "change_pct": -3.33,
-      "volume": 538855700,
-      "value": 62507261200,
-      "categories": [
-        "volume",
-        "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 840,
+        "ara_price": 1050,
+        "ara_dist": 25.7,
+        "ara_hit": false,
+        "sl": 795,
+        "target1": 870,
+        "target2": 1050,
+        "rr": 0.9,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 25.7% ruang ke ARA Rp1,050. Entry Rp835, target Rp870, SL Rp795. Konfirmasi volume sebelum masuk.",
+        "value_b": 561.9,
+        "cat_count": 2
+      }
     },
     {
       "code": "TPIA",
@@ -554,27 +676,15 @@
       ]
     },
     {
-      "code": "DOOH",
-      "name": "PT Era Media Sejahtera Tbk",
-      "price": 282,
-      "change_pct": 5.22,
-      "volume": 194726600,
-      "value": 54912901200,
+      "code": "BAIK",
+      "name": "PT Bersama Mencapai Puncak Tbk",
+      "price": 390,
+      "change_pct": -14.85,
+      "volume": 159734800,
+      "value": 62296572000,
       "categories": [
-        "gainer",
-        "volume"
-      ]
-    },
-    {
-      "code": "IOTF",
-      "name": "PT Sumber Sinergi Makmur Tbk",
-      "price": 76,
-      "change_pct": 5.56,
-      "volume": 156804800,
-      "value": 11917164800,
-      "categories": [
-        "gainer",
-        "volume"
+        "volume",
+        "value"
       ]
     },
     {
@@ -614,7 +724,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 246,
+        "ara_price": 308,
+        "ara_dist": 10.0,
+        "ara_hit": false,
+        "sl": 266,
+        "target1": 292,
+        "target2": 308,
+        "rr": 0.9,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 10.0% ruang ke ARA Rp308. Entry area sekarang, target 1 Rp292 · target 2 Rp308. SL Rp266 · R/R 0.9x.",
+        "value_b": 278.4,
+        "cat_count": 3
+      }
     },
     {
       "code": "SLIS",
@@ -627,7 +754,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 88,
+        "ara_price": 110,
+        "ara_dist": 0.9,
+        "ara_hit": true,
+        "sl": 104,
+        "target1": 113,
+        "target2": 118,
+        "rr": 0.8,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp110). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 92.1,
+        "cat_count": 3
+      }
     },
     {
       "code": "VKTR",
@@ -640,7 +784,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 820,
+        "ara_price": 1025,
+        "ara_dist": 16.5,
+        "ara_hit": false,
+        "sl": 835,
+        "target1": 915,
+        "target2": 1025,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 16.5% ruang ke ARA Rp1,025. Entry area sekarang, target 1 Rp915 · target 2 Rp1,025. SL Rp835 · R/R 0.8x.",
+        "value_b": 87.2,
+        "cat_count": 3
+      }
     },
     {
       "code": "BUMI",
@@ -652,145 +813,53 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 178,
+        "ara_price": 222,
+        "ara_dist": 25.4,
+        "ara_hit": false,
+        "sl": 168,
+        "target1": 184,
+        "target2": 222,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 25.4% ruang ke ARA Rp222. Entry Rp177, target Rp184, SL Rp168. Konfirmasi volume sebelum masuk.",
+        "value_b": 151.6,
+        "cat_count": 2
+      }
     },
     {
       "code": "CUAN",
       "name": "PT Petrindo Jaya Kreasi Tbk",
       "price": 835,
       "change_pct": -0.6,
-      "volume": 672610200,
-      "value": 561629517000,
+      "volume": 672905900,
+      "value": 561876426500,
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 840,
+        "ara_price": 1050,
+        "ara_dist": 25.7,
+        "ara_hit": false,
+        "sl": 795,
+        "target1": 870,
+        "target2": 1050,
+        "rr": 0.9,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 25.7% ruang ke ARA Rp1,050. Entry Rp835, target Rp870, SL Rp795. Konfirmasi volume sebelum masuk.",
+        "value_b": 561.9,
+        "cat_count": 2
+      }
     }
-  ],
-  "analysis": {
-    "watchlist_notes": [
-      {
-        "code": "MDIA",
-        "name": "PT Intermedia Capital Tbk",
-        "price": 280,
-        "change": 13.82,
-        "volume": 994119200,
-        "value": 278353376000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 994.1M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp269 | Target Rp291 | Stop Rp260"
-      },
-      {
-        "code": "SLIS",
-        "name": "PT Gaya Abadi Sempurna Tbk",
-        "price": 109,
-        "change": 23.86,
-        "volume": 845005900,
-        "value": 92105643100,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 845.0M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp105 | Target Rp113 | Stop Rp101"
-      },
-      {
-        "code": "VKTR",
-        "name": "PT VKTR Teknologi Mobilitas Tbk",
-        "price": 880,
-        "change": 7.32,
-        "volume": 99051600,
-        "value": 87165408000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 99.1M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp845 | Target Rp915 | Stop Rp818"
-      },
-      {
-        "code": "BUMI",
-        "name": "PT Bumi Resources Tbk Class A",
-        "price": 177,
-        "change": -0.56,
-        "volume": 856525400,
-        "value": 151604995800,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 856.5M & nilai Rp151.60B — paling liquid, spread kecil.",
-        "guidance": "Pantau open besok untuk konfirmasi arah."
-      },
-      {
-        "code": "CUAN",
-        "name": "PT Petrindo Jaya Kreasi Tbk",
-        "price": 835,
-        "change": -0.6,
-        "volume": 672610200,
-        "value": 561629517000,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 672.6M & nilai Rp561.63B — paling liquid, spread kecil.",
-        "guidance": "Pantau open besok untuk konfirmasi arah."
-      }
-    ],
-    "signals": [
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "MDIA",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "SLIS",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "VKTR",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "info",
-        "icon": "📈",
-        "code": "MDIA",
-        "text": "Volume king hari ini: 994.1M shares — paling liquid untuk scalp."
-      }
-    ],
-    "warnings": [
-      {
-        "code": "BAIK",
-        "change": -14.85,
-        "text": "Turun -14.8% — hindari untuk long, potensi tekanan berlanjut."
-      }
-    ],
-    "summary": {
-      "ihsg_close": 6282.96,
-      "ihsg_change": -1.43,
-      "ihsg_high": 6315.921,
-      "ihsg_low": 6267.407,
-      "day_range": 48.51,
-      "is_positive": false,
-      "is_month_end": false,
-      "session_label": "Sesi Pagi",
-      "top_gainer": "SLIS",
-      "top_gainer_chg": 23.86,
-      "vol_king": "MDIA",
-      "vol_king_vol": "994.1M",
-      "triple_count": 3,
-      "intersection_count": 12
-    }
-  }
+  ]
 }
