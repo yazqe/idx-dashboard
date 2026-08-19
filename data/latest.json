@@ -1,21 +1,46 @@
 {
   "session": "siang",
-  "timestamp": "2026-08-19T12:44:31.875636+07:00",
+  "timestamp": "2026-08-19T12:45:00.003586+07:00",
   "date": "19 August 2026",
-  "time": "12:44 WIB",
+  "time": "12:45 WIB",
   "ihsg": {
-    "close": 6411.2,
-    "change_pct": 0.15,
-    "change_abs": 9.31,
+    "close": 6411.196,
+    "change_pct": -0.6,
+    "change_abs": -38.63,
     "high": 6490.913,
     "low": 6373.81,
-    "open": null,
+    "open": 6408.177,
     "volume": 0,
-    "market_open": false,
-    "market_state": "CLOSED",
-    "as_of": "19 Aug 2026 12:44 WIB"
+    "value": 0,
+    "market_open": true,
+    "market_state": "REGULAR",
+    "as_of": "19 Aug 2026 12:45 WIB"
   },
   "gainers": [
+    {
+      "code": "TIFA",
+      "name": "PT KDB Tifa Finance Tbk",
+      "price": 382,
+      "change_pct": 24.84,
+      "volume": 1811000,
+      "value": 691802000
+    },
+    {
+      "code": "TRUS",
+      "name": "PT Trust Finance Indonesia Tbk",
+      "price": 482,
+      "change_pct": 22.96,
+      "volume": 1317200,
+      "value": 634890400
+    },
+    {
+      "code": "FUJI",
+      "name": "PT Fuji Finance Indonesia Tbk.",
+      "price": 252,
+      "change_pct": 21.15,
+      "volume": 6890400,
+      "value": 1736380800
+    },
     {
       "code": "SWID",
       "name": "PT Saraswanti Indoland Development Tbk",
@@ -41,6 +66,14 @@
       "value": 31246686800
     },
     {
+      "code": "YPAS",
+      "name": "PT Yanaprima Hastapersada Tbk",
+      "price": 1370,
+      "change_pct": 14.17,
+      "volume": 1946100,
+      "value": 2666157000
+    },
+    {
       "code": "MDIA",
       "name": "PT Intermedia Capital Tbk",
       "price": 280,
@@ -55,6 +88,14 @@
       "change_pct": 13.14,
       "volume": 619353900,
       "value": 95999854500
+    },
+    {
+      "code": "AGAR",
+      "name": "PT Asia Sejahtera Mina Tbk",
+      "price": 1810,
+      "change_pct": 12.77,
+      "volume": 4382400,
+      "value": 7932144000
     },
     {
       "code": "WEGE",
@@ -105,6 +146,22 @@
       "value": 57844914400
     },
     {
+      "code": "SOFA",
+      "name": "PT Solusi Environment Asia Tbk",
+      "price": 302,
+      "change_pct": 9.42,
+      "volume": 4192800,
+      "value": 1266225600
+    },
+    {
+      "code": "APLI",
+      "name": "PT Asiaplast Industries Tbk",
+      "price": 280,
+      "change_pct": 9.38,
+      "volume": 4745000,
+      "value": 1328600000
+    },
+    {
       "code": "BSDE",
       "name": "PT Bumi Serpong Damai Tbk",
       "price": 665,
@@ -119,62 +176,6 @@
       "change_pct": 8.62,
       "volume": 36357800,
       "value": 2290541400
-    },
-    {
-      "code": "LMPI",
-      "name": "PT Langgeng Makmur Industri Tbk",
-      "price": 160,
-      "change_pct": 8.11,
-      "volume": 10378100,
-      "value": 1660496000
-    },
-    {
-      "code": "IATA",
-      "name": "PT Karya Pacific Energy Tbk",
-      "price": 118,
-      "change_pct": 7.27,
-      "volume": 1089613200,
-      "value": 128574357600
-    },
-    {
-      "code": "FPNI",
-      "name": "PT Lotte Chemical Titan Tbk",
-      "price": 464,
-      "change_pct": 6.91,
-      "volume": 16460900,
-      "value": 7637857600
-    },
-    {
-      "code": "COAL",
-      "name": "PT Black Diamond Resources Tbk",
-      "price": 31,
-      "change_pct": 6.9,
-      "volume": 64616900,
-      "value": 2003123900
-    },
-    {
-      "code": "ISAT",
-      "name": "PT Indosat Tbk Class B",
-      "price": 2750,
-      "change_pct": 5.77,
-      "volume": 104073600,
-      "value": 286202400000
-    },
-    {
-      "code": "AYAM",
-      "name": "PT Janu Putra Sejahtera Tbk",
-      "price": 484,
-      "change_pct": 5.68,
-      "volume": 21183600,
-      "value": 10252862400
-    },
-    {
-      "code": "FWCT",
-      "name": "PT Wijaya Cahaya Timber Tbk",
-      "price": 95,
-      "change_pct": 5.56,
-      "volume": 11552000,
-      "value": 1097440000
     }
   ],
   "volume": [
@@ -513,20 +514,24 @@
         "gainer",
         "volume",
         "value"
-      ]
-    },
-    {
-      "code": "IATA",
-      "name": "PT Karya Pacific Energy Tbk",
-      "price": 118,
-      "change_pct": 7.27,
-      "volume": 1089613200,
-      "value": 128574357600,
-      "categories": [
-        "gainer",
-        "volume",
-        "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 166,
+        "ara_price": 208,
+        "ara_dist": 13.7,
+        "ara_hit": false,
+        "sl": 174,
+        "target1": 190,
+        "target2": 208,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 13.7% ruang ke ARA Rp208. Entry area sekarang, target 1 Rp190 · target 2 Rp208. SL Rp174 · R/R 0.8x.",
+        "value_b": 386.5,
+        "cat_count": 3
+      }
     },
     {
       "code": "MDIA",
@@ -539,7 +544,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 246,
+        "ara_price": 308,
+        "ara_dist": 10.0,
+        "ara_hit": false,
+        "sl": 266,
+        "target1": 292,
+        "target2": 308,
+        "rr": 0.9,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 10.0% ruang ke ARA Rp308. Entry area sekarang, target 1 Rp292 · target 2 Rp308. SL Rp266 · R/R 0.9x.",
+        "value_b": 278.4,
+        "cat_count": 3
+      }
     },
     {
       "code": "DOOH",
@@ -552,7 +574,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 294,
+        "ara_price": 368,
+        "ara_dist": 12.9,
+        "ara_hit": false,
+        "sl": 310,
+        "target1": 340,
+        "target2": 368,
+        "rr": 0.9,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 12.9% ruang ke ARA Rp368. Entry area sekarang, target 1 Rp340 · target 2 Rp368. SL Rp310 · R/R 0.9x.",
+        "value_b": 241.6,
+        "cat_count": 3
+      }
     },
     {
       "code": "APLN",
@@ -565,7 +604,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 137,
+        "ara_price": 171,
+        "ara_dist": 10.3,
+        "ara_hit": false,
+        "sl": 147,
+        "target1": 161,
+        "target2": 171,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 10.3% ruang ke ARA Rp171. Entry area sekarang, target 1 Rp161 · target 2 Rp171. SL Rp147 · R/R 0.8x.",
+        "value_b": 96.0,
+        "cat_count": 3
+      }
     },
     {
       "code": "BACH",
@@ -578,7 +634,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 452,
+        "ara_price": 565,
+        "ara_dist": 8.7,
+        "ara_hit": false,
+        "sl": 494,
+        "target1": 540,
+        "target2": 565,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection + Momentum Kuat",
+        "signal": "STRONG BUY",
+        "tip": "Setup terkuat — triple intersection, 8.7% ruang ke ARA Rp565. Entry area sekarang, target 1 Rp540 · target 2 Rp565. SL Rp494 · R/R 0.8x.",
+        "value_b": 111.6,
+        "cat_count": 3
+      }
     },
     {
       "code": "INET",
@@ -587,6 +660,18 @@
       "change_pct": 0,
       "volume": 1399337200,
       "value": 408606462400,
+      "categories": [
+        "volume",
+        "value"
+      ]
+    },
+    {
+      "code": "IATA",
+      "name": "PT Karya Pacific Energy Tbk",
+      "price": 118,
+      "change_pct": 7.27,
+      "volume": 1089613200,
+      "value": 128574357600,
       "categories": [
         "volume",
         "value"
@@ -615,18 +700,6 @@
         "gainer",
         "volume"
       ]
-    },
-    {
-      "code": "ISAT",
-      "name": "PT Indosat Tbk Class B",
-      "price": 2750,
-      "change_pct": 5.77,
-      "volume": 104073600,
-      "value": 286202400000,
-      "categories": [
-        "gainer",
-        "value"
-      ]
     }
   ],
   "watchlist": [
@@ -641,20 +714,24 @@
         "gainer",
         "volume",
         "value"
-      ]
-    },
-    {
-      "code": "IATA",
-      "name": "PT Karya Pacific Energy Tbk",
-      "price": 118,
-      "change_pct": 7.27,
-      "volume": 1089613200,
-      "value": 128574357600,
-      "categories": [
-        "gainer",
-        "volume",
-        "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 166,
+        "ara_price": 208,
+        "ara_dist": 13.7,
+        "ara_hit": false,
+        "sl": 174,
+        "target1": 190,
+        "target2": 208,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 13.7% ruang ke ARA Rp208. Entry area sekarang, target 1 Rp190 · target 2 Rp208. SL Rp174 · R/R 0.8x.",
+        "value_b": 386.5,
+        "cat_count": 3
+      }
     },
     {
       "code": "MDIA",
@@ -667,7 +744,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 246,
+        "ara_price": 308,
+        "ara_dist": 10.0,
+        "ara_hit": false,
+        "sl": 266,
+        "target1": 292,
+        "target2": 308,
+        "rr": 0.9,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 10.0% ruang ke ARA Rp308. Entry area sekarang, target 1 Rp292 · target 2 Rp308. SL Rp266 · R/R 0.9x.",
+        "value_b": 278.4,
+        "cat_count": 3
+      }
     },
     {
       "code": "DOOH",
@@ -680,7 +774,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 294,
+        "ara_price": 368,
+        "ara_dist": 12.9,
+        "ara_hit": false,
+        "sl": 310,
+        "target1": 340,
+        "target2": 368,
+        "rr": 0.9,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 12.9% ruang ke ARA Rp368. Entry area sekarang, target 1 Rp340 · target 2 Rp368. SL Rp310 · R/R 0.9x.",
+        "value_b": 241.6,
+        "cat_count": 3
+      }
     },
     {
       "code": "APLN",
@@ -693,147 +804,54 @@
         "gainer",
         "volume",
         "value"
-      ]
-    }
-  ],
-  "analysis": {
-    "watchlist_notes": [
-      {
-        "code": "KIJA",
-        "name": "PT Kawasan Industri Jababeka Tbk Class A",
-        "price": 183,
-        "change": 10.24,
-        "volume": 2111832900,
-        "value": 386465420700,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 2.11B sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp176 | Target Rp190 | Stop Rp170"
-      },
-      {
-        "code": "IATA",
-        "name": "PT Karya Pacific Energy Tbk",
-        "price": 118,
-        "change": 7.27,
-        "volume": 1089613200,
-        "value": 128574357600,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 1.09B sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp113 | Target Rp123 | Stop Rp110"
-      },
-      {
-        "code": "MDIA",
-        "name": "PT Intermedia Capital Tbk",
-        "price": 280,
-        "change": 13.82,
-        "volume": 994119200,
-        "value": 278353376000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 994.1M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp269 | Target Rp291 | Stop Rp260"
-      },
-      {
-        "code": "DOOH",
-        "name": "PT Era Media Sejahtera Tbk",
-        "price": 326,
-        "change": 10.88,
-        "volume": 741208100,
-        "value": 241633840600,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 741.2M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp313 | Target Rp339 | Stop Rp303"
-      },
-      {
-        "code": "APLN",
-        "name": "PT Agung Podomoro Land Tbk",
-        "price": 155,
-        "change": 13.14,
-        "volume": 619353900,
-        "value": 95999854500,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 619.4M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp149 | Target Rp161 | Stop Rp144"
+      ],
+      "analysis": {
+        "prev_close": 137,
+        "ara_price": 171,
+        "ara_dist": 10.3,
+        "ara_hit": false,
+        "sl": 147,
+        "target1": 161,
+        "target2": 171,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 10.3% ruang ke ARA Rp171. Entry area sekarang, target 1 Rp161 · target 2 Rp171. SL Rp147 · R/R 0.8x.",
+        "value_b": 96.0,
+        "cat_count": 3
       }
-    ],
-    "signals": [
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "KIJA",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "IATA",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "MDIA",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "DOOH",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "APLN",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "BACH",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "info",
-        "icon": "📈",
-        "code": "KIJA",
-        "text": "Volume king hari ini: 2.11B shares — paling liquid untuk scalp."
+    },
+    {
+      "code": "BACH",
+      "name": "PT Bach Multi Global Tbk",
+      "price": 520,
+      "change_pct": 15.04,
+      "volume": 214667900,
+      "value": 111627308000,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ],
+      "analysis": {
+        "prev_close": 452,
+        "ara_price": 565,
+        "ara_dist": 8.7,
+        "ara_hit": false,
+        "sl": 494,
+        "target1": 540,
+        "target2": 565,
+        "rr": 0.8,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection + Momentum Kuat",
+        "signal": "STRONG BUY",
+        "tip": "Setup terkuat — triple intersection, 8.7% ruang ke ARA Rp565. Entry area sekarang, target 1 Rp540 · target 2 Rp565. SL Rp494 · R/R 0.8x.",
+        "value_b": 111.6,
+        "cat_count": 3
       }
-    ],
-    "warnings": [],
-    "summary": {
-      "ihsg_close": 6411.2,
-      "ihsg_change": 0.15,
-      "ihsg_high": 6490.913,
-      "ihsg_low": 6373.81,
-      "day_range": 117.1,
-      "is_positive": true,
-      "is_month_end": false,
-      "session_label": "Sesi Siang",
-      "top_gainer": "SWID",
-      "top_gainer_chg": 16.98,
-      "vol_king": "KIJA",
-      "vol_king_vol": "2.11B",
-      "triple_count": 6,
-      "intersection_count": 10
     }
-  }
+  ]
 }
