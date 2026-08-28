@@ -1,20 +1,19 @@
 {
   "session": "pagi",
-  "timestamp": "2026-08-28T09:00:02.332820+07:00",
+  "timestamp": "2026-08-28T09:04:59.127720+07:00",
   "date": "28 August 2026",
-  "time": "09:00 WIB",
+  "time": "09:04 WIB",
   "ihsg": {
     "close": 6521.75,
-    "change_pct": 1.81,
-    "change_abs": 116.06,
+    "change_pct": 0.31,
+    "change_abs": 20.08,
     "high": 6521.75,
     "low": 6376.654,
-    "open": 6390.353,
+    "open": null,
     "volume": 0,
-    "value": 0,
-    "market_open": true,
-    "market_state": "REGULAR",
-    "as_of": "28 Aug 2026 09:00 WIB"
+    "market_open": false,
+    "market_state": "CLOSED",
+    "as_of": "28 Aug 2026 09:04 WIB"
   },
   "gainers": [
     {
@@ -34,28 +33,12 @@
       "value": 45350537400
     },
     {
-      "code": "BIKE",
-      "name": "PT Bhineka Inovasi Ketahanan Energi Tbk",
-      "price": 775,
-      "change_pct": 25,
-      "volume": 3883900,
-      "value": 3010022500
-    },
-    {
       "code": "KETR",
       "name": "PT Ketrosden Triasmitra Tbk",
       "price": 775,
       "change_pct": 25,
       "volume": 116115700,
       "value": 89989667500
-    },
-    {
-      "code": "CBUT",
-      "name": "PT Citra Borneo Utama Tbk",
-      "price": 960,
-      "change_pct": 24.68,
-      "volume": 4232000,
-      "value": 4062720000
     },
     {
       "code": "KOTA",
@@ -114,14 +97,6 @@
       "value": 23189363200
     },
     {
-      "code": "ALKA",
-      "name": "PT Alakasa Industrindo, Tbk Class A",
-      "price": 4580,
-      "change_pct": 13.93,
-      "volume": 685900,
-      "value": 3141422000
-    },
-    {
       "code": "ELIT",
       "name": "PT Data Sinergitama Jaya Tbk",
       "price": 264,
@@ -146,14 +121,6 @@
       "value": 14590044600
     },
     {
-      "code": "ZONE",
-      "name": "PT Mega Perintis Tbk",
-      "price": 805,
-      "change_pct": 13.38,
-      "volume": 1938900,
-      "value": 1560814500
-    },
-    {
       "code": "FILM",
       "name": "PT MD Entertainment Tbk",
       "price": 850,
@@ -170,12 +137,44 @@
       "value": 85665048800
     },
     {
-      "code": "AGAR",
-      "name": "PT Asia Sejahtera Mina Tbk",
-      "price": 1810,
-      "change_pct": 12.77,
-      "volume": 4382400,
-      "value": 7932144000
+      "code": "DMMX",
+      "name": "PT Digital Mediatama Maxima Tbk",
+      "price": 202,
+      "change_pct": 12.22,
+      "volume": 77406600,
+      "value": 15636133200
+    },
+    {
+      "code": "TOBA",
+      "name": "PT TBS Energi Utama Tbk",
+      "price": 600,
+      "change_pct": 12.15,
+      "volume": 30968200,
+      "value": 18580920000
+    },
+    {
+      "code": "PEGE",
+      "name": "PT Panca Global Kapital Tbk",
+      "price": 120,
+      "change_pct": 12.15,
+      "volume": 55774000,
+      "value": 6692880000
+    },
+    {
+      "code": "RANS",
+      "name": "PT Rans Entertainmen Indonesia Tbk",
+      "price": 220,
+      "change_pct": 11.11,
+      "volume": 411590300,
+      "value": 90549866000
+    },
+    {
+      "code": "DOOH",
+      "name": "PT Era Media Sejahtera Tbk",
+      "price": 326,
+      "change_pct": 10.88,
+      "volume": 741208100,
+      "value": 241633840600
     }
   ],
   "volume": [
@@ -514,24 +513,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 183,
-        "ara_price": 228,
-        "ara_dist": 4.6,
-        "ara_hit": false,
-        "sl": 208,
-        "target1": 226,
-        "target2": 228,
-        "rr": 0.8,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Triple Intersection + Momentum Kuat",
-        "signal": "STRONG BUY",
-        "tip": "Pantau apakah harga hold di atas Rp208. ARA target Rp228 (+4.6%). Masuk hanya jika volume naik.",
-        "value_b": 471.9,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "INET",
@@ -544,24 +526,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 306,
-        "ara_price": 382,
-        "ara_dist": 9.1,
-        "ara_hit": false,
-        "sl": 332,
-        "target1": 364,
-        "target2": 382,
-        "rr": 0.8,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Triple Intersection",
-        "signal": "BUY",
-        "tip": "Setup terkuat — triple intersection, 9.1% ruang ke ARA Rp382. Entry area sekarang, target 1 Rp364 · target 2 Rp382. SL Rp332 · R/R 0.8x.",
-        "value_b": 546.6,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "KOTA",
@@ -574,24 +539,20 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 142,
-        "ara_price": 177,
-        "ara_dist": 4.1,
-        "ara_hit": false,
-        "sl": 162,
-        "target1": 177,
-        "target2": 177,
-        "rr": 0.9,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Triple Intersection + Momentum Kuat",
-        "signal": "STRONG BUY",
-        "tip": "Pantau apakah harga hold di atas Rp162. ARA target Rp177 (+4.1%). Masuk hanya jika volume naik.",
-        "value_b": 197.2,
-        "cat_count": 3
-      }
+      ]
+    },
+    {
+      "code": "DOOH",
+      "name": "PT Era Media Sejahtera Tbk",
+      "price": 326,
+      "change_pct": 10.88,
+      "volume": 741208100,
+      "value": 241633840600,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ]
     },
     {
       "code": "BUMI",
@@ -603,53 +564,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 184,
-        "ara_price": 230,
-        "ara_dist": 18.6,
-        "ara_hit": false,
-        "sl": 184,
-        "target1": 202,
-        "target2": 230,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 18.6% ruang ke ARA Rp230. Entry Rp194, target Rp202, SL Rp184. Konfirmasi volume sebelum masuk.",
-        "value_b": 530.2,
-        "cat_count": 2
-      }
-    },
-    {
-      "code": "DOOH",
-      "name": "PT Era Media Sejahtera Tbk",
-      "price": 326,
-      "change_pct": 10.88,
-      "volume": 741208100,
-      "value": 241633840600,
-      "categories": [
-        "volume",
-        "value"
-      ],
-      "analysis": {
-        "prev_close": 294,
-        "ara_price": 368,
-        "ara_dist": 12.9,
-        "ara_hit": false,
-        "sl": 310,
-        "target1": 340,
-        "target2": 368,
-        "rr": 0.9,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 12.9% ruang ke ARA Rp368. Entry Rp326, target Rp340, SL Rp310. Konfirmasi volume sebelum masuk.",
-        "value_b": 241.6,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "DSSA",
@@ -724,6 +639,18 @@
       ]
     },
     {
+      "code": "RANS",
+      "name": "PT Rans Entertainmen Indonesia Tbk",
+      "price": 220,
+      "change_pct": 11.11,
+      "volume": 411590300,
+      "value": 90549866000,
+      "categories": [
+        "gainer",
+        "volume"
+      ]
+    },
+    {
       "code": "CUAN",
       "name": "PT Petrindo Jaya Kreasi Tbk",
       "price": 815,
@@ -748,24 +675,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 183,
-        "ara_price": 228,
-        "ara_dist": 4.6,
-        "ara_hit": false,
-        "sl": 208,
-        "target1": 226,
-        "target2": 228,
-        "rr": 0.8,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Triple Intersection + Momentum Kuat",
-        "signal": "STRONG BUY",
-        "tip": "Pantau apakah harga hold di atas Rp208. ARA target Rp228 (+4.6%). Masuk hanya jika volume naik.",
-        "value_b": 471.9,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "INET",
@@ -778,24 +688,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 306,
-        "ara_price": 382,
-        "ara_dist": 9.1,
-        "ara_hit": false,
-        "sl": 332,
-        "target1": 364,
-        "target2": 382,
-        "rr": 0.8,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Triple Intersection",
-        "signal": "BUY",
-        "tip": "Setup terkuat — triple intersection, 9.1% ruang ke ARA Rp382. Entry area sekarang, target 1 Rp364 · target 2 Rp382. SL Rp332 · R/R 0.8x.",
-        "value_b": 546.6,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "KOTA",
@@ -808,24 +701,20 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 142,
-        "ara_price": 177,
-        "ara_dist": 4.1,
-        "ara_hit": false,
-        "sl": 162,
-        "target1": 177,
-        "target2": 177,
-        "rr": 0.9,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Triple Intersection + Momentum Kuat",
-        "signal": "STRONG BUY",
-        "tip": "Pantau apakah harga hold di atas Rp162. ARA target Rp177 (+4.1%). Masuk hanya jika volume naik.",
-        "value_b": 197.2,
-        "cat_count": 3
-      }
+      ]
+    },
+    {
+      "code": "DOOH",
+      "name": "PT Era Media Sejahtera Tbk",
+      "price": 326,
+      "change_pct": 10.88,
+      "volume": 741208100,
+      "value": 241633840600,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ]
     },
     {
       "code": "BUMI",
@@ -837,53 +726,140 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 184,
-        "ara_price": 230,
-        "ara_dist": 18.6,
-        "ara_hit": false,
-        "sl": 184,
-        "target1": 202,
-        "target2": 230,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 18.6% ruang ke ARA Rp230. Entry Rp194, target Rp202, SL Rp184. Konfirmasi volume sebelum masuk.",
-        "value_b": 530.2,
-        "cat_count": 2
-      }
-    },
-    {
-      "code": "DOOH",
-      "name": "PT Era Media Sejahtera Tbk",
-      "price": 326,
-      "change_pct": 10.88,
-      "volume": 741208100,
-      "value": 241633840600,
-      "categories": [
-        "volume",
-        "value"
-      ],
-      "analysis": {
-        "prev_close": 294,
-        "ara_price": 368,
-        "ara_dist": 12.9,
-        "ara_hit": false,
-        "sl": 310,
-        "target1": 340,
-        "target2": 368,
-        "rr": 0.9,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 12.9% ruang ke ARA Rp368. Entry Rp326, target Rp340, SL Rp310. Konfirmasi volume sebelum masuk.",
-        "value_b": 241.6,
-        "cat_count": 2
-      }
+      ]
     }
-  ]
+  ],
+  "analysis": {
+    "watchlist_notes": [
+      {
+        "code": "KIJA",
+        "name": "PT Kawasan Industri Jababeka Tbk Class A",
+        "price": 218,
+        "change": 19.13,
+        "volume": 2164497500,
+        "value": 471860455000,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 2.16B sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp209 | Target Rp227 | Stop Rp203"
+      },
+      {
+        "code": "INET",
+        "name": "PT Sinergi Inti Andalan Prima Tbk",
+        "price": 350,
+        "change": 14.38,
+        "volume": 1561585100,
+        "value": 546554785000,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 1.56B sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp336 | Target Rp364 | Stop Rp326"
+      },
+      {
+        "code": "KOTA",
+        "name": "PT DMS Propertindo Tbk",
+        "price": 170,
+        "change": 19.72,
+        "volume": 1159742900,
+        "value": 197156293000,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 1.16B sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp163 | Target Rp177 | Stop Rp158"
+      },
+      {
+        "code": "DOOH",
+        "name": "PT Era Media Sejahtera Tbk",
+        "price": 326,
+        "change": 10.88,
+        "volume": 741208100,
+        "value": 241633840600,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 741.2M sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp313 | Target Rp339 | Stop Rp303"
+      },
+      {
+        "code": "BUMI",
+        "name": "PT Bumi Resources Tbk Class A",
+        "price": 194,
+        "change": 5.43,
+        "volume": 2732850200,
+        "value": 530172938800,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 2.73B & nilai Rp530.17B — paling liquid, spread kecil.",
+        "guidance": "Entry area Rp186 | Target Rp202 | Stop Rp180"
+      }
+    ],
+    "signals": [
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "KIJA",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "INET",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "KOTA",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "DOOH",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "info",
+        "icon": "📈",
+        "code": "BUMI",
+        "text": "Volume king hari ini: 2.73B shares — paling liquid untuk scalp."
+      }
+    ],
+    "warnings": [
+      {
+        "code": "JAST",
+        "change": -9.01,
+        "text": "Turun -9.0% — hindari untuk long, potensi tekanan berlanjut."
+      }
+    ],
+    "summary": {
+      "ihsg_close": 6521.75,
+      "ihsg_change": 0.31,
+      "ihsg_high": 6521.75,
+      "ihsg_low": 6376.654,
+      "day_range": 145.1,
+      "is_positive": true,
+      "is_month_end": true,
+      "session_label": "Sesi Pagi",
+      "top_gainer": "TMPO",
+      "top_gainer_chg": 34.76,
+      "vol_king": "BUMI",
+      "vol_king_vol": "2.73B",
+      "triple_count": 4,
+      "intersection_count": 13
+    }
+  }
 }
