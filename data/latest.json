@@ -1,19 +1,20 @@
 {
   "session": "pagi",
-  "timestamp": "2026-09-14T09:09:52.707130+07:00",
+  "timestamp": "2026-09-14T09:10:00.157484+07:00",
   "date": "14 September 2026",
-  "time": "09:09 WIB",
+  "time": "09:10 WIB",
   "ihsg": {
-    "close": 6541.38,
+    "close": 6541.377,
     "change_pct": -0.73,
     "change_abs": -47.96,
     "high": 6552.792,
     "low": 6462.96,
-    "open": null,
+    "open": 6552.792,
     "volume": 0,
-    "market_open": false,
-    "market_state": "CLOSED",
-    "as_of": "14 Sep 2026 09:09 WIB"
+    "value": 0,
+    "market_open": true,
+    "market_state": "REGULAR",
+    "as_of": "14 Sep 2026 09:10 WIB"
   },
   "gainers": [
     {
@@ -23,6 +24,38 @@
       "change_pct": 26.09,
       "volume": 25521600,
       "value": 2220379200
+    },
+    {
+      "code": "FORU",
+      "name": "PT Fortune Indonesia, Tbk",
+      "price": 4650,
+      "change_pct": 25,
+      "volume": 643400,
+      "value": 2991810000
+    },
+    {
+      "code": "TRUK",
+      "name": "PT Guna Timur Raya Tbk",
+      "price": 1075,
+      "change_pct": 25,
+      "volume": 3488800,
+      "value": 3750460000
+    },
+    {
+      "code": "SAFE",
+      "name": "PT Steady Safe Tbk",
+      "price": 875,
+      "change_pct": 25,
+      "volume": 1586400,
+      "value": 1388100000
+    },
+    {
+      "code": "SAPX",
+      "name": "PT Satria Antaran Prima Tbk",
+      "price": 505,
+      "change_pct": 24.38,
+      "volume": 8958400,
+      "value": 4523992000
     },
     {
       "code": "MSIE",
@@ -49,6 +82,14 @@
       "value": 1738994400
     },
     {
+      "code": "PPGL",
+      "name": "PT Prima Globalindo Logistik Tbk",
+      "price": 468,
+      "change_pct": 9.86,
+      "volume": 8186600,
+      "value": 3831328800
+    },
+    {
       "code": "TGUK",
       "name": "PT Platinum Wahab Nusantara Tbk",
       "price": 91,
@@ -65,12 +106,36 @@
       "value": 2763379200
     },
     {
+      "code": "PTSN",
+      "name": "PT Sat Nusapersada Tbk",
+      "price": 400,
+      "change_pct": 7.53,
+      "volume": 2667500,
+      "value": 1067000000
+    },
+    {
       "code": "TAXI",
       "name": "PT Express Transindo Utama Tbk",
       "price": 15,
       "change_pct": 7.14,
       "volume": 93273800,
       "value": 1399107000
+    },
+    {
+      "code": "DPUM",
+      "name": "PT Dua Putra Utama Makmur Tbk",
+      "price": 138,
+      "change_pct": 6.98,
+      "volume": 1199100,
+      "value": 165475800
+    },
+    {
+      "code": "HBAT",
+      "name": "PT Minahasa Membangun Hebat Tbk",
+      "price": 340,
+      "change_pct": 6.92,
+      "volume": 952600,
+      "value": 323884000
     },
     {
       "code": "PPRO",
@@ -81,6 +146,14 @@
       "value": 206262400
     },
     {
+      "code": "SOFA",
+      "name": "PT Solusi Environment Asia Tbk",
+      "price": 344,
+      "change_pct": 6.17,
+      "volume": 3191200,
+      "value": 1097772800
+    },
+    {
       "code": "NANO",
       "name": "PT Nanotech Indonesia Global Tbk",
       "price": 37,
@@ -89,20 +162,20 @@
       "value": 961600400
     },
     {
-      "code": "GRPH",
-      "name": "PT Griptha Putra Persada Tbk",
-      "price": 137,
-      "change_pct": 3.79,
-      "volume": 126633300,
-      "value": 17348762100
+      "code": "FLMC",
+      "name": "PT Falmaco Nonwoven Industri Tbk",
+      "price": 136,
+      "change_pct": 5.43,
+      "volume": 9928700,
+      "value": 1350303200
     },
     {
-      "code": "WMPP",
-      "name": "PT Widodo Makmur Perkasa Tbk",
-      "price": 30,
-      "change_pct": 3.45,
-      "volume": 31135500,
-      "value": 934065000
+      "code": "JARR",
+      "name": "PT Jhonlin Agro Raya Tbk",
+      "price": 3900,
+      "change_pct": 5.12,
+      "volume": 1202000,
+      "value": 4687800000
     }
   ],
   "volume": [
@@ -431,19 +504,6 @@
   ],
   "intersection": [
     {
-      "code": "GRPH",
-      "name": "PT Griptha Putra Persada Tbk",
-      "price": 137,
-      "change_pct": 3.79,
-      "volume": 126633300,
-      "value": 17348762100,
-      "categories": [
-        "gainer",
-        "volume",
-        "value"
-      ]
-    },
-    {
       "code": "LUCY",
       "name": "PT Lima Dua Lima Tiga Tbk",
       "price": 388,
@@ -453,7 +513,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 430,
+        "ara_price": 540,
+        "ara_dist": 39.2,
+        "ara_hit": false,
+        "sl": 368,
+        "target1": 404,
+        "target2": 540,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 39.2% ruang ke ARA Rp540. Entry Rp388, target Rp404, SL Rp368. Konfirmasi volume sebelum masuk.",
+        "value_b": 96.0,
+        "cat_count": 2
+      }
     },
     {
       "code": "BTEK",
@@ -465,7 +542,53 @@
       "categories": [
         "gainer",
         "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 11,
+        "ara_price": 14,
+        "ara_dist": 16.7,
+        "ara_hit": false,
+        "sl": 11,
+        "target1": 12,
+        "target2": 14,
+        "rr": 0.0,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 16.7% ruang ke ARA Rp14. Entry Rp12, target Rp12, SL Rp11. Konfirmasi volume sebelum masuk.",
+        "value_b": 2.8,
+        "cat_count": 2
+      }
+    },
+    {
+      "code": "GRPH",
+      "name": "PT Griptha Putra Persada Tbk",
+      "price": 137,
+      "change_pct": 3.79,
+      "volume": 126633300,
+      "value": 17348762100,
+      "categories": [
+        "volume",
+        "value"
+      ],
+      "analysis": {
+        "prev_close": 132,
+        "ara_price": 165,
+        "ara_dist": 20.4,
+        "ara_hit": false,
+        "sl": 130,
+        "target1": 142,
+        "target2": 165,
+        "rr": 0.7,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 20.4% ruang ke ARA Rp165. Entry Rp137, target Rp142, SL Rp130. Konfirmasi volume sebelum masuk.",
+        "value_b": 17.3,
+        "cat_count": 2
+      }
     },
     {
       "code": "DOOH",
@@ -477,7 +600,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 392,
+        "ara_price": 490,
+        "ara_dist": 22.5,
+        "ara_hit": false,
+        "sl": 380,
+        "target1": 416,
+        "target2": 490,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 22.5% ruang ke ARA Rp490. Entry Rp400, target Rp416, SL Rp380. Konfirmasi volume sebelum masuk.",
+        "value_b": 48.3,
+        "cat_count": 2
+      }
     },
     {
       "code": "TAXI",
@@ -489,7 +629,24 @@
       "categories": [
         "gainer",
         "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 14,
+        "ara_price": 18,
+        "ara_dist": 20.0,
+        "ara_hit": false,
+        "sl": 14,
+        "target1": 16,
+        "target2": 18,
+        "rr": 1.0,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 20.0% ruang ke ARA Rp18. Entry Rp15, target Rp16, SL Rp14. Konfirmasi volume sebelum masuk.",
+        "value_b": 1.4,
+        "cat_count": 2
+      }
     },
     {
       "code": "PLAN",
@@ -513,18 +670,6 @@
       "categories": [
         "volume",
         "value"
-      ]
-    },
-    {
-      "code": "WMPP",
-      "name": "PT Widodo Makmur Perkasa Tbk",
-      "price": 30,
-      "change_pct": 3.45,
-      "volume": 31135500,
-      "value": 934065000,
-      "categories": [
-        "gainer",
-        "volume"
       ]
     },
     {
@@ -574,22 +719,33 @@
         "gainer",
         "value"
       ]
-    }
-  ],
-  "watchlist": [
+    },
     {
-      "code": "GRPH",
-      "name": "PT Griptha Putra Persada Tbk",
-      "price": 137,
-      "change_pct": 3.79,
-      "volume": 126633300,
-      "value": 17348762100,
+      "code": "SAPX",
+      "name": "PT Satria Antaran Prima Tbk",
+      "price": 505,
+      "change_pct": 24.38,
+      "volume": 8958400,
+      "value": 4523992000,
       "categories": [
         "gainer",
-        "volume",
         "value"
       ]
     },
+    {
+      "code": "JARR",
+      "name": "PT Jhonlin Agro Raya Tbk",
+      "price": 3900,
+      "change_pct": 5.12,
+      "volume": 1202000,
+      "value": 4687800000,
+      "categories": [
+        "gainer",
+        "value"
+      ]
+    }
+  ],
+  "watchlist": [
     {
       "code": "LUCY",
       "name": "PT Lima Dua Lima Tiga Tbk",
@@ -600,7 +756,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 430,
+        "ara_price": 540,
+        "ara_dist": 39.2,
+        "ara_hit": false,
+        "sl": 368,
+        "target1": 404,
+        "target2": 540,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 39.2% ruang ke ARA Rp540. Entry Rp388, target Rp404, SL Rp368. Konfirmasi volume sebelum masuk.",
+        "value_b": 96.0,
+        "cat_count": 2
+      }
     },
     {
       "code": "BTEK",
@@ -612,7 +785,53 @@
       "categories": [
         "gainer",
         "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 11,
+        "ara_price": 14,
+        "ara_dist": 16.7,
+        "ara_hit": false,
+        "sl": 11,
+        "target1": 12,
+        "target2": 14,
+        "rr": 0.0,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 16.7% ruang ke ARA Rp14. Entry Rp12, target Rp12, SL Rp11. Konfirmasi volume sebelum masuk.",
+        "value_b": 2.8,
+        "cat_count": 2
+      }
+    },
+    {
+      "code": "GRPH",
+      "name": "PT Griptha Putra Persada Tbk",
+      "price": 137,
+      "change_pct": 3.79,
+      "volume": 126633300,
+      "value": 17348762100,
+      "categories": [
+        "volume",
+        "value"
+      ],
+      "analysis": {
+        "prev_close": 132,
+        "ara_price": 165,
+        "ara_dist": 20.4,
+        "ara_hit": false,
+        "sl": 130,
+        "target1": 142,
+        "target2": 165,
+        "rr": 0.7,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 20.4% ruang ke ARA Rp165. Entry Rp137, target Rp142, SL Rp130. Konfirmasi volume sebelum masuk.",
+        "value_b": 17.3,
+        "cat_count": 2
+      }
     },
     {
       "code": "DOOH",
@@ -624,7 +843,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 392,
+        "ara_price": 490,
+        "ara_dist": 22.5,
+        "ara_hit": false,
+        "sl": 380,
+        "target1": 416,
+        "target2": 490,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 22.5% ruang ke ARA Rp490. Entry Rp400, target Rp416, SL Rp380. Konfirmasi volume sebelum masuk.",
+        "value_b": 48.3,
+        "cat_count": 2
+      }
     },
     {
       "code": "TAXI",
@@ -636,129 +872,24 @@
       "categories": [
         "gainer",
         "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 14,
+        "ara_price": 18,
+        "ara_dist": 20.0,
+        "ara_hit": false,
+        "sl": 14,
+        "target1": 16,
+        "target2": 18,
+        "rr": 1.0,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 20.0% ruang ke ARA Rp18. Entry Rp15, target Rp16, SL Rp14. Konfirmasi volume sebelum masuk.",
+        "value_b": 1.4,
+        "cat_count": 2
+      }
     }
-  ],
-  "analysis": {
-    "watchlist_notes": [
-      {
-        "code": "GRPH",
-        "name": "PT Griptha Putra Persada Tbk",
-        "price": 137,
-        "change": 3.79,
-        "volume": 126633300,
-        "value": 17348762100,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 126.6M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp132 | Target Rp142 | Stop Rp127"
-      },
-      {
-        "code": "LUCY",
-        "name": "PT Lima Dua Lima Tiga Tbk",
-        "price": 388,
-        "change": -9.77,
-        "volume": 247516700,
-        "value": 96036479600,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 247.5M & nilai Rp96.04B — paling liquid, spread kecil.",
-        "guidance": "Pantau open besok untuk konfirmasi arah."
-      },
-      {
-        "code": "BTEK",
-        "name": "PT Bumi Teknokultura Unggul Tbk",
-        "price": 12,
-        "change": 9.09,
-        "volume": 230281600,
-        "value": 2763379200,
-        "cats": [
-          "gainer",
-          "volume"
-        ],
-        "reason": "Gain +9.1% dengan volume 230.3M — momentum kuat, liquid untuk scalp.",
-        "guidance": "Entry area Rp10 | Target Rp10 | Stop Rp10"
-      },
-      {
-        "code": "DOOH",
-        "name": "PT Era Media Sejahtera Tbk",
-        "price": 400,
-        "change": 2.04,
-        "volume": 120863400,
-        "value": 48345360000,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 120.9M & nilai Rp48.35B — paling liquid, spread kecil.",
-        "guidance": "Entry area Rp384 | Target Rp416 | Stop Rp372"
-      },
-      {
-        "code": "TAXI",
-        "name": "PT Express Transindo Utama Tbk",
-        "price": 15,
-        "change": 7.14,
-        "volume": 93273800,
-        "value": 1399107000,
-        "cats": [
-          "gainer",
-          "volume"
-        ],
-        "reason": "Gain +7.1% dengan volume 93.3M — momentum kuat, liquid untuk scalp.",
-        "guidance": "Entry area Rp15 | Target Rp15 | Stop Rp15"
-      }
-    ],
-    "signals": [
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "GRPH",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "info",
-        "icon": "📈",
-        "code": "LUCY",
-        "text": "Volume king hari ini: 247.5M shares — paling liquid untuk scalp."
-      }
-    ],
-    "warnings": [
-      {
-        "code": "LUCY",
-        "change": -9.77,
-        "text": "Turun -9.8% — hindari untuk long, potensi tekanan berlanjut."
-      },
-      {
-        "code": "EMAS",
-        "change": -9.71,
-        "text": "Turun -9.7% — hindari untuk long, potensi tekanan berlanjut."
-      },
-      {
-        "code": "UDNG",
-        "change": -9.85,
-        "text": "Turun -9.8% — hindari untuk long, potensi tekanan berlanjut."
-      }
-    ],
-    "summary": {
-      "ihsg_close": 6541.38,
-      "ihsg_change": -0.73,
-      "ihsg_high": 6552.792,
-      "ihsg_low": 6462.96,
-      "day_range": 89.83,
-      "is_positive": false,
-      "is_month_end": false,
-      "session_label": "Sesi Pagi",
-      "top_gainer": "LAPD",
-      "top_gainer_chg": 26.09,
-      "vol_king": "LUCY",
-      "vol_king_vol": "247.5M",
-      "triple_count": 1,
-      "intersection_count": 12
-    }
-  }
+  ]
 }
