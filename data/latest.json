@@ -1,19 +1,20 @@
 {
   "session": "pagi",
-  "timestamp": "2026-09-15T09:04:11.059686+07:00",
+  "timestamp": "2026-09-15T09:05:00.143224+07:00",
   "date": "15 September 2026",
-  "time": "09:04 WIB",
+  "time": "09:05 WIB",
   "ihsg": {
-    "close": 6534.69,
+    "close": 6534.693,
     "change_pct": -0.1,
     "change_abs": -6.68,
-    "high": 6550.0,
+    "high": 6550,
     "low": 6371.395,
-    "open": null,
+    "open": 6533.868,
     "volume": 0,
-    "market_open": false,
-    "market_state": "CLOSED",
-    "as_of": "15 Sep 2026 09:04 WIB"
+    "value": 0,
+    "market_open": true,
+    "market_state": "REGULAR",
+    "as_of": "15 Sep 2026 09:05 WIB"
   },
   "gainers": [
     {
@@ -41,12 +42,68 @@
       "value": 43647632000
     },
     {
+      "code": "TRUK",
+      "name": "PT Guna Timur Raya Tbk",
+      "price": 1075,
+      "change_pct": 25,
+      "volume": 3488800,
+      "value": 3750460000
+    },
+    {
+      "code": "FORU",
+      "name": "PT Fortune Indonesia, Tbk",
+      "price": 4650,
+      "change_pct": 25,
+      "volume": 4375800,
+      "value": 20347470000
+    },
+    {
+      "code": "SAFE",
+      "name": "PT Steady Safe Tbk",
+      "price": 875,
+      "change_pct": 25,
+      "volume": 1586400,
+      "value": 1388100000
+    },
+    {
+      "code": "AGAR",
+      "name": "PT Asia Sejahtera Mina Tbk",
+      "price": 2410,
+      "change_pct": 24.55,
+      "volume": 3963300,
+      "value": 9551553000
+    },
+    {
+      "code": "SAPX",
+      "name": "PT Satria Antaran Prima Tbk",
+      "price": 505,
+      "change_pct": 24.38,
+      "volume": 8958400,
+      "value": 4523992000
+    },
+    {
+      "code": "BMSR",
+      "name": "PT Bintang Mitra Semestaraya Tbk",
+      "price": 400,
+      "change_pct": 24.22,
+      "volume": 4695200,
+      "value": 1878080000
+    },
+    {
       "code": "PTSN",
       "name": "PT Sat Nusapersada Tbk",
       "price": 450,
       "change_pct": 20.97,
       "volume": 65836800,
       "value": 29626560000
+    },
+    {
+      "code": "FISH",
+      "name": "PT FKS Multi Agro Tbk",
+      "price": 720,
+      "change_pct": 14.29,
+      "volume": 2669100,
+      "value": 1921752000
     },
     {
       "code": "ULTJ",
@@ -97,68 +154,28 @@
       "value": 14162603000
     },
     {
+      "code": "TRIM",
+      "name": "PT Trimegah Sekuritas Indonesia Tbk",
+      "price": 795,
+      "change_pct": 11.19,
+      "volume": 2601900,
+      "value": 2068510500
+    },
+    {
+      "code": "INTD",
+      "name": "PT Inter-Delta Tbk",
+      "price": 292,
+      "change_pct": 10.61,
+      "volume": 1599100,
+      "value": 466937200
+    },
+    {
       "code": "OLIV",
       "name": "PT Atlas Nexus Group Tbk",
       "price": 66,
       "change_pct": 10,
       "volume": 45932000,
       "value": 3031512000
-    },
-    {
-      "code": "IDEA",
-      "name": "PT Idea Indonesia Akademi Tbk",
-      "price": 85,
-      "change_pct": 8.97,
-      "volume": 25794200,
-      "value": 2192507000
-    },
-    {
-      "code": "VTNY",
-      "name": "PT Venteny Fortuna International Tbk",
-      "price": 78,
-      "change_pct": 8.33,
-      "volume": 91393900,
-      "value": 7128724200
-    },
-    {
-      "code": "BTEK",
-      "name": "PT Bumi Teknokultura Unggul Tbk",
-      "price": 13,
-      "change_pct": 8.33,
-      "volume": 178340200,
-      "value": 2318422600
-    },
-    {
-      "code": "BRMS",
-      "name": "PT Bumi Resources Minerals Tbk Class A",
-      "price": 730,
-      "change_pct": 8.15,
-      "volume": 631741100,
-      "value": 461171003000
-    },
-    {
-      "code": "DPUM",
-      "name": "PT Dua Putra Utama Makmur Tbk",
-      "price": 139,
-      "change_pct": 7.75,
-      "volume": 102276700,
-      "value": 14216461300
-    },
-    {
-      "code": "SOFA",
-      "name": "PT Solusi Environment Asia Tbk",
-      "price": 370,
-      "change_pct": 7.56,
-      "volume": 24165400,
-      "value": 8941198000
-    },
-    {
-      "code": "COCO",
-      "name": "PT Wahana Interfood Nusantara Tbk",
-      "price": 140,
-      "change_pct": 6.87,
-      "volume": 787911900,
-      "value": 110307666000
     }
   ],
   "volume": [
@@ -487,19 +504,6 @@
   ],
   "intersection": [
     {
-      "code": "BRMS",
-      "name": "PT Bumi Resources Minerals Tbk Class A",
-      "price": 730,
-      "change_pct": 8.15,
-      "volume": 631741100,
-      "value": 461171003000,
-      "categories": [
-        "gainer",
-        "volume",
-        "value"
-      ]
-    },
-    {
       "code": "BUMI",
       "name": "PT Bumi Resources Tbk Class A",
       "price": 208,
@@ -509,7 +513,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 212,
+        "ara_price": 266,
+        "ara_dist": 27.9,
+        "ara_hit": false,
+        "sl": 198,
+        "target1": 216,
+        "target2": 266,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 27.9% ruang ke ARA Rp266. Entry Rp208, target Rp216, SL Rp198. Konfirmasi volume sebelum masuk.",
+        "value_b": 1182.6,
+        "cat_count": 2
+      }
     },
     {
       "code": "LAPD",
@@ -521,7 +542,24 @@
       "categories": [
         "gainer",
         "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 69,
+        "ara_price": 86,
+        "ara_dist": -7.5,
+        "ara_hit": true,
+        "sl": 88,
+        "target1": 97,
+        "target2": 100,
+        "rr": 0.8,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp86). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 101.3,
+        "cat_count": 2
+      }
     },
     {
       "code": "DEWA",
@@ -533,19 +571,24 @@
       "categories": [
         "volume",
         "value"
-      ]
-    },
-    {
-      "code": "COCO",
-      "name": "PT Wahana Interfood Nusantara Tbk",
-      "price": 140,
-      "change_pct": 6.87,
-      "volume": 787911900,
-      "value": 110307666000,
-      "categories": [
-        "gainer",
-        "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 418,
+        "ara_price": 520,
+        "ara_dist": 28.1,
+        "ara_hit": false,
+        "sl": 386,
+        "target1": 422,
+        "target2": 520,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 28.1% ruang ke ARA Rp520. Entry Rp406, target Rp422, SL Rp386. Konfirmasi volume sebelum masuk.",
+        "value_b": 369.7,
+        "cat_count": 2
+      }
     },
     {
       "code": "INET",
@@ -557,7 +600,53 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 344,
+        "ara_price": 430,
+        "ara_dist": 29.5,
+        "ara_hit": false,
+        "sl": 316,
+        "target1": 346,
+        "target2": 430,
+        "rr": 0.9,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 29.5% ruang ke ARA Rp430. Entry Rp332, target Rp346, SL Rp316. Konfirmasi volume sebelum masuk.",
+        "value_b": 216.7,
+        "cat_count": 2
+      }
+    },
+    {
+      "code": "BRMS",
+      "name": "PT Bumi Resources Minerals Tbk Class A",
+      "price": 730,
+      "change_pct": 8.15,
+      "volume": 631741100,
+      "value": 461171003000,
+      "categories": [
+        "volume",
+        "value"
+      ],
+      "analysis": {
+        "prev_close": 675,
+        "ara_price": 845,
+        "ara_dist": 15.8,
+        "ara_hit": false,
+        "sl": 695,
+        "target1": 760,
+        "target2": 845,
+        "rr": 0.9,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 15.8% ruang ke ARA Rp845. Entry Rp730, target Rp760, SL Rp695. Konfirmasi volume sebelum masuk.",
+        "value_b": 461.2,
+        "cat_count": 2
+      }
     },
     {
       "code": "DSSA",
@@ -610,19 +699,6 @@
   ],
   "watchlist": [
     {
-      "code": "BRMS",
-      "name": "PT Bumi Resources Minerals Tbk Class A",
-      "price": 730,
-      "change_pct": 8.15,
-      "volume": 631741100,
-      "value": 461171003000,
-      "categories": [
-        "gainer",
-        "volume",
-        "value"
-      ]
-    },
-    {
       "code": "BUMI",
       "name": "PT Bumi Resources Tbk Class A",
       "price": 208,
@@ -632,7 +708,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 212,
+        "ara_price": 266,
+        "ara_dist": 27.9,
+        "ara_hit": false,
+        "sl": 198,
+        "target1": 216,
+        "target2": 266,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 27.9% ruang ke ARA Rp266. Entry Rp208, target Rp216, SL Rp198. Konfirmasi volume sebelum masuk.",
+        "value_b": 1182.6,
+        "cat_count": 2
+      }
     },
     {
       "code": "LAPD",
@@ -644,7 +737,24 @@
       "categories": [
         "gainer",
         "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 69,
+        "ara_price": 86,
+        "ara_dist": -7.5,
+        "ara_hit": true,
+        "sl": 88,
+        "target1": 97,
+        "target2": 100,
+        "rr": 0.8,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp86). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 101.3,
+        "cat_count": 2
+      }
     },
     {
       "code": "DEWA",
@@ -656,131 +766,82 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 418,
+        "ara_price": 520,
+        "ara_dist": 28.1,
+        "ara_hit": false,
+        "sl": 386,
+        "target1": 422,
+        "target2": 520,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 28.1% ruang ke ARA Rp520. Entry Rp406, target Rp422, SL Rp386. Konfirmasi volume sebelum masuk.",
+        "value_b": 369.7,
+        "cat_count": 2
+      }
     },
     {
-      "code": "COCO",
-      "name": "PT Wahana Interfood Nusantara Tbk",
-      "price": 140,
-      "change_pct": 6.87,
-      "volume": 787911900,
-      "value": 110307666000,
+      "code": "INET",
+      "name": "PT Sinergi Inti Andalan Prima Tbk",
+      "price": 332,
+      "change_pct": -3.49,
+      "volume": 652697300,
+      "value": 216695503600,
       "categories": [
-        "gainer",
-        "volume"
-      ]
+        "volume",
+        "value"
+      ],
+      "analysis": {
+        "prev_close": 344,
+        "ara_price": 430,
+        "ara_dist": 29.5,
+        "ara_hit": false,
+        "sl": 316,
+        "target1": 346,
+        "target2": 430,
+        "rr": 0.9,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 29.5% ruang ke ARA Rp430. Entry Rp332, target Rp346, SL Rp316. Konfirmasi volume sebelum masuk.",
+        "value_b": 216.7,
+        "cat_count": 2
+      }
+    },
+    {
+      "code": "BRMS",
+      "name": "PT Bumi Resources Minerals Tbk Class A",
+      "price": 730,
+      "change_pct": 8.15,
+      "volume": 631741100,
+      "value": 461171003000,
+      "categories": [
+        "volume",
+        "value"
+      ],
+      "analysis": {
+        "prev_close": 675,
+        "ara_price": 845,
+        "ara_dist": 15.8,
+        "ara_hit": false,
+        "sl": 695,
+        "target1": 760,
+        "target2": 845,
+        "rr": 0.9,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 15.8% ruang ke ARA Rp845. Entry Rp730, target Rp760, SL Rp695. Konfirmasi volume sebelum masuk.",
+        "value_b": 461.2,
+        "cat_count": 2
+      }
     }
-  ],
-  "analysis": {
-    "watchlist_notes": [
-      {
-        "code": "BRMS",
-        "name": "PT Bumi Resources Minerals Tbk Class A",
-        "price": 730,
-        "change": 8.15,
-        "volume": 631741100,
-        "value": 461171003000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 631.7M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp701 | Target Rp759 | Stop Rp679"
-      },
-      {
-        "code": "BUMI",
-        "name": "PT Bumi Resources Tbk Class A",
-        "price": 208,
-        "change": -1.89,
-        "volume": 5685408800,
-        "value": 1182565030400,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 5.69B & nilai Rp1.18T — paling liquid, spread kecil.",
-        "guidance": "Pantau open besok untuk konfirmasi arah."
-      },
-      {
-        "code": "LAPD",
-        "name": "PT Leyand International Tbk",
-        "price": 93,
-        "change": 34.78,
-        "volume": 1088719100,
-        "value": 101250876300,
-        "cats": [
-          "gainer",
-          "volume"
-        ],
-        "reason": "Gain +34.8% dengan volume 1.09B — momentum kuat, liquid untuk scalp.",
-        "guidance": "Entry area Rp90 | Target Rp95 | Stop Rp85"
-      },
-      {
-        "code": "DEWA",
-        "name": "PT Darma Henwa Tbk",
-        "price": 406,
-        "change": -2.87,
-        "volume": 910546300,
-        "value": 369681797800,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 910.5M & nilai Rp369.68B — paling liquid, spread kecil.",
-        "guidance": "Pantau open besok untuk konfirmasi arah."
-      },
-      {
-        "code": "COCO",
-        "name": "PT Wahana Interfood Nusantara Tbk",
-        "price": 140,
-        "change": 6.87,
-        "volume": 787911900,
-        "value": 110307666000,
-        "cats": [
-          "gainer",
-          "volume"
-        ],
-        "reason": "Gain +6.9% dengan volume 787.9M — momentum kuat, liquid untuk scalp.",
-        "guidance": "Entry area Rp134 | Target Rp146 | Stop Rp130"
-      }
-    ],
-    "signals": [
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "BRMS",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "info",
-        "icon": "📈",
-        "code": "BUMI",
-        "text": "Volume king hari ini: 5.69B shares — paling liquid untuk scalp."
-      }
-    ],
-    "warnings": [
-      {
-        "code": "EMAS",
-        "change": -12,
-        "text": "Turun -12.0% — hindari untuk long, potensi tekanan berlanjut."
-      }
-    ],
-    "summary": {
-      "ihsg_close": 6534.69,
-      "ihsg_change": -0.1,
-      "ihsg_high": 6550.0,
-      "ihsg_low": 6371.395,
-      "day_range": 178.6,
-      "is_positive": false,
-      "is_month_end": false,
-      "session_label": "Sesi Pagi",
-      "top_gainer": "SEMA",
-      "top_gainer_chg": 34.93,
-      "vol_king": "BUMI",
-      "vol_king_vol": "5.69B",
-      "triple_count": 1,
-      "intersection_count": 10
-    }
-  }
+  ]
 }
