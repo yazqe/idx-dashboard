@@ -1,20 +1,19 @@
 {
   "session": "siang",
-  "timestamp": "2026-09-17T12:35:00.128574+07:00",
+  "timestamp": "2026-09-17T12:39:16.878426+07:00",
   "date": "17 September 2026",
-  "time": "12:35 WIB",
+  "time": "12:39 WIB",
   "ihsg": {
     "close": 6463.61,
-    "change_pct": 0.42,
-    "change_abs": 26.76,
+    "change_pct": 0.04,
+    "change_abs": 2.46,
     "high": 6500.407,
     "low": 6418.128,
-    "open": 6455.031,
+    "open": null,
     "volume": 0,
-    "value": 0,
-    "market_open": true,
-    "market_state": "REGULAR",
-    "as_of": "17 Sep 2026 12:35 WIB"
+    "market_open": false,
+    "market_state": "CLOSED",
+    "as_of": "17 Sep 2026 12:39 WIB"
   },
   "gainers": [
     {
@@ -32,14 +31,6 @@
       "change_pct": 24.66,
       "volume": 326255600,
       "value": 59378519200
-    },
-    {
-      "code": "ALKA",
-      "name": "PT Alakasa Industrindo, Tbk Class A",
-      "price": 7400,
-      "change_pct": 18.88,
-      "volume": 894800,
-      "value": 6621520000
     },
     {
       "code": "FILM",
@@ -98,22 +89,6 @@
       "value": 40989336600
     },
     {
-      "code": "SAFE",
-      "name": "PT Steady Safe Tbk",
-      "price": 1160,
-      "change_pct": 9.95,
-      "volume": 788300,
-      "value": 914428000
-    },
-    {
-      "code": "PPGL",
-      "name": "PT Prima Globalindo Logistik Tbk",
-      "price": 468,
-      "change_pct": 9.86,
-      "volume": 8186600,
-      "value": 3831328800
-    },
-    {
       "code": "PACK",
       "name": "PT Abadi Nusantara Hijau Investama Tbk",
       "price": 615,
@@ -130,36 +105,12 @@
       "value": 1296388800
     },
     {
-      "code": "ASPI",
-      "name": "PT Andalan Sakti Primaindo Tbk",
-      "price": 560,
-      "change_pct": 9.8,
-      "volume": 1754300,
-      "value": 982408000
-    },
-    {
-      "code": "INPS",
-      "name": "PT Indah Prakasa Sentosa Tbk",
-      "price": 1065,
-      "change_pct": 9.79,
-      "volume": 951600,
-      "value": 1013454000
-    },
-    {
       "code": "CASH",
       "name": "PT.Cashlez Worldwide Indonesia Tbk",
       "price": 272,
       "change_pct": 9.68,
       "volume": 11315200,
       "value": 3077734400
-    },
-    {
-      "code": "CSMI",
-      "name": "PT Cipta Selera Murni Tbk",
-      "price": 193,
-      "change_pct": 9.66,
-      "volume": 8722900,
-      "value": 1683519700
     },
     {
       "code": "FAST",
@@ -170,12 +121,52 @@
       "value": 20850536000
     },
     {
-      "code": "HADE",
-      "name": "PT Himalaya Energi Perkasa Tbk",
-      "price": 25,
-      "change_pct": 8.7,
-      "volume": 7558900,
-      "value": 188972500
+      "code": "KETR",
+      "name": "PT Ketrosden Triasmitra Tbk",
+      "price": 1005,
+      "change_pct": 8.65,
+      "volume": 57110500,
+      "value": 57396052500
+    },
+    {
+      "code": "MEDS",
+      "name": "PT Hetzer Medical Indonesia Tbk",
+      "price": 88,
+      "change_pct": 8.64,
+      "volume": 506215400,
+      "value": 44546955200
+    },
+    {
+      "code": "NINE",
+      "name": "PT Techno9 Indonesia Tbk",
+      "price": 89,
+      "change_pct": 8.54,
+      "volume": 15409400,
+      "value": 1371436600
+    },
+    {
+      "code": "SQMI",
+      "name": "PT Wilton Makmur Indonesia Tbk",
+      "price": 94,
+      "change_pct": 8.05,
+      "volume": 236021800,
+      "value": 22186049200
+    },
+    {
+      "code": "SRSN",
+      "name": "PT Indo Acidatama Tbk",
+      "price": 109,
+      "change_pct": 7.92,
+      "volume": 303060300,
+      "value": 33033572700
+    },
+    {
+      "code": "SSMS",
+      "name": "PT Sawit Sumbermas Sarana Tbk",
+      "price": 1115,
+      "change_pct": 7.21,
+      "volume": 11481900,
+      "value": 12802318500
     }
   ],
   "volume": [
@@ -514,24 +505,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 560,
-        "ara_price": 700,
-        "ara_dist": 13.8,
-        "ara_hit": false,
-        "sl": 585,
-        "target1": 640,
-        "target2": 700,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Triple Intersection",
-        "signal": "BUY",
-        "tip": "Setup terkuat — triple intersection, 13.8% ruang ke ARA Rp700. Entry area sekarang, target 1 Rp640 · target 2 Rp700. SL Rp585 · R/R 0.8x.",
-        "value_b": 119.6,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "BUMI",
@@ -543,24 +517,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 202,
-        "ara_price": 252,
-        "ara_dist": 26.0,
-        "ara_hit": false,
-        "sl": 190,
-        "target1": 208,
-        "target2": 252,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 26.0% ruang ke ARA Rp252. Entry Rp200, target Rp208, SL Rp190. Konfirmasi volume sebelum masuk.",
-        "value_b": 478.7,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "DEWA",
@@ -572,24 +529,19 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 370,
-        "ara_price": 462,
-        "ara_dist": 22.9,
-        "ara_hit": false,
-        "sl": 358,
-        "target1": 392,
-        "target2": 462,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 22.9% ruang ke ARA Rp462. Entry Rp376, target Rp392, SL Rp358. Konfirmasi volume sebelum masuk.",
-        "value_b": 213.9,
-        "cat_count": 2
-      }
+      ]
+    },
+    {
+      "code": "MEDS",
+      "name": "PT Hetzer Medical Indonesia Tbk",
+      "price": 88,
+      "change_pct": 8.64,
+      "volume": 506215400,
+      "value": 44546955200,
+      "categories": [
+        "gainer",
+        "volume"
+      ]
     },
     {
       "code": "LAPD",
@@ -601,24 +553,7 @@
       "categories": [
         "gainer",
         "volume"
-      ],
-      "analysis": {
-        "prev_close": 79,
-        "ara_price": 99,
-        "ara_dist": 13.8,
-        "ara_hit": false,
-        "sl": 83,
-        "target1": 90,
-        "target2": 99,
-        "rr": 0.8,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 13.8% ruang ke ARA Rp99. Entry Rp87, target Rp90, SL Rp83. Konfirmasi volume sebelum masuk.",
-        "value_b": 41.0,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BULL",
@@ -630,24 +565,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 406,
-        "ara_price": 510,
-        "ara_dist": 29.4,
-        "ara_hit": false,
-        "sl": 374,
-        "target1": 410,
-        "target2": 510,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 29.4% ruang ke ARA Rp510. Entry Rp394, target Rp410, SL Rp374. Konfirmasi volume sebelum masuk.",
-        "value_b": 169.6,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "CUAN",
@@ -674,6 +592,18 @@
       ]
     },
     {
+      "code": "SRSN",
+      "name": "PT Indo Acidatama Tbk",
+      "price": 109,
+      "change_pct": 7.92,
+      "volume": 303060300,
+      "value": 33033572700,
+      "categories": [
+        "gainer",
+        "volume"
+      ]
+    },
+    {
       "code": "INET",
       "name": "PT Sinergi Inti Andalan Prima Tbk",
       "price": 326,
@@ -683,6 +613,18 @@
       "categories": [
         "volume",
         "value"
+      ]
+    },
+    {
+      "code": "SQMI",
+      "name": "PT Wilton Makmur Indonesia Tbk",
+      "price": 94,
+      "change_pct": 8.05,
+      "volume": 236021800,
+      "value": 22186049200,
+      "categories": [
+        "gainer",
+        "volume"
       ]
     },
     {
@@ -722,24 +664,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 560,
-        "ara_price": 700,
-        "ara_dist": 13.8,
-        "ara_hit": false,
-        "sl": 585,
-        "target1": 640,
-        "target2": 700,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Triple Intersection",
-        "signal": "BUY",
-        "tip": "Setup terkuat — triple intersection, 13.8% ruang ke ARA Rp700. Entry area sekarang, target 1 Rp640 · target 2 Rp700. SL Rp585 · R/R 0.8x.",
-        "value_b": 119.6,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "BUMI",
@@ -751,24 +676,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 202,
-        "ara_price": 252,
-        "ara_dist": 26.0,
-        "ara_hit": false,
-        "sl": 190,
-        "target1": 208,
-        "target2": 252,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 26.0% ruang ke ARA Rp252. Entry Rp200, target Rp208, SL Rp190. Konfirmasi volume sebelum masuk.",
-        "value_b": 478.7,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "DEWA",
@@ -780,24 +688,19 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 370,
-        "ara_price": 462,
-        "ara_dist": 22.9,
-        "ara_hit": false,
-        "sl": 358,
-        "target1": 392,
-        "target2": 462,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 22.9% ruang ke ARA Rp462. Entry Rp376, target Rp392, SL Rp358. Konfirmasi volume sebelum masuk.",
-        "value_b": 213.9,
-        "cat_count": 2
-      }
+      ]
+    },
+    {
+      "code": "MEDS",
+      "name": "PT Hetzer Medical Indonesia Tbk",
+      "price": 88,
+      "change_pct": 8.64,
+      "volume": 506215400,
+      "value": 44546955200,
+      "categories": [
+        "gainer",
+        "volume"
+      ]
     },
     {
       "code": "LAPD",
@@ -809,53 +712,113 @@
       "categories": [
         "gainer",
         "volume"
-      ],
-      "analysis": {
-        "prev_close": 79,
-        "ara_price": 99,
-        "ara_dist": 13.8,
-        "ara_hit": false,
-        "sl": 83,
-        "target1": 90,
-        "target2": 99,
-        "rr": 0.8,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 13.8% ruang ke ARA Rp99. Entry Rp87, target Rp90, SL Rp83. Konfirmasi volume sebelum masuk.",
-        "value_b": 41.0,
-        "cat_count": 2
-      }
-    },
-    {
-      "code": "BULL",
-      "name": "PT Buana Lintas Lautan Tbk",
-      "price": 394,
-      "change_pct": -2.96,
-      "volume": 430422400,
-      "value": 169586425600,
-      "categories": [
-        "volume",
-        "value"
-      ],
-      "analysis": {
-        "prev_close": 406,
-        "ara_price": 510,
-        "ara_dist": 29.4,
-        "ara_hit": false,
-        "sl": 374,
-        "target1": 410,
-        "target2": 510,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 29.4% ruang ke ARA Rp510. Entry Rp394, target Rp410, SL Rp374. Konfirmasi volume sebelum masuk.",
-        "value_b": 169.6,
-        "cat_count": 2
-      }
+      ]
     }
-  ]
+  ],
+  "analysis": {
+    "watchlist_notes": [
+      {
+        "code": "PACK",
+        "name": "PT Abadi Nusantara Hijau Investama Tbk",
+        "price": 615,
+        "change": 9.82,
+        "volume": 194548300,
+        "value": 119647204500,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 194.5M sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp590 | Target Rp640 | Stop Rp572"
+      },
+      {
+        "code": "BUMI",
+        "name": "PT Bumi Resources Tbk Class A",
+        "price": 200,
+        "change": -0.99,
+        "volume": 2393559200,
+        "value": 478711840000,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 2.39B & nilai Rp478.71B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "DEWA",
+        "name": "PT Darma Henwa Tbk",
+        "price": 376,
+        "change": 1.62,
+        "volume": 568826600,
+        "value": 213878801600,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 568.8M & nilai Rp213.88B — paling liquid, spread kecil.",
+        "guidance": "Entry area Rp361 | Target Rp391 | Stop Rp350"
+      },
+      {
+        "code": "MEDS",
+        "name": "PT Hetzer Medical Indonesia Tbk",
+        "price": 88,
+        "change": 8.64,
+        "volume": 506215400,
+        "value": 44546955200,
+        "cats": [
+          "gainer",
+          "volume"
+        ],
+        "reason": "Gain +8.6% dengan volume 506.2M — momentum kuat, liquid untuk scalp.",
+        "guidance": "Entry area Rp85 | Target Rp90 | Stop Rp80"
+      },
+      {
+        "code": "LAPD",
+        "name": "PT Leyand International Tbk",
+        "price": 87,
+        "change": 10.13,
+        "volume": 471141800,
+        "value": 40989336600,
+        "cats": [
+          "gainer",
+          "volume"
+        ],
+        "reason": "Gain +10.1% dengan volume 471.1M — momentum kuat, liquid untuk scalp.",
+        "guidance": "Entry area Rp85 | Target Rp90 | Stop Rp80"
+      }
+    ],
+    "signals": [
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "PACK",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "info",
+        "icon": "📈",
+        "code": "BUMI",
+        "text": "Volume king hari ini: 2.39B shares — paling liquid untuk scalp."
+      }
+    ],
+    "warnings": [],
+    "summary": {
+      "ihsg_close": 6463.61,
+      "ihsg_change": 0.04,
+      "ihsg_high": 6500.407,
+      "ihsg_low": 6418.128,
+      "day_range": 82.28,
+      "is_positive": true,
+      "is_month_end": false,
+      "session_label": "Sesi Siang",
+      "top_gainer": "AYLS",
+      "top_gainer_chg": 25.85,
+      "vol_king": "BUMI",
+      "vol_king_vol": "2.39B",
+      "triple_count": 1,
+      "intersection_count": 13
+    }
+  }
 }
