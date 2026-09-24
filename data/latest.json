@@ -1,21 +1,46 @@
 {
   "session": "pagi",
-  "timestamp": "2026-09-24T09:09:50.998538+07:00",
+  "timestamp": "2026-09-24T09:10:00.333808+07:00",
   "date": "24 September 2026",
-  "time": "09:09 WIB",
+  "time": "09:10 WIB",
   "ihsg": {
-    "close": 6374.91,
-    "change_pct": -0.15,
-    "change_abs": -9.82,
+    "close": 6374.912,
+    "change_pct": 1.56,
+    "change_abs": 97.87,
     "high": 6380.166,
     "low": 6253.736,
-    "open": null,
+    "open": 6297.955,
     "volume": 0,
-    "market_open": false,
-    "market_state": "CLOSED",
-    "as_of": "24 Sep 2026 09:09 WIB"
+    "value": 0,
+    "market_open": true,
+    "market_state": "REGULAR",
+    "as_of": "24 Sep 2026 09:10 WIB"
   },
   "gainers": [
+    {
+      "code": "FORU",
+      "name": "PT Fortune Indonesia, Tbk",
+      "price": 294,
+      "change_pct": 24.58,
+      "volume": 1214100,
+      "value": 356945400
+    },
+    {
+      "code": "UNSP",
+      "name": "PT Bakrie Sumatera Plantations Tbk",
+      "price": 318,
+      "change_pct": 24.22,
+      "volume": 7934100,
+      "value": 2523043800
+    },
+    {
+      "code": "ALKA",
+      "name": "PT Alakasa Industrindo, Tbk Class A",
+      "price": 7400,
+      "change_pct": 18.88,
+      "volume": 894800,
+      "value": 6621520000
+    },
     {
       "code": "SINI",
       "name": "PT Singaraja Putra Tbk",
@@ -23,6 +48,46 @@
       "change_pct": 14.02,
       "volume": 16621600,
       "value": 304175280000
+    },
+    {
+      "code": "BIPP",
+      "name": "PT Bhuwanatala Indah Permai Tbk Class A",
+      "price": 74,
+      "change_pct": 13.85,
+      "volume": 5138500,
+      "value": 380249000
+    },
+    {
+      "code": "ASPI",
+      "name": "PT Andalan Sakti Primaindo Tbk",
+      "price": 750,
+      "change_pct": 10.29,
+      "volume": 4085200,
+      "value": 3063900000
+    },
+    {
+      "code": "INPS",
+      "name": "PT Indah Prakasa Sentosa Tbk",
+      "price": 1065,
+      "change_pct": 9.79,
+      "volume": 951600,
+      "value": 1013454000
+    },
+    {
+      "code": "ACST",
+      "name": "PT Acset Indonusa Tbk",
+      "price": 102,
+      "change_pct": 9.68,
+      "volume": 2067800,
+      "value": 210915600
+    },
+    {
+      "code": "FLMC",
+      "name": "PT Falmaco Nonwoven Industri Tbk",
+      "price": 125,
+      "change_pct": 9.65,
+      "volume": 4791600,
+      "value": 598950000
     },
     {
       "code": "IDEA",
@@ -73,6 +138,22 @@
       "value": 3228577100
     },
     {
+      "code": "NASA",
+      "name": "PT Andalan Perkasa Abadi Tbk",
+      "price": 36,
+      "change_pct": 9.09,
+      "volume": 561400,
+      "value": 20210400
+    },
+    {
+      "code": "SWID",
+      "name": "PT Saraswanti Indoland Development Tbk",
+      "price": 134,
+      "change_pct": 8.94,
+      "volume": 1636800,
+      "value": 219331200
+    },
+    {
       "code": "PBRX",
       "name": "PT Pan Brothers Tbk",
       "price": 26,
@@ -95,54 +176,6 @@
       "change_pct": 7.69,
       "volume": 47223500,
       "value": 1322258000
-    },
-    {
-      "code": "RELF",
-      "name": "PT Graha Mitra Asia Tbk",
-      "price": 42,
-      "change_pct": 7.69,
-      "volume": 15899000,
-      "value": 667758000
-    },
-    {
-      "code": "SEMA",
-      "name": "PT Semacom Integrated Tbk",
-      "price": 264,
-      "change_pct": 7.32,
-      "volume": 34059000,
-      "value": 8991576000
-    },
-    {
-      "code": "HADE",
-      "name": "PT Himalaya Energi Perkasa Tbk",
-      "price": 30,
-      "change_pct": 7.14,
-      "volume": 30911100,
-      "value": 927333000
-    },
-    {
-      "code": "TAXI",
-      "name": "PT Express Transindo Utama Tbk",
-      "price": 15,
-      "change_pct": 7.14,
-      "volume": 58986900,
-      "value": 884803500
-    },
-    {
-      "code": "PPRO",
-      "name": "PT PP Properti Tbk",
-      "price": 16,
-      "change_pct": 6.67,
-      "volume": 99086300,
-      "value": 1585380800
-    },
-    {
-      "code": "IKAI",
-      "name": "PT Intikeramik Alamasri Industri Tbk",
-      "price": 21,
-      "change_pct": 5,
-      "volume": 14608100,
-      "value": 306770100
     }
   ],
   "volume": [
@@ -471,19 +504,6 @@
   ],
   "intersection": [
     {
-      "code": "SEMA",
-      "name": "PT Semacom Integrated Tbk",
-      "price": 264,
-      "change_pct": 7.32,
-      "volume": 34059000,
-      "value": 8991576000,
-      "categories": [
-        "gainer",
-        "volume",
-        "value"
-      ]
-    },
-    {
       "code": "MEJA",
       "name": "PT Harta Djaya Karya Tbk",
       "price": 119,
@@ -494,7 +514,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 109,
+        "ara_price": 136,
+        "ara_dist": 14.3,
+        "ara_hit": false,
+        "sl": 113,
+        "target1": 124,
+        "target2": 136,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 14.3% ruang ke ARA Rp136. Entry area sekarang, target 1 Rp124 · target 2 Rp136. SL Rp113 · R/R 0.8x.",
+        "value_b": 3.2,
+        "cat_count": 3
+      }
     },
     {
       "code": "PACK",
@@ -506,19 +543,24 @@
       "categories": [
         "volume",
         "value"
-      ]
-    },
-    {
-      "code": "PPRO",
-      "name": "PT PP Properti Tbk",
-      "price": 16,
-      "change_pct": 6.67,
-      "volume": 99086300,
-      "value": 1585380800,
-      "categories": [
-        "gainer",
-        "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 560,
+        "ara_price": 700,
+        "ara_dist": 25.0,
+        "ara_hit": false,
+        "sl": 530,
+        "target1": 580,
+        "target2": 700,
+        "rr": 0.7,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 25.0% ruang ke ARA Rp700. Entry Rp560, target Rp580, SL Rp530. Konfirmasi volume sebelum masuk.",
+        "value_b": 63.0,
+        "cat_count": 2
+      }
     },
     {
       "code": "ELTY",
@@ -530,19 +572,24 @@
       "categories": [
         "gainer",
         "volume"
-      ]
-    },
-    {
-      "code": "TAXI",
-      "name": "PT Express Transindo Utama Tbk",
-      "price": 15,
-      "change_pct": 7.14,
-      "volume": 58986900,
-      "value": 884803500,
-      "categories": [
-        "gainer",
-        "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 32,
+        "ara_price": 40,
+        "ara_dist": 14.3,
+        "ara_hit": false,
+        "sl": 33,
+        "target1": 36,
+        "target2": 40,
+        "rr": 0.5,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 14.3% ruang ke ARA Rp40. Entry Rp35, target Rp36, SL Rp33. Konfirmasi volume sebelum masuk.",
+        "value_b": 2.7,
+        "cat_count": 2
+      }
     },
     {
       "code": "BUMI",
@@ -554,7 +601,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 193,
+        "ara_price": 242,
+        "ara_dist": 26.7,
+        "ara_hit": false,
+        "sl": 181,
+        "target1": 199,
+        "target2": 242,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 26.7% ruang ke ARA Rp242. Entry Rp191, target Rp199, SL Rp181. Konfirmasi volume sebelum masuk.",
+        "value_b": 10.9,
+        "cat_count": 2
+      }
     },
     {
       "code": "LUCY",
@@ -566,7 +630,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 330,
+        "ara_price": 412,
+        "ara_dist": 28.0,
+        "ara_hit": false,
+        "sl": 306,
+        "target1": 334,
+        "target2": 412,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 28.0% ruang ke ARA Rp412. Entry Rp322, target Rp334, SL Rp306. Konfirmasi volume sebelum masuk.",
+        "value_b": 16.0,
+        "cat_count": 2
+      }
     },
     {
       "code": "WMPP",
@@ -593,15 +674,15 @@
       ]
     },
     {
-      "code": "HADE",
-      "name": "PT Himalaya Energi Perkasa Tbk",
-      "price": 30,
-      "change_pct": 7.14,
-      "volume": 30911100,
-      "value": 927333000,
+      "code": "SEMA",
+      "name": "PT Semacom Integrated Tbk",
+      "price": 264,
+      "change_pct": 7.32,
+      "volume": 34059000,
+      "value": 8991576000,
       "categories": [
-        "gainer",
-        "volume"
+        "volume",
+        "value"
       ]
     },
     {
@@ -663,22 +744,33 @@
         "gainer",
         "value"
       ]
-    }
-  ],
-  "watchlist": [
+    },
     {
-      "code": "SEMA",
-      "name": "PT Semacom Integrated Tbk",
-      "price": 264,
-      "change_pct": 7.32,
-      "volume": 34059000,
-      "value": 8991576000,
+      "code": "ASPI",
+      "name": "PT Andalan Sakti Primaindo Tbk",
+      "price": 750,
+      "change_pct": 10.29,
+      "volume": 4085200,
+      "value": 3063900000,
       "categories": [
         "gainer",
-        "volume",
         "value"
       ]
     },
+    {
+      "code": "ALKA",
+      "name": "PT Alakasa Industrindo, Tbk Class A",
+      "price": 7400,
+      "change_pct": 18.88,
+      "volume": 894800,
+      "value": 6621520000,
+      "categories": [
+        "gainer",
+        "value"
+      ]
+    }
+  ],
+  "watchlist": [
     {
       "code": "MEJA",
       "name": "PT Harta Djaya Karya Tbk",
@@ -690,7 +782,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 109,
+        "ara_price": 136,
+        "ara_dist": 14.3,
+        "ara_hit": false,
+        "sl": 113,
+        "target1": 124,
+        "target2": 136,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 14.3% ruang ke ARA Rp136. Entry area sekarang, target 1 Rp124 · target 2 Rp136. SL Rp113 · R/R 0.8x.",
+        "value_b": 3.2,
+        "cat_count": 3
+      }
     },
     {
       "code": "PACK",
@@ -702,19 +811,24 @@
       "categories": [
         "volume",
         "value"
-      ]
-    },
-    {
-      "code": "PPRO",
-      "name": "PT PP Properti Tbk",
-      "price": 16,
-      "change_pct": 6.67,
-      "volume": 99086300,
-      "value": 1585380800,
-      "categories": [
-        "gainer",
-        "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 560,
+        "ara_price": 700,
+        "ara_dist": 25.0,
+        "ara_hit": false,
+        "sl": 530,
+        "target1": 580,
+        "target2": 700,
+        "rr": 0.7,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 25.0% ruang ke ARA Rp700. Entry Rp560, target Rp580, SL Rp530. Konfirmasi volume sebelum masuk.",
+        "value_b": 63.0,
+        "cat_count": 2
+      }
     },
     {
       "code": "ELTY",
@@ -726,131 +840,82 @@
       "categories": [
         "gainer",
         "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 32,
+        "ara_price": 40,
+        "ara_dist": 14.3,
+        "ara_hit": false,
+        "sl": 33,
+        "target1": 36,
+        "target2": 40,
+        "rr": 0.5,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 14.3% ruang ke ARA Rp40. Entry Rp35, target Rp36, SL Rp33. Konfirmasi volume sebelum masuk.",
+        "value_b": 2.7,
+        "cat_count": 2
+      }
+    },
+    {
+      "code": "BUMI",
+      "name": "PT Bumi Resources Tbk Class A",
+      "price": 191,
+      "change_pct": -1.04,
+      "volume": 56937600,
+      "value": 10875081600,
+      "categories": [
+        "volume",
+        "value"
+      ],
+      "analysis": {
+        "prev_close": 193,
+        "ara_price": 242,
+        "ara_dist": 26.7,
+        "ara_hit": false,
+        "sl": 181,
+        "target1": 199,
+        "target2": 242,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 26.7% ruang ke ARA Rp242. Entry Rp191, target Rp199, SL Rp181. Konfirmasi volume sebelum masuk.",
+        "value_b": 10.9,
+        "cat_count": 2
+      }
+    },
+    {
+      "code": "LUCY",
+      "name": "PT Lima Dua Lima Tiga Tbk",
+      "price": 322,
+      "change_pct": -2.42,
+      "volume": 49608600,
+      "value": 15973969200,
+      "categories": [
+        "volume",
+        "value"
+      ],
+      "analysis": {
+        "prev_close": 330,
+        "ara_price": 412,
+        "ara_dist": 28.0,
+        "ara_hit": false,
+        "sl": 306,
+        "target1": 334,
+        "target2": 412,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 28.0% ruang ke ARA Rp412. Entry Rp322, target Rp334, SL Rp306. Konfirmasi volume sebelum masuk.",
+        "value_b": 16.0,
+        "cat_count": 2
+      }
     }
-  ],
-  "analysis": {
-    "watchlist_notes": [
-      {
-        "code": "SEMA",
-        "name": "PT Semacom Integrated Tbk",
-        "price": 264,
-        "change": 7.32,
-        "volume": 34059000,
-        "value": 8991576000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 34.1M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp253 | Target Rp275 | Stop Rp246"
-      },
-      {
-        "code": "MEJA",
-        "name": "PT Harta Djaya Karya Tbk",
-        "price": 119,
-        "change": 9.17,
-        "volume": 27130900,
-        "value": 3228577100,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 27.1M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp114 | Target Rp124 | Stop Rp111"
-      },
-      {
-        "code": "PACK",
-        "name": "PT Abadi Nusantara Hijau Investama Tbk",
-        "price": 560,
-        "change": 0,
-        "volume": 112545000,
-        "value": 63025200000,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 112.5M & nilai Rp63.03B — paling liquid, spread kecil.",
-        "guidance": "Pantau open besok untuk konfirmasi arah."
-      },
-      {
-        "code": "PPRO",
-        "name": "PT PP Properti Tbk",
-        "price": 16,
-        "change": 6.67,
-        "volume": 99086300,
-        "value": 1585380800,
-        "cats": [
-          "gainer",
-          "volume"
-        ],
-        "reason": "Gain +6.7% dengan volume 99.1M — momentum kuat, liquid untuk scalp.",
-        "guidance": "Entry area Rp15 | Target Rp15 | Stop Rp15"
-      },
-      {
-        "code": "ELTY",
-        "name": "PT Bakrieland Development Tbk Class A",
-        "price": 35,
-        "change": 9.38,
-        "volume": 76100800,
-        "value": 2663528000,
-        "cats": [
-          "gainer",
-          "volume"
-        ],
-        "reason": "Gain +9.4% dengan volume 76.1M — momentum kuat, liquid untuk scalp.",
-        "guidance": "Entry area Rp35 | Target Rp35 | Stop Rp35"
-      }
-    ],
-    "signals": [
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "SEMA",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "MEJA",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "info",
-        "icon": "📈",
-        "code": "PACK",
-        "text": "Volume king hari ini: 112.5M shares — paling liquid untuk scalp."
-      }
-    ],
-    "warnings": [
-      {
-        "code": "GRPM",
-        "change": -9.8,
-        "text": "Turun -9.8% — hindari untuk long, potensi tekanan berlanjut."
-      },
-      {
-        "code": "NASI",
-        "change": -14.6,
-        "text": "Turun -14.6% — hindari untuk long, potensi tekanan berlanjut."
-      }
-    ],
-    "summary": {
-      "ihsg_close": 6374.91,
-      "ihsg_change": -0.15,
-      "ihsg_high": 6380.166,
-      "ihsg_low": 6253.736,
-      "day_range": 126.43,
-      "is_positive": false,
-      "is_month_end": false,
-      "session_label": "Sesi Pagi",
-      "top_gainer": "SINI",
-      "top_gainer_chg": 14.02,
-      "vol_king": "PACK",
-      "vol_king_vol": "112.5M",
-      "triple_count": 2,
-      "intersection_count": 16
-    }
-  }
+  ]
 }
