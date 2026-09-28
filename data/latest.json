@@ -1,37 +1,60 @@
 {
   "session": "pagi",
-  "timestamp": "2026-09-28T09:20:00.150469+07:00",
+  "timestamp": "2026-09-28T09:24:14.692713+07:00",
   "date": "28 September 2026",
-  "time": "09:20 WIB",
+  "time": "09:24 WIB",
   "ihsg": {
-    "close": 6203.68,
-    "change_pct": -0.61,
-    "change_abs": -38.21,
+    "close": 6188.29,
+    "change_pct": -0.86,
+    "change_abs": -53.6,
     "high": 6227.899,
     "low": 6180.603,
-    "open": 6209.746,
+    "open": null,
     "volume": 0,
-    "value": 0,
-    "market_open": true,
-    "market_state": "REGULAR",
-    "as_of": "28 Sep 2026 09:20 WIB"
+    "market_open": false,
+    "market_state": "CLOSED",
+    "as_of": "28 Sep 2026 09:24 WIB"
   },
   "gainers": [
     {
       "code": "BLTA",
       "name": "PT Berlian Laju Tanker Tbk",
-      "price": 43,
-      "change_pct": 34.38,
-      "volume": 85366300,
-      "value": 3670750900
+      "price": 41,
+      "change_pct": 28.12,
+      "volume": 147388900,
+      "value": 5913110200
+    },
+    {
+      "code": "BTEK",
+      "name": "PT Bumi Teknokultura Unggul Tbk",
+      "price": 14,
+      "change_pct": 27.27,
+      "volume": 343792900,
+      "value": 4813100600
     },
     {
       "code": "PBRX",
       "name": "PT Pan Brothers Tbk",
       "price": 30,
       "change_pct": 25,
-      "volume": 37690400,
-      "value": 1130712000
+      "volume": 51072600,
+      "value": 1532178000
+    },
+    {
+      "code": "VIVA",
+      "name": "PT Visi Media Asia Tbk Class A",
+      "price": 45,
+      "change_pct": 25,
+      "volume": 77843100,
+      "value": 3502939500
+    },
+    {
+      "code": "IKAI",
+      "name": "PT Intikeramik Alamasri Industri Tbk",
+      "price": 25,
+      "change_pct": 25,
+      "volume": 44226700,
+      "value": 1105667500
     },
     {
       "code": "WAPO",
@@ -42,76 +65,68 @@
       "value": 8990220800
     },
     {
-      "code": "NASA",
-      "name": "PT Andalan Perkasa Abadi Tbk",
-      "price": 42,
-      "change_pct": 23.53,
-      "volume": 3829700,
-      "value": 160847400
-    },
-    {
       "code": "ELTY",
       "name": "PT Bakrieland Development Tbk Class A",
       "price": 37,
       "change_pct": 23.33,
-      "volume": 243390600,
-      "value": 9005452200
-    },
-    {
-      "code": "TAMU",
-      "name": "PT Pelayaran Tamarin Samudra Tbk",
-      "price": 32,
-      "change_pct": 23.08,
-      "volume": 16893100,
-      "value": 540579200
-    },
-    {
-      "code": "VIVA",
-      "name": "PT Visi Media Asia Tbk Class A",
-      "price": 44,
-      "change_pct": 22.22,
-      "volume": 71349900,
-      "value": 3139395600
-    },
-    {
-      "code": "BAPI",
-      "name": "PT Bhakti Agung Propertindo Tbk",
-      "price": 28,
-      "change_pct": 21.74,
-      "volume": 14496900,
-      "value": 405913200
+      "volume": 315227200,
+      "value": 11663406400
     },
     {
       "code": "PPRO",
       "name": "PT PP Properti Tbk",
       "price": 18,
       "change_pct": 20,
-      "volume": 58086600,
-      "value": 1045558800
+      "volume": 70607900,
+      "value": 1270942200
     },
     {
-      "code": "ALKA",
-      "name": "PT Alakasa Industrindo, Tbk Class A",
-      "price": 7400,
-      "change_pct": 18.88,
-      "volume": 894800,
-      "value": 6621520000
+      "code": "TAMU",
+      "name": "PT Pelayaran Tamarin Samudra Tbk",
+      "price": 31,
+      "change_pct": 19.23,
+      "volume": 19842500,
+      "value": 615117500
     },
     {
-      "code": "BTEK",
-      "name": "PT Bumi Teknokultura Unggul Tbk",
-      "price": 13,
+      "code": "TARA",
+      "name": "PT Agung Semesta Sejahtera Tbk",
+      "price": 38,
+      "change_pct": 18.75,
+      "volume": 11044500,
+      "value": 419691000
+    },
+    {
+      "code": "ASMI",
+      "name": "PT Asuransi Maximus Graha Persada Tbk",
+      "price": 19,
+      "change_pct": 18.75,
+      "volume": 20330300,
+      "value": 386275700
+    },
+    {
+      "code": "SAGE",
+      "name": "PT Saptausaha Gemilangindah Tbk",
+      "price": 39,
       "change_pct": 18.18,
-      "volume": 268535300,
-      "value": 3490958900
+      "volume": 15783900,
+      "value": 615572100
+    },
+    {
+      "code": "BEKS",
+      "name": "PT Bank Pembangunan Daerah Banten (Perseroda) Tbk Class A",
+      "price": 26,
+      "change_pct": 18.18,
+      "volume": 44226500,
+      "value": 1149889000
     },
     {
       "code": "AHAP",
       "name": "PT Asuransi Harta Aman Pratama Tbk",
       "price": 99,
       "change_pct": 17.86,
-      "volume": 80816300,
-      "value": 8000813700
+      "volume": 97534600,
+      "value": 9655925400
     },
     {
       "code": "ASLI",
@@ -126,24 +141,16 @@
       "name": "PT Winner Nusantara Jaya Tbk",
       "price": 30,
       "change_pct": 15.38,
-      "volume": 33402500,
-      "value": 1002075000
-    },
-    {
-      "code": "SAGE",
-      "name": "PT Saptausaha Gemilangindah Tbk",
-      "price": 38,
-      "change_pct": 15.15,
-      "volume": 12440000,
-      "value": 472720000
+      "volume": 44062000,
+      "value": 1321860000
     },
     {
       "code": "TAXI",
       "name": "PT Express Transindo Utama Tbk",
       "price": 16,
       "change_pct": 14.29,
-      "volume": 23241200,
-      "value": 371859200
+      "volume": 41975500,
+      "value": 671608000
     },
     {
       "code": "SINI",
@@ -154,28 +161,20 @@
       "value": 304175280000
     },
     {
-      "code": "ASMI",
-      "name": "PT Asuransi Maximus Graha Persada Tbk",
-      "price": 18,
-      "change_pct": 12.5,
-      "volume": 17586800,
-      "value": 316562400
+      "code": "ANDI",
+      "name": "PT Andira Agro Tbk",
+      "price": 25,
+      "change_pct": 13.64,
+      "volume": 24170600,
+      "value": 604265000
     },
     {
-      "code": "PURA",
-      "name": "PT Putra Rajawali Kencana Tbk",
-      "price": 36,
-      "change_pct": 12.5,
-      "volume": 24997100,
-      "value": 899895600
-    },
-    {
-      "code": "MIRA",
-      "name": "PT Mitra International Resources Tbk",
-      "price": 27,
-      "change_pct": 12.5,
-      "volume": 13120500,
-      "value": 354253500
+      "code": "BAPI",
+      "name": "PT Bhakti Agung Propertindo Tbk",
+      "price": 26,
+      "change_pct": 13.04,
+      "volume": 19827800,
+      "value": 515522800
     }
   ],
   "volume": [
@@ -190,154 +189,154 @@
     {
       "code": "BTEK",
       "name": "PT Bumi Teknokultura Unggul Tbk",
-      "price": 13,
-      "change_pct": 18.18,
-      "volume": 268535300,
-      "value": 3490958900
+      "price": 14,
+      "change_pct": 27.27,
+      "volume": 345169300,
+      "value": 4832370200
     },
     {
       "code": "ELTY",
       "name": "PT Bakrieland Development Tbk Class A",
       "price": 37,
       "change_pct": 23.33,
-      "volume": 243390600,
-      "value": 9005452200
+      "volume": 315227200,
+      "value": 11663406400
     },
     {
       "code": "JGLE",
       "name": "PT Graha Andrasentra Propertindo Tbk",
-      "price": 52,
-      "change_pct": -3.7,
-      "volume": 233274700,
-      "value": 12130284400
+      "price": 53,
+      "change_pct": -1.85,
+      "volume": 274149500,
+      "value": 14529923500
     },
     {
       "code": "BNBR",
       "name": "PT Bakrie & Brothers Tbk Class A",
       "price": 76,
       "change_pct": 1.33,
-      "volume": 153551500,
-      "value": 11669914000
+      "volume": 178376400,
+      "value": 13556606400
     },
     {
       "code": "IATA",
       "name": "PT Karya Pacific Energy Tbk",
-      "price": 97,
-      "change_pct": 6.59,
-      "volume": 136328100,
-      "value": 13223825700
+      "price": 98,
+      "change_pct": 7.69,
+      "volume": 174798100,
+      "value": 17130213800
     },
     {
       "code": "BUMI",
       "name": "PT Bumi Resources Tbk Class A",
-      "price": 184,
-      "change_pct": 1.1,
-      "volume": 130829300,
-      "value": 24072591200
+      "price": 182,
+      "change_pct": 0,
+      "volume": 166990400,
+      "value": 30392252800
     },
     {
       "code": "LPKR",
       "name": "PT Lippo Karawaci Tbk",
-      "price": 45,
-      "change_pct": -10,
-      "volume": 130191500,
-      "value": 5858617500
+      "price": 46,
+      "change_pct": -8,
+      "volume": 156600500,
+      "value": 7203623000
+    },
+    {
+      "code": "BLTA",
+      "name": "PT Berlian Laju Tanker Tbk",
+      "price": 41,
+      "change_pct": 28.12,
+      "volume": 147388900,
+      "value": 6042944900
     },
     {
       "code": "BBKP",
       "name": "PT Bank KB Indonesia Tbk Class B",
       "price": 44,
       "change_pct": -12,
-      "volume": 127221900,
-      "value": 5597763600
+      "volume": 142456200,
+      "value": 6268072800
     },
     {
       "code": "PACK",
       "name": "PT Abadi Nusantara Hijau Investama Tbk",
-      "price": 610,
-      "change_pct": -5.43,
-      "volume": 117109300,
-      "value": 71436673000
+      "price": 605,
+      "change_pct": -6.2,
+      "volume": 139551900,
+      "value": 84428899500
     },
     {
-      "code": "BLTA",
-      "name": "PT Berlian Laju Tanker Tbk",
-      "price": 43,
-      "change_pct": 34.38,
-      "volume": 85366300,
-      "value": 3670750900
+      "code": "AHAP",
+      "name": "PT Asuransi Harta Aman Pratama Tbk",
+      "price": 98,
+      "change_pct": 16.67,
+      "volume": 99606900,
+      "value": 9761476200
     },
     {
       "code": "PADI",
       "name": "PT Minna Padi Investama Sekuritas Tbk",
       "price": 43,
       "change_pct": -14.0,
-      "volume": 84835000,
-      "value": 3647905000
+      "volume": 86217500,
+      "value": 3707352500
     },
     {
-      "code": "AHAP",
-      "name": "PT Asuransi Harta Aman Pratama Tbk",
-      "price": 99,
-      "change_pct": 17.86,
-      "volume": 80816300,
-      "value": 8000813700
+      "code": "MBTO",
+      "name": "PT Martina Berto Tbk",
+      "price": 226,
+      "change_pct": 9.71,
+      "volume": 82085600,
+      "value": 18551345600
+    },
+    {
+      "code": "BULL",
+      "name": "PT Buana Lintas Lautan Tbk",
+      "price": 358,
+      "change_pct": 0.56,
+      "volume": 81796800,
+      "value": 29283254400
     },
     {
       "code": "GMFI",
       "name": "PT Garuda Maintenance Facility Aero Asia Tbk",
       "price": 52,
       "change_pct": -3.7,
-      "volume": 76034400,
-      "value": 3953788800
+      "volume": 80909700,
+      "value": 4207304400
     },
     {
-      "code": "BULL",
-      "name": "PT Buana Lintas Lautan Tbk",
-      "price": 362,
-      "change_pct": 1.69,
-      "volume": 74429300,
-      "value": 26943406600
+      "code": "VIVA",
+      "name": "PT Visi Media Asia Tbk Class A",
+      "price": 45,
+      "change_pct": 25,
+      "volume": 77843100,
+      "value": 3502939500
     },
     {
       "code": "KREN",
       "name": "PT Quantum Clovera Investama Tbk",
       "price": 16,
       "change_pct": 6.67,
-      "volume": 73230200,
-      "value": 1171683200
+      "volume": 77539000,
+      "value": 1240624000
     },
     {
-      "code": "VIVA",
-      "name": "PT Visi Media Asia Tbk Class A",
-      "price": 44,
-      "change_pct": 22.22,
-      "volume": 71349900,
-      "value": 3139395600
-    },
-    {
-      "code": "INET",
-      "name": "PT Sinergi Inti Andalan Prima Tbk",
-      "price": 292,
-      "change_pct": 0.69,
-      "volume": 60098200,
-      "value": 17548674400
+      "code": "PPRO",
+      "name": "PT PP Properti Tbk",
+      "price": 18,
+      "change_pct": 20,
+      "volume": 70607900,
+      "value": 1270942200
     },
     {
       "code": "UVCR",
       "name": "PT Trimegah Karya Pratama Tbk",
-      "price": 216,
-      "change_pct": 8,
-      "volume": 59347100,
-      "value": 12818973600
-    },
-    {
-      "code": "MBTO",
-      "name": "PT Martina Berto Tbk",
-      "price": 216,
-      "change_pct": 4.85,
-      "volume": 59176700,
-      "value": 12188506000
+      "price": 222,
+      "change_pct": 11,
+      "volume": 68420700,
+      "value": 15189395400
     }
   ],
   "value": [
@@ -360,146 +359,146 @@
     {
       "code": "BBCA",
       "name": "PT Bank Central Asia Tbk",
-      "price": 6200,
-      "change_pct": -0.8,
-      "volume": 13972800,
-      "value": 86631360000
+      "price": 6175,
+      "change_pct": -1.2,
+      "volume": 14325400,
+      "value": 88459345000
     },
     {
       "code": "PACK",
       "name": "PT Abadi Nusantara Hijau Investama Tbk",
-      "price": 610,
-      "change_pct": -5.43,
-      "volume": 117109300,
-      "value": 71436673000
+      "price": 605,
+      "change_pct": -6.2,
+      "volume": 139551900,
+      "value": 84428899500
     },
     {
       "code": "TLKM",
       "name": "PT Telkom Indonesia (Persero) Tbk Class B",
       "price": 2390,
       "change_pct": -0.83,
-      "volume": 20293700,
-      "value": 48501943000
+      "volume": 21424900,
+      "value": 51205511000
     },
     {
       "code": "DSSA",
       "name": "PT Dian Swastatika Sentosa Tbk",
-      "price": 1045,
-      "change_pct": -0.95,
-      "volume": 37599000,
-      "value": 39290955000
+      "price": 1040,
+      "change_pct": -1.42,
+      "volume": 45899900,
+      "value": 47735896000
     },
     {
       "code": "BMRI",
       "name": "PT Bank Mandiri (Persero) Tbk",
-      "price": 4070,
-      "change_pct": -0.25,
-      "volume": 9509800,
-      "value": 38704886000
+      "price": 4080,
+      "change_pct": 0,
+      "volume": 10784700,
+      "value": 44001576000
     },
     {
       "code": "BBRI",
       "name": "PT Bank Rakyat Indonesia (Persero) Tbk Class B",
       "price": 3130,
       "change_pct": -0.63,
-      "volume": 11183400,
-      "value": 35004042000
-    },
-    {
-      "code": "BULL",
-      "name": "PT Buana Lintas Lautan Tbk",
-      "price": 362,
-      "change_pct": 1.69,
-      "volume": 74429300,
-      "value": 26943406600
+      "volume": 12555200,
+      "value": 39297776000
     },
     {
       "code": "ANTM",
       "name": "PT ANTAM (Persero) Tbk",
       "price": 3190,
       "change_pct": -1.24,
-      "volume": 7626300,
-      "value": 24327897000
+      "volume": 10181800,
+      "value": 32479942000
     },
     {
       "code": "BUMI",
       "name": "PT Bumi Resources Tbk Class A",
-      "price": 184,
-      "change_pct": 1.1,
-      "volume": 130829300,
-      "value": 24072591200
+      "price": 182,
+      "change_pct": 0,
+      "volume": 166990400,
+      "value": 30392252800
+    },
+    {
+      "code": "BULL",
+      "name": "PT Buana Lintas Lautan Tbk",
+      "price": 358,
+      "change_pct": 0.56,
+      "volume": 81796800,
+      "value": 29283254400
     },
     {
       "code": "AMMN",
       "name": "PT Amman Mineral Internasional Tbk",
-      "price": 4710,
-      "change_pct": -0.21,
-      "volume": 5039100,
-      "value": 23734161000
+      "price": 4690,
+      "change_pct": -0.64,
+      "volume": 6057100,
+      "value": 28407799000
     },
     {
       "code": "CUAN",
       "name": "PT Petrindo Jaya Kreasi Tbk",
       "price": 935,
       "change_pct": 0,
-      "volume": 21397600,
-      "value": 20006756000
+      "volume": 25568500,
+      "value": 23906547500
+    },
+    {
+      "code": "TPIA",
+      "name": "PT Chandra Asri Pacific Tbk",
+      "price": 1795,
+      "change_pct": -0.28,
+      "volume": 11383400,
+      "value": 20433203000
     },
     {
       "code": "INET",
       "name": "PT Sinergi Inti Andalan Prima Tbk",
       "price": 292,
       "change_pct": 0.69,
-      "volume": 60098200,
-      "value": 17548674400
-    },
-    {
-      "code": "BRMS",
-      "name": "PT Bumi Resources Minerals Tbk Class A",
-      "price": 650,
-      "change_pct": -1.52,
-      "volume": 21383400,
-      "value": 13899210000
-    },
-    {
-      "code": "IATA",
-      "name": "PT Karya Pacific Energy Tbk",
-      "price": 97,
-      "change_pct": 6.59,
-      "volume": 136328100,
-      "value": 13223825700
-    },
-    {
-      "code": "UVCR",
-      "name": "PT Trimegah Karya Pratama Tbk",
-      "price": 216,
-      "change_pct": 8,
-      "volume": 59347100,
-      "value": 12818973600
+      "volume": 68326700,
+      "value": 19951396400
     },
     {
       "code": "MBTO",
       "name": "PT Martina Berto Tbk",
-      "price": 216,
-      "change_pct": 4.85,
-      "volume": 59176700,
-      "value": 12188506000
+      "price": 226,
+      "change_pct": 9.71,
+      "volume": 82085600,
+      "value": 18551345600
     },
     {
-      "code": "JGLE",
-      "name": "PT Graha Andrasentra Propertindo Tbk",
-      "price": 52,
-      "change_pct": -3.7,
-      "volume": 233274700,
-      "value": 12130284400
+      "code": "IATA",
+      "name": "PT Karya Pacific Energy Tbk",
+      "price": 98,
+      "change_pct": 7.69,
+      "volume": 174798100,
+      "value": 17130213800
     },
     {
-      "code": "TPIA",
-      "name": "PT Chandra Asri Pacific Tbk",
-      "price": 1800,
-      "change_pct": 0,
-      "volume": 6657000,
-      "value": 11982600000
+      "code": "BRMS",
+      "name": "PT Bumi Resources Minerals Tbk Class A",
+      "price": 640,
+      "change_pct": -3.03,
+      "volume": 25472600,
+      "value": 16302464000
+    },
+    {
+      "code": "UVCR",
+      "name": "PT Trimegah Karya Pratama Tbk",
+      "price": 222,
+      "change_pct": 11,
+      "volume": 68420700,
+      "value": 15189395400
+    },
+    {
+      "code": "PTRO",
+      "name": "PT Petrosea Tbk",
+      "price": 5325,
+      "change_pct": 0.47,
+      "volume": 2848800,
+      "value": 15169860000
     }
   ],
   "intersection": [
@@ -514,160 +513,51 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 414,
-        "ara_price": 520,
-        "ara_dist": 7.0,
-        "ara_hit": false,
-        "sl": 462,
-        "target1": 505,
-        "target2": 520,
-        "rr": 0.8,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Triple Intersection + Momentum Kuat",
-        "signal": "STRONG BUY",
-        "tip": "Double intersection, 7.0% ruang ke ARA Rp520. Entry Rp486, target Rp505, SL Rp462. Konfirmasi volume sebelum masuk.",
-        "value_b": 332.7,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "BTEK",
       "name": "PT Bumi Teknokultura Unggul Tbk",
-      "price": 13,
-      "change_pct": 18.18,
-      "volume": 268535300,
-      "value": 3490958900,
+      "price": 14,
+      "change_pct": 27.27,
+      "volume": 343792900,
+      "value": 4813100600,
       "categories": [
         "gainer",
         "volume"
-      ],
-      "analysis": {
-        "prev_close": 11,
-        "ara_price": 14,
-        "ara_dist": 7.7,
-        "ara_hit": false,
-        "sl": 12,
-        "target1": 14,
-        "target2": 14,
-        "rr": 1.0,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Double Intersection + Gainer Kuat",
-        "signal": "BUY",
-        "tip": "Double intersection, 7.7% ruang ke ARA Rp14. Entry Rp13, target Rp14, SL Rp12. Konfirmasi volume sebelum masuk.",
-        "value_b": 3.5,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "ELTY",
       "name": "PT Bakrieland Development Tbk Class A",
       "price": 37,
       "change_pct": 23.33,
-      "volume": 243390600,
-      "value": 9005452200,
+      "volume": 315227200,
+      "value": 11663406400,
       "categories": [
         "gainer",
         "volume"
-      ],
-      "analysis": {
-        "prev_close": 30,
-        "ara_price": 38,
-        "ara_dist": 2.7,
-        "ara_hit": false,
-        "sl": 35,
-        "target1": 38,
-        "target2": 40,
-        "rr": 0.5,
-        "risk": "Tinggi",
-        "risk_cls": "risk-high",
-        "pattern": "Double Intersection + Gainer Kuat",
-        "signal": "BUY",
-        "tip": "Pantau apakah harga hold di atas Rp35. ARA target Rp38 (+2.7%). Masuk hanya jika volume naik.",
-        "value_b": 9.0,
-        "cat_count": 2
-      }
-    },
-    {
-      "code": "JGLE",
-      "name": "PT Graha Andrasentra Propertindo Tbk",
-      "price": 52,
-      "change_pct": -3.7,
-      "volume": 233274700,
-      "value": 12130284400,
-      "categories": [
-        "volume",
-        "value"
-      ],
-      "analysis": {
-        "prev_close": 54,
-        "ara_price": 67,
-        "ara_dist": 28.8,
-        "ara_hit": false,
-        "sl": 49,
-        "target1": 54,
-        "target2": 67,
-        "rr": 0.7,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 28.8% ruang ke ARA Rp67. Entry Rp52, target Rp54, SL Rp49. Konfirmasi volume sebelum masuk.",
-        "value_b": 12.1,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "IATA",
       "name": "PT Karya Pacific Energy Tbk",
-      "price": 97,
-      "change_pct": 6.59,
-      "volume": 136328100,
-      "value": 13223825700,
-      "categories": [
-        "volume",
-        "value"
-      ],
-      "analysis": {
-        "prev_close": 91,
-        "ara_price": 114,
-        "ara_dist": 17.5,
-        "ara_hit": false,
-        "sl": 92,
-        "target1": 101,
-        "target2": 114,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 17.5% ruang ke ARA Rp114. Entry Rp97, target Rp101, SL Rp92. Konfirmasi volume sebelum masuk.",
-        "value_b": 13.2,
-        "cat_count": 2
-      }
-    },
-    {
-      "code": "BUMI",
-      "name": "PT Bumi Resources Tbk Class A",
-      "price": 184,
-      "change_pct": 1.1,
-      "volume": 130829300,
-      "value": 24072591200,
+      "price": 98,
+      "change_pct": 7.69,
+      "volume": 174798100,
+      "value": 17130213800,
       "categories": [
         "volume",
         "value"
       ]
     },
     {
-      "code": "PACK",
-      "name": "PT Abadi Nusantara Hijau Investama Tbk",
-      "price": 610,
-      "change_pct": -5.43,
-      "volume": 117109300,
-      "value": 71436673000,
+      "code": "BUMI",
+      "name": "PT Bumi Resources Tbk Class A",
+      "price": 182,
+      "change_pct": 0,
+      "volume": 166990400,
+      "value": 30392252800,
       "categories": [
         "volume",
         "value"
@@ -676,13 +566,25 @@
     {
       "code": "BLTA",
       "name": "PT Berlian Laju Tanker Tbk",
-      "price": 43,
-      "change_pct": 34.38,
-      "volume": 85366300,
-      "value": 3670750900,
+      "price": 41,
+      "change_pct": 28.12,
+      "volume": 147388900,
+      "value": 5913110200,
       "categories": [
         "gainer",
         "volume"
+      ]
+    },
+    {
+      "code": "PACK",
+      "name": "PT Abadi Nusantara Hijau Investama Tbk",
+      "price": 605,
+      "change_pct": -6.2,
+      "volume": 139551900,
+      "value": 84428899500,
+      "categories": [
+        "volume",
+        "value"
       ]
     },
     {
@@ -690,20 +592,32 @@
       "name": "PT Asuransi Harta Aman Pratama Tbk",
       "price": 99,
       "change_pct": 17.86,
-      "volume": 80816300,
-      "value": 8000813700,
+      "volume": 97534600,
+      "value": 9655925400,
       "categories": [
         "gainer",
         "volume"
       ]
     },
     {
+      "code": "MBTO",
+      "name": "PT Martina Berto Tbk",
+      "price": 226,
+      "change_pct": 9.71,
+      "volume": 82085600,
+      "value": 18551345600,
+      "categories": [
+        "volume",
+        "value"
+      ]
+    },
+    {
       "code": "BULL",
       "name": "PT Buana Lintas Lautan Tbk",
-      "price": 362,
-      "change_pct": 1.69,
-      "volume": 74429300,
-      "value": 26943406600,
+      "price": 358,
+      "change_pct": 0.56,
+      "volume": 81796800,
+      "value": 29283254400,
       "categories": [
         "volume",
         "value"
@@ -712,46 +626,34 @@
     {
       "code": "VIVA",
       "name": "PT Visi Media Asia Tbk Class A",
-      "price": 44,
-      "change_pct": 22.22,
-      "volume": 71349900,
-      "value": 3139395600,
+      "price": 45,
+      "change_pct": 25,
+      "volume": 77843100,
+      "value": 3502939500,
       "categories": [
         "gainer",
         "volume"
       ]
     },
     {
-      "code": "INET",
-      "name": "PT Sinergi Inti Andalan Prima Tbk",
-      "price": 292,
-      "change_pct": 0.69,
-      "volume": 60098200,
-      "value": 17548674400,
+      "code": "PPRO",
+      "name": "PT PP Properti Tbk",
+      "price": 18,
+      "change_pct": 20,
+      "volume": 70607900,
+      "value": 1270942200,
       "categories": [
-        "volume",
-        "value"
+        "gainer",
+        "volume"
       ]
     },
     {
       "code": "UVCR",
       "name": "PT Trimegah Karya Pratama Tbk",
-      "price": 216,
-      "change_pct": 8,
-      "volume": 59347100,
-      "value": 12818973600,
-      "categories": [
-        "volume",
-        "value"
-      ]
-    },
-    {
-      "code": "MBTO",
-      "name": "PT Martina Berto Tbk",
-      "price": 216,
-      "change_pct": 4.85,
-      "volume": 59176700,
-      "value": 12188506000,
+      "price": 222,
+      "change_pct": 11,
+      "volume": 68420700,
+      "value": 15189395400,
       "categories": [
         "volume",
         "value"
@@ -782,140 +684,172 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 414,
-        "ara_price": 520,
-        "ara_dist": 7.0,
-        "ara_hit": false,
-        "sl": 462,
-        "target1": 505,
-        "target2": 520,
-        "rr": 0.8,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Triple Intersection + Momentum Kuat",
-        "signal": "STRONG BUY",
-        "tip": "Double intersection, 7.0% ruang ke ARA Rp520. Entry Rp486, target Rp505, SL Rp462. Konfirmasi volume sebelum masuk.",
-        "value_b": 332.7,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "BTEK",
       "name": "PT Bumi Teknokultura Unggul Tbk",
-      "price": 13,
-      "change_pct": 18.18,
-      "volume": 268535300,
-      "value": 3490958900,
+      "price": 14,
+      "change_pct": 27.27,
+      "volume": 343792900,
+      "value": 4813100600,
       "categories": [
         "gainer",
         "volume"
-      ],
-      "analysis": {
-        "prev_close": 11,
-        "ara_price": 14,
-        "ara_dist": 7.7,
-        "ara_hit": false,
-        "sl": 12,
-        "target1": 14,
-        "target2": 14,
-        "rr": 1.0,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Double Intersection + Gainer Kuat",
-        "signal": "BUY",
-        "tip": "Double intersection, 7.7% ruang ke ARA Rp14. Entry Rp13, target Rp14, SL Rp12. Konfirmasi volume sebelum masuk.",
-        "value_b": 3.5,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "ELTY",
       "name": "PT Bakrieland Development Tbk Class A",
       "price": 37,
       "change_pct": 23.33,
-      "volume": 243390600,
-      "value": 9005452200,
+      "volume": 315227200,
+      "value": 11663406400,
       "categories": [
         "gainer",
         "volume"
-      ],
-      "analysis": {
-        "prev_close": 30,
-        "ara_price": 38,
-        "ara_dist": 2.7,
-        "ara_hit": false,
-        "sl": 35,
-        "target1": 38,
-        "target2": 40,
-        "rr": 0.5,
-        "risk": "Tinggi",
-        "risk_cls": "risk-high",
-        "pattern": "Double Intersection + Gainer Kuat",
-        "signal": "BUY",
-        "tip": "Pantau apakah harga hold di atas Rp35. ARA target Rp38 (+2.7%). Masuk hanya jika volume naik.",
-        "value_b": 9.0,
-        "cat_count": 2
-      }
-    },
-    {
-      "code": "JGLE",
-      "name": "PT Graha Andrasentra Propertindo Tbk",
-      "price": 52,
-      "change_pct": -3.7,
-      "volume": 233274700,
-      "value": 12130284400,
-      "categories": [
-        "volume",
-        "value"
-      ],
-      "analysis": {
-        "prev_close": 54,
-        "ara_price": 67,
-        "ara_dist": 28.8,
-        "ara_hit": false,
-        "sl": 49,
-        "target1": 54,
-        "target2": 67,
-        "rr": 0.7,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 28.8% ruang ke ARA Rp67. Entry Rp52, target Rp54, SL Rp49. Konfirmasi volume sebelum masuk.",
-        "value_b": 12.1,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "IATA",
       "name": "PT Karya Pacific Energy Tbk",
-      "price": 97,
-      "change_pct": 6.59,
-      "volume": 136328100,
-      "value": 13223825700,
+      "price": 98,
+      "change_pct": 7.69,
+      "volume": 174798100,
+      "value": 17130213800,
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 91,
-        "ara_price": 114,
-        "ara_dist": 17.5,
-        "ara_hit": false,
-        "sl": 92,
-        "target1": 101,
-        "target2": 114,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 17.5% ruang ke ARA Rp114. Entry Rp97, target Rp101, SL Rp92. Konfirmasi volume sebelum masuk.",
-        "value_b": 13.2,
-        "cat_count": 2
-      }
+      ]
+    },
+    {
+      "code": "BUMI",
+      "name": "PT Bumi Resources Tbk Class A",
+      "price": 182,
+      "change_pct": 0,
+      "volume": 166990400,
+      "value": 30392252800,
+      "categories": [
+        "volume",
+        "value"
+      ]
     }
-  ]
+  ],
+  "analysis": {
+    "watchlist_notes": [
+      {
+        "code": "ASLI",
+        "name": "PT Asri Karya Lestari Tbk",
+        "price": 486,
+        "change": 17.39,
+        "volume": 684639500,
+        "value": 332734797000,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 684.6M sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp467 | Target Rp505 | Stop Rp452"
+      },
+      {
+        "code": "BTEK",
+        "name": "PT Bumi Teknokultura Unggul Tbk",
+        "price": 14,
+        "change": 27.27,
+        "volume": 343792900,
+        "value": 4813100600,
+        "cats": [
+          "gainer",
+          "volume"
+        ],
+        "reason": "Gain +27.3% dengan volume 343.8M — momentum kuat, liquid untuk scalp.",
+        "guidance": "Entry area Rp15 | Target Rp15 | Stop Rp15"
+      },
+      {
+        "code": "ELTY",
+        "name": "PT Bakrieland Development Tbk Class A",
+        "price": 37,
+        "change": 23.33,
+        "volume": 315227200,
+        "value": 11663406400,
+        "cats": [
+          "gainer",
+          "volume"
+        ],
+        "reason": "Gain +23.3% dengan volume 315.2M — momentum kuat, liquid untuk scalp.",
+        "guidance": "Entry area Rp35 | Target Rp40 | Stop Rp35"
+      },
+      {
+        "code": "IATA",
+        "name": "PT Karya Pacific Energy Tbk",
+        "price": 98,
+        "change": 7.69,
+        "volume": 174798100,
+        "value": 17130213800,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 174.8M & nilai Rp17.13B — paling liquid, spread kecil.",
+        "guidance": "Entry area Rp95 | Target Rp100 | Stop Rp90"
+      },
+      {
+        "code": "BUMI",
+        "name": "PT Bumi Resources Tbk Class A",
+        "price": 182,
+        "change": 0,
+        "volume": 166990400,
+        "value": 30392252800,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 167.0M & nilai Rp30.39B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      }
+    ],
+    "signals": [
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "ASLI",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "info",
+        "icon": "📈",
+        "code": "ASLI",
+        "text": "Volume king hari ini: 684.6M shares — paling liquid untuk scalp."
+      }
+    ],
+    "warnings": [
+      {
+        "code": "BBKP",
+        "change": -12,
+        "text": "Turun -12.0% — hindari untuk long, potensi tekanan berlanjut."
+      },
+      {
+        "code": "PADI",
+        "change": -14.0,
+        "text": "Turun -14.0% — hindari untuk long, potensi tekanan berlanjut."
+      }
+    ],
+    "summary": {
+      "ihsg_close": 6188.29,
+      "ihsg_change": -0.86,
+      "ihsg_high": 6227.899,
+      "ihsg_low": 6180.603,
+      "day_range": 47.3,
+      "is_positive": false,
+      "is_month_end": true,
+      "session_label": "Sesi Pagi",
+      "top_gainer": "BLTA",
+      "top_gainer_chg": 28.12,
+      "vol_king": "ASLI",
+      "vol_king_vol": "684.6M",
+      "triple_count": 1,
+      "intersection_count": 14
+    }
+  }
 }
