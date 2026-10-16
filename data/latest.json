@@ -1,20 +1,19 @@
 {
   "session": "siang",
-  "timestamp": "2026-10-16T13:45:00.135622+07:00",
+  "timestamp": "2026-10-16T13:47:58.994244+07:00",
   "date": "16 October 2026",
-  "time": "13:45 WIB",
+  "time": "13:47 WIB",
   "ihsg": {
-    "close": 5233.002,
-    "change_pct": -10.76,
-    "change_abs": -630.78,
+    "close": 5233.0,
+    "change_pct": -11.95,
+    "change_abs": -710.02,
     "high": 5404.508,
     "low": 5193.222,
-    "open": 5393.924,
+    "open": null,
     "volume": 0,
-    "value": 0,
-    "market_open": true,
-    "market_state": "REGULAR",
-    "as_of": "16 Oct 2026 13:45 WIB"
+    "market_open": false,
+    "market_state": "CLOSED",
+    "as_of": "16 Oct 2026 13:47 WIB"
   },
   "gainers": [
     {
@@ -34,38 +33,6 @@
       "value": 56417477500
     },
     {
-      "code": "ALDO",
-      "name": "PT Alkindo Naratama Tbk",
-      "price": 1955,
-      "change_pct": 24.92,
-      "volume": 1923000,
-      "value": 3759465000
-    },
-    {
-      "code": "TFCO",
-      "name": "PT Tifico Fiber Indonesia, Tbk",
-      "price": 2000,
-      "change_pct": 24.61,
-      "volume": 638500,
-      "value": 1277000000
-    },
-    {
-      "code": "PTSP",
-      "name": "PT Pioneerindo Gourmet International Tbk",
-      "price": 2010,
-      "change_pct": 20.72,
-      "volume": 1669300,
-      "value": 3355293000
-    },
-    {
-      "code": "AIMS",
-      "name": "PT Artha Mahiya Investama Tbk",
-      "price": 990,
-      "change_pct": 20,
-      "volume": 6989100,
-      "value": 6919209000
-    },
-    {
       "code": "SMLE",
       "name": "PT Sinergi Multi Lestarindo Tbk",
       "price": 340,
@@ -74,28 +41,12 @@
       "value": 32349198000
     },
     {
-      "code": "RUNS",
-      "name": "PT Global Sukses Solusi Tbk",
-      "price": 69,
-      "change_pct": 4.55,
-      "volume": 5281900,
-      "value": 364451100
-    },
-    {
       "code": "MMIX",
       "name": "PT Multi Medika Internasional Tbk",
       "price": 990,
       "change_pct": 1.54,
       "volume": 19696200,
       "value": 19499238000
-    },
-    {
-      "code": "BIKE",
-      "name": "PT Bhineka Inovasi Ketahanan Energi Tbk",
-      "price": 4380,
-      "change_pct": 0.23,
-      "volume": 3490800,
-      "value": 15289704000
     }
   ],
   "volume": [
@@ -433,24 +384,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 27,
-        "ara_price": 34,
-        "ara_dist": 41.7,
-        "ara_hit": false,
-        "sl": 23,
-        "target1": 25,
-        "target2": 34,
-        "rr": 1.0,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 41.7% ruang ke ARA Rp34. Entry Rp24, target Rp25, SL Rp23. Konfirmasi volume sebelum masuk.",
-        "value_b": 537.3,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BBCA",
@@ -462,24 +396,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 6075,
-        "ara_price": 7600,
-        "ara_dist": 45.5,
-        "ara_hit": false,
-        "sl": 4960,
-        "target1": 5425,
-        "target2": 7600,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 45.5% ruang ke ARA Rp7,600. Entry Rp5,225, target Rp5,425, SL Rp4,960. Konfirmasi volume sebelum masuk.",
-        "value_b": 5323.5,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BBRI",
@@ -491,24 +408,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 3100,
-        "ara_price": 3880,
-        "ara_dist": 42.6,
-        "ara_hit": false,
-        "sl": 2580,
-        "target1": 2830,
-        "target2": 3880,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 42.6% ruang ke ARA Rp3,880. Entry Rp2,720, target Rp2,830, SL Rp2,580. Konfirmasi volume sebelum masuk.",
-        "value_b": 1905.6,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BMRI",
@@ -520,24 +420,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 3980,
-        "ara_price": 4970,
-        "ara_dist": 36.5,
-        "ara_hit": false,
-        "sl": 3460,
-        "target1": 3790,
-        "target2": 4970,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 36.5% ruang ke ARA Rp4,970. Entry Rp3,640, target Rp3,790, SL Rp3,460. Konfirmasi volume sebelum masuk.",
-        "value_b": 1437.5,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "TLKM",
@@ -549,24 +432,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 2230,
-        "ara_price": 2790,
-        "ara_dist": 41.6,
-        "ara_hit": false,
-        "sl": 1870,
-        "target1": 2050,
-        "target2": 2790,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 41.6% ruang ke ARA Rp2,790. Entry Rp1,970, target Rp2,050, SL Rp1,870. Konfirmasi volume sebelum masuk.",
-        "value_b": 695.5,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "AKKU",
@@ -628,24 +494,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 27,
-        "ara_price": 34,
-        "ara_dist": 41.7,
-        "ara_hit": false,
-        "sl": 23,
-        "target1": 25,
-        "target2": 34,
-        "rr": 1.0,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 41.7% ruang ke ARA Rp34. Entry Rp24, target Rp25, SL Rp23. Konfirmasi volume sebelum masuk.",
-        "value_b": 537.3,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BBCA",
@@ -657,24 +506,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 6075,
-        "ara_price": 7600,
-        "ara_dist": 45.5,
-        "ara_hit": false,
-        "sl": 4960,
-        "target1": 5425,
-        "target2": 7600,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 45.5% ruang ke ARA Rp7,600. Entry Rp5,225, target Rp5,425, SL Rp4,960. Konfirmasi volume sebelum masuk.",
-        "value_b": 5323.5,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BBRI",
@@ -686,24 +518,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 3100,
-        "ara_price": 3880,
-        "ara_dist": 42.6,
-        "ara_hit": false,
-        "sl": 2580,
-        "target1": 2830,
-        "target2": 3880,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 42.6% ruang ke ARA Rp3,880. Entry Rp2,720, target Rp2,830, SL Rp2,580. Konfirmasi volume sebelum masuk.",
-        "value_b": 1905.6,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BMRI",
@@ -715,24 +530,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 3980,
-        "ara_price": 4970,
-        "ara_dist": 36.5,
-        "ara_hit": false,
-        "sl": 3460,
-        "target1": 3790,
-        "target2": 4970,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 36.5% ruang ke ARA Rp4,970. Entry Rp3,640, target Rp3,790, SL Rp3,460. Konfirmasi volume sebelum masuk.",
-        "value_b": 1437.5,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "TLKM",
@@ -744,24 +542,122 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 2230,
-        "ara_price": 2790,
-        "ara_dist": 41.6,
-        "ara_hit": false,
-        "sl": 1870,
-        "target1": 2050,
-        "target2": 2790,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 41.6% ruang ke ARA Rp2,790. Entry Rp1,970, target Rp2,050, SL Rp1,870. Konfirmasi volume sebelum masuk.",
-        "value_b": 695.5,
-        "cat_count": 2
-      }
+      ]
     }
-  ]
+  ],
+  "analysis": {
+    "watchlist_notes": [
+      {
+        "code": "GOTO",
+        "name": "PT GoTo Gojek Tokopedia Tbk",
+        "price": 24,
+        "change": -11.11,
+        "volume": 22387814600,
+        "value": 537307550400,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 22.39B & nilai Rp537.31B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "BBCA",
+        "name": "PT Bank Central Asia Tbk",
+        "price": 5225,
+        "change": -13.99,
+        "volume": 1018842800,
+        "value": 5323453630000,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 1.02B & nilai Rp5.32T — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "BBRI",
+        "name": "PT Bank Rakyat Indonesia (Persero) Tbk Class B",
+        "price": 2720,
+        "change": -12.26,
+        "volume": 700599400,
+        "value": 1905630368000,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 700.6M & nilai Rp1.91T — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "BMRI",
+        "name": "PT Bank Mandiri (Persero) Tbk",
+        "price": 3640,
+        "change": -8.54,
+        "volume": 394925400,
+        "value": 1437528456000,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 394.9M & nilai Rp1.44T — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "TLKM",
+        "name": "PT Telkom Indonesia (Persero) Tbk Class B",
+        "price": 1970,
+        "change": -11.66,
+        "volume": 353061900,
+        "value": 695531943000,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 353.1M & nilai Rp695.53B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      }
+    ],
+    "signals": [
+      {
+        "type": "info",
+        "icon": "📈",
+        "code": "GOTO",
+        "text": "Volume king hari ini: 22.39B shares — paling liquid untuk scalp."
+      }
+    ],
+    "warnings": [
+      {
+        "code": "GOTO",
+        "change": -11.11,
+        "text": "Turun -11.1% — hindari untuk long, potensi tekanan berlanjut."
+      },
+      {
+        "code": "BBCA",
+        "change": -13.99,
+        "text": "Turun -14.0% — hindari untuk long, potensi tekanan berlanjut."
+      },
+      {
+        "code": "BBRI",
+        "change": -12.26,
+        "text": "Turun -12.3% — hindari untuk long, potensi tekanan berlanjut."
+      }
+    ],
+    "summary": {
+      "ihsg_close": 5233.0,
+      "ihsg_change": -11.95,
+      "ihsg_high": 5404.508,
+      "ihsg_low": 5193.222,
+      "day_range": 211.29,
+      "is_positive": false,
+      "is_month_end": false,
+      "session_label": "Sesi Siang",
+      "top_gainer": "AKKU",
+      "top_gainer_chg": 34.62,
+      "vol_king": "GOTO",
+      "vol_king_vol": "22.39B",
+      "triple_count": 0,
+      "intersection_count": 9
+    }
+  }
 }
