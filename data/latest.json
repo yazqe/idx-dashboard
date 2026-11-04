@@ -1,20 +1,19 @@
 {
   "session": "siang",
-  "timestamp": "2026-11-04T12:55:00.134380+07:00",
+  "timestamp": "2026-11-04T12:59:48.130892+07:00",
   "date": "04 November 2026",
-  "time": "12:55 WIB",
+  "time": "12:59 WIB",
   "ihsg": {
-    "close": 4860.937,
-    "change_pct": -0.88,
-    "change_abs": -43.35,
+    "close": 4860.94,
+    "change_pct": -4.63,
+    "change_abs": -235.89,
     "high": 4902.713,
     "low": 4824.364,
-    "open": 4856.96,
+    "open": null,
     "volume": 0,
-    "value": 0,
-    "market_open": true,
-    "market_state": "REGULAR",
-    "as_of": "04 Nov 2026 12:55 WIB"
+    "market_open": false,
+    "market_state": "CLOSED",
+    "as_of": "04 Nov 2026 12:59 WIB"
   },
   "gainers": [
     {
@@ -34,14 +33,6 @@
       "value": 3701287500
     },
     {
-      "code": "BOBA",
-      "name": "PT Formosa Ingredient Factory Tbk",
-      "price": 193,
-      "change_pct": 21.38,
-      "volume": 9881500,
-      "value": 1907129500
-    },
-    {
       "code": "TMPO",
       "name": "PT Tempo Inti Media Tbk",
       "price": 280,
@@ -50,28 +41,12 @@
       "value": 84725956000
     },
     {
-      "code": "CITY",
-      "name": "PT Natura City Developments Tbk",
-      "price": 123,
-      "change_pct": 14.95,
-      "volume": 2819800,
-      "value": 346835400
-    },
-    {
       "code": "AIMS",
       "name": "PT Artha Mahiya Investama Tbk",
       "price": 680,
       "change_pct": 12.4,
       "volume": 15373900,
       "value": 10454252000
-    },
-    {
-      "code": "FLMC",
-      "name": "PT Falmaco Nonwoven Industri Tbk",
-      "price": 146,
-      "change_pct": 9.77,
-      "volume": 4580000,
-      "value": 668680000
     },
     {
       "code": "BTEK",
@@ -98,44 +73,12 @@
       "value": 3002620800
     },
     {
-      "code": "PTPS",
-      "name": "PT Pulau Subur Tbk",
-      "price": 128,
-      "change_pct": 5.79,
-      "volume": 3307400,
-      "value": 423347200
-    },
-    {
-      "code": "AXIO",
-      "name": "PT Tera Data Indonusa Tbk",
-      "price": 126,
-      "change_pct": 5,
-      "volume": 3866300,
-      "value": 487153800
-    },
-    {
-      "code": "ASPI",
-      "name": "PT Andalan Sakti Primaindo Tbk",
-      "price": 645,
-      "change_pct": 4.88,
-      "volume": 1682300,
-      "value": 1085083500
-    },
-    {
       "code": "KOKA",
       "name": "PT Koka Indonesia Tbk",
       "price": 114,
       "change_pct": 4.59,
       "volume": 33482200,
       "value": 3816970800
-    },
-    {
-      "code": "KRAS",
-      "name": "PT Krakatau Steel (Persero) Tbk Class B",
-      "price": 160,
-      "change_pct": 4.58,
-      "volume": 2465500,
-      "value": 394480000
     },
     {
       "code": "GRIA",
@@ -146,36 +89,44 @@
       "value": 1637078400
     },
     {
-      "code": "ICBP",
-      "name": "PT Indofood CBP Sukses Makmur Tbk",
-      "price": 5875,
-      "change_pct": 3.98,
-      "volume": 8661300,
-      "value": 50885137500
-    },
-    {
-      "code": "POLA",
-      "name": "PT Pool Advista Finance Tbk",
-      "price": 79,
-      "change_pct": 3.95,
-      "volume": 6394300,
-      "value": 505149700
-    },
-    {
-      "code": "CAMP",
-      "name": "PT Campina Ice Cream Industry Tbk",
-      "price": 136,
-      "change_pct": 3.82,
-      "volume": 2729200,
-      "value": 371171200
-    },
-    {
       "code": "ANDI",
       "name": "PT Andira Agro Tbk",
       "price": 28,
       "change_pct": 3.7,
       "volume": 70886200,
       "value": 1984813600
+    },
+    {
+      "code": "BRIS",
+      "name": "PT Bank Syariah Indonesia (Persero) Tbk",
+      "price": 1045,
+      "change_pct": 3.47,
+      "volume": 47892100,
+      "value": 50047244500
+    },
+    {
+      "code": "DPUM",
+      "name": "PT Dua Putra Utama Makmur Tbk",
+      "price": 94,
+      "change_pct": 3.3,
+      "volume": 24197400,
+      "value": 2274555600
+    },
+    {
+      "code": "ERAA",
+      "name": "PT Erajaya Swasembada Tbk",
+      "price": 486,
+      "change_pct": 2.97,
+      "volume": 47308400,
+      "value": 22991882400
+    },
+    {
+      "code": "CLEO",
+      "name": "PT Sariguna Primatirta Tbk",
+      "price": 368,
+      "change_pct": 2.79,
+      "volume": 14676700,
+      "value": 5401025600
     }
   ],
   "volume": [
@@ -514,24 +465,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 234,
-        "ara_price": 292,
-        "ara_dist": 4.3,
-        "ara_hit": false,
-        "sl": 266,
-        "target1": 292,
-        "target2": 292,
-        "rr": 0.9,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Triple Intersection + Momentum Kuat",
-        "signal": "STRONG BUY",
-        "tip": "Pantau apakah harga hold di atas Rp266. ARA target Rp292 (+4.3%). Masuk hanya jika volume naik.",
-        "value_b": 84.7,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "BUMI",
@@ -543,24 +477,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 120,
-        "ara_price": 150,
-        "ara_dist": 29.3,
-        "ara_hit": false,
-        "sl": 110,
-        "target1": 121,
-        "target2": 150,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 29.3% ruang ke ARA Rp150. Entry Rp116, target Rp121, SL Rp110. Konfirmasi volume sebelum masuk.",
-        "value_b": 327.2,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "MKNT",
@@ -572,24 +489,7 @@
       "categories": [
         "gainer",
         "volume"
-      ],
-      "analysis": {
-        "prev_close": 18,
-        "ara_price": 23,
-        "ara_dist": -4.2,
-        "ara_hit": true,
-        "sl": 23,
-        "target1": 25,
-        "target2": 26,
-        "rr": 1.0,
-        "risk": "CEILING",
-        "risk_cls": "risk-ceiling",
-        "pattern": "Mendekati Ceiling ARA",
-        "signal": "WAIT",
-        "tip": "Harga sudah di ceiling ARA (Rp23). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
-        "value_b": 19.5,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BUVA",
@@ -601,24 +501,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 274,
-        "ara_price": 342,
-        "ara_dist": 32.6,
-        "ara_hit": false,
-        "sl": 246,
-        "target1": 268,
-        "target2": 342,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 32.6% ruang ke ARA Rp342. Entry Rp258, target Rp268, SL Rp246. Konfirmasi volume sebelum masuk.",
-        "value_b": 194.0,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "DEWA",
@@ -630,24 +513,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 222,
-        "ara_price": 278,
-        "ara_dist": 29.9,
-        "ara_hit": false,
-        "sl": 204,
-        "target1": 222,
-        "target2": 278,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 29.9% ruang ke ARA Rp278. Entry Rp214, target Rp222, SL Rp204. Konfirmasi volume sebelum masuk.",
-        "value_b": 133.6,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "PACK",
@@ -696,18 +562,6 @@
         "volume",
         "value"
       ]
-    },
-    {
-      "code": "ICBP",
-      "name": "PT Indofood CBP Sukses Makmur Tbk",
-      "price": 5875,
-      "change_pct": 3.98,
-      "volume": 8661300,
-      "value": 50885137500,
-      "categories": [
-        "gainer",
-        "value"
-      ]
     }
   ],
   "watchlist": [
@@ -722,24 +576,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 234,
-        "ara_price": 292,
-        "ara_dist": 4.3,
-        "ara_hit": false,
-        "sl": 266,
-        "target1": 292,
-        "target2": 292,
-        "rr": 0.9,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Triple Intersection + Momentum Kuat",
-        "signal": "STRONG BUY",
-        "tip": "Pantau apakah harga hold di atas Rp266. ARA target Rp292 (+4.3%). Masuk hanya jika volume naik.",
-        "value_b": 84.7,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "BUMI",
@@ -751,24 +588,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 120,
-        "ara_price": 150,
-        "ara_dist": 29.3,
-        "ara_hit": false,
-        "sl": 110,
-        "target1": 121,
-        "target2": 150,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 29.3% ruang ke ARA Rp150. Entry Rp116, target Rp121, SL Rp110. Konfirmasi volume sebelum masuk.",
-        "value_b": 327.2,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "MKNT",
@@ -780,24 +600,7 @@
       "categories": [
         "gainer",
         "volume"
-      ],
-      "analysis": {
-        "prev_close": 18,
-        "ara_price": 23,
-        "ara_dist": -4.2,
-        "ara_hit": true,
-        "sl": 23,
-        "target1": 25,
-        "target2": 26,
-        "rr": 1.0,
-        "risk": "CEILING",
-        "risk_cls": "risk-ceiling",
-        "pattern": "Mendekati Ceiling ARA",
-        "signal": "WAIT",
-        "tip": "Harga sudah di ceiling ARA (Rp23). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
-        "value_b": 19.5,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BUVA",
@@ -809,24 +612,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 274,
-        "ara_price": 342,
-        "ara_dist": 32.6,
-        "ara_hit": false,
-        "sl": 246,
-        "target1": 268,
-        "target2": 342,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 32.6% ruang ke ARA Rp342. Entry Rp258, target Rp268, SL Rp246. Konfirmasi volume sebelum masuk.",
-        "value_b": 194.0,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "DEWA",
@@ -838,24 +624,113 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 222,
-        "ara_price": 278,
-        "ara_dist": 29.9,
-        "ara_hit": false,
-        "sl": 204,
-        "target1": 222,
-        "target2": 278,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 29.9% ruang ke ARA Rp278. Entry Rp214, target Rp222, SL Rp204. Konfirmasi volume sebelum masuk.",
-        "value_b": 133.6,
-        "cat_count": 2
-      }
+      ]
     }
-  ]
+  ],
+  "analysis": {
+    "watchlist_notes": [
+      {
+        "code": "TMPO",
+        "name": "PT Tempo Inti Media Tbk",
+        "price": 280,
+        "change": 19.66,
+        "volume": 302592700,
+        "value": 84725956000,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 302.6M sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp269 | Target Rp291 | Stop Rp260"
+      },
+      {
+        "code": "BUMI",
+        "name": "PT Bumi Resources Tbk Class A",
+        "price": 116,
+        "change": -3.33,
+        "volume": 2820335100,
+        "value": 327158871600,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 2.82B & nilai Rp327.16B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "MKNT",
+        "name": "Pt Mitra Komunikasi Nusantara Tbk",
+        "price": 24,
+        "change": 33.33,
+        "volume": 812024600,
+        "value": 19488590400,
+        "cats": [
+          "gainer",
+          "volume"
+        ],
+        "reason": "Gain +33.3% dengan volume 812.0M — momentum kuat, liquid untuk scalp.",
+        "guidance": "Entry area Rp25 | Target Rp25 | Stop Rp20"
+      },
+      {
+        "code": "BUVA",
+        "name": "PT Bukit Uluwatu Villa Tbk",
+        "price": 258,
+        "change": -5.84,
+        "volume": 752026900,
+        "value": 194022940200,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 752.0M & nilai Rp194.02B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "DEWA",
+        "name": "PT Darma Henwa Tbk",
+        "price": 214,
+        "change": -3.6,
+        "volume": 624240800,
+        "value": 133587531200,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 624.2M & nilai Rp133.59B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      }
+    ],
+    "signals": [
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "TMPO",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "info",
+        "icon": "📈",
+        "code": "BUMI",
+        "text": "Volume king hari ini: 2.82B shares — paling liquid untuk scalp."
+      }
+    ],
+    "warnings": [],
+    "summary": {
+      "ihsg_close": 4860.94,
+      "ihsg_change": -4.63,
+      "ihsg_high": 4902.713,
+      "ihsg_low": 4824.364,
+      "day_range": 78.35,
+      "is_positive": false,
+      "is_month_end": false,
+      "session_label": "Sesi Siang",
+      "top_gainer": "MKNT",
+      "top_gainer_chg": 33.33,
+      "vol_king": "BUMI",
+      "vol_king_vol": "2.82B",
+      "triple_count": 1,
+      "intersection_count": 9
+    }
+  }
 }
