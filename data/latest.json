@@ -1,20 +1,19 @@
 {
   "session": "siang",
-  "timestamp": "2026-11-06T13:40:00.158728+07:00",
+  "timestamp": "2026-11-06T13:43:54.116815+07:00",
   "date": "06 November 2026",
-  "time": "13:40 WIB",
+  "time": "13:43 WIB",
   "ihsg": {
-    "close": 4931.393,
-    "change_pct": -1.97,
-    "change_abs": -98.87,
+    "close": 4931.39,
+    "change_pct": 0.24,
+    "change_abs": 11.62,
     "high": 4969.004,
     "low": 4925.101,
-    "open": 4955.834,
+    "open": null,
     "volume": 0,
-    "value": 0,
-    "market_open": true,
-    "market_state": "REGULAR",
-    "as_of": "06 Nov 2026 13:40 WIB"
+    "market_open": false,
+    "market_state": "CLOSED",
+    "as_of": "06 Nov 2026 13:43 WIB"
   },
   "gainers": [
     {
@@ -50,14 +49,6 @@
       "value": 3313186900
     },
     {
-      "code": "AIMS",
-      "name": "PT Artha Mahiya Investama Tbk",
-      "price": 1175,
-      "change_pct": 25,
-      "volume": 5646700,
-      "value": 6634872500
-    },
-    {
       "code": "TMPO",
       "name": "PT Tempo Inti Media Tbk",
       "price": 292,
@@ -90,14 +81,6 @@
       "value": 3425666400
     },
     {
-      "code": "YUPI",
-      "name": "Pt Yupi Indo Jelly Gum Tbk",
-      "price": 1300,
-      "change_pct": 14.54,
-      "volume": 1087300,
-      "value": 1413490000
-    },
-    {
       "code": "JAWA",
       "name": "PT Jaya Agra Wattie Tbk",
       "price": 118,
@@ -106,44 +89,12 @@
       "value": 1687541600
     },
     {
-      "code": "YPAS",
-      "name": "PT Yanaprima Hastapersada Tbk",
-      "price": 870,
-      "change_pct": 12.99,
-      "volume": 544200,
-      "value": 473454000
-    },
-    {
       "code": "GDST",
       "name": "PT Gunawan Dianjaya Steel Tbk",
       "price": 97,
       "change_pct": 12.79,
       "volume": 56218500,
       "value": 5453194500
-    },
-    {
-      "code": "FLMC",
-      "name": "PT Falmaco Nonwoven Industri Tbk",
-      "price": 176,
-      "change_pct": 10,
-      "volume": 5137000,
-      "value": 904112000
-    },
-    {
-      "code": "MCAS",
-      "name": "PT M Cash Integrasi Tbk",
-      "price": 187,
-      "change_pct": 7.47,
-      "volume": 2881300,
-      "value": 538803100
-    },
-    {
-      "code": "PLAN",
-      "name": "PT Planet Properindo Jaya Tbk",
-      "price": 44,
-      "change_pct": 7.32,
-      "volume": 2793200,
-      "value": 122900800
     },
     {
       "code": "IKAN",
@@ -170,12 +121,28 @@
       "value": 2995871500
     },
     {
-      "code": "OLIV",
-      "name": "PT Atlas Nexus Group Tbk",
-      "price": 48,
-      "change_pct": 6.67,
-      "volume": 3781100,
-      "value": 181492800
+      "code": "PART",
+      "name": "PT Cipta Perdana Lancar Tbk",
+      "price": 97,
+      "change_pct": 5.43,
+      "volume": 71394200,
+      "value": 6925237400
+    },
+    {
+      "code": "DEFI",
+      "name": "PT Danasupra Erapacific Tbk",
+      "price": 68,
+      "change_pct": 4.62,
+      "volume": 36801500,
+      "value": 2502502000
+    },
+    {
+      "code": "GOTO",
+      "name": "PT GoTo Gojek Tokopedia Tbk",
+      "price": 25,
+      "change_pct": 4.17,
+      "volume": 1188044200,
+      "value": 29701105000
     }
   ],
   "volume": [
@@ -514,24 +481,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 234,
-        "ara_price": 292,
-        "ara_dist": 0.0,
-        "ara_hit": true,
-        "sl": 278,
-        "target1": 304,
-        "target2": 316,
-        "rr": 0.9,
-        "risk": "CEILING",
-        "risk_cls": "risk-ceiling",
-        "pattern": "Mendekati Ceiling ARA",
-        "signal": "WAIT",
-        "tip": "Harga sudah di ceiling ARA (Rp292). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
-        "value_b": 102.5,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "BUMI",
@@ -543,24 +493,19 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 118,
-        "ara_price": 148,
-        "ara_dist": 31.0,
-        "ara_hit": false,
-        "sl": 107,
-        "target1": 118,
-        "target2": 148,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 31.0% ruang ke ARA Rp148. Entry Rp113, target Rp118, SL Rp107. Konfirmasi volume sebelum masuk.",
-        "value_b": 161.0,
-        "cat_count": 2
-      }
+      ]
+    },
+    {
+      "code": "GOTO",
+      "name": "PT GoTo Gojek Tokopedia Tbk",
+      "price": 25,
+      "change_pct": 4.17,
+      "volume": 1188044200,
+      "value": 29701105000,
+      "categories": [
+        "gainer",
+        "volume"
+      ]
     },
     {
       "code": "DEWA",
@@ -572,24 +517,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 230,
-        "ara_price": 288,
-        "ara_dist": 32.1,
-        "ara_hit": false,
-        "sl": 208,
-        "target1": 226,
-        "target2": 288,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 32.1% ruang ke ARA Rp288. Entry Rp218, target Rp226, SL Rp208. Konfirmasi volume sebelum masuk.",
-        "value_b": 64.0,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "MKNT",
@@ -601,24 +529,7 @@
       "categories": [
         "gainer",
         "volume"
-      ],
-      "analysis": {
-        "prev_close": 24,
-        "ara_price": 30,
-        "ara_dist": -6.2,
-        "ara_hit": true,
-        "sl": 30,
-        "target1": 33,
-        "target2": 35,
-        "rr": 0.5,
-        "risk": "CEILING",
-        "risk_cls": "risk-ceiling",
-        "pattern": "Mendekati Ceiling ARA",
-        "signal": "WAIT",
-        "tip": "Harga sudah di ceiling ARA (Rp30). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
-        "value_b": 8.3,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "UVCR",
@@ -630,24 +541,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 208,
-        "ara_price": 260,
-        "ara_dist": 34.0,
-        "ara_hit": false,
-        "sl": 184,
-        "target1": 202,
-        "target2": 260,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 34.0% ruang ke ARA Rp260. Entry Rp194, target Rp202, SL Rp184. Konfirmasi volume sebelum masuk.",
-        "value_b": 43.0,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BUVA",
@@ -696,6 +590,18 @@
         "gainer",
         "volume"
       ]
+    },
+    {
+      "code": "PART",
+      "name": "PT Cipta Perdana Lancar Tbk",
+      "price": 97,
+      "change_pct": 5.43,
+      "volume": 71394200,
+      "value": 6925237400,
+      "categories": [
+        "gainer",
+        "volume"
+      ]
     }
   ],
   "watchlist": [
@@ -710,24 +616,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 234,
-        "ara_price": 292,
-        "ara_dist": 0.0,
-        "ara_hit": true,
-        "sl": 278,
-        "target1": 304,
-        "target2": 316,
-        "rr": 0.9,
-        "risk": "CEILING",
-        "risk_cls": "risk-ceiling",
-        "pattern": "Mendekati Ceiling ARA",
-        "signal": "WAIT",
-        "tip": "Harga sudah di ceiling ARA (Rp292). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
-        "value_b": 102.5,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "BUMI",
@@ -739,24 +628,19 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 118,
-        "ara_price": 148,
-        "ara_dist": 31.0,
-        "ara_hit": false,
-        "sl": 107,
-        "target1": 118,
-        "target2": 148,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 31.0% ruang ke ARA Rp148. Entry Rp113, target Rp118, SL Rp107. Konfirmasi volume sebelum masuk.",
-        "value_b": 161.0,
-        "cat_count": 2
-      }
+      ]
+    },
+    {
+      "code": "GOTO",
+      "name": "PT GoTo Gojek Tokopedia Tbk",
+      "price": 25,
+      "change_pct": 4.17,
+      "volume": 1188044200,
+      "value": 29701105000,
+      "categories": [
+        "gainer",
+        "volume"
+      ]
     },
     {
       "code": "DEWA",
@@ -768,24 +652,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 230,
-        "ara_price": 288,
-        "ara_dist": 32.1,
-        "ara_hit": false,
-        "sl": 208,
-        "target1": 226,
-        "target2": 288,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 32.1% ruang ke ARA Rp288. Entry Rp218, target Rp226, SL Rp208. Konfirmasi volume sebelum masuk.",
-        "value_b": 64.0,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "MKNT",
@@ -797,53 +664,113 @@
       "categories": [
         "gainer",
         "volume"
-      ],
-      "analysis": {
-        "prev_close": 24,
-        "ara_price": 30,
-        "ara_dist": -6.2,
-        "ara_hit": true,
-        "sl": 30,
-        "target1": 33,
-        "target2": 35,
-        "rr": 0.5,
-        "risk": "CEILING",
-        "risk_cls": "risk-ceiling",
-        "pattern": "Mendekati Ceiling ARA",
-        "signal": "WAIT",
-        "tip": "Harga sudah di ceiling ARA (Rp30). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
-        "value_b": 8.3,
-        "cat_count": 2
-      }
-    },
-    {
-      "code": "UVCR",
-      "name": "PT Trimegah Karya Pratama Tbk",
-      "price": 194,
-      "change_pct": -6.73,
-      "volume": 221717200,
-      "value": 43013136800,
-      "categories": [
-        "volume",
-        "value"
-      ],
-      "analysis": {
-        "prev_close": 208,
-        "ara_price": 260,
-        "ara_dist": 34.0,
-        "ara_hit": false,
-        "sl": 184,
-        "target1": 202,
-        "target2": 260,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 34.0% ruang ke ARA Rp260. Entry Rp194, target Rp202, SL Rp184. Konfirmasi volume sebelum masuk.",
-        "value_b": 43.0,
-        "cat_count": 2
-      }
+      ]
     }
-  ]
+  ],
+  "analysis": {
+    "watchlist_notes": [
+      {
+        "code": "TMPO",
+        "name": "PT Tempo Inti Media Tbk",
+        "price": 292,
+        "change": 24.79,
+        "volume": 351001300,
+        "value": 102492379600,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 351.0M sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp280 | Target Rp304 | Stop Rp272"
+      },
+      {
+        "code": "BUMI",
+        "name": "PT Bumi Resources Tbk Class A",
+        "price": 113,
+        "change": -4.24,
+        "volume": 1424596800,
+        "value": 160979438400,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 1.42B & nilai Rp160.98B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "GOTO",
+        "name": "PT GoTo Gojek Tokopedia Tbk",
+        "price": 25,
+        "change": 4.17,
+        "volume": 1188044200,
+        "value": 29701105000,
+        "cats": [
+          "gainer",
+          "volume"
+        ],
+        "reason": "Gain +4.2% dengan volume 1.19B — momentum kuat, liquid untuk scalp.",
+        "guidance": "Entry area Rp25 | Target Rp25 | Stop Rp25"
+      },
+      {
+        "code": "DEWA",
+        "name": "PT Darma Henwa Tbk",
+        "price": 218,
+        "change": -5.22,
+        "volume": 293483200,
+        "value": 63979337600,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 293.5M & nilai Rp63.98B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "MKNT",
+        "name": "Pt Mitra Komunikasi Nusantara Tbk",
+        "price": 32,
+        "change": 33.33,
+        "volume": 258888000,
+        "value": 8284416000,
+        "cats": [
+          "gainer",
+          "volume"
+        ],
+        "reason": "Gain +33.3% dengan volume 258.9M — momentum kuat, liquid untuk scalp.",
+        "guidance": "Entry area Rp30 | Target Rp35 | Stop Rp30"
+      }
+    ],
+    "signals": [
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "TMPO",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "info",
+        "icon": "📈",
+        "code": "BUMI",
+        "text": "Volume king hari ini: 1.42B shares — paling liquid untuk scalp."
+      }
+    ],
+    "warnings": [],
+    "summary": {
+      "ihsg_close": 4931.39,
+      "ihsg_change": 0.24,
+      "ihsg_high": 4969.004,
+      "ihsg_low": 4925.101,
+      "day_range": 43.9,
+      "is_positive": true,
+      "is_month_end": false,
+      "session_label": "Sesi Siang",
+      "top_gainer": "MKNT",
+      "top_gainer_chg": 33.33,
+      "vol_king": "BUMI",
+      "vol_king_vol": "1.42B",
+      "triple_count": 1,
+      "intersection_count": 11
+    }
+  }
 }
