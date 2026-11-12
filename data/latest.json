@@ -1,20 +1,19 @@
 {
   "session": "pagi",
-  "timestamp": "2026-11-12T09:00:02.106186+07:00",
+  "timestamp": "2026-11-12T09:04:49.191937+07:00",
   "date": "12 November 2026",
-  "time": "09:00 WIB",
+  "time": "09:04 WIB",
   "ihsg": {
-    "close": 5115.035,
-    "change_pct": -0.21,
-    "change_abs": -10.69,
+    "close": 5115.03,
+    "change_pct": 0.81,
+    "change_abs": 41.26,
     "high": 5144.79,
     "low": 5086.023,
-    "open": 5139.093,
+    "open": null,
     "volume": 0,
-    "value": 0,
-    "market_open": true,
-    "market_state": "REGULAR",
-    "as_of": "12 Nov 2026 09:00 WIB"
+    "market_open": false,
+    "market_state": "CLOSED",
+    "as_of": "12 Nov 2026 09:04 WIB"
   },
   "gainers": [
     {
@@ -42,28 +41,12 @@
       "value": 9735796000
     },
     {
-      "code": "AGAR",
-      "name": "PT Asia Sejahtera Mina Tbk",
-      "price": 1405,
-      "change_pct": 24.89,
-      "volume": 2314300,
-      "value": 3251591500
-    },
-    {
       "code": "TMPO",
       "name": "PT Tempo Inti Media Tbk",
       "price": 292,
       "change_pct": 24.79,
       "volume": 351001300,
       "value": 102492379600
-    },
-    {
-      "code": "TRUS",
-      "name": "PT Trust Finance Indonesia Tbk",
-      "price": 446,
-      "change_pct": 24.58,
-      "volume": 2501400,
-      "value": 1115624400
     },
     {
       "code": "PPRI",
@@ -90,14 +73,6 @@
       "value": 334847344000
     },
     {
-      "code": "DAAZ",
-      "name": "PT Daaz Bara Lestari Tbk",
-      "price": 1550,
-      "change_pct": 11.11,
-      "volume": 548900,
-      "value": 850795000
-    },
-    {
       "code": "BEER",
       "name": "PT Jobubu Jarum Minahasa Tbk",
       "price": 50,
@@ -114,44 +89,12 @@
       "value": 1255183600
     },
     {
-      "code": "CBRE",
-      "name": "PT Cakra Buana Resources Energi Tbk",
-      "price": 422,
-      "change_pct": 9.9,
-      "volume": 8652700,
-      "value": 3651439400
-    },
-    {
       "code": "ENRG",
       "name": "PT Energi Mega Persada Tbk",
       "price": 615,
       "change_pct": 9.82,
       "volume": 221628300,
       "value": 136301404500
-    },
-    {
-      "code": "LMAX",
-      "name": "PT Lupromax Pelumas Indonesia Tbk",
-      "price": 82,
-      "change_pct": 9.33,
-      "volume": 3534200,
-      "value": 289804400
-    },
-    {
-      "code": "LAPD",
-      "name": "PT Leyand International Tbk",
-      "price": 36,
-      "change_pct": 9.09,
-      "volume": 3226900,
-      "value": 116168400
-    },
-    {
-      "code": "RUNS",
-      "name": "PT Global Sukses Solusi Tbk",
-      "price": 60,
-      "change_pct": 9.09,
-      "volume": 1620300,
-      "value": 97218000
     },
     {
       "code": "GMFI",
@@ -162,20 +105,44 @@
       "value": 1638848000
     },
     {
-      "code": "RELF",
-      "name": "PT Graha Mitra Asia Tbk",
-      "price": 31,
-      "change_pct": 6.9,
-      "volume": 3269700,
-      "value": 101360700
+      "code": "DSSA",
+      "name": "PT Dian Swastatika Sentosa Tbk",
+      "price": 745,
+      "change_pct": 6.43,
+      "volume": 179302600,
+      "value": 133580437000
     },
     {
-      "code": "PGLI",
-      "name": "PT Pembangunan Graha Lestari Indah Tbk",
-      "price": 224,
-      "change_pct": 6.67,
-      "volume": 1955800,
-      "value": 438099200
+      "code": "TFAS",
+      "name": "PT Telefast Indonesia Tbk",
+      "price": 140,
+      "change_pct": 6.06,
+      "volume": 10677100,
+      "value": 1494794000
+    },
+    {
+      "code": "SGER",
+      "name": "PT Sumber Global Energy Tbk",
+      "price": 645,
+      "change_pct": 5.74,
+      "volume": 12987100,
+      "value": 8376679500
+    },
+    {
+      "code": "TRUE",
+      "name": "PT Triniti Dinamik Tbk",
+      "price": 19,
+      "change_pct": 5.56,
+      "volume": 21039500,
+      "value": 399750500
+    },
+    {
+      "code": "BULL",
+      "name": "PT Buana Lintas Lautan Tbk",
+      "price": 232,
+      "change_pct": 5.45,
+      "volume": 833070300,
+      "value": 193272309600
     }
   ],
   "volume": [
@@ -504,6 +471,19 @@
   ],
   "intersection": [
     {
+      "code": "BULL",
+      "name": "PT Buana Lintas Lautan Tbk",
+      "price": 232,
+      "change_pct": 5.45,
+      "volume": 833070300,
+      "value": 193272309600,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ]
+    },
+    {
       "code": "RAJA",
       "name": "PT Rukun Raharja Tbk",
       "price": 520,
@@ -514,24 +494,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 466,
-        "ara_price": 580,
-        "ara_dist": 11.5,
-        "ara_hit": false,
-        "sl": 494,
-        "target1": 540,
-        "target2": 580,
-        "rr": 0.8,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Triple Intersection",
-        "signal": "BUY",
-        "tip": "Setup terkuat — triple intersection, 11.5% ruang ke ARA Rp580. Entry area sekarang, target 1 Rp540 · target 2 Rp580. SL Rp494 · R/R 0.8x.",
-        "value_b": 334.8,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "GOTO",
@@ -543,24 +506,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 25,
-        "ara_price": 31,
-        "ara_dist": 24.0,
-        "ara_hit": false,
-        "sl": 24,
-        "target1": 26,
-        "target2": 31,
-        "rr": 1.0,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 24.0% ruang ke ARA Rp31. Entry Rp25, target Rp26, SL Rp24. Konfirmasi volume sebelum masuk.",
-        "value_b": 258.7,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BUVA",
@@ -572,24 +518,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 300,
-        "ara_price": 376,
-        "ara_dist": 28.8,
-        "ara_hit": false,
-        "sl": 278,
-        "target1": 304,
-        "target2": 376,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 28.8% ruang ke ARA Rp376. Entry Rp292, target Rp304, SL Rp278. Konfirmasi volume sebelum masuk.",
-        "value_b": 654.2,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BUMI",
@@ -601,53 +530,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 120,
-        "ara_price": 150,
-        "ara_dist": 25.0,
-        "ara_hit": false,
-        "sl": 114,
-        "target1": 125,
-        "target2": 150,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 25.0% ruang ke ARA Rp150. Entry Rp120, target Rp125, SL Rp114. Konfirmasi volume sebelum masuk.",
-        "value_b": 210.8,
-        "cat_count": 2
-      }
-    },
-    {
-      "code": "BULL",
-      "name": "PT Buana Lintas Lautan Tbk",
-      "price": 232,
-      "change_pct": 5.45,
-      "volume": 833070300,
-      "value": 193272309600,
-      "categories": [
-        "volume",
-        "value"
-      ],
-      "analysis": {
-        "prev_close": 220,
-        "ara_price": 276,
-        "ara_dist": 19.0,
-        "ara_hit": false,
-        "sl": 220,
-        "target1": 242,
-        "target2": 276,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 19.0% ruang ke ARA Rp276. Entry Rp232, target Rp242, SL Rp220. Konfirmasi volume sebelum masuk.",
-        "value_b": 193.3,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "DEWA",
@@ -732,9 +615,34 @@
         "gainer",
         "value"
       ]
+    },
+    {
+      "code": "DSSA",
+      "name": "PT Dian Swastatika Sentosa Tbk",
+      "price": 745,
+      "change_pct": 6.43,
+      "volume": 179302600,
+      "value": 133580437000,
+      "categories": [
+        "gainer",
+        "value"
+      ]
     }
   ],
   "watchlist": [
+    {
+      "code": "BULL",
+      "name": "PT Buana Lintas Lautan Tbk",
+      "price": 232,
+      "change_pct": 5.45,
+      "volume": 833070300,
+      "value": 193272309600,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ]
+    },
     {
       "code": "RAJA",
       "name": "PT Rukun Raharja Tbk",
@@ -746,24 +654,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 466,
-        "ara_price": 580,
-        "ara_dist": 11.5,
-        "ara_hit": false,
-        "sl": 494,
-        "target1": 540,
-        "target2": 580,
-        "rr": 0.8,
-        "risk": "Moderat",
-        "risk_cls": "risk-mod",
-        "pattern": "Triple Intersection",
-        "signal": "BUY",
-        "tip": "Setup terkuat — triple intersection, 11.5% ruang ke ARA Rp580. Entry area sekarang, target 1 Rp540 · target 2 Rp580. SL Rp494 · R/R 0.8x.",
-        "value_b": 334.8,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "GOTO",
@@ -775,24 +666,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 25,
-        "ara_price": 31,
-        "ara_dist": 24.0,
-        "ara_hit": false,
-        "sl": 24,
-        "target1": 26,
-        "target2": 31,
-        "rr": 1.0,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 24.0% ruang ke ARA Rp31. Entry Rp25, target Rp26, SL Rp24. Konfirmasi volume sebelum masuk.",
-        "value_b": 258.7,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BUVA",
@@ -804,24 +678,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 300,
-        "ara_price": 376,
-        "ara_dist": 28.8,
-        "ara_hit": false,
-        "sl": 278,
-        "target1": 304,
-        "target2": 376,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 28.8% ruang ke ARA Rp376. Entry Rp292, target Rp304, SL Rp278. Konfirmasi volume sebelum masuk.",
-        "value_b": 654.2,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BUMI",
@@ -833,53 +690,120 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 120,
-        "ara_price": 150,
-        "ara_dist": 25.0,
-        "ara_hit": false,
-        "sl": 114,
-        "target1": 125,
-        "target2": 150,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 25.0% ruang ke ARA Rp150. Entry Rp120, target Rp125, SL Rp114. Konfirmasi volume sebelum masuk.",
-        "value_b": 210.8,
-        "cat_count": 2
-      }
-    },
-    {
-      "code": "BULL",
-      "name": "PT Buana Lintas Lautan Tbk",
-      "price": 232,
-      "change_pct": 5.45,
-      "volume": 833070300,
-      "value": 193272309600,
-      "categories": [
-        "volume",
-        "value"
-      ],
-      "analysis": {
-        "prev_close": 220,
-        "ara_price": 276,
-        "ara_dist": 19.0,
-        "ara_hit": false,
-        "sl": 220,
-        "target1": 242,
-        "target2": 276,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 19.0% ruang ke ARA Rp276. Entry Rp232, target Rp242, SL Rp220. Konfirmasi volume sebelum masuk.",
-        "value_b": 193.3,
-        "cat_count": 2
-      }
+      ]
     }
-  ]
+  ],
+  "analysis": {
+    "watchlist_notes": [
+      {
+        "code": "BULL",
+        "name": "PT Buana Lintas Lautan Tbk",
+        "price": 232,
+        "change": 5.45,
+        "volume": 833070300,
+        "value": 193272309600,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 833.1M sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp223 | Target Rp241 | Stop Rp216"
+      },
+      {
+        "code": "RAJA",
+        "name": "PT Rukun Raharja Tbk",
+        "price": 520,
+        "change": 11.59,
+        "volume": 643937200,
+        "value": 334847344000,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 643.9M sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp499 | Target Rp541 | Stop Rp484"
+      },
+      {
+        "code": "GOTO",
+        "name": "PT GoTo Gojek Tokopedia Tbk",
+        "price": 25,
+        "change": 0,
+        "volume": 10348432500,
+        "value": 258710812500,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 10.35B & nilai Rp258.71B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "BUVA",
+        "name": "PT Bukit Uluwatu Villa Tbk",
+        "price": 292,
+        "change": -2.67,
+        "volume": 2240535200,
+        "value": 654236278400,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 2.24B & nilai Rp654.24B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "BUMI",
+        "name": "PT Bumi Resources Tbk Class A",
+        "price": 120,
+        "change": 0,
+        "volume": 1756763600,
+        "value": 210811632000,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 1.76B & nilai Rp210.81B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      }
+    ],
+    "signals": [
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "BULL",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "RAJA",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "info",
+        "icon": "📈",
+        "code": "GOTO",
+        "text": "Volume king hari ini: 10.35B shares — paling liquid untuk scalp."
+      }
+    ],
+    "warnings": [],
+    "summary": {
+      "ihsg_close": 5115.03,
+      "ihsg_change": 0.81,
+      "ihsg_high": 5144.79,
+      "ihsg_low": 5086.023,
+      "day_range": 58.77,
+      "is_positive": true,
+      "is_month_end": false,
+      "session_label": "Sesi Pagi",
+      "top_gainer": "HRME",
+      "top_gainer_chg": 34.15,
+      "vol_king": "GOTO",
+      "vol_king_vol": "10.35B",
+      "triple_count": 2,
+      "intersection_count": 13
+    }
+  }
 }
