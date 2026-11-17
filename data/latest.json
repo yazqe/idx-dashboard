@@ -1,19 +1,20 @@
 {
   "session": "siang",
-  "timestamp": "2026-11-17T12:49:52.272897+07:00",
+  "timestamp": "2026-11-17T12:50:00.199221+07:00",
   "date": "17 November 2026",
-  "time": "12:49 WIB",
+  "time": "12:50 WIB",
   "ihsg": {
-    "close": 5341.61,
-    "change_pct": -0.05,
-    "change_abs": -2.8,
+    "close": 5341.614,
+    "change_pct": 0.39,
+    "change_abs": 20.63,
     "high": 5385.138,
     "low": 5301.688,
-    "open": null,
+    "open": 5309.863,
     "volume": 0,
-    "market_open": false,
-    "market_state": "CLOSED",
-    "as_of": "17 Nov 2026 12:49 WIB"
+    "value": 0,
+    "market_open": true,
+    "market_state": "REGULAR",
+    "as_of": "17 Nov 2026 12:50 WIB"
   },
   "gainers": [
     {
@@ -97,12 +98,28 @@
       "value": 6752043000
     },
     {
+      "code": "SSTM",
+      "name": "PT Sunson Textile Manufacturer Tbk",
+      "price": 388,
+      "change_pct": 13.45,
+      "volume": 1898300,
+      "value": 736540400
+    },
+    {
       "code": "CENT",
       "name": "PT Centratama Telekomunikasi Indonesia Tbk",
       "price": 76,
       "change_pct": 11.76,
       "volume": 41410000,
       "value": 3147160000
+    },
+    {
+      "code": "VISI",
+      "name": "PT Satu Visi Putra Tbk",
+      "price": 630,
+      "change_pct": 11.5,
+      "volume": 551900,
+      "value": 347697000
     },
     {
       "code": "HADE",
@@ -145,36 +162,20 @@
       "value": 4103008800
     },
     {
+      "code": "NAYZ",
+      "name": "PT Hassana Boga Sejahtera Tbk",
+      "price": 69,
+      "change_pct": 9.52,
+      "volume": 3280200,
+      "value": 226333800
+    },
+    {
       "code": "BBYB",
       "name": "PT Bank Neo Commerce Tbk",
       "price": 175,
       "change_pct": 9.38,
       "volume": 88634200,
       "value": 15510985000
-    },
-    {
-      "code": "ASHA",
-      "name": "PT Cilacap Samudera Fishing Industry Tbk",
-      "price": 36,
-      "change_pct": 9.09,
-      "volume": 16051700,
-      "value": 577861200
-    },
-    {
-      "code": "BRIS",
-      "name": "PT Bank Syariah Indonesia (Persero) Tbk",
-      "price": 1215,
-      "change_pct": 8.48,
-      "volume": 84867800,
-      "value": 103114377000
-    },
-    {
-      "code": "VTNY",
-      "name": "PT Venteny Fortuna International Tbk",
-      "price": 39,
-      "change_pct": 8.33,
-      "volume": 26190200,
-      "value": 1021417800
     }
   ],
   "volume": [
@@ -513,7 +514,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 94,
+        "ara_price": 118,
+        "ara_dist": 0.0,
+        "ara_hit": true,
+        "sl": 112,
+        "target1": 123,
+        "target2": 127,
+        "rr": 0.8,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp118). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 66.0,
+        "cat_count": 3
+      }
     },
     {
       "code": "TRIN",
@@ -526,7 +544,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 133,
+        "ara_price": 166,
+        "ara_dist": -5.7,
+        "ara_hit": true,
+        "sl": 167,
+        "target1": 183,
+        "target2": 190,
+        "rr": 0.8,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp166). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 78.6,
+        "cat_count": 3
+      }
     },
     {
       "code": "TMPO",
@@ -539,7 +574,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 234,
+        "ara_price": 292,
+        "ara_dist": 0.0,
+        "ara_hit": true,
+        "sl": 278,
+        "target1": 304,
+        "target2": 316,
+        "rr": 0.9,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp292). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 102.5,
+        "cat_count": 3
+      }
     },
     {
       "code": "GOTO",
@@ -551,7 +603,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 26,
+        "ara_price": 33,
+        "ara_dist": 17.9,
+        "ara_hit": false,
+        "sl": 27,
+        "target1": 29,
+        "target2": 33,
+        "rr": 1.0,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 17.9% ruang ke ARA Rp33. Entry Rp28, target Rp29, SL Rp27. Konfirmasi volume sebelum masuk.",
+        "value_b": 135.6,
+        "cat_count": 2
+      }
     },
     {
       "code": "KOTA",
@@ -563,7 +632,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 69,
+        "ara_price": 86,
+        "ara_dist": 22.9,
+        "ara_hit": false,
+        "sl": 66,
+        "target1": 73,
+        "target2": 86,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 22.9% ruang ke ARA Rp86. Entry Rp70, target Rp73, SL Rp66. Konfirmasi volume sebelum masuk.",
+        "value_b": 121.9,
+        "cat_count": 2
+      }
     },
     {
       "code": "BUMI",
@@ -660,18 +746,6 @@
         "gainer",
         "volume"
       ]
-    },
-    {
-      "code": "BRIS",
-      "name": "PT Bank Syariah Indonesia (Persero) Tbk",
-      "price": 1215,
-      "change_pct": 8.48,
-      "volume": 84867800,
-      "value": 103114377000,
-      "categories": [
-        "gainer",
-        "value"
-      ]
     }
   ],
   "watchlist": [
@@ -686,7 +760,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 94,
+        "ara_price": 118,
+        "ara_dist": 0.0,
+        "ara_hit": true,
+        "sl": 112,
+        "target1": 123,
+        "target2": 127,
+        "rr": 0.8,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp118). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 66.0,
+        "cat_count": 3
+      }
     },
     {
       "code": "TRIN",
@@ -699,7 +790,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 133,
+        "ara_price": 166,
+        "ara_dist": -5.7,
+        "ara_hit": true,
+        "sl": 167,
+        "target1": 183,
+        "target2": 190,
+        "rr": 0.8,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp166). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 78.6,
+        "cat_count": 3
+      }
     },
     {
       "code": "TMPO",
@@ -712,7 +820,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 234,
+        "ara_price": 292,
+        "ara_dist": 0.0,
+        "ara_hit": true,
+        "sl": 278,
+        "target1": 304,
+        "target2": 316,
+        "rr": 0.9,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp292). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 102.5,
+        "cat_count": 3
+      }
     },
     {
       "code": "GOTO",
@@ -724,7 +849,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 26,
+        "ara_price": 33,
+        "ara_dist": 17.9,
+        "ara_hit": false,
+        "sl": 27,
+        "target1": 29,
+        "target2": 33,
+        "rr": 1.0,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 17.9% ruang ke ARA Rp33. Entry Rp28, target Rp29, SL Rp27. Konfirmasi volume sebelum masuk.",
+        "value_b": 135.6,
+        "cat_count": 2
+      }
     },
     {
       "code": "KOTA",
@@ -736,133 +878,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 69,
+        "ara_price": 86,
+        "ara_dist": 22.9,
+        "ara_hit": false,
+        "sl": 66,
+        "target1": 73,
+        "target2": 86,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 22.9% ruang ke ARA Rp86. Entry Rp70, target Rp73, SL Rp66. Konfirmasi volume sebelum masuk.",
+        "value_b": 121.9,
+        "cat_count": 2
+      }
     }
-  ],
-  "analysis": {
-    "watchlist_notes": [
-      {
-        "code": "FOLK",
-        "name": "PT Multi Garam Utama Tbk",
-        "price": 118,
-        "change": 25.53,
-        "volume": 558911200,
-        "value": 65951521600,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 558.9M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp113 | Target Rp123 | Stop Rp110"
-      },
-      {
-        "code": "TRIN",
-        "name": "PT Perintis Triniti Properti Tbk",
-        "price": 176,
-        "change": 32.33,
-        "volume": 446698600,
-        "value": 78618953600,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 446.7M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp169 | Target Rp183 | Stop Rp164"
-      },
-      {
-        "code": "TMPO",
-        "name": "PT Tempo Inti Media Tbk",
-        "price": 292,
-        "change": 24.79,
-        "volume": 351001300,
-        "value": 102492379600,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 351.0M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp280 | Target Rp304 | Stop Rp272"
-      },
-      {
-        "code": "GOTO",
-        "name": "PT GoTo Gojek Tokopedia Tbk",
-        "price": 28,
-        "change": 7.69,
-        "volume": 4842611800,
-        "value": 135593130400,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 4.84B & nilai Rp135.59B — paling liquid, spread kecil.",
-        "guidance": "Entry area Rp25 | Target Rp30 | Stop Rp25"
-      },
-      {
-        "code": "KOTA",
-        "name": "PT DMS Propertindo Tbk",
-        "price": 70,
-        "change": 1.45,
-        "volume": 1742062100,
-        "value": 121944347000,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 1.74B & nilai Rp121.94B — paling liquid, spread kecil.",
-        "guidance": "Entry area Rp65 | Target Rp75 | Stop Rp65"
-      }
-    ],
-    "signals": [
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "FOLK",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "TRIN",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "TMPO",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "info",
-        "icon": "📈",
-        "code": "GOTO",
-        "text": "Volume king hari ini: 4.84B shares — paling liquid untuk scalp."
-      }
-    ],
-    "warnings": [
-      {
-        "code": "BTEK",
-        "change": -8.33,
-        "text": "Turun -8.3% — hindari untuk long, potensi tekanan berlanjut."
-      }
-    ],
-    "summary": {
-      "ihsg_close": 5341.61,
-      "ihsg_change": -0.05,
-      "ihsg_high": 5385.138,
-      "ihsg_low": 5301.688,
-      "day_range": 83.45,
-      "is_positive": false,
-      "is_month_end": false,
-      "session_label": "Sesi Siang",
-      "top_gainer": "AREA",
-      "top_gainer_chg": 34.67,
-      "vol_king": "GOTO",
-      "vol_king_vol": "4.84B",
-      "triple_count": 3,
-      "intersection_count": 14
-    }
-  }
+  ]
 }
