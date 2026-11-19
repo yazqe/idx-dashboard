@@ -1,19 +1,20 @@
 {
   "session": "pagi",
-  "timestamp": "2026-11-19T09:01:41.887352+07:00",
+  "timestamp": "2026-11-19T09:05:00.139192+07:00",
   "date": "19 November 2026",
-  "time": "09:01 WIB",
+  "time": "09:05 WIB",
   "ihsg": {
-    "close": 5247.88,
-    "change_pct": -1.37,
-    "change_abs": -73.1,
+    "close": 5247.879,
+    "change_pct": -1.07,
+    "change_abs": -56.88,
     "high": 5374.357,
     "low": 5240.691,
-    "open": null,
+    "open": 5323.493,
     "volume": 0,
-    "market_open": false,
-    "market_state": "CLOSED",
-    "as_of": "19 Nov 2026 09:01 WIB"
+    "value": 0,
+    "market_open": true,
+    "market_state": "REGULAR",
+    "as_of": "19 Nov 2026 09:05 WIB"
   },
   "gainers": [
     {
@@ -33,14 +34,6 @@
       "value": 14536134300
     },
     {
-      "code": "MKNT",
-      "name": "PT Remitra Global International Tbk",
-      "price": 32,
-      "change_pct": 33.33,
-      "volume": 258888000,
-      "value": 8284416000
-    },
-    {
       "code": "TRON",
       "name": "PT Teknologi Karya Digital Nusa Tbk",
       "price": 96,
@@ -55,6 +48,22 @@
       "change_pct": 25,
       "volume": 30729200,
       "value": 6145840000
+    },
+    {
+      "code": "TMPO",
+      "name": "PT Tempo Inti Media Tbk",
+      "price": 292,
+      "change_pct": 24.79,
+      "volume": 351001300,
+      "value": 102492379600
+    },
+    {
+      "code": "ALKA",
+      "name": "PT Alakasa Industrindo, Tbk Class A",
+      "price": 5175,
+      "change_pct": 24.7,
+      "volume": 1735800,
+      "value": 8982765000
     },
     {
       "code": "DADA",
@@ -105,6 +114,14 @@
       "value": 5085728000
     },
     {
+      "code": "DOSS",
+      "name": "PT Global Sukses Digital Tbk",
+      "price": 133,
+      "change_pct": 9.02,
+      "volume": 6126000,
+      "value": 814758000
+    },
+    {
       "code": "RELF",
       "name": "PT Graha Mitra Asia Tbk",
       "price": 37,
@@ -153,28 +170,12 @@
       "value": 17638370000
     },
     {
-      "code": "BRRC",
-      "name": "PT Raja Roti Cemerlang Tbk",
-      "price": 47,
-      "change_pct": 6.82,
-      "volume": 23068400,
-      "value": 1084214800
-    },
-    {
-      "code": "DGWG",
-      "name": "PT Delta Giri Wacana Tbk",
-      "price": 286,
-      "change_pct": 6.72,
-      "volume": 28761300,
-      "value": 8225731800
-    },
-    {
-      "code": "BAPI",
-      "name": "PT Bhakti Agung Propertindo Tbk",
-      "price": 16,
-      "change_pct": 6.67,
-      "volume": 50538400,
-      "value": 808614400
+      "code": "PLAN",
+      "name": "PT Planet Properindo Jaya Tbk",
+      "price": 46,
+      "change_pct": 6.98,
+      "volume": 6167300,
+      "value": 283695800
     }
   ],
   "volume": [
@@ -283,6 +284,14 @@
       "value": 6800848600
     },
     {
+      "code": "TMPO",
+      "name": "PT Tempo Inti Media Tbk",
+      "price": 292,
+      "change_pct": 24.79,
+      "volume": 351001300,
+      "value": 102492379600
+    },
+    {
       "code": "GTSI",
       "name": "PT GTS Internasional",
       "price": 73,
@@ -321,14 +330,6 @@
       "change_pct": -5.69,
       "volume": 309283300,
       "value": 71753725600
-    },
-    {
-      "code": "MKNT",
-      "name": "PT Remitra Global International Tbk",
-      "price": 32,
-      "change_pct": 33.33,
-      "volume": 258888000,
-      "value": 8284416000
     },
     {
       "code": "HUMI",
@@ -469,6 +470,14 @@
       "value": 103774137600
     },
     {
+      "code": "TMPO",
+      "name": "PT Tempo Inti Media Tbk",
+      "price": 292,
+      "change_pct": 24.79,
+      "volume": 351001300,
+      "value": 102492379600
+    },
+    {
       "code": "ADRO",
       "name": "PT Alamtri Resources Indonesia Tbk",
       "price": 2360,
@@ -491,17 +500,39 @@
       "change_pct": -0.74,
       "volume": 7821600,
       "value": 78998160000
-    },
-    {
-      "code": "INCO",
-      "name": "PT Vale Indonesia Tbk",
-      "price": 3390,
-      "change_pct": -2.59,
-      "volume": 22928400,
-      "value": 77727276000
     }
   ],
   "intersection": [
+    {
+      "code": "TMPO",
+      "name": "PT Tempo Inti Media Tbk",
+      "price": 292,
+      "change_pct": 24.79,
+      "volume": 351001300,
+      "value": 102492379600,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ],
+      "analysis": {
+        "prev_close": 234,
+        "ara_price": 292,
+        "ara_dist": 0.0,
+        "ara_hit": true,
+        "sl": 278,
+        "target1": 304,
+        "target2": 316,
+        "rr": 0.9,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp292). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 102.5,
+        "cat_count": 3
+      }
+    },
     {
       "code": "BUMI",
       "name": "PT Bumi Resources Tbk Class A",
@@ -512,7 +543,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 131,
+        "ara_price": 164,
+        "ara_dist": 34.4,
+        "ara_hit": false,
+        "sl": 116,
+        "target1": 127,
+        "target2": 164,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 34.4% ruang ke ARA Rp164. Entry Rp122, target Rp127, SL Rp116. Konfirmasi volume sebelum masuk.",
+        "value_b": 322.0,
+        "cat_count": 2
+      }
     },
     {
       "code": "TRIN",
@@ -524,7 +572,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 179,
+        "ara_price": 224,
+        "ara_dist": 33.3,
+        "ara_hit": false,
+        "sl": 160,
+        "target1": 175,
+        "target2": 224,
+        "rr": 0.9,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 33.3% ruang ke ARA Rp224. Entry Rp168, target Rp175, SL Rp160. Konfirmasi volume sebelum masuk.",
+        "value_b": 103.8,
+        "cat_count": 2
+      }
     },
     {
       "code": "BRMS",
@@ -536,7 +601,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 304,
+        "ara_price": 380,
+        "ara_dist": 31.0,
+        "ara_hit": false,
+        "sl": 276,
+        "target1": 302,
+        "target2": 380,
+        "rr": 0.9,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 31.0% ruang ke ARA Rp380. Entry Rp290, target Rp302, SL Rp276. Konfirmasi volume sebelum masuk.",
+        "value_b": 119.0,
+        "cat_count": 2
+      }
     },
     {
       "code": "TRON",
@@ -548,7 +630,24 @@
       "categories": [
         "gainer",
         "volume"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 75,
+        "ara_price": 94,
+        "ara_dist": -2.1,
+        "ara_hit": true,
+        "sl": 91,
+        "target1": 100,
+        "target2": 104,
+        "rr": 0.8,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp94). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 36.4,
+        "cat_count": 2
+      }
     },
     {
       "code": "BBCA",
@@ -587,18 +686,6 @@
       ]
     },
     {
-      "code": "MKNT",
-      "name": "PT Remitra Global International Tbk",
-      "price": 32,
-      "change_pct": 33.33,
-      "volume": 258888000,
-      "value": 8284416000,
-      "categories": [
-        "gainer",
-        "volume"
-      ]
-    },
-    {
       "code": "EXCL",
       "name": "PT XLSMART Telecom Sejahtera Tbk",
       "price": 1715,
@@ -613,6 +700,36 @@
   ],
   "watchlist": [
     {
+      "code": "TMPO",
+      "name": "PT Tempo Inti Media Tbk",
+      "price": 292,
+      "change_pct": 24.79,
+      "volume": 351001300,
+      "value": 102492379600,
+      "categories": [
+        "gainer",
+        "volume",
+        "value"
+      ],
+      "analysis": {
+        "prev_close": 234,
+        "ara_price": 292,
+        "ara_dist": 0.0,
+        "ara_hit": true,
+        "sl": 278,
+        "target1": 304,
+        "target2": 316,
+        "rr": 0.9,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp292). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 102.5,
+        "cat_count": 3
+      }
+    },
+    {
       "code": "BUMI",
       "name": "PT Bumi Resources Tbk Class A",
       "price": 122,
@@ -622,7 +739,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 131,
+        "ara_price": 164,
+        "ara_dist": 34.4,
+        "ara_hit": false,
+        "sl": 116,
+        "target1": 127,
+        "target2": 164,
+        "rr": 0.8,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 34.4% ruang ke ARA Rp164. Entry Rp122, target Rp127, SL Rp116. Konfirmasi volume sebelum masuk.",
+        "value_b": 322.0,
+        "cat_count": 2
+      }
     },
     {
       "code": "TRIN",
@@ -634,7 +768,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 179,
+        "ara_price": 224,
+        "ara_dist": 33.3,
+        "ara_hit": false,
+        "sl": 160,
+        "target1": 175,
+        "target2": 224,
+        "rr": 0.9,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 33.3% ruang ke ARA Rp224. Entry Rp168, target Rp175, SL Rp160. Konfirmasi volume sebelum masuk.",
+        "value_b": 103.8,
+        "cat_count": 2
+      }
     },
     {
       "code": "BRMS",
@@ -646,7 +797,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 304,
+        "ara_price": 380,
+        "ara_dist": 31.0,
+        "ara_hit": false,
+        "sl": 276,
+        "target1": 302,
+        "target2": 380,
+        "rr": 0.9,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 31.0% ruang ke ARA Rp380. Entry Rp290, target Rp302, SL Rp276. Konfirmasi volume sebelum masuk.",
+        "value_b": 119.0,
+        "cat_count": 2
+      }
     },
     {
       "code": "TRON",
@@ -658,118 +826,24 @@
       "categories": [
         "gainer",
         "volume"
-      ]
-    },
-    {
-      "code": "BBCA",
-      "name": "PT Bank Central Asia Tbk",
-      "price": 5750,
-      "change_pct": 4.55,
-      "volume": 367781800,
-      "value": 2114745350000,
-      "categories": [
-        "volume",
-        "value"
-      ]
-    }
-  ],
-  "analysis": {
-    "watchlist_notes": [
-      {
-        "code": "BUMI",
-        "name": "PT Bumi Resources Tbk Class A",
-        "price": 122,
-        "change": -6.87,
-        "volume": 2639225000,
-        "value": 321985450000,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 2.64B & nilai Rp321.99B — paling liquid, spread kecil.",
-        "guidance": "Pantau open besok untuk konfirmasi arah."
-      },
-      {
-        "code": "TRIN",
-        "name": "PT Perintis Triniti Properti Tbk",
-        "price": 168,
-        "change": -6.15,
-        "volume": 617703200,
-        "value": 103774137600,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 617.7M & nilai Rp103.77B — paling liquid, spread kecil.",
-        "guidance": "Pantau open besok untuk konfirmasi arah."
-      },
-      {
-        "code": "BRMS",
-        "name": "PT Bumi Resources Minerals Tbk Class A",
-        "price": 290,
-        "change": -4.61,
-        "volume": 410423600,
-        "value": 119022844000,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 410.4M & nilai Rp119.02B — paling liquid, spread kecil.",
-        "guidance": "Pantau open besok untuk konfirmasi arah."
-      },
-      {
-        "code": "TRON",
-        "name": "PT Teknologi Karya Digital Nusa Tbk",
-        "price": 96,
-        "change": 28.0,
-        "volume": 378778600,
-        "value": 36362745600,
-        "cats": [
-          "gainer",
-          "volume"
-        ],
-        "reason": "Gain +28.0% dengan volume 378.8M — momentum kuat, liquid untuk scalp.",
-        "guidance": "Entry area Rp90 | Target Rp100 | Stop Rp90"
-      },
-      {
-        "code": "BBCA",
-        "name": "PT Bank Central Asia Tbk",
-        "price": 5750,
-        "change": 4.55,
-        "volume": 367781800,
-        "value": 2114745350000,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 367.8M & nilai Rp2.11T — paling liquid, spread kecil.",
-        "guidance": "Entry area Rp5,520 | Target Rp5,980 | Stop Rp5,348"
+      ],
+      "analysis": {
+        "prev_close": 75,
+        "ara_price": 94,
+        "ara_dist": -2.1,
+        "ara_hit": true,
+        "sl": 91,
+        "target1": 100,
+        "target2": 104,
+        "rr": 0.8,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp94). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 36.4,
+        "cat_count": 2
       }
-    ],
-    "signals": [
-      {
-        "type": "info",
-        "icon": "📈",
-        "code": "BUMI",
-        "text": "Volume king hari ini: 2.64B shares — paling liquid untuk scalp."
-      }
-    ],
-    "warnings": [],
-    "summary": {
-      "ihsg_close": 5247.88,
-      "ihsg_change": -1.37,
-      "ihsg_high": 5374.357,
-      "ihsg_low": 5240.691,
-      "day_range": 133.67,
-      "is_positive": false,
-      "is_month_end": false,
-      "session_label": "Sesi Pagi",
-      "top_gainer": "NZIA",
-      "top_gainer_chg": 34.48,
-      "vol_king": "BUMI",
-      "vol_king_vol": "2.64B",
-      "triple_count": 0,
-      "intersection_count": 9
     }
-  }
+  ]
 }
