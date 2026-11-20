@@ -1,20 +1,19 @@
 {
   "session": "siang",
-  "timestamp": "2026-11-20T12:00:00.118035+07:00",
+  "timestamp": "2026-11-20T12:02:33.898824+07:00",
   "date": "20 November 2026",
-  "time": "12:00 WIB",
+  "time": "12:02 WIB",
   "ihsg": {
-    "close": 5116.304,
-    "change_pct": -1.5,
-    "change_abs": -77.84,
+    "close": 5116.3,
+    "change_pct": -2.51,
+    "change_abs": -131.58,
     "high": 5196.277,
     "low": 5094.892,
-    "open": 5152.16,
+    "open": null,
     "volume": 0,
-    "value": 0,
-    "market_open": true,
-    "market_state": "REGULAR",
-    "as_of": "20 Nov 2026 12:00 WIB"
+    "market_open": false,
+    "market_state": "CLOSED",
+    "as_of": "20 Nov 2026 12:02 WIB"
   },
   "gainers": [
     {
@@ -32,14 +31,6 @@
       "change_pct": 20.78,
       "volume": 98345700,
       "value": 9146150100
-    },
-    {
-      "code": "LION",
-      "name": "PT Lion Metal Works Tbk",
-      "price": 282,
-      "change_pct": 12.8,
-      "volume": 1287300,
-      "value": 363018600
     },
     {
       "code": "NTBK",
@@ -106,14 +97,6 @@
       "value": 1412914000
     },
     {
-      "code": "BHIT",
-      "name": "PT MNC Asia Holding Tbk",
-      "price": 17,
-      "change_pct": 6.25,
-      "volume": 1032400,
-      "value": 17550800
-    },
-    {
       "code": "KKES",
       "name": "PT Kusuma Kemindo Sentosa Tbk",
       "price": 53,
@@ -130,36 +113,12 @@
       "value": 420468000
     },
     {
-      "code": "MYOR",
-      "name": "PT Mayora Indah Tbk",
-      "price": 1485,
-      "change_pct": 4.58,
-      "volume": 4840400,
-      "value": 7187994000
-    },
-    {
       "code": "ATLA",
       "name": "PT Atlantis Subsea Indonesia Tbk",
       "price": 23,
       "change_pct": 4.55,
       "volume": 23772500,
       "value": 546767500
-    },
-    {
-      "code": "JAYA",
-      "name": "PT Armada Berjaya Trans Tbk",
-      "price": 127,
-      "change_pct": 4.1,
-      "volume": 795600,
-      "value": 101041200
-    },
-    {
-      "code": "ARII",
-      "name": "PT Atlas Resources Tbk",
-      "price": 705,
-      "change_pct": 3.68,
-      "volume": 3028100,
-      "value": 2134810500
     },
     {
       "code": "YELO",
@@ -170,12 +129,44 @@
       "value": 1818816600
     },
     {
+      "code": "WEGE",
+      "name": "PT Wijaya Karya Bangunan Gedung Tbk",
+      "price": 30,
+      "change_pct": 3.45,
+      "volume": 31345800,
+      "value": 940374000
+    },
+    {
       "code": "REAL",
       "name": "PT Repower Asia Indonesia Tbk",
       "price": 30,
       "change_pct": 3.45,
       "volume": 20229600,
       "value": 606888000
+    },
+    {
+      "code": "BREN",
+      "name": "PT Barito Renewables Energy Tbk",
+      "price": 2110,
+      "change_pct": 3.43,
+      "volume": 19678500,
+      "value": 41521635000
+    },
+    {
+      "code": "PCAR",
+      "name": "PT Prima Cakrawala Abadi Tbk",
+      "price": 66,
+      "change_pct": 3.12,
+      "volume": 77154000,
+      "value": 5092164000
+    },
+    {
+      "code": "AVIA",
+      "name": "PT Avia Avian Tbk",
+      "price": 312,
+      "change_pct": 2.63,
+      "volume": 20322400,
+      "value": 6340588800
     }
   ],
   "volume": [
@@ -514,24 +505,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 298,
-        "ara_price": 372,
-        "ara_dist": 14.1,
-        "ara_hit": false,
-        "sl": 310,
-        "target1": 340,
-        "target2": 372,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Triple Intersection",
-        "signal": "BUY",
-        "tip": "Setup terkuat — triple intersection, 14.1% ruang ke ARA Rp372. Entry area sekarang, target 1 Rp340 · target 2 Rp372. SL Rp310 · R/R 0.9x.",
-        "value_b": 57.0,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "BUMI",
@@ -543,24 +517,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 121,
-        "ara_price": 151,
-        "ara_dist": 28.0,
-        "ara_hit": false,
-        "sl": 112,
-        "target1": 123,
-        "target2": 151,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 28.0% ruang ke ARA Rp151. Entry Rp118, target Rp123, SL Rp112. Konfirmasi volume sebelum masuk.",
-        "value_b": 113.3,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "HRME",
@@ -572,24 +529,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 58,
-        "ara_price": 73,
-        "ara_dist": 35.2,
-        "ara_hit": false,
-        "sl": 51,
-        "target1": 56,
-        "target2": 73,
-        "rr": 0.7,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 35.2% ruang ke ARA Rp73. Entry Rp54, target Rp56, SL Rp51. Konfirmasi volume sebelum masuk.",
-        "value_b": 51.3,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "INET",
@@ -601,24 +541,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 177,
-        "ara_price": 222,
-        "ara_dist": 26.1,
-        "ara_hit": false,
-        "sl": 167,
-        "target1": 183,
-        "target2": 222,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 26.1% ruang ke ARA Rp222. Entry Rp176, target Rp183, SL Rp167. Konfirmasi volume sebelum masuk.",
-        "value_b": 59.9,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "WIFI",
@@ -630,24 +553,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 825,
-        "ara_price": 1030,
-        "ara_dist": 25.6,
-        "ara_hit": false,
-        "sl": 780,
-        "target1": 855,
-        "target2": 1030,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 25.6% ruang ke ARA Rp1,030. Entry Rp820, target Rp855, SL Rp780. Konfirmasi volume sebelum masuk.",
-        "value_b": 203.7,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "BRMS",
@@ -708,6 +614,30 @@
         "volume",
         "value"
       ]
+    },
+    {
+      "code": "PCAR",
+      "name": "PT Prima Cakrawala Abadi Tbk",
+      "price": 66,
+      "change_pct": 3.12,
+      "volume": 77154000,
+      "value": 5092164000,
+      "categories": [
+        "gainer",
+        "volume"
+      ]
+    },
+    {
+      "code": "BREN",
+      "name": "PT Barito Renewables Energy Tbk",
+      "price": 2110,
+      "change_pct": 3.43,
+      "volume": 19678500,
+      "value": 41521635000,
+      "categories": [
+        "gainer",
+        "value"
+      ]
     }
   ],
   "watchlist": [
@@ -722,24 +652,7 @@
         "gainer",
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 298,
-        "ara_price": 372,
-        "ara_dist": 14.1,
-        "ara_hit": false,
-        "sl": 310,
-        "target1": 340,
-        "target2": 372,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Triple Intersection",
-        "signal": "BUY",
-        "tip": "Setup terkuat — triple intersection, 14.1% ruang ke ARA Rp372. Entry area sekarang, target 1 Rp340 · target 2 Rp372. SL Rp310 · R/R 0.9x.",
-        "value_b": 57.0,
-        "cat_count": 3
-      }
+      ]
     },
     {
       "code": "BUMI",
@@ -751,24 +664,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 121,
-        "ara_price": 151,
-        "ara_dist": 28.0,
-        "ara_hit": false,
-        "sl": 112,
-        "target1": 123,
-        "target2": 151,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 28.0% ruang ke ARA Rp151. Entry Rp118, target Rp123, SL Rp112. Konfirmasi volume sebelum masuk.",
-        "value_b": 113.3,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "HRME",
@@ -780,24 +676,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 58,
-        "ara_price": 73,
-        "ara_dist": 35.2,
-        "ara_hit": false,
-        "sl": 51,
-        "target1": 56,
-        "target2": 73,
-        "rr": 0.7,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 35.2% ruang ke ARA Rp73. Entry Rp54, target Rp56, SL Rp51. Konfirmasi volume sebelum masuk.",
-        "value_b": 51.3,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "INET",
@@ -809,24 +688,7 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 177,
-        "ara_price": 222,
-        "ara_dist": 26.1,
-        "ara_hit": false,
-        "sl": 167,
-        "target1": 183,
-        "target2": 222,
-        "rr": 0.8,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 26.1% ruang ke ARA Rp222. Entry Rp176, target Rp183, SL Rp167. Konfirmasi volume sebelum masuk.",
-        "value_b": 59.9,
-        "cat_count": 2
-      }
+      ]
     },
     {
       "code": "WIFI",
@@ -838,24 +700,113 @@
       "categories": [
         "volume",
         "value"
-      ],
-      "analysis": {
-        "prev_close": 825,
-        "ara_price": 1030,
-        "ara_dist": 25.6,
-        "ara_hit": false,
-        "sl": 780,
-        "target1": 855,
-        "target2": 1030,
-        "rr": 0.9,
-        "risk": "Rendah",
-        "risk_cls": "risk-low",
-        "pattern": "Double Intersection",
-        "signal": "WATCH",
-        "tip": "Double intersection, 25.6% ruang ke ARA Rp1,030. Entry Rp820, target Rp855, SL Rp780. Konfirmasi volume sebelum masuk.",
-        "value_b": 203.7,
-        "cat_count": 2
-      }
+      ]
     }
-  ]
+  ],
+  "analysis": {
+    "watchlist_notes": [
+      {
+        "code": "MBMA",
+        "name": "PT Merdeka Battery Materials Tbk",
+        "price": 326,
+        "change": 9.4,
+        "volume": 174757100,
+        "value": 56970814600,
+        "cats": [
+          "gainer",
+          "volume",
+          "value"
+        ],
+        "reason": "Triple intersection (Gainer + Volume + Value). Vol 174.8M sangat liquid. Momentum terkuat hari ini.",
+        "guidance": "Entry area Rp313 | Target Rp339 | Stop Rp303"
+      },
+      {
+        "code": "BUMI",
+        "name": "PT Bumi Resources Tbk Class A",
+        "price": 118,
+        "change": -2.48,
+        "volume": 960005900,
+        "value": 113280696200,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 960.0M & nilai Rp113.28B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "HRME",
+        "name": "PT Menteng Heritage Realty Tbk",
+        "price": 54,
+        "change": -6.9,
+        "volume": 950479800,
+        "value": 51325909200,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 950.5M & nilai Rp51.33B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "INET",
+        "name": "PT Sinergi Inti Andalan Prima Tbk",
+        "price": 176,
+        "change": -0.56,
+        "volume": 340288100,
+        "value": 59890705600,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 340.3M & nilai Rp59.89B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      },
+      {
+        "code": "WIFI",
+        "name": "PT Solusi Sinergi Digital Tbk",
+        "price": 820,
+        "change": -0.61,
+        "volume": 248430300,
+        "value": 203712846000,
+        "cats": [
+          "volume",
+          "value"
+        ],
+        "reason": "Volume 248.4M & nilai Rp203.71B — paling liquid, spread kecil.",
+        "guidance": "Pantau open besok untuk konfirmasi arah."
+      }
+    ],
+    "signals": [
+      {
+        "type": "bullish",
+        "icon": "🔥",
+        "code": "MBMA",
+        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
+      },
+      {
+        "type": "info",
+        "icon": "📈",
+        "code": "GOTO",
+        "text": "Volume king hari ini: 1.12B shares — paling liquid untuk scalp."
+      }
+    ],
+    "warnings": [],
+    "summary": {
+      "ihsg_close": 5116.3,
+      "ihsg_change": -2.51,
+      "ihsg_high": 5196.277,
+      "ihsg_low": 5094.892,
+      "day_range": 101.39,
+      "is_positive": false,
+      "is_month_end": false,
+      "session_label": "Sesi Siang",
+      "top_gainer": "VOKS",
+      "top_gainer_chg": 24.22,
+      "vol_king": "GOTO",
+      "vol_king_vol": "1.12B",
+      "triple_count": 1,
+      "intersection_count": 12
+    }
+  }
 }
