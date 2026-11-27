@@ -1,19 +1,20 @@
 {
-  "session": "penutupan",
-  "timestamp": "2026-11-26T17:34:14.512207+07:00",
-  "date": "26 November 2026",
-  "time": "17:34 WIB",
+  "session": "pagi",
+  "timestamp": "2026-11-27T09:00:02.317611+07:00",
+  "date": "27 November 2026",
+  "time": "09:00 WIB",
   "ihsg": {
-    "close": 5242.17,
-    "change_pct": 0.01,
-    "change_abs": 0.58,
+    "close": 5242.172,
+    "change_pct": 0.86,
+    "change_abs": 44.56,
     "high": 5297.464,
     "low": 5214.57,
-    "open": null,
+    "open": 5214.617,
     "volume": 0,
-    "market_open": false,
-    "market_state": "CLOSED",
-    "as_of": "26 Nov 2026 17:34 WIB"
+    "value": 0,
+    "market_open": true,
+    "market_state": "REGULAR",
+    "as_of": "27 Nov 2026 09:00 WIB"
   },
   "gainers": [
     {
@@ -89,6 +90,14 @@
       "value": 5342505000
     },
     {
+      "code": "AIMS",
+      "name": "PT Artha Mahiya Investama Tbk",
+      "price": 815,
+      "change_pct": 10.88,
+      "volume": 4440500,
+      "value": 3619007500
+    },
+    {
       "code": "BTEK",
       "name": "PT Bumi Teknokultura Unggul Tbk",
       "price": 11,
@@ -103,6 +112,22 @@
       "change_pct": 10,
       "volume": 160185300,
       "value": 10572229800
+    },
+    {
+      "code": "INPS",
+      "name": "PT Indah Prakasa Sentosa Tbk",
+      "price": 1410,
+      "change_pct": 9.73,
+      "volume": 629600,
+      "value": 887736000
+    },
+    {
+      "code": "SPRE",
+      "name": "PT Soraya Berjaya Indonesia Tbk",
+      "price": 79,
+      "change_pct": 9.72,
+      "volume": 3878400,
+      "value": 306393600
     },
     {
       "code": "IDEA",
@@ -145,36 +170,12 @@
       "value": 1616269600
     },
     {
-      "code": "KPIG",
-      "name": "PT MNC Tourism Indonesia Tbk",
-      "price": 30,
-      "change_pct": 7.14,
-      "volume": 111950700,
-      "value": 3358521000
-    },
-    {
-      "code": "CDIA",
-      "name": "PT Chandra Daya Investasi Tbk.",
-      "price": 400,
-      "change_pct": 6.38,
-      "volume": 265260700,
-      "value": 106104280000
-    },
-    {
-      "code": "IPTV",
-      "name": "PT MNC Vision Networks Tbk Class A",
-      "price": 17,
-      "change_pct": 6.25,
-      "volume": 59875700,
-      "value": 1017886900
-    },
-    {
-      "code": "AADI",
-      "name": "Pt Adaro Andalan Indonesia Tbk",
-      "price": 10450,
-      "change_pct": 5.56,
-      "volume": 40047700,
-      "value": 418498465000
+      "code": "FLMC",
+      "name": "PT Falmaco Nonwoven Industri Tbk",
+      "price": 135,
+      "change_pct": 8,
+      "volume": 5586400,
+      "value": 754164000
     }
   ],
   "volume": [
@@ -513,7 +514,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 635,
+        "ara_price": 795,
+        "ara_dist": 8.9,
+        "ara_hit": false,
+        "sl": 695,
+        "target1": 760,
+        "target2": 795,
+        "rr": 0.9,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 8.9% ruang ke ARA Rp795. Entry area sekarang, target 1 Rp760 · target 2 Rp795. SL Rp695 · R/R 0.9x.",
+        "value_b": 438.6,
+        "cat_count": 3
+      }
     },
     {
       "code": "IRSX",
@@ -526,20 +544,24 @@
         "gainer",
         "volume",
         "value"
-      ]
-    },
-    {
-      "code": "CDIA",
-      "name": "PT Chandra Daya Investasi Tbk.",
-      "price": 400,
-      "change_pct": 6.38,
-      "volume": 265260700,
-      "value": 106104280000,
-      "categories": [
-        "gainer",
-        "volume",
-        "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 181,
+        "ara_price": 226,
+        "ara_dist": 1.8,
+        "ara_hit": true,
+        "sl": 210,
+        "target1": 230,
+        "target2": 240,
+        "rr": 0.7,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp226). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 65.5,
+        "cat_count": 3
+      }
     },
     {
       "code": "GOTO",
@@ -551,7 +573,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 26,
+        "ara_price": 32,
+        "ara_dist": 18.5,
+        "ara_hit": false,
+        "sl": 26,
+        "target1": 28,
+        "target2": 32,
+        "rr": 1.0,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 18.5% ruang ke ARA Rp32. Entry Rp27, target Rp28, SL Rp26. Konfirmasi volume sebelum masuk.",
+        "value_b": 104.5,
+        "cat_count": 2
+      }
     },
     {
       "code": "BUMI",
@@ -563,7 +602,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 127,
+        "ara_price": 159,
+        "ara_dist": 21.4,
+        "ara_hit": false,
+        "sl": 124,
+        "target1": 136,
+        "target2": 159,
+        "rr": 0.7,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 21.4% ruang ke ARA Rp159. Entry Rp131, target Rp136, SL Rp124. Konfirmasi volume sebelum masuk.",
+        "value_b": 404.0,
+        "cat_count": 2
+      }
     },
     {
       "code": "BRMS",
@@ -575,7 +631,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 270,
+        "ara_price": 338,
+        "ara_dist": 20.7,
+        "ara_hit": false,
+        "sl": 266,
+        "target1": 292,
+        "target2": 338,
+        "rr": 0.9,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 20.7% ruang ke ARA Rp338. Entry Rp280, target Rp292, SL Rp266. Konfirmasi volume sebelum masuk.",
+        "value_b": 342.5,
+        "cat_count": 2
+      }
     },
     {
       "code": "DEWA",
@@ -596,6 +669,18 @@
       "change_pct": 4.05,
       "volume": 293719400,
       "value": 105738984000,
+      "categories": [
+        "volume",
+        "value"
+      ]
+    },
+    {
+      "code": "CDIA",
+      "name": "PT Chandra Daya Investasi Tbk.",
+      "price": 400,
+      "change_pct": 6.38,
+      "volume": 265260700,
+      "value": 106104280000,
       "categories": [
         "volume",
         "value"
@@ -636,18 +721,6 @@
         "volume",
         "value"
       ]
-    },
-    {
-      "code": "AADI",
-      "name": "Pt Adaro Andalan Indonesia Tbk",
-      "price": 10450,
-      "change_pct": 5.56,
-      "volume": 40047700,
-      "value": 418498465000,
-      "categories": [
-        "gainer",
-        "value"
-      ]
     }
   ],
   "watchlist": [
@@ -662,7 +735,24 @@
         "gainer",
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 635,
+        "ara_price": 795,
+        "ara_dist": 8.9,
+        "ara_hit": false,
+        "sl": 695,
+        "target1": 760,
+        "target2": 795,
+        "rr": 0.9,
+        "risk": "Moderat",
+        "risk_cls": "risk-mod",
+        "pattern": "Triple Intersection",
+        "signal": "BUY",
+        "tip": "Setup terkuat — triple intersection, 8.9% ruang ke ARA Rp795. Entry area sekarang, target 1 Rp760 · target 2 Rp795. SL Rp695 · R/R 0.9x.",
+        "value_b": 438.6,
+        "cat_count": 3
+      }
     },
     {
       "code": "IRSX",
@@ -675,20 +765,24 @@
         "gainer",
         "volume",
         "value"
-      ]
-    },
-    {
-      "code": "CDIA",
-      "name": "PT Chandra Daya Investasi Tbk.",
-      "price": 400,
-      "change_pct": 6.38,
-      "volume": 265260700,
-      "value": 106104280000,
-      "categories": [
-        "gainer",
-        "volume",
-        "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 181,
+        "ara_price": 226,
+        "ara_dist": 1.8,
+        "ara_hit": true,
+        "sl": 210,
+        "target1": 230,
+        "target2": 240,
+        "rr": 0.7,
+        "risk": "CEILING",
+        "risk_cls": "risk-ceiling",
+        "pattern": "Mendekati Ceiling ARA",
+        "signal": "WAIT",
+        "tip": "Harga sudah di ceiling ARA (Rp226). Tidak ada ruang naik hari ini. Tunggu besok, cek opening candle.",
+        "value_b": 65.5,
+        "cat_count": 3
+      }
     },
     {
       "code": "GOTO",
@@ -700,7 +794,24 @@
       "categories": [
         "volume",
         "value"
-      ]
+      ],
+      "analysis": {
+        "prev_close": 26,
+        "ara_price": 32,
+        "ara_dist": 18.5,
+        "ara_hit": false,
+        "sl": 26,
+        "target1": 28,
+        "target2": 32,
+        "rr": 1.0,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 18.5% ruang ke ARA Rp32. Entry Rp27, target Rp28, SL Rp26. Konfirmasi volume sebelum masuk.",
+        "value_b": 104.5,
+        "cat_count": 2
+      }
     },
     {
       "code": "BUMI",
@@ -712,127 +823,53 @@
       "categories": [
         "volume",
         "value"
-      ]
-    }
-  ],
-  "analysis": {
-    "watchlist_notes": [
-      {
-        "code": "BRPT",
-        "name": "PT Barito Pacific Tbk",
-        "price": 730,
-        "change": 14.96,
-        "volume": 600859400,
-        "value": 438627362000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 600.9M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp701 | Target Rp759 | Stop Rp679"
-      },
-      {
-        "code": "IRSX",
-        "name": "PT Folago Global Nusantara Tbk",
-        "price": 222,
-        "change": 22.65,
-        "volume": 295255600,
-        "value": 65546743200,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 295.3M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp213 | Target Rp231 | Stop Rp206"
-      },
-      {
-        "code": "CDIA",
-        "name": "PT Chandra Daya Investasi Tbk.",
-        "price": 400,
-        "change": 6.38,
-        "volume": 265260700,
-        "value": 106104280000,
-        "cats": [
-          "gainer",
-          "volume",
-          "value"
-        ],
-        "reason": "Triple intersection (Gainer + Volume + Value). Vol 265.3M sangat liquid. Momentum terkuat hari ini.",
-        "guidance": "Entry area Rp384 | Target Rp416 | Stop Rp372"
-      },
-      {
-        "code": "GOTO",
-        "name": "PT GoTo Gojek Tokopedia Tbk",
-        "price": 27,
-        "change": 3.85,
-        "volume": 3871076600,
-        "value": 104519068200,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 3.87B & nilai Rp104.52B — paling liquid, spread kecil.",
-        "guidance": "Entry area Rp25 | Target Rp30 | Stop Rp25"
-      },
-      {
-        "code": "BUMI",
-        "name": "PT Bumi Resources Tbk Class A",
-        "price": 131,
-        "change": 3.15,
-        "volume": 3083986900,
-        "value": 404002283900,
-        "cats": [
-          "volume",
-          "value"
-        ],
-        "reason": "Volume 3.08B & nilai Rp404.00B — paling liquid, spread kecil.",
-        "guidance": "Entry area Rp126 | Target Rp136 | Stop Rp122"
+      ],
+      "analysis": {
+        "prev_close": 127,
+        "ara_price": 159,
+        "ara_dist": 21.4,
+        "ara_hit": false,
+        "sl": 124,
+        "target1": 136,
+        "target2": 159,
+        "rr": 0.7,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 21.4% ruang ke ARA Rp159. Entry Rp131, target Rp136, SL Rp124. Konfirmasi volume sebelum masuk.",
+        "value_b": 404.0,
+        "cat_count": 2
       }
-    ],
-    "signals": [
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "BRPT",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "IRSX",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "bullish",
-        "icon": "🔥",
-        "code": "CDIA",
-        "text": "Triple intersection — masuk Gainer + Volume + Value sekaligus. Sinyal terkuat."
-      },
-      {
-        "type": "info",
-        "icon": "📈",
-        "code": "GOTO",
-        "text": "Volume king hari ini: 3.87B shares — paling liquid untuk scalp."
+    },
+    {
+      "code": "BRMS",
+      "name": "PT Bumi Resources Minerals Tbk Class A",
+      "price": 280,
+      "change_pct": 3.7,
+      "volume": 1223048700,
+      "value": 342453636000,
+      "categories": [
+        "volume",
+        "value"
+      ],
+      "analysis": {
+        "prev_close": 270,
+        "ara_price": 338,
+        "ara_dist": 20.7,
+        "ara_hit": false,
+        "sl": 266,
+        "target1": 292,
+        "target2": 338,
+        "rr": 0.9,
+        "risk": "Rendah",
+        "risk_cls": "risk-low",
+        "pattern": "Double Intersection",
+        "signal": "WATCH",
+        "tip": "Double intersection, 20.7% ruang ke ARA Rp338. Entry Rp280, target Rp292, SL Rp266. Konfirmasi volume sebelum masuk.",
+        "value_b": 342.5,
+        "cat_count": 2
       }
-    ],
-    "warnings": [],
-    "summary": {
-      "ihsg_close": 5242.17,
-      "ihsg_change": 0.01,
-      "ihsg_high": 5297.464,
-      "ihsg_low": 5214.57,
-      "day_range": 82.89,
-      "is_positive": true,
-      "is_month_end": false,
-      "session_label": "Menjelang Penutupan",
-      "top_gainer": "OASA",
-      "top_gainer_chg": 26.28,
-      "vol_king": "GOTO",
-      "vol_king_vol": "3.87B",
-      "triple_count": 3,
-      "intersection_count": 12
     }
-  }
+  ]
 }
